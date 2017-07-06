@@ -144,7 +144,7 @@ If you're ok with the idea of variables, then you can move on. If not, think of 
 You count how many coats you have, and then give these to the man. You count how many shoes you have, and give these to the woman. Unfortunately, you have a bad memory. The question is, which one of your people (variables) holds the coats and which one holds the shoes? To help you remember, you can give your people names! You could call them something like this:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 mr_coats<br>
 mrs_shoes
 </div>
@@ -153,7 +153,7 @@ mrs_shoes
 But it's entirely up to you what names you give your people (variables). If you like, they could be called this:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 man_coats<br>
 woman_shoes
 </div>
@@ -162,7 +162,7 @@ woman_shoes
 Or<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 HimCoats<br>
 HerShoes
 </div>
@@ -174,7 +174,7 @@ But because your memory is bad, it's best to give them names that help you remem
 OK, so your people (variables) now have name. But it's no good just giving them a name. They are going to be doing some work for you, so you need to tell them what they will be doing. The man is going to be holding the coats. But we can specify how many coats he will be holding. If you have ten coats to give him, then you do the "telling" like this:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 mr_coats = 10
 </div>
 
@@ -185,7 +185,7 @@ So, the variable name comes first, then an equals sign. After the equals sign, y
 However, you're learning PHP, so there's something missing. Two things, actually. First, your people (variables) need a dollar sign at the beginning (people are like that). So it would be this:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 $mr_coats = 10
 </div>
 
@@ -193,7 +193,7 @@ $mr_coats = 10
 If you miss the dollar sign out, then your people will refuse to work! But the other thing missing is something really picky and fussy - a semi-colon. Lines of code in PHP need a semi-colon at the end:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 $mr_coats = 10;
 </div>
 
@@ -204,7 +204,7 @@ If you get any parse errors when you try to run your code, the first thing to ch
 So the man is holding ten coats. We can do the same thing with the other person (variable):<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 $mrs_shoes = 25;
 </div>
 
@@ -212,7 +212,7 @@ $mrs_shoes = 25;
 So, $mrs_shoes is holding a value of 25. If we then wanted to add up how many items of clothes we have so far, we could set up a new variable (Note the dollar sign at the begining of the new variable):<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 $total_clothes
 </div>
 
@@ -221,7 +221,7 @@ We can then add up the coats and the shoes. You add up in PHP like this:<br>
 <br>
 
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 $total_clothes = $mr_coats + $mrs_shoes;
 </div>
 
@@ -229,7 +229,7 @@ $total_clothes = $mr_coats + $mrs_shoes;
 Remember, $mr_coats is holding a value of 10, and $mrs_shoes is holding a value of 25. If you use a plus sign, PHP thinks you want to add up. So it will work out the total for you. The answer will then get stored in our new variable, the one we've called $total_clothes. You can also add up like this:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 $total_clothes = 10 + 35;
 </div>
 
@@ -237,7 +237,7 @@ $total_clothes = 10 + 35;
 Again, PHP will see the plus sign and add the two together for you. Of course, you can add up more than two items:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 $total_clothes = 10 + 35 + 7 + 38 + 1250;
 </div>
 
@@ -249,7 +249,7 @@ But the idea is the same - PHP will see plus signs and then add things up. The a
 In the previous section, you saw how to put numbers into variables. But you can also put text into your variables. Suppose you want to know something about the coats you own. Are they Winter coats? Jackets? Summer coats? You decide to catalogue this, as well. You can put direct text into your variables. You do it in a similar way to storing numbers:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 $coats1 = "Winter Coats";
 </div>
 
@@ -257,7 +257,7 @@ $coats1 = "Winter Coats";
 Again, our variable name starts with a dollar sign ($). We've then given it the name coats1. The equals sign follows the variable name. After the equals sign, however, we have direct text - Winter Coats. But notice the double quotation marks around our text. If you don't surround your direct text with quotation marks, then you'll get errors. You can, however, use single quotes instead of double quotes. So you can do this:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 $coats1 = 'Winter Coats';
 </div>
 
@@ -265,7 +265,7 @@ $coats1 = 'Winter Coats';
 But you can't do this:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 $coats1 = 'Winter Coats";
 </div>
 
@@ -276,7 +276,7 @@ In the above line, we've started with a single quote and ended with a double quo
 We can store other text in the same way:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 $coats2 = "Jackets";<br>
 $coats3 = "Summer Coats";
 </div>
@@ -295,7 +295,7 @@ In the previous section, you saw what variables are: storage areas to hold thing
 First, we'll take a look at how to display what's in your variables. We're going to be viewing our results on a web page. So see if you can get this script working first, because it's the one we'll be building on. Using a text editor like Notepad, or your PHP software, type the following. (You can copy and paste it, if you prefer. But you learn more by typing it out yourself - it doesn't really sink in unless you're making mistakes!)<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 <html><br>
 <head><br>
 <title>Variables - Some Practice</title><br>
@@ -312,7 +312,7 @@ First, we'll take a look at how to display what's in your variables. We're going
 When you've finished typing it all, save the page as <b>variables.php</b>. Then Run the script. Remember: when you're saving your work, save it to the WWW folder, as explained here. To run the page, start your browser up and type this in the address bar:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 http://localhost/variables.php
 </div>
 
@@ -320,7 +320,7 @@ http://localhost/variables.php
 If you've created a folder inside the www folder, then the address to type in your browser would be something like:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 http://localhost/FolderName/variables.php
 </div>
 
@@ -328,7 +328,7 @@ http://localhost/FolderName/variables.php
 If you were successful, you should have seen the text "It worked!" displayed in your browser. If so, Congratulations! You have a working server up and running! (If you're using Wampserver, you should see an icon in the bottom right of your screen. Click the icon and select <b>Start All Services</b> from the menu.)<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 The PHP script is only one line long:<br>
 <?php print("It Worked!"); ?>
 </div>
@@ -340,7 +340,7 @@ The rest of the script is just plain HTML code. Let's examine the PHP in more de
 We've put the PHP in the BODY section of an HTML page. Scripts can also, and often do, go between the HEAD section of an HTML page. You can also write your script without any HTML. But before a browser can recognise your script, it needs some help. You have to tell it what kind of script it is. Browsers recognise PHP by looking for this punctuation (called syntax):<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 <?php ?>
 </div>
 
@@ -355,7 +355,7 @@ Now let's adapt the basic page so that we can set up some variables. We'll try s
 <br>
 
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 <?php print("It Worked!"); ?>
 </div>
 
@@ -363,7 +363,7 @@ To this:<br>
 <br>
 
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 <?php<br>
 <br>
 print("It Worked!");<br>
@@ -376,7 +376,7 @@ OK, it's not much of a change! But spreading your code out over more than one li
 <br>
 
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 <?php<br>
 <br>
 $test_String = "It Worked!";<br>
@@ -392,7 +392,7 @@ We've set up a variable called <b>$test_String</b>. After the equals sign, the t
 <br>
 
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 print($test_String);
 </div>
 
@@ -401,7 +401,7 @@ Then add some comments ...<br>
 <br>
 
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 <?php<br>
 //--------------TESTING VARIABLES------------<br>
 <br>
@@ -417,7 +417,7 @@ Comments in PHP are for your benefit. They help you remember what the code is su
 <br>
 
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 <?php<br>
 
 /* --------------TESTING VARIABLES------------<br>
@@ -462,7 +462,7 @@ But now that you can print text to a page, let's try some numbers. Start with th
 <br>
 
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 <html><br>
 <head><br>
 <title>More on Variables</title><br>
@@ -484,7 +484,7 @@ print ("Basic Page");<br>
 We'll now set up a variable and print it to the page. So change your code to this:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 <?php<br>
 <br>
 $first_number = 10;<br>
@@ -497,7 +497,7 @@ print ($first_number);<br>
 All the code does is to print the contents of the variable that we've called <b>$first_number</b>. Remember: if you're printing direct text then you need quotation marks; if you're printing a variable name then you leave the quotes out. To see why, run the first script above. Then change the print line to this:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 print ("$first_number");
 </div>
 
@@ -509,7 +509,7 @@ In other words, add double quotation marks around your variable name. Did it mak
 You can join together direct text, and whatever is in your variable. The full stop (period or dot, to some) is used for this. Suppose you want to print out the following "My variable contains the value of 10". In PHP, you can do it like this:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 <?php<br>
 <br>
 $first_number = 10;<br>
@@ -527,7 +527,7 @@ So now we have two variables. The new variable holds our direct text. When we're
 You can also do this sort of thing:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 <?php<br>
 <br>
 $first_number = 10;<br>
@@ -548,7 +548,7 @@ OK, let's do some adding up. To add up in PHP, the plus symbol (+) is used. (If 
 To add up the contents of variables, you just separate each variable name with a plus symbol. Try this new script:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 <?php<br>
 <br>
 $first_number = 10;<br>
@@ -566,7 +566,7 @@ print ($direct_text . $sum_total);<br>
 In the above script, we've added a second number, and assigned a value to it:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 $second_number = 20;
 </div>
 
@@ -574,7 +574,7 @@ $second_number = 20;
 A third variable is then declared, which we've called $sum_total. To the right of the equals sign, we've added up the contents of the first variable and the contents of the second variable:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 $sum_total = $first_number + $second_number;
 </div>
 
@@ -585,7 +585,7 @@ PHP knows what is inside of the variables called <b>$first_number</b> and <b>$se
 To print out the answer, we've used concatenation:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 print ($direct_text . $sum_total);
 </div>
 
@@ -593,7 +593,7 @@ print ($direct_text . $sum_total);
 This script is a little more complicated than the ones you've been doing. If you're a bit puzzled, just remember what it is we're doing: adding the contents of one variable to the contents of another. The important line is this one:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 $sum_total = $first_number + $second_number;
 </div>
 
@@ -611,7 +611,7 @@ Add a third variable to your code. Assign a value of 30 to your new variable. Pu
 You don't have to use variable names to add up. You can do this:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 print (10 + 20 + 30);
 </div>
 
@@ -619,7 +619,7 @@ print (10 + 20 + 30);
 Or even this:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 $number = 10;<br>
 <br>
 print ($number + 30);
@@ -636,7 +636,7 @@ We're not going to weigh things down by subjecting you to torrents of heavy Math
 To add up using PHP variables, you did this:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 <?php<br>
 <br>
 $first_number = 10;<br>
@@ -652,7 +652,7 @@ print ($sum_total);<br>
 Subtraction is more or less the same. Instead of the plus sign (+), simply use the minus sign (-). Change your <b>$sum_total</b> line to this, and run your code:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 $sum_total = $second_number - $first_number;
 </div>
 
@@ -663,7 +663,7 @@ The <b>$sum_total</b> line is more or less the same as the first one. Except we'
 Just like addition, you can subtract more than one number at a time. Try this:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 <?php<br>
 <br>
 $first_number = 10;<br>
@@ -681,7 +681,7 @@ print ($sum_total);<br>
 The answer you should get is 70. You can also mix addition with subtraction. Here's an example:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 <?php<br>
 <br>
 $first_number = 10;<br>
@@ -719,7 +719,7 @@ Another reason to use parentheses is because of something called <b>operator pre
 To multiply in PHP (and just about every other programming language), the * symbol is used. If you see 20 * 10, it means multiply 20 by 10. Here's some code for you to try:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 <?php<br>
 <br>
 $first_number = 10;<br>
@@ -738,7 +738,7 @@ In the above code, we're just multiplying whatever is inside of our two variable
 Just like addition and subtraction, you can multiply more than two numbers:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 <?php<br>
 <br>
 $first_number = 10;<br>
@@ -756,7 +756,7 @@ print ($sum_total);<br>
 And you can even do this:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 $sum_total = $third_number * $second_number * 10;
 </div>
 
@@ -764,7 +764,7 @@ $sum_total = $third_number * $second_number * 10;
 But try this code. See if you can guess what the answer is before trying it out:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 <?php<br>
 <br>
 $first_number = 10;<br>
@@ -782,7 +782,7 @@ print ($sum_total);<br>
 What answer did you expect? If you were expecting to get an answer of 50 then you really need to know about operator precedence! As was mentioned, some operators (Math symbols) are calculated before others in PHP. Multiplication and division are thought to be more important that addition and division. So these will get calculated first. In our sum above, PHP sees the * symbol, and then multiplies these two numbers first. When it works out the answer, it will move on to the other symbol, the plus sign. It does this first:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 $second_number * $first_number;
 </div>
 
@@ -790,7 +790,7 @@ $second_number * $first_number;
 Then it moves on to the addition. It doesn't do this first:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 $third_number + $second_number
 </div>
 
@@ -812,7 +812,7 @@ Here's we're using parentheses to force two different answers. PHP will work out
 To divide one number by another, the / symbol is used in PHP. If you see 20 / 10, it means divide 10 into 20. Try it yourself:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 <?php<br>
 <br>
 $first_number = 10;<br>
@@ -828,7 +828,7 @@ print ($sum_total);<br>
 Again, you have to be careful of operator precedence. Try this code:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 <?php<br>
 <br>
 $first_number = 10;<br>
@@ -846,7 +846,7 @@ print ($sum_total);<br>
 PHP won't work out the sum from left to right! Division is done before subtraction. So this will get done first:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 $second_number / $first_number
 </div>
 
@@ -854,7 +854,7 @@ $second_number / $first_number
 And NOT this:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 $third_number - $second_number
 </div>
 
@@ -877,7 +877,7 @@ The first version will get you an answer of 98, but the second version gets you 
 A floating point number is one that has a dot in it, like 0.5 and 10.8. You don't need any special syntax to set these types of numbers up. Here's an example for you to try:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 <?php<br>
 <br>
 $first_number = 1.2;<br>
@@ -910,7 +910,7 @@ Write a script to add up the following two numbers: 15, 45. Then subtract the an
 Use variables to calculate the answer to the following sum:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 (200 * 15) / 10
 </div>
 
