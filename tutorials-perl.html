@@ -138,7 +138,7 @@ li{
 Take the following text and put it into a file called first.pl:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
      #!/usr/local/bin/perl<br>
      print "Hello World!\n";
 </div>
@@ -147,7 +147,7 @@ Take the following text and put it into a file called first.pl:<br>
 Now, run it with your Perl interpreter. From a command line, go to the directory with this file and type perl first.pl. You should see:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
      Hello World!
 </div>
 
@@ -162,7 +162,7 @@ Perl has a rich library of functions. They're the verbs of Perl, the commands th
 The print function is one of the most frequently used parts of Perl. You use it to display things on the screen or to send information to a file (which we'll discuss in the next article). It takes a list of things to output as its parameters.<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
    print "This is a single statement.";<br>
    print "Look, ", "a ", "list!";
 </div>
@@ -171,7 +171,7 @@ The print function is one of the most frequently used parts of Perl. You use it 
 A Perl program consists of statements, each of which ends with a semicolon. Statements don't need to be on separate lines; there may be multiple statements on one line or a single statement can be split across multiple lines.<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
     print "This is "; print "two statements.\n"; print "But this ",<br>
           "is only one statement.\n";
 </div>
@@ -187,7 +187,7 @@ Numbers are easy; we've all dealt with them. The only thing you need to know is 
 Strings are a bit more complex. A string is a collection of characters in either single or double quotes:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
    'This is a test.'<br>
    "Hi there!\n"
 </div>
@@ -196,7 +196,7 @@ Strings are a bit more complex. A string is a collection of characters in either
 The difference between single quotes and double quotes is that single quotes mean that their contents should be taken literally, while double quotes mean that their contents should be interpreted. For example, the character sequence \n is a newline character when it appears in a string with double quotes, but is literally the two characters, backslash and n, when it appears in single quotes.<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
     print "This string\nshows up on two lines.";<br>
     print 'This string \n shows up on only one.';
 </div>
@@ -212,7 +212,7 @@ If functions are Perl's verbs, then variables are its nouns. Perl has three type
 Scalars are single things. This might be a number or a string. The name of a scalar begins with a dollar sign, such as $i or $abacus. You assign a value to a scalar by telling Perl what it equals, like so:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
     $i = 5;<br>
     $pie_flavor = 'apple';<br>
     $constitution1776 = "We the People, etc.";
@@ -225,7 +225,7 @@ You don't need to specify whether a scalar is a number or a string. It doesn't m
 If you use a double-quoted string, Perl will insert the value of any scalar variables you name in the string. This is often used to fill in strings on the fly:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
     $apple_count = 5; <br>
     $count_report = "There are $apple_count apples.";<br>
     print "The report is: $count_report\n";
@@ -238,7 +238,7 @@ The final output from this code is The report is: There are 5 apples..<br>
 Numbers in Perl can be manipulated with the usual mathematical operations: addition, multiplication, division and subtraction. (Multiplication and division are indicated in Perl with the * and / symbols, by the way.)<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
     $a = 5;<br>
     $b = $a + 10;       # $b is now equal to 15.<br>
     $c = $b * 10;       # $c is now equal to 150.<br>
@@ -249,7 +249,7 @@ Numbers in Perl can be manipulated with the usual mathematical operations: addit
 You can also use special operators like ++, --, +=, -=, /= and *=. These manipulate a scalar's value without needing two elements in an equation. Some people like them, some don't. I like the fact that they can make code clearer.<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
    $a = 5;<br>
    $a++;        # $a is now 6; we added 1 to it.<br>
    $a += 10;    # Now it's 16; we added 10.<br>
@@ -260,7 +260,7 @@ You can also use special operators like ++, --, +=, -=, /= and *=. These manipul
 Strings in Perl don't have quite as much flexibility. About the only basic operator that you can use on strings is concatenation, which is a $10 way of saying ``put together.'' The concatenation operator is the period. Concatenation and addition are two different things:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
    $a = "8";    # Note the quotes.  $a is a string.<br>
    $b = $a + "1";   # "1" is a string too.<br>
    $c = $a . "1";   # But $b and $c have different values!
@@ -276,7 +276,7 @@ Just remember, the plus sign adds numbers and the period puts strings together.<
 Arrays are lists of scalars. Array names begin with @. You define arrays by listing their contents in parentheses, separated by commas:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
     @lotto_numbers = (1, 2, 3, 4, 5, 6);  # Hey, it could happen.<br>
     @months = ("July", "August", "September");
 </div>
@@ -285,7 +285,7 @@ Arrays are lists of scalars. Array names begin with @. You define arrays by list
 The contents of an array are indexed beginning with 0. (Why not 1? Because. It's a computer thing.) To retrieve the elements of an array, you replace the @ sign with a $ sign, and follow that with the index position of the element you want. (It begins with a dollar sign because you're getting a scalar value.) You can also modify it in place, just like any other scalar.<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
     @months = ("July", "August", "September");<br>
     print $months[0];   # This prints "July".<br>
     $months[2] = "Smarch";  # We just renamed September!
@@ -295,7 +295,7 @@ The contents of an array are indexed beginning with 0. (Why not 1? Because. It's
 If an array doesn't exist, by the way, you'll create it when you try to assign a value to one of its elements.<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
     $winter_months[0] = "December";  # This implicitly creates @winter_months.
 </div>
 
@@ -303,7 +303,7 @@ If an array doesn't exist, by the way, you'll create it when you try to assign a
 Arrays always return their contents in the same order; if you go through @months from beginning to end, no matter how many times you do it, you'll get back July, August and September in that order. If you want to find the length of an array, use the value $#array_name. This is one less than the number of elements in the array. If the array just doesn't exist or is empty, $#array_name is -1. If you want to resize an array, just change the value of $#array_name.<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
     @months = ("July", "August", "September");<br>
     print $#months;         # This prints 2.<br>
     $a1 = $#autumn_months;  # We don't have an @autumn_months, so this is -1.<br>
@@ -314,7 +314,7 @@ Arrays always return their contents in the same order; if you go through @months
 Hashes are called ``dictionaries'' in some programming languages, and that's what they are: a term and a definition, or in more correct language a key and a value. Each key in a hash has one and only one corresponding value. The name of a hash begins with a percentage sign, like %parents. You define hashes by comma-separated pairs of key and value, like so:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
     %days_in_summer = ( "July" => 31, "August" => 31, "September" => 30 );
 </div>
 
@@ -322,7 +322,7 @@ Hashes are called ``dictionaries'' in some programming languages, and that's wha
 You can fetch any value from a hash by referring to $hashname{key}, or modify it in place just like any other scalar.<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
     print $days_in_summer{"September"}; # 30, of course.<br>
     $days_in_summer{"February"} = 29;   # It's a leap year.
 </div>
@@ -331,7 +331,7 @@ You can fetch any value from a hash by referring to $hashname{key}, or modify it
 If you want to see what keys are in a hash, you can use the keys function with the name of the hash. This returns a list containing all of the keys in the hash. The list isn't always in the same order, though; while we could count on @months to always return July, August, September in that order, keys %days_in_summer might return them in any order whatsoever.<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
     @month_list = keys %days_in_summer;<br>
     # @month_list is now ('July', 'September', 'August') !
 </div>
@@ -347,7 +347,7 @@ Notice that in some of the code samples from the previous section, I've used cod
 Anything in a line of Perl code that follows a # sign is a comment. (Except, of course, if the # sign appears in a string.)<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
    print "Hello world!\n";  # That's more like it.<br>
    # This entire line is a comment.
 </div>
@@ -361,7 +361,7 @@ Almost every time you write a program, you'll need to use a loop. Loops allow yo
 Perl has several different functions that are useful for flow control, the most basic of which is for. When you use the for function, you specify a variable that will be used for the loop index, and a list of values to loop over. Inside a pair of curly brackets, you put any code you want to run during the loop:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
      for $i (1, 2, 3, 4, 5) {<br>
          print "$i\n";<br>
      }
@@ -374,7 +374,7 @@ This loop prints the numbers 1 through 5, each on a separate line.<br>
 A handy shortcut for defining loops is using .. to specify a range of numbers. You can write (1, 2, 3, 4, 5) as (1 .. 5). You can also use arrays and scalars in your loop list. Try this code and see what happens:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
     @one_to_ten = (1 .. 10);<br>
     $top_limit = 25;<br>
     for $i (@one_to_ten, 15, 20 .. $top_limit) {<br>
@@ -386,7 +386,7 @@ A handy shortcut for defining loops is using .. to specify a range of numbers. Y
 The items in your loop list don't have to be numbers; you can use strings just as easily. If the hash %month_has contains names of months and the number of days in each month, you can use the keys function to step through them.<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
     for $i (keys %month_has) {<br>
         print "$i has $month_has{$i} days.\n";<br>
     }<br>
@@ -405,7 +405,7 @@ You now know enough about Perl - variables, print, and for() - to write a small,
 The single most complex line in the program is this one:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
     $interest = int (($apr / 100) * $nest_egg * 100) / 100;
 </div>
 

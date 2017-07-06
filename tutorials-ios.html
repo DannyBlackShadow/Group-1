@@ -138,7 +138,7 @@ li{
 Just like other languages, strings are enclosed and defined by the use of “double quotes”, however in Objective-C an NSString also comes with the prefix of the @ sign, Like so:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 NSString *yourString = @"This is a string, you like?";
 </div>
 
@@ -148,7 +148,7 @@ NSString *yourString = @"This is a string, you like?";
 Take a look at the apple documentation on NSString Class Reference to check the number of ways that you can create and return strings. The most common and the one you’re likely to be using is stringWithFormat:<br>
 
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 NSString *yourString = @"iOS-Blog";<br>
 NSString *yourNewString = [NSString stringWithFormat:@"Check out:    %@ for awesome tutorials.];<br>
 // yourNewString is now @"Check out: iOS-Blog for awesome tutorials."
@@ -161,7 +161,7 @@ Common string format specifiers are: %@ another object. (this calls the :descrip
 You can also get the length of a string which can be obtained using the length method:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 NSString *yourString = @"iOS-Blog";<br>
 int yourLength = [yourString length];       // yourLength is equals to 8 <br>
 Joining an Array of Strings
@@ -171,7 +171,7 @@ Joining an Array of Strings
 For this, you need to use NSArray’s componentsJoinedByString:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 NSArray *yourWords = [NSArray arrayWithObjects:@"iOS-Blog", @"is", @"just", @"awesome", nil];<br>
 NSString *sentence = [yourWords componentsJoinedByString:@" "];<br>
 <br>
@@ -184,7 +184,7 @@ NSString *sentence = [yourWords componentsJoinedByString:@" "];<br>
 There may become a time you need to determine if two of your strings are equal, for this we use: isEqualToString and we implement it like so:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 NSString *yourString = @"iOS-Blog";<br>
 <br>
 if ([yourString isEqualToString:@"iOS-Blog"]) {<br>
@@ -201,7 +201,7 @@ Many languages offer you the chance to replace information within a string, for 
 So lets say that you wanted to take out all the references to the word red:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 NSString *newString = [textField.text stringByReplacingOccurrencesOfString:@"red" withString:@""];
 </div>
 
@@ -210,7 +210,7 @@ NSString *newString = [textField.text stringByReplacingOccurrencesOfString:@"red
 We use a method called componentsSeparatedByString to achieve this:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 NSString *yourString = @"This is a test string";<br>
 NSArray *yourWords = [myString componentsSeparatedByString:@" "];<br>
 <br>
@@ -221,7 +221,7 @@ NSArray *yourWords = [myString componentsSeparatedByString:@" "];<br>
 if you need to split on a set of several different characters, use NSString’s componentsSeparatedByCharactersInSet:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 NSString *yourString = @"Foo-bar/iOS-Blog";<br>
 NSArray *yourWords = [myString componentsSeparatedByCharactersInSet:<br>
                       [NSCharacterSet characterSetWithCharactersInString:@"-/"]<br>
@@ -234,7 +234,7 @@ NSArray *yourWords = [myString componentsSeparatedByCharactersInSet:<br>
 Note however that the separator string can’t be blank. If you need to separate a string into its individual characters, just loop through the length of the string and convert each char into a new string:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 NSMutableArray *characters = [[NSMutableArray alloc] initWithCapacity:[myString length]];<br>
 for (int i=0; i < [myString length]; i++) {<br>
     NSString *ichar  = [NSString stringWithFormat:@"%c", [myString characterAtIndex:i]];<br>
@@ -248,7 +248,7 @@ for (int i=0; i < [myString length]; i++) {<br>
 Sometimes you might need to remove white spacing, sometimes you just want to, for this we will use the whitespaceCharacterSet method to remove the white spaces from both ends of the string:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 NSString *yourString = [whitespaceString stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceCharacterSet]];
 </div>
 
@@ -256,7 +256,7 @@ NSString *yourString = [whitespaceString stringByTrimmingCharactersInSet: [NSCha
 If you want to also remove newlines from the string however, use the whitespaceAndNewlineCharacterSet:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 NSString *yourString = [whitespaceString stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceAndNewlineCharacterSet]];
 </div>
 
@@ -265,7 +265,7 @@ NSString *yourString = [whitespaceString stringByTrimmingCharactersInSet: [NSCha
 This is quite possibly the most useful thing that you will need to know. Concatenating strings. So you have two strings and you need them to go together. Like firstName and LastName. Then this is how you would do that:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 NSString *firstName = @"iOS-";<br>
 NSString *lastName = @"Blog";<br>
 // Concatenate them into a new string<br>
@@ -278,7 +278,7 @@ NSString *fullName = [string1 stringByAppendingString:string2];<br>
 This is a little different if you are using NSMutableString method, you just simply call the appendString method<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 NSMutableString *string1 = [NSMutableString stringWithString:@"This is"];<br>
 NSString *string2 = @" a test.";<br>
 [string1 appendString:string2];<br>
@@ -289,7 +289,7 @@ NSLog(@"string1: %@", string1);         // string1 is now @"This is a test."
 If you would like to concatenate 3 strings then it’s probably easier to construct a new string out of the three by using stringWithFormat: method<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 NSString *allThreeStrings = [NSString stringWithFormat:@"%@ %@ and boring %@",<br>
                              firstString, secondString, thirdString];
 
@@ -300,7 +300,7 @@ NSString *allThreeStrings = [NSString stringWithFormat:@"%@ %@ and boring %@",<b
 For this we will use the NSString method: rangeOfString to find out whether a substring exists within another string:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 NSString *theString = @"iOS-Blog.com";<br>
 NSRange isCom = [theString rangeOfString:@".com"];
 </div>
@@ -309,7 +309,7 @@ NSRange isCom = [theString rangeOfString:@".com"];
 NSRange is a struct with two parts:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
     .location<br>
     .length
 </div>
@@ -321,7 +321,7 @@ If the substring is not found, rangeOfString returns {NSNotFound, 0}.<br>
 There is a shorter and easier way to test whether a s string is found:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 if ( [theString rangeOfString:@".com"].location != NSNotFound ) {<br>
     // do something here if the string is found<br>
 }
@@ -331,7 +331,7 @@ if ( [theString rangeOfString:@".com"].location != NSNotFound ) {<br>
 <h1>Replacing or removing a Substring:</h1>
 
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 NSString *theString = @"ios-blog.com";<br>
 NSRange tldr = [domainName rangeOfString:@".com"];<br>
 <br>
@@ -347,7 +347,7 @@ if (tldr.location != NSNotFound) {<br>
 Comments in Objective-C come directly from C and are similar to what you find in other languages. One line comments are written like this:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 // This is a single line comment.
 </div>
 
@@ -355,7 +355,7 @@ Comments in Objective-C come directly from C and are similar to what you find in
 Everything after the // is ignored by the compiler until the end of the line. They also work after instructions:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 int counter = 0; // This is a counter.
 </div>
 
@@ -363,7 +363,7 @@ int counter = 0; // This is a counter.
 C allows also multiline comments, which some languages don’t have<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 /*<br>
 This is a multiline comment <br>
 which spans more than one line.<br>
@@ -378,7 +378,7 @@ As in many other languages, you need to store your values and object inside vari
 This does not happen in C. Variables are typed, which means that you have to declare the type of data a variable will contain and you won’t be able to change it later. Variable declarations in C look like this:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 int variable1 = 7;<br>
 float variable2 = 3.14;<br>
 char variable3 = 'm';
@@ -467,7 +467,7 @@ Operator   Description   Syntax
 Increment and decrement operators have precedence over the arithmetic operators. Pay particular attention to these operators. When used in isolation, they are equivalent:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 someVariable++;
 </div>
 
@@ -475,7 +475,7 @@ someVariable++;
 produces the same result as<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 ++someVariable;
 </div>
 
@@ -486,7 +486,7 @@ The difference comes out when you use them inside another expression. When put b
 This example explains how this works:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 int  x;<br>
 int  y;<br>
 <br>
@@ -522,7 +522,7 @@ Unlike in other languages, in Objective-C there is no operator overloading. This
 Let’s have a first look at objects. Objective-C is an object oriented language after all, so we need variables to contain objects. The generic type for an object variable is id:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 id myObject = nil;
 </div>
 
@@ -533,7 +533,7 @@ The id type means that the variable can contain any type of object. The nil valu
 Object variables with a specific type are declared in a slightly different way:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 NSString *aString = nil;
 </div>
 
@@ -561,7 +561,7 @@ Let’s now see how flow control works in Objective-C. Flow control is another p
 The main statement to perform decisions in Objective-C is the if-else statement:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 if (expression) {<br>
     if-body<br>
 } else {<br>
@@ -579,7 +579,7 @@ I personally use the K&R style now, that in my experience seems to be quite wide
 If you want to use more than one condition, the if-else statement allows multiple branches. This is usually the case in many languages, although it’s not possible in a few.<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 if (expression1) {<br>
     if-body<br>
 } else if (expression2) {<br>
@@ -597,7 +597,7 @@ The else if clause can be repeated as many times as needed.<br>
 When you have multiple choices you can use, as we saw, the if-else statement with as many branches as needed. If the expression evaluates to an integer, though, C offers another branching facility, the switch statement:<br>
 
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 switch (expression) {<br>
     case value1:<br>
         case-body-1<br>
@@ -626,7 +626,7 @@ The default statement is optional, and is executed when the value of the express
 Another branching facility that Objective-C inherits from C is the ternary operator, also known as conditional operator. This is an operator that in some languages might not be available, and it’s a shorthand of the if-else statement and a return statement (which we will see later, but you are probably already familiar with). The ternary operator takes this form:<br>
 
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 condition ? expression1 : expression2;
 </div>
 
@@ -634,7 +634,7 @@ condition ? expression1 : expression2;
 If the condition evaluates to YES, true, or any non zero value, expression1 is executed and it’s value is returned, otherwise the same happens for expression2. Thus, it is equivalent to the following:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 if (condition)<br>
     return expression1;<br>
 else<br>
@@ -645,7 +645,7 @@ else<br>
 The ternary operator has the advantage over the if-else statement that it can be written inside another expression, like an assignment. Thus this is possible and sometimes used:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 a = condition ? expression1 : expression2;
 </div>
 
@@ -691,7 +691,7 @@ Many languages have a strict boolean notion of true and false. As we have seen, 
 This is useful to know for a very common idiom in Objective-C that comes from C. The nil value is also mapped to 0, which means that it is equivalent to NO. So, instead of checking if a variable (or value) is equal to nil, it’s common in Objective-C to check it’s negation, which is logically equivalent. So instead of writing:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 if (someObject == nil)
 </div>
 
@@ -699,7 +699,7 @@ if (someObject == nil)
 We Write:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 if (!someObject)
 </div>
 
@@ -715,7 +715,7 @@ Objective-C loops also come from C. In addition to these Objective-C also introd
 The first loop statement, present in many modern languages as well is the for loop. In C it has the following syntax:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 for (initialization-expression; loop-condition; update-expression) {<br>
     loop-body<br>
 }
@@ -740,7 +740,7 @@ The update-expression is an expression that is evaluated at the end of each pass
 In it’s most common incarnation, the for loop takes the following form:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 for (NSUInteger index = 0; index < someValue; index++) {<br>
     loop-body<br>
 }
@@ -754,7 +754,7 @@ Where someValue is a variable or a constant with some positive integer value. In
 The for-loop is normally used to iterate a fixed number of times. If we want to loop until a certain condition is met, then the while loop is normally used.<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 while (condition) {<br>
     loop-body<br>
 }
@@ -768,7 +768,7 @@ The condition is checked at the beginning of every iteration and the loop ends w
 If we want the loop to iterate at least one time, we have the do-while loop:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 do {<br>
     loop-body<br>
 } while (condition);
@@ -788,7 +788,7 @@ There are two statements that are used to alter the flow of the loop structures:
 The break statement is used when you want to terminate the loop prematurely, for reasons often different from the loop condition and at any point during an iteration, so you only execute part of it. This illustrates how usually it’s used:<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 while (loop-condition) {<br>
     some-instructions<br>
     if (exit-condition)<br>
@@ -804,7 +804,7 @@ If the exit-condition evaluates to true during any iteration, the loop exits wit
 Sometimes you want to just skip the rest of the current iteration like with the break statement, but without exiting the loop. The continue statement is used for this specific reason.<br>
 <br>
 
-<div class="container" style="background-color: darkgrey;">
+<div class="container" style="background-color: lightgrey;">
 while (loop-condition) {<br>
     some-instructions<br>
     if (skip-condition)<br>
