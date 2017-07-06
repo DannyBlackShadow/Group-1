@@ -20,6 +20,10 @@
         padding-top: 70px;
         /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     }
+li{
+        color: #33AAFF;
+    }
+    
     </style>
 
 
@@ -55,8 +59,8 @@
                             <li><a class="dropdown-item" href="programming-language-haskell.html">Haskell</a></li>
                             <li><a class="dropdown-item" href="programming-language-php.html">PHP</a></li>
                             <li><a class="dropdown-item" href="programming-language-c++.html">C++</a></li>
-                            <li><a class="dropdown-item" href="programming-language-c#.html">C#</a></li>
-                            <li><a class="dropdown-item" href="programming-language-ios.html">IOS</a></li>
+                            <li><a class="dropdown-item" href="programming-language-c_sharp.html">C#</a></li>
+                            <li><a class="dropdown-item" href="programming-language-ios.html">IOS - Objective-C</a></li>
                             <li><a class="dropdown-item" href="programming-language-Ruby on Rails.html">Ruby on Rails</a></li>
                             <li><a class="dropdown-item" href="programming-language-SQL.html">SQL</a></li>
                             <li><a class="dropdown-item" href="programming-language-Perl.html">Perl</a></li>
@@ -76,8 +80,8 @@
                             <li><a class="dropdown-item" href="tutorials-haskell.html">Haskell</a></li>
                             <li><a class="dropdown-item" href="tutorials-php.html">PHP</a></li>
                             <li><a class="dropdown-item" href="tutorials-c++.html">C++</a></li>
-                            <li><a class="dropdown-item" href="tutorials-c#.html">C#</a></li>
-                            <li><a class="dropdown-item" href="tutorials-ios.html">IOS</a></li>
+                            <li><a class="dropdown-item" href="tutorials-c_shar.html">C#</a></li>
+                            <li><a class="dropdown-item" href="tutorials-ios.html">IOS - Objective-C</a></li>
                             <li><a class="dropdown-item" href="tutorials-ror.html">Ruby on Rails</a></li>
                             <li><a class="dropdown-item" href="tutorials-sql.html">SQL</a></li>
                             <li><a class="dropdown-item" href="tutorials-perl.html">Perl</a></li>
@@ -92,10 +96,9 @@
                         <!-- languages dropdown menu -->
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <ul>
-                            <li><a class="dropdown-item" href="#">NetBeans</a></li>
-                            <li><a class="dropdown-item" href="#">JCreator</a></li>
-                            <li><a class="dropdown-item" href="#">Sublime Text</a></li>
-                            </ul>
+                            <li><a class="dropdown-item" href="prosoft-nb.html">NetBeans</a></li>
+                            <li><a class="dropdown-item" href="prosoft-jc.html">JCreator</a></li>
+                            <li><a class="dropdown-item" href="prosoft-st.html">Sublime Text</a></li>
                         </div>
                     </li><!-- end of programming softwares -->
 
@@ -120,14 +123,1068 @@
     <div class="container">
 
         <div class="row">
-            <div class="col-lg-12 text-center">
-                <h1>C++</h1>
+            <div class="col-lg-12 text-left">
+                <div class="jumbotron jumbotron-fluid">
+  <div class="container" style="text-align: center">
+    <h1 class="display-3">C++</h1>
+    <p class="lead">        </p>
+  </div>
+</div>
                 
-                <p class="lead">Content!!!</p>
-                <p>dito po unt content ng home page mga koiyah / ate</p>
-                <ul class="list-unstyled">
-                    
-                </ul>
+                <p class="lead">
+
+<h1>Structure of a program</h1>
+
+A computer program is a sequence of instructions that tell the computer what to do.<br>
+
+<h3>Statements</h3>
+
+The most common type of instruction in a program is the <b>statement</b>. A statement in C++ is the smallest independent unit in the language. In human language, it is analogous to a sentence. We write sentences in order to convey an idea. In C++, we write statements in order to convey to the compiler that we want to perform a task. <b>Statements in C++ are often terminated by a semicolon.</b><br>
+<br>
+
+There are many different kinds of statements in C++. The following are some of the most common types of simple statements:<br>
+<br>
+
+<div class="container" style="background-color: darkgrey;">
+1    int x;<br>
+2    x = 5;<br>
+3    std::cout << x;
+</div>
+
+<br>
+int x; is a <b>declaration statement</b>. This particular declaration statement tells the compiler that x is a variable that holds an integer (int) value. In programming, a variable provides a name for a region of memory that can hold a value that can vary. All variables in a program must be declared before they are used. We will talk more about variables shortly.<br>
+<br>
+
+x = 5; is an <b>assignment statement</b>. It assigns a value (5) to a variable (x).<br>
+<br>
+
+std::cout << x; is an <b>output statement</b>. It outputs the value of x (which we set to 5 in the previous statement) to the screen.<br>
+
+<h3>Expressions</h3>
+
+The compiler is also capable of resolving expressions. An <b>expression</b> is a mathematical entity that evaluates to a value. For example, in math, the expression 2+3 evaluates to the value 5. Expressions can involve values (such as 2), variables (such as x), operators (such as +) and functions (which return an output value based on some input value). They can be singular (such as 2, or x), or compound (such as 2+3, 2+x, x+y, or (2+x)*(y-3)).<br>
+<br>
+
+For example, the statement x = 2 + 3; is a valid assignment statement. The expression 2 + 3 evaluates to the value of 5. This value of 5 is then assigned to x.<br>
+
+<h3>Functions</h3>
+
+In C++, statements are typically grouped into units called functions. A <b>function</b> is a collection of statements that executes sequentially. Every C++ program must contain a special function called main. When the C++ program is run, execution starts with the first statement inside of function main. Functions are typically written to do a very specific job. For example, a function named “max” might contain statements that figures out which of two numbers is larger. A function named “calculateGrade” might calculate a student’s grade. We will talk more about functions later.<br>
+<br>
+
+<p class="text-info">Helpful hint: It’s a good idea to put your main() function in a .cpp file named either main.cpp, or with the same name as your project. For example, if you are writing a Chess game, you could put your main() function in chess.cpp.</p>
+
+<h3>Libraries and the C++ Standard Library</h3>
+
+A <b>library</b> is a collection of precompiled code (e.g. functions) that has been “packaged up” for reuse in many different programs. Libraries provide a common way to extend what your programs can do. For example, if you were writing a game, you’d probably want to include a sound library and a graphics library.<br>
+
+<br>
+The C++ core language is actually very small and minimalistic (and you’ll learn most of it in these tutorials). However, C++ also comes with a library called the C++ standard library that provides additional functionality for your use. The C++ standard library is divided into areas (sometimes also called libraries, even though they’re just parts of the standard library), each of which focus on providing a specific type of functionality. One of the most commonly used parts of the C++ standard library is the iostream library, which contains functionality for writing to the screen and getting input from a console user.<br>
+
+<h4>Taking a look at a sample program</h4>
+
+Now that you have a brief understanding of what statements, functions, and libraries are, let’s look at a simple “hello world” program:<br>
+<br>
+
+<div class="container" style="background-color: darkgrey;">
+1   #include <iostream><br>
+2    <br>
+3   int main()<br>
+4   {<br>
+5     std::cout << "Hello world!";<br>
+6      return 0;<br>
+7    }
+</div>
+
+<br>
+Line 1 is a special type of statement called a <b>preprocessor directive</b>. Preprocessor directives tell the compiler to perform a special task. In this case, we are telling the compiler that we would like to add the contents of the iostream header to our program. The iostream header allows us to access functionality from the iostream library, which will allow us to write text to the screen.<br>
+<br>
+
+Line 2 is blank, and is ignored by the compiler.<br>
+<br>
+
+Line 3 declares the main() function, which as you learned above, is mandatory. Every program must have a main() function.<br>
+<br>
+
+Lines 4 and 7 tell the compiler which lines are part of the main function. Everything between the opening curly brace on line 4 and the closing curly brace on line 7 is considered part of the main() function.<br>
+<br>
+
+Line 5 is our first statement (you can tell it’s a statement because it ends with a semicolon), and it is an output statement. std::cout is a special object that represents the console/screen. The << symbol is an operator (much like + is an operator in mathematics) called the <b>output operator</b>. std::cout understands that anything sent to it via the output operator should be printed on the screen. In this case, we’re sending it the text “Hello world!”.<br>
+<br>
+
+Line 6 is a new type of statement, called a <b>return statement</b>. When an executable program finishes running, the main() function sends a value back to the operating system that indicates whether it was run successfully or not.<br>
+<br>
+
+This particular return statement returns the value of 0 to the operating system, which means “everything went okay!”. Non-zero numbers are typically used to indicate that something went wrong, and the program had to abort. We will discuss return statements in more detail when we discuss functions.<br>
+<br>
+
+All of the programs we write will follow this template, or a variation on it. We will discuss each of the lines above in more detail in the upcoming sections.<br>
+<br>
+
+(Remember, Visual Studio users should add #include “stdafx.h” as the first line of any C++ code file written in Visual Studio)<br>
+
+<h3>Syntax and syntax errors</h3>
+
+In English, sentences are constructed according to specific grammatical rules that you probably learned in English class in school. For example, normal sentences end in a period. The rules that govern how sentences are constructed in a language is called <b>syntax</b>. If you forget the period and run two sentences together, this is a violation of the English language syntax.<br>
+<br>
+
+C++ has a syntax too: rules about how your programs must be constructed in order to be considered valid. When you compile your program, the compiler is responsible for making sure your program follows the basic syntax of the C++ language. If you violate a rule, the compiler will complain when you try to compile your program, and issue you a <b>syntax error</b>.<br>
+<br>
+
+For example, you learned above that statements must end in a semicolon.<br>
+<br>
+
+Let’s see what happens if we omit the semicolon in the following program:<br>
+<br>
+
+<div class="container" style="background-color: darkgrey;">
+1   #include <iostream><br>
+2   <br>
+3   int main()<br>
+4   {<br>
+5   std::cout << "Hello world!"<br>
+6   return 0;<br>
+7   }
+<br>
+Visual studio produces the following error:<br>
+
+c:\users\apomeranz\documents\visual studio 2013\projects\test1\test1\test1.cpp(6): error C2143: syntax error : missing ';' before 'return'
+</div>
+
+<br>
+This is telling you that you have an syntax error on line 6: You’ve forgotten a semicolon before the return. In this case, the error is actually at the end of line 5. Often, the compiler will pinpoint the exact line where the syntax error occurs for you. However, sometimes it doesn’t notice until the next line.<br>
+<br>
+
+Syntax errors are common when writing a program. Fortunately, they’re often easily fixable. The program can only be fully compiled (and executed) once all syntax errors are resolved.
+
+
+<h1>Comments</h1>
+
+<h3>Types of comments</h3>
+
+A <b>comment</b> is a line (or multiple lines) of text that are inserted into the source code to explain what the code is doing. In C++ there are two kinds of comments.<br>
+<br>
+
+The // symbol begins a C++ single-line comment, which tells the compiler to ignore everything to the end of the line. For example:<br>
+<br>
+
+<div class="container" style="background-color: darkgrey;">
+1   std::cout << "Hello world!" << std::endl; // Everything from here to the right is ignored.
+</div>
+
+<br>
+Typically, the single line comment is used to make a quick comment about a single line of code.<br>
+<br>
+
+<div class="container" style="background-color: darkgrey;">
+1   std::cout << "Hello world!" << std::endl; // cout and endl live in the iostream library<br>
+2   std::cout << "It is very nice to meet you!" << std::endl; // these comments make the code hard to read<br>
+3   std::cout << "Yeah!" << std::endl; // especially when lines are different lengths
+</div>
+
+<br>
+Having comments to the right of a line can make both the code and the comment hard to read, particularly if the line is long. Consequently, the // comment is often placed above the line it is commenting.<br>
+<br>
+
+<div class="container" style="background-color: darkgrey;">
+1   // cout and endl live in the iostream library<br>
+2   std::cout << "Hello world!" << std::endl;<br>
+3<br>
+4   // this is much easier to read<br>
+5   std::cout << "It is very nice to meet you!" << std::endl;<br>
+6<br>
+7   // don't you think so?<br>
+8   std::cout << "Yeah!" << std::endl;   
+</div>
+   
+<br>
+The /* and */ pair of symbols denotes a C-style multi-line comment. Everything in between the symbols is ignored.<br>
+<br>
+
+<div class="container" style="background-color: darkgrey;">
+1   /* This is a multi-line comment.<br>
+2      This line will be ignored.<br>
+3      So will this one. */
+</div>
+
+<br>
+Since everything between the symbols is ignored, you will sometimes see programmers “beautify” their multiline comments:<br>
+<br>
+
+<div class="container" style="background-color: darkgrey;">
+1   /* This is a multi-line comment.<br>
+2    * the matching asterisks to the left<br>
+3    * can make this easier to read<br>
+4    */
+</div>
+
+<br>
+Multi-line style comments do not nest. Consequently, the following will have unexpected results:<br>
+<br>
+
+<div class="container" style="background-color: darkgrey;">
+1   /* This is a multi-line /* comment */ this is not inside the comment */<br>
+2   // The above comment ends at the first */, not the second */
+</div>
+
+<br>
+<p class="text-info">Rule: Never nest comments inside of other comments.</p>
+
+<h3>Proper use of comments</h3>
+
+Typically, comments should be used for three things. For a given library, program, or function, comments are best used to describe what the library, program, or function, does. For example:<br>
+<br>
+
+<div class="container" style="background-color: darkgrey;">
+1   // This program calculate the student's final grade based on his test and homework scores.
+</div>
+
+<br>
+
+<div class="container" style="background-color: darkgrey;">
+1   // This function uses newton's method to approximate the root of a given equation.
+</div>
+
+<br>
+
+<div class="container" style="background-color: darkgrey;">
+1   // The following lines generate a random item based on rarity, level, and a weight factor.
+</div>
+
+<br>
+All of these comments give the reader a good idea of what the program is trying to accomplish without having to look at the actual code. The user (possibly someone else, or you if you’re trying to reuse code you’ve already previously written) can tell at a glance whether the code is relevant to what he or she is trying to accomplish. This is particularly important when working as part of a team, where not everybody will be familiar with all of the code.<br>
+<br>
+
+Second, within a library, program, or function described above, comments can be used to describe how the code is going to accomplish its goal.<br>
+<br>
+
+<div class="container" style="background-color: darkgrey;">
+1   /* To calculate the final grade, we sum all the weighted midterm and homework scores<br>
+2       and then divide by the number of scores to assign a percentage.  This percentage is<br>
+3       used to calculate a letter grade. */
+</div>
+
+<br>
+
+<div class="container" style="background-color: darkgrey;">
+1   // To generate a random item, we're going to do the following:<br>
+2   // 1) Put all of the items of the desired rarity on a list<br>
+3   // 2) Calculate a probability for each item based on level and weight factor<br>
+4   // 3) Choose a random number<br>
+5   // 4) Figure out which item that random number corresponds to<br>
+6   // 5) Return the appropriate item
+</div>
+
+<br>
+These comments give the user an idea of how the code is going to accomplish it’s goal without going into too much detail.<br>
+<br>
+
+At the statement level, comments should be used to describe why the code is doing something. A bad statement comment explains what the code is doing. If you ever write code that is so complex that needs a comment to explain what a statement is doing, you probably need to rewrite your statement, not comment it.<br>
+<br>
+
+Here are some examples of bad line comments and good statement comments.<br>
+<br>
+Bad comment:<br>
+<br>
+
+<div class="container" style="background-color: darkgrey;">
+1   // Set sight range to 0<br>
+2   sight = 0;
+</div>
+<br>
+(yes, we already can see that sight is being set to 0 by looking at the statement)<br>
+
+Good comment:<br>
+<br>
+
+<div class="container" style="background-color: darkgrey;">
+1   // The player just drank a potion of blindness and can not see anything<br>
+2   sight = 0;
+</div>
+
+<br>
+(now we know WHY the player’s sight is being set to 0)<br>
+<br>
+Bad comment:<br>
+<br>
+
+<div class="container" style="background-color: darkgrey;">
+1   // Calculate the cost of the items<br>
+2   cost = items / 2 * storePrice;
+</div>
+
+<br>
+(yes, we can see that this is a cost calculation, but why is items divided by 2?)<br>
+<br>
+Good comment:<br>
+<br>
+
+<div class="container" style="background-color: darkgrey;">
+1   // We need to divide items by 2 here because they are bought in pairs<br>
+2   cost = items / 2 * storePrice;
+</div>
+
+<br>
+(now we know!)<br>
+
+<br>
+Programmers often have to make a tough decision between solving a problem one way, or solving it another way. Comments are a great way to remind yourself (or tell somebody else) the reason you made one decision instead of another.<br>
+<br>
+
+Good comments:<br>
+<br>
+
+<div class="container" style="background-color: darkgrey;">
+1   // We decided to use a linked list instead of an array because<br>
+2   // arrays do insertion too slowly.
+</div>
+
+<br>
+
+<div class="container" style="background-color: darkgrey;">
+1   // We're going to use newton's method to find the root of a number because<br>
+2   // there is no deterministic way to solve these equations.
+</div>
+
+<br>
+Finally, comments should be written in a way that makes sense to someone who has no idea what the code does. It is often the case that a programmer will say “It’s obvious what this does! There’s no way I’ll forget about this”. Guess what? It’s not obvious, and you will be amazed how quickly you forget. 🙂 You (or someone else) will thank you later for writing down the what, how, and why of your code in human language. Reading individual lines of code is easy. Understanding what goal they are meant to accomplish is not.<br>
+<br>
+
+To summarize:<br>
+<ul>
+<li style="color: black">At the library, program, or function level, describe what</li>
+<li style="color: black">Inside the library, program, or function, describe how</li>
+<li style="color: black">At the statement level, describe why.</li>
+</ul>
+
+<h3>Commenting out code</h3>
+
+Converting one or more lines of code into a comment is called <b>commenting out</b> your code. This provides a convenient way to (temporarily) exclude parts of your code from being included in your compiled program.<br>
+<br>
+
+To comment out a single line of code, simply use the // style comment to turn a line of code into a comment temporarily:<br>
+<br>
+
+Uncommented out:<br>
+<br>
+
+<div class="container" style="background-color: darkgrey;">
+1   std::cout << 1;
+</div>
+    
+
+<br>
+Commented out:<br>
+<br>
+
+<div class="container" style="background-color: darkgrey;">
+1   //    std::cout << 1;
+</div>
+
+
+<br>
+To comment out a block of code, use // on multiple lines of code, or the /* */ style comment to turn the block of code into a comment temporarily.<br>
+<br>
+Uncommented out:<br>
+<br>
+
+<div class="container" style="background-color: darkgrey;">
+1   std::cout << 1;<br>
+2   std::cout << 2;<br>
+3   std::cout << 3;
+    </div>
+    
+    <br>
+Commented out:<br>
+<br>
+
+<div class="container" style="background-color: darkgrey;">
+1   //    std::cout << 1;<br>
+2   //    std::cout << 2;<br>
+3   //    std::cout << 3;
+</div>
+
+<br>
+or<br>
+<br>
+
+<div class="container" style="background-color: darkgrey;">
+1   /*<br>
+2       std::cout << 1;<br>
+3       std::cout << 2;<br>
+4       std::cout << 3;<br>
+5   */
+</div>
+
+<br>
+There are quite a few reasons you might want to do this:<br>
+<br>
+1) You’re working on a new piece of code that won’t compile yet, and you need to run the program. The compiler won’t let you run if there are compiler errors. Commenting out the code that won’t compile will allow the program to compile so you can run it. When you’re ready, you can uncomment the code, and continue working on it.<br>
+<br>
+
+2) You’ve written code that compiles but doesn’t work correctly, and you don’t have time to fix it until later. Commenting out the broken code will ensure the broken code doesn’t execute and cause problems until you can fix it.<br>
+<br>
+
+3) To find the source of an error. If a program isn’t producing the desired results (or is crashing), it can be useful in some cases to disable parts of your code to see if you can isolate what’s causing it to not work correctly. If you comment out one or more lines of code, and your program starts working as expected (or stops crashing), odds are whatever you last commented out was part of the problem. You can then investigate why those lines of code are causing the problem.<br>
+<br>
+
+4) You want to replace one piece of code with another piece of code. Instead of just deleting the original code, you can comment it out and leave it there for reference until you’re sure your new code works properly. Once you are sure your new code is working, you can remove the old commented out code. If you can’t get your new code to work, you can always delete the new code and uncomment the old code to revert back to what you had before.<br>
+<br>
+
+Commenting out code is a common thing to do while developing, so many IDEs provide support for commenting out a highlighted section of code. How you access this functionality varies by IDE (in Visual Studio, you can find it in the Edit menu under Edit->Advanced->Comment Selection/Uncomment Selection).<br>
+<br>
+<b>A note on comments in these tutorials</b><br>
+<br>
+Throughout the rest of this tutorial series, I’ll be using comments inside code blocks to help illustrate how things work. Astute readers will note that by the above standards, most of these comments are horrible. 🙂 As you read through the rest of the tutorials, keep in mind that the comments are serving an intentional educational purpose, not trying to demonstrate what good comments look like.
+
+
+<h1>A first look at variables, initialization, and assignment</h1>
+
+<h3>Objects</h3>
+
+C++ programs create, access, manipulate, and destroy objects. An <b>object</b> is a piece of memory that can be used to store values. You can think of an object as a mailbox, or a cubbyhole, where we can store and retrieve information. All computers have memory, called RAM (random access memory), that is available for programs to use. When an object is defined, a piece of that memory is set aside for the object.<br>
+<br>
+
+Most of the objects that we use in C++ come in the form of variables.<br>
+
+<h3>Variables</h3>
+
+A statement such as x = 5; seems obvious enough. As you might guess, we are assigning the value of 5 to x. But what exactly is x? x is a variable.<br>
+<br>
+
+A <b>variable</b> in C++ is simply an object that has a name.<br>
+<br>
+
+In this section, we are only going to consider integer variables. An <b>integer</b> is a number that can be written without a fractional component, such as -12, -1, 0, 4, or 27. An integer variable is a variable that holds an integer value.<br>
+<br>
+
+In order to create a variable, we generally use a special kind of declaration statement called a <b>definition</b> (we’ll explain the precise difference between a declaration and a definition later). Here’s an example of defining variable x as an integer variable (one that can hold integer values):<br>
+<br>
+
+<div class="container" style="background-color: darkgrey;">
+1   int x;
+</div>
+
+<br>
+When this statement is executed by the CPU, a piece of memory from RAM will be set aside (called <b>instantiation</b>). For the sake of example, let’s say that the variable x is assigned memory location 140. Whenever the program sees the variable x in an expression or statement, it knows that it should look in memory location 140 to get the value.<br>
+<br>
+
+One of the most common operations done with variables is assignment. To do this, we use the assignment operator, more commonly known as the = symbol. For example:<br>
+<br>
+
+<div class="container" style="background-color: darkgrey;">
+1   x = 5;
+</div>
+
+<br>
+When the CPU executes this statement, it translates this to “put the value of 5 in memory location 140”.<br>
+<br>
+
+Later in our program, we could print that value to the screen using std::cout:<br>
+<br>
+
+<div class="container" style="background-color: darkgrey;">
+1   std::cout << x;  // prints the value of x (memory location 140) to the console
+</div>
+
+
+<h3>l-values and r-values</h3>
+
+In C++, variables are a type of <b>l-value</b> (pronounced ell-value). An l-value is a value that has an address (in memory). Since all variables have addresses, all variables are l-values. The name l-value came about because l-values are the only values that can be on the left side of an assignment statement. When we do an assignment, the left hand side of the assignment operator must be an l-value. Consequently, a statement like 5 = 6; will cause a compile error, because 5 is not an l-value. The value of 5 has no memory, and thus nothing can be assigned to it. 5 means 5, and its value can not be reassigned. When an l-value has a value assigned to it, the current value at that memory address is overwritten.<br>
+<br>
+
+The opposite of l-values are r-values (pronounced arr-values). An <b>r-value</b> refers to any value that can be assigned to an l-value. r-values are always evaluated to produce a single value. Examples of r-values are single numbers (such as 5, which evaluates to 5), variables (such as x, which evaluates to whatever value was last assigned to it), or expressions (such as 2 + x, which evaluates to the value of variable x plus 2).<br>
+<br>
+
+Here is an example of some assignment statements, showing how the r-values evaluate:<br>
+<br>
+
+<div class="container" style="background-color: darkgrey;">
+1   int y;      // define y as an integer variable<br>
+2   y = 4;      // 4 evaluates to 4, which is then assigned to y<br>
+3   y = 2 + 5;  // 2 + 5 evaluates to 7, which is then assigned to y<br>
+4    <br>
+5   int x;      // define x as an integer variable<br>
+6   x = y;      // y evaluates to 7 (from before), which is then assigned to x.<br>
+7   x = x;      // x evaluates to 7, which is then assigned to x (useless!)<br>
+8   x = x + 1;  // x + 1 evaluates to 8, which is then assigned to x.
+</div>
+
+<br>
+Let’s take a closer look at the last assignment statement above, since it causes the most confusion.<br>
+<br>
+
+<div class="container" style="background-color: darkgrey;">
+1   x = x + 1;
+</div>
+
+<br>
+In this statement, the variable x is being used in two different contexts. On the left side of the assignment operator, “x” is being used as an l-value (variable with an address). On the right side of the assignment operator, x is being used as an r-value, and will be evaluated to produce a value (in this case, 7). When C++ evaluates the above statement, it evaluates as:<br>
+<br>
+
+<div class="container" style="background-color: darkgrey;">
+1   x = 7 + 1;
+</div>
+
+<br>
+Which makes it obvious that C++ will assign the value 8 back into variable x.<br>
+<br>
+
+For the time being, you don’t need to worry about l-values or r-values much, but we’ll return to them later when we start discussing some more advanced topics.<br>
+
+<br>
+The key takeaway here is that on the left side of the assignment, you must have something that represents a memory address (such as a variable). Everything on the right side of the assignment will be evaluated to produce a value.<br>
+
+<h3>Initialization vs. assignment</h3>
+
+C++ supports two related concepts that new programmers often get mixed up: assignment and initialization.<br>
+<br>
+
+After a variable is defined, a value may be <b>assigned</b> to it via the assignment operator (the = sign):<br>
+<br>
+
+<div class="container" style="background-color: darkgrey;">
+1   int x; // this is a variable definition<br>
+2   x = 5; // assign the value 5 to variable x
+</div>
+
+<br>
+C++ will let you both define a variable AND give it an initial value in the same step. This is called <b>initialization</b>.<br>
+<br>
+
+<div class="container" style="background-color: darkgrey;">
+1   int x = 5; // initialize variable x with the value 5
+</div>
+
+<br>
+A variable can only be initialized when it is defined.<br>
+<br>
+
+Although these two concepts are similar in nature, and can often be used to achieve similar ends, we’ll see cases in future lessons where some types of variables require an initialization value, or disallow assignment. For these reasons, it’s useful to make the distinction now.<br>
+<br>
+
+<p class="text-info">Rule: When giving variables an initial value, favor initialization over assignment.</p>
+
+<h3>Uninitialized variables</h3>
+
+Unlike some programming languages, C/C++ does not initialize most variables to a given value (such as zero) automatically. Thus when a variable is assigned a memory location by the compiler, the default value of that variable is whatever (garbage) value happens to already be in that memory location! A variable that has not been given a known value (through initialization or assignment) is called an <b>uninitialized variable</b>.<br>
+<br>
+
+Note: Some compilers, such as Visual Studio, will initialize the contents of memory when you’re using a debug build configuration. This will not happen when using a release build configuration.<br>
+<br>
+
+Using the values of uninitialized variables can lead to unexpected results. Consider the following short program:<br>
+<br>
+
+<div class="container" style="background-color: darkgrey;">
+1   // #include "stdafx.h" // Uncomment if Visual Studio user<br>
+2   #include <iostream><br>
+3    <br>
+4   int main()<br>
+5   {<br>
+6       // define an integer variable named x<br>
+7       int x; // this variable is uninitialized<br>
+8       <br>
+9       // print the value of x to the screen (dangerous, because x is uninitialized)<br>
+10      std::cout << x;<br>
+11   <br>
+12      return 0;<br>
+13  }
+</div>
+
+<br>
+In this case, the computer will assign some unused memory to x. It will then send the value residing in that memory location to std::cout, which will print the value. But what value will it print? The answer is “who knows!”, and the answer may change every time you run the program. When the author ran this program with the Visual Studio 2013 compiler, std::cout printed the value 7177728 one time, and 5277592 the next.<br>
+<br>
+
+A couple of notes if you want to run this program yourself:<br>
+<br>
+
+<ul>
+<li style="color: black">Make sure you’re using a release build configuration (see section 0.6a -- Build configurations for information on how to do that). Otherwise the above program may print whatever value your compiler is initializing memory with (Visual Studio uses -858993460).</li>
+<li style="color: black">If your compiler won’t let you run this program because it flags variable x as an uninitialized variable, a possible solution to get around this issue is noted in the comments section.</li>
+</ul>
+
+<br>
+Using uninitialized variables is one of the most common mistakes that novice programmers make, and unfortunately, it can also be one of the most challenging to debug (because the program may run fine anyway if the uninitialized value happened to get assigned to a spot of memory that had a reasonable value in it, like 0).<br>
+<br>
+
+Fortunately, most modern compilers will print warnings at compile-time if they can detect a variable that is used without being initialized. For example, compiling the above program on Visual Studio 2005 express produced the following warning:<br>
+<br>
+
+<p class="text-warning">c:vc2005projectstesttesttest.cpp(11) : warning C4700: uninitialized local variable 'x' used</p>
+
+<br>
+A good rule of thumb is to initialize your variables. This ensures that your variable will always have a consistent value, making it easier to debug if something goes wrong somewhere else.<br>
+<br>
+
+<p class="text-info">Rule: Make sure all of your variables have known values (either through initialization or assignment).</p>
+
+<h3>Undefined behavior</h3>
+
+Using the value from an uninitialized variable is our first example of undefined behavior. <b>Undefined behavior</b> is the result of executing code whose behavior is not well defined by the language. In this case, the C++ language doesn’t have any rules determining what happens if you use value of a variable that has not been given an known value. Consequently, if you actually do this, undefined behavior will result.<br>
+<br>
+
+Code implementing undefined behavior may exhibit any of the following symptoms:<br>
+<br>
+
+<ul>
+<li style="color: black">Your program produces different results every time it is executed.</li>
+<li style="color: black">Your program behaves inconsistently.</li>
+<li style="color: black">Your program seems like its working but produces incorrect results later in the program.</li>
+<li style="color: black">Your program crash, either immediately or later.</li>
+<li style="color: black">Your program works on some compilers but not others.</li>
+<li style="color: black">Your program works until you change some other unrelated code.</li>
+</ul>
+
+<br>
+C++ contains many cases that can result in undefined behavior if you’re not careful. We’ll ensure we point these out in future lessons. Take note of where these cases are and make sure you avoid them.<br>
+<br>
+
+<p class="text-info">Rule: Take care to avoid situations that result in undefined behavior.</p>
+
+<h1>A first look at cout, cin, and endl</h1>
+
+<b>std::cout</b><br>
+<br>
+
+As noted in previous sections, the std::cout object (in the iostream library) can be used to output text to the console. As a reminder, here’s our Hello world program:<br>
+<br>
+
+<div class="container" style="background-color: darkgrey;">
+1   #include <iostream><br>
+2    <br>
+3   int main()<br>
+4   {<br>
+5       std::cout << "Hello world!";<br>
+6       return 0;<br>
+7   }
+</div>
+
+<br>
+To print more than one thing on the same line, the output operator (<<) can be used multiple times. For example:<br>
+<br>
+
+<div class="container" style="background-color: darkgrey;">
+1   #include <iostream><br>
+2    <br>
+3   int main()<br>
+4   {<br>
+5       int x = 4;<br>
+6       std::cout << "x is equal to: " << x;<br>
+7       return 0;
+8   }
+</div>
+
+<br>
+This program prints:<br>
+<br>
+x is equal to: 4
+
+<br>
+<br>
+What would you expect this program to print?<br>
+<br>
+
+<div class="container" style="background-color: darkgrey;">
+1   #include <iostream><br>
+2    <br>
+3   int main()<br>
+4   {<br>
+5       std::cout << "Hi!";<br>
+6       std::cout << "My name is Alex.";<br>
+7       return 0;
+8   }
+</div>
+
+<br>
+You might be surprised at the result:<br>
+<br>
+Hi!My name is Alex.
+
+<br>
+<br>
+<b>std::endl</b><br>
+<br>
+
+If we want to print things to more than one line, we can do that by using std::endl. When used with std::cout, std::endl inserts a newline character (causing the cursor to go to the start of the next line).<br>
+<br>
+For example:<br>
+<br>
+
+<div class="container" style="background-color: darkgrey;">
+1   #include <iostream><br>
+2    <br>
+3   int main()<br>
+4   {<br>
+5       std::cout << "Hi!" << std::endl;<br>
+6       std::cout << "My name is Alex." << std::endl;<br>
+7       return 0;<br>
+8   }
+</div>
+
+<br>
+This prints:<br>
+<br>
+Hi!<br>
+My name is Alex.
+
+<br>
+<br>
+<b>std::cin</b><br>
+<br>
+
+std::cin is the opposite of std::cout -- whereas std::cout prints data to the console using the output operator (<<), std::cin reads input from the user at the console using the input operator (>>). Now that you have a basic understanding of variables, we can use std::cin to get input from the user and store it in a variable.<br>
+<br>
+
+
+<div class="container" style="background-color: darkgrey;">
+1   //#include "stdafx.h" // Uncomment this line if using Visual Studio<br>
+2   #include <iostream><br>
+3    <br>
+4   int main()<br>
+5   {<br>
+6       std::cout << "Enter a number: "; // ask user for a number<br>
+7       int x; // no need to initialize x since we're going to overwrite that value on the very next line<br>
+8       std::cin >> x; // read number from console and store it in x<br>
+9       std::cout << "You entered " << x << std::endl;<br>
+10      return 0;<br>
+11  }
+</div>
+
+<br>
+Try compiling this program and running it for yourself. When you run the program, it will print “Enter a number: ” and then wait for you to enter one. Once you enter a number (and press enter), it will print “You entered ” followed by the number you just entered.<br>
+<br>
+
+For example (I entered 4):<br>
+<br>
+Enter a number: 4<br>
+You entered 4
+
+<br>
+<br>
+This is an easy way to get input from the user, and we will use it in many of our examples going forward.<br>
+<br>
+
+(As an interesting side note, if you enter a really big number, the results may surprise you. Try it! This happens because x can only hold numbers up to a certain size. After that, it “overflows”. We’ll discuss overflow in a future section.)<br>
+<br>
+
+<b>std::cin, std::cout, <<, and >></b><br>
+
+<br>
+New programmers often mix up std::cin, std::cout, << and >>. Here’s an easy way to remember:<br>
+<br>
+
+<ul>
+<li style="color: black;">std::cin and cout always go on the left-hand side of the statement.</li>
+<li style="color: black;">std::cout is used to output a value (cout = output)</li>
+<li style="color: black;">std::cin is used to get an input value (cin = input)</li>
+<< is used with std::cout, and shows the direction that data is moving from the r-value to the console. 
+<li style="color: black;">std::cout << 4 moves the value of 4 to the console</li>
+>> is used with std::cin, and shows the direction that data is moving from the console into the variable. <li style="color: black;">std::cin >> x moves the value from the console into x</li>
+</ul>
+
+<h1>A first look at functions and return values</h1>
+
+A <b>function</b> is a reusable sequence of statements designed to do a particular job. You already know that every program must have a function named main() (which is where the program starts execution). However, most programs use many functions.<br>
+<br>
+
+Often, your program needs to interrupt what it is doing to temporarily do something else. You do this in real life all the time. For example, you might be reading a book when you remember you need to make a phone call. You put a bookmark in your book, make the phone call, and when you are done with the phone call, you return to your book where you left off.<br>
+<br>
+
+C++ programs work the same way. A program will be executing statements sequentially inside one function when it encounters a function call. A <b>function call</b> is an expression that tells the CPU to interrupt the current function and execute another function. The CPU “puts a bookmark” at the current point of execution, and then <b>calls</b> (executes) the function named in the function call. When the called function terminates, the CPU goes back to the point it bookmarked, and resumes execution.<br>
+<br>
+
+The function initiating the function call is called the <b>caller</b>, and the function being called is the <b>callee</b> or <b>called</b> function.<br>
+<br>
+
+Here is a sample program that shows how new functions are defined and called:<br>
+<br>
+
+<div class="container" style="background-color: darkgrey;">
+1   //#include "stdafx.h" // Visual Studio users need to uncomment this line<br>
+2   #include <iostream> // for std::cout and std::endl<br>
+3    <br>
+4   // Definition of function doPrint()<br>
+5   void doPrint() // doPrint() is the called function in this example<br>
+6   {<br>
+7       std::cout << "In doPrint()" << std::endl;<br>
+8   }<br>
+9    <br>
+10  // Definition of function main()<br>
+11  int main()<br>
+12  {<br>
+13      std::cout << "Starting main()" << std::endl;<br>
+14      doPrint(); // Interrupt main() by making a function call to doPrint().  main() is the caller.<br>
+15      std::cout << "Ending main()" << std::endl;<br>
+16   <br>
+17      return 0;<br>
+18  }
+</div>
+
+<br>
+This program produces the following output:<br>
+<br>
+Starting main()<br>
+In doPrint()<br>
+Ending main()<br>
+
+<br>
+This program begins execution at the top of function main(), and the first line to be executed prints Starting main(). The second line in main() is a function call to the function doPrint(). At this point, execution of statements in main() is suspended, and the CPU jumps to doPrint(). The first (and only) line in doPrint prints In doPrint(). When doPrint() terminates, the caller (main()) resumes execution where it left off. Consequently, the next statement executed in main prints Ending main().<br>
+<br>
+
+Note that function calls are made by using the function name, plus an empty set of parenthesis (). We’ll talk about what this set of parenthesis is in the next lesson. For now, just note that if you forget them, your program may not compile (and if it does, the function will not be called as expected).<br>
+<br>
+
+<p class="text-info">Rule: Don’t forget to include parenthesis () when making a function call.</p>
+
+<h3>Return values</h3>
+
+When the main() function finishes executing, it returns an integer value (typically 0) back to the operating system (the caller) by using a return statement.<br>
+<br>
+
+When you write your own functions, you get to decide whether a given function will return a value to the caller or not. This is done by setting the <b>return type</b> of the function in the function’s definition. The return type is the type declared before the function name. Note that the return type does not indicate what specific value will be returned. It only indicates what type of value will be returned.<br>
+<br>
+
+Then, inside the function, we use a return statement to indicate the specific value being returned to the caller. The actual value returned from a function is called the <b>return value.</b><br>
+<br>
+
+Let’s take a look at a simple function that returns an integer value, and a sample program that calls it:<br>
+<br>
+
+
+<div class="container" style="background-color: darkgrey;">
+1   // int means the function returns an integer value to the caller<br>
+2   int return5()<br>
+3   {<br>
+4       // this function returns an integer, so a return statement is needed<br>
+5       return 5; // we're going to return integer value 5 back to the caller of this function<br>
+6   }<br>
+7    <br>
+8   int main()<br>
+9   {<br>
+10      std::cout << return5() << std::endl; // prints 5<br>
+11      std::cout << return5() + 2 << std::endl; // prints 7<br>
+12   <br>
+13      return5(); // okay: the value 5 is returned, but is discarded<br>
+14   <br>
+15      return 0;
+16  }<br>
+</div>
+
+<br>
+In the first function call of return5(), the function returns the value of 5 back to the caller, which passes that value to cout to be output.<br>
+<br>
+
+In the second function call of return5(), the function returns the value of 5 back to the caller. The expression 5 + 2 is then evaluated to 7. The value of 7 is passed to cout to be output.<br>
+<br>
+
+In the third function call of return5(), the function returns the value of 5 back to the caller. However, main() does nothing with the return value so the return value is discarded.<br>
+
+<h3>Return values of type void</h3>
+
+Functions are not required to return a value. To tell the compiler that a function does not return a value, a return type of <b>void</b> is used. Let’s look at the doPrint() function from the program above:<br>
+<br>
+
+<div class="container" style="background-color: darkgrey;">
+1   void doPrint() // void is the return type<br>
+2   {<br>
+3       std::cout << "In doPrint()" << std::endl;<br>
+4       // This function does not return a value so no return statement is needed<br>
+5   }
+</div>
+
+<br>
+This function has a return type of void, indicating that it does not return a value to the caller. Because it does not return a value, no return statement is needed.<br>
+<br>
+
+Here’s another example of a function that returns void, and a sample program that calls it:<br>
+<br>
+
+
+<div class="container" style="background-color: darkgrey;">
+1   // void means the function does not return a value to the caller<br>
+2   void returnNothing()<br>
+3   {<br>
+4       std::cout << "Hi" << std::endl;<br>
+5       // This function does not return a value so no return statement is needed<br>
+6   }<br>
+7    <br>
+8   int main()<br>
+9   {<br>
+10      returnNothing(); // okay: function returnNothing() is called, no value is returned<br>
+11   <br>
+12      std::cout << returnNothing(); // error: this line will not compile.  You'll need to comment it out to continue.<br>
+13   <br>
+14      return 0;<br>
+15  }
+</div>
+
+<br>
+In the first function call to returnNothing(), the function prints “Hi” and then returns nothing back to the caller. Control returns to main() and the program proceeds.<br>
+<br>
+
+The second function call to returnNothing() won’t even compile. Function returnNothing() has a void return type, meaning it doesn’t return a value. However, function main() is trying to send this nothing value to std::cout to be printed. std::cout can’t handle “nothing” values, as it doesn’t know what to do with them (what value would it output?). Consequently, the compiler will flag this as an error. You’ll need to comment out this line of code in order to make your code compile.<br>
+<br>
+
+The only valid thing you can do with void return values is ignore them.<br>
+
+<h3>Returning to main</h3>
+
+You now have the conceptual tools to understand how the main() function actually works. When the program is executed, the operating system makes a function call to main(). Execution then jumps to the top of main. The statements in main are executed sequentially. Finally, main returns a integer value (usually 0) back to the operating system. This is why main is defined as int main().<br>
+<br>
+
+Why return a value back to the operating system? This value is called a <b>status code</b>, and it tells the operating system (and any other programs that called yours) whether your program executed successfully or not. By consensus, a return value of 0 means success, and a positive return value means failure.<br>
+<br>
+
+Note that the C++ standard explicitly specifies that main() must return an int. However, if you do not provide a return statement in main, the compiler will return 0 on your behalf. That said, it is best practice to explicitly return a value from main, both to show your intent, and for consistency with other functions (which will not let you omit the return value).<br>
+
+
+<h3>A few additional notes about return values</h3>
+
+First, if a function has a non-void return type, it must return a value of that type (using a return statement). The only exception to this rule is for function main(), which will assume a return value of 0 if one is not explicitly provided.<br>
+<br>
+
+Second, when a return statement is reached in a function, the function returns back to the caller immediately at that point. Any additional code in the function is ignored.<br>
+<br>
+
+A function can only return a single value back to the caller. The function may, however, use any logic at its disposal to determine which specific value to return. It may return a single number (return 5). It may return the value of a variable or an expression (both of which evaluate to a single value). Or it may pick a single value from a set of possible values (which is still just a single value).<br>
+<br>
+
+There are ways to work around only being able to return a single value back to the caller, which we will discuss when we get into the in-depth section on functions.<br>
+<br>
+
+Finally, note that a function is free to define what its return value means. Some functions use return values as status codes, to indicate whether they succeeded or failed. Other functions return a calculated or selected value. Other functions return nothing. What the function returns and the meaning of that value is defined by the function’s author. Because of the wide variety of possibilities here, it’s a good idea to leave a comment on your functions indicating not just what they return, but also what the return value means.<br>
+
+<h3>Reusing functions</h3>
+
+The same function can be called multiple times, which is useful if you need to do something more than once.<br>
+<br>
+
+<div class="container" style="background-color: darkgrey;">
+1   //#include "stdafx.h" // Visual Studio users need to uncomment this line<br>
+2   #include <iostream><br>
+3    <br>
+4   // getValueFromUser will read a value in from the user, and return it to the caller<br>
+5   int getValueFromUser()<br>
+6   {<br>
+7       std::cout << "Enter an integer: "; // ask user for an integer<br>
+8       int a; // allocate a variable to hold the user input<br>
+9       std::cin >> a; // get user input from console and store in variable a<br>
+10      return a; // return this value to the function's caller (main)<br>
+11  }<br>
+12   <br>
+13  int main()<br>
+14  {<br>
+15      int x = getValueFromUser(); // first call to getValueFromUser<br>
+16      int y = getValueFromUser(); // second call to getValueFromUser<br>
+17   <br>
+18      std::cout << x << " + " << y << " = " << x + y << std::endl;<br>
+19   <br>
+20      return 0;<br>
+21  }<br>
+</div>
+
+<br>
+This program produces the following output:<br>
+<br>
+
+Enter an integer: 5<br>
+Enter an integer: 7<br>
+5 + 7 = 12
+
+<br>
+<br>
+In this case, main() is interrupted 2 times, once for each call to getValueFromUser(). Note that in both cases, the value read into variable a is passed back to main() via the function’s return value and then assigned to variable x or y!<br>
+<br>
+
+Note that main() isn’t the only function that can call other functions. Any function can call another function!<br>
+<br>
+
+
+<div class="container" style="background-color: darkgrey;">
+1   //#include "stdafx.h" // Visual Studio users need to uncomment this line<br>
+2   #include <iostream><br>
+3    <br>
+4   void printA()<br>
+5   {<br>
+6       std::cout << "A" << std::endl;<br>
+7   }<br>
+8    <br>
+9   void printB()<br>
+10  {<br>
+11      std::cout << "B" << std::endl;<br>
+12  }<br>
+13   <br>
+14  // function printAB() calls both printA() and printB()<br>
+15  void printAB()<br>
+16  {<br>
+17      printA();<br>
+18      printB();<br>
+19  }<br>
+20   <br>
+21  // Definition of main()<br>
+22  int main()<br>
+23  {<br>
+24      std::cout << "Starting main()" << std::endl;<br>
+25      printAB();<br>
+26      std::cout << "Ending main()" << std::endl;<br>
+27      return 0;<br>
+28  }
+</div>
+
+<br>
+This program produces the following output:<br>
+<br>
+Starting main()<br>
+A<br>
+B<br>
+Ending main()<br>
+
+<h3>Nested functions</h3>
+
+Functions can not be defined inside other functions (called nesting) in C++. The following program is not legal:<br>
+<br>
+
+
+<div class="container" style="background-color: darkgrey;">
+1   #include <iostream><br>
+2    <br>
+3   int main()<br>
+4   {<br>
+5       int foo() // this function is nested inside main(), which is illegal.<br>
+6       {<br>
+7           std::cout << "foo!" << std::endl;<br>
+8           return 0;<br>
+9       }<br>
+10   <br>
+11      foo();<br>
+12      return 0;<br>
+13  }<br>
+</div>
+
+<br>
+The proper way to write the above program is:<br>
+<br>
+
+
+<div class="container" style="background-color: darkgrey;">
+1   #include <iostream><br>
+2    <br>
+3   int foo() // no longer inside of main()<br>
+4   {<br>
+5       std::cout << "foo!" << std::endl;<br>
+6       return 0;<br>
+7   }<br>
+8    <br>
+9   int main()<br>
+10  {<br>
+11      foo();<br>
+12      return 0;<br>
+13  }
+</div>
+
+                </p>
+                
             </div>
         </div>
         <!-- /.row -->
