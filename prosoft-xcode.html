@@ -20,13 +20,13 @@
         padding-top: 70px;
         /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     }
-    h3{
-        color: #27668E;
-    }
 li{
         color: #33AAFF;
     }
-    
+    h2{
+        color: #0F65F2;
+    }
+
     </style>
 
 
@@ -130,84 +130,49 @@ li{
 
         <div class="row">
             <div class="col-lg-12 text-left">
-                <div class= "container" align="middle">
-                <h1>Sublime Text</h1>
-                
-<img src="images\Sublime_Text_Logo.png" class="img-rounded-fluid" alt="Sublime Text Logo" width="304" height="236"> 
-</div>
+                <div class="container" align="middle">
+                <h1>Xcode</h1>
 
-<br>
+<img src="images\xcode_Logo.png" class="img-rounded-fluid" alt="Net Beans Logo" width="280" height="280"> 
+                </div>
+
+                <br>
                 <p class="lead">
-Sublime Text is a sophisticated text editor for code, markup and prose.
-You'll love the slick user interface, extraordinary features and amazing performance.<br>
+
+Xcode is an integrated development environment for macOS containing a suite of software development tools developed by Apple for developing software for macOS, iOS, watchOS and tvOS. First released in 2003, the latest stable release is version 8.3.3 and is available via the Mac App Store free of charge for macOS Sierra users. Registered developers can download preview releases and prior versions of the suite through the Apple Developer website. However, Apple recently made a beta version of version 9 beta 2 of the software available to those of the public with Apple Developer accounts.<br>
+
+<h2>Major features</h2>
+Xcode supports source code for the programming languages C, C++, Objective-C, Objective-C++, Java, AppleScript, Python, Ruby, ResEdit (Rez), and Swift, with a variety of programming models, including but not limited to Cocoa, Carbon, and Java. Third parties have added support for GNU Pascal, Free Pascal, Ada, C#, Perl, and D.<br>
 <br>
 
-<b>Some things users love about Sublime Text:</b>
-
-<h3>Goto Anything</h3>
-
-Use Goto Anything to open files with only a few keystrokes, and instantly jump to symbols, lines or words.<br>
-
-<h3>Triggered with Ctrl+P, it is possible to:</h3>
-
-Type part of a file name to open it.<br>
-Type @ to jump to symbols, # to search within the file, and : to go to a line number.<br>
-These shortcuts can be combined, so tp@rf may take you to a function read_file within a file text_parser.py. Similarly, tp:100 would take you to line 100 of the same file.<br>
-
-<h3>Multiple Selections</h3>
-
-Make ten changes at the same time, not one change ten times. Multiple selections allow you to interactively change many lines at once, rename variables with ease, and manipulate files faster than ever.<br>
+Thanks to the Mach-O executable format, which allows fat binary files, containing code for multiple architectures, Xcode can build universal binary files, which allow software to run on both PowerPC and Intel-based (x86) platforms and that can include both 32-bit and 64-bit code for both architectures. Using the iOS SDK, Xcode can also be used to compile and debug applications for iOS that run on ARM architecture processors.<br>
 <br>
 
-Try pressing Ctrl+Shift+L to split the selection into lines and Ctrl+D to select the next occurrence of the selected word. To make multiple selections with the mouse, take a look at the Column Selection documentation.<br>
+Xcode includes the GUI tool Instruments, which runs atop a dynamic tracing framework, DTrace, created by Sun Microsystems and released as part of OpenSolaris.<br>
 
-<h3>Command Palette</h3>
-
-The Command Palette holds infrequently used functionality, like sorting, changing the syntax and changing the indentation settings. With just a few keystrokes, you can search for what you want, without ever having to navigate through the menus or remember obscure key bindings.<br>
+<h2>Composition</h2>
+The main application of the suite is the integrated development environment (IDE), also named Xcode. The Xcode suite includes most of Apple's developer documentation, and built-in Interface Builder, an application used to construct graphical user interfaces.<br>
 <br>
 
-Show the Command Palette with Ctrl+Shift+P.<br>
-
-<h3>Distraction Free Mode</h3>
-
-When you need to focus, Distraction Free Mode is there to help you out. Distraction Free Mode is full screen, chrome free editing, with nothing but your text in the center of the screen. You can incrementally show elements of the UI, such as tabs and the find panel, as you need them.<br>
+Up to Xcode 4.1, the Xcode suite included a modified version of the GNU Compiler Collection. In Xcode 3.1 up to Xcode 4.6.3, it included the LLVM-GCC compiler, with front ends from the GNU Compiler Collection and a code generator based on LLVM. In Xcode 3.2 and later, it included the Clang C/C++/Objective-C compiler, with newly-written front ends and a code generator based on LLVM, and the Clang static analyzer. Starting with Xcode 4.2, the Clang compiler became the default compiler, Starting with Xcode 5.0, Clang was the only compiler provided.<br>
 <br>
 
-You can enter Distraction Free Mode using the View/Enter Distraction Free Mode menu.<br>
+Up to Xcode 4.6.3, the Xcode suite used the GNU Debugger (GDB) as the back-end for the IDE's debugger. Starting with Xcode 4.3, the LLDB debugger was also provided; starting with Xcode 4.5 LLDB replaced GDB as the default back-end for the IDE's debugger. Starting with Xcode 5.0, GDB was no longer supplied.<br>
 
-<h3>Split Editing</h3>
-
-Get the most out of your wide screen monitor with split editing support. Edit files side by side, or edit two locations in the one file. You can edit with as many rows and columns as you wish.<br>
+<h2>Removed features</h2>
+Formerly, Xcode supported distributing a product build process over multiple systems. One technology involved was named Shared Workgroup Build, which used the Bonjour protocol to automatically discover systems providing compiler services, and a modified version of the free software product distcc to facilitate the distribution of workloads. Earlier versions of Xcode provided a system named Dedicated Network Builds. These features are absent in the supported versions of Xcode.<br>
 <br>
 
-Take advantage of multiple monitors by editing with multiple windows, and using multiple splits in each window.<br>
-<br>
+Xcode also includes Apple's WebObjects tools and frameworks for building Java web applications and web services (formerly sold as a separate product). As of Xcode 3.0, Apple dropped WebObjects development inside Xcode; WOLips[16] should be used instead. Xcode 3 still includes the WebObjects frameworks.
 
-Take a look at the View/Layout menu for split editing options. To open multiple views into the one file, use the File/New View into File menu item.<br>
+                </p>
 
-<h3>Instant Project Switch</h3>
-
-Projects in Sublime Text capture the full contents of the workspace, including modified and unsaved files. You can switch between projects in a manner similar to Goto Anything, and the switch is instant, with no save prompts - all your modifications will be restored next time the project is opened.<br>
-
-<h3>Plugin API</h3>
-
-Sublime Text has a powerful, Python based plugin API. Along with the API, it comes with a built in Python console to interactively experiment in real time.<br>
-
-<h3>Customize Anything</h3>
-
-Key Bindings, Menus, Snippets, Macros, Completions and more - just about everything in Sublime Text is customizable with simple JSON files. This system gives you flexibility as settings can be specified on a per-file type and per-project basis.<br>
-
-<h3>Cross Platform</h3>
-
-Sublime Text is available for OS X, Windows and Linux. One license is all you need to use Sublime Text on every computer you own, no matter what operating system it uses.<br>
-
-Sublime Text uses a custom UI toolkit, optimized for speed and beauty, while taking advantage of native functionality on each platform.</p>
-
-<h2>For download press here</h2>
-                <form action="https://www.sublimetext.com/download">
-    <input type="submit" value="Go to Sublime Text download" />
+        
+<h2> For download press here </h2>
+<form action="https://developer.apple.com/xcode/">
+    <input type="submit" value="Go to Xcode" />
 </form>
-                
+        
             </div>
         </div>
         <!-- /.row -->
