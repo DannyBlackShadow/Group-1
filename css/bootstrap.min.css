@@ -31,3 +31,10 @@ input[type="text"]:focus {
     width: 200px;
     } /* end of search bar css */
 
+    p {
+    	text-align: left;
+    }
+
+    ul {
+    	text-align: left;
+    }

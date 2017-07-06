@@ -60,7 +60,7 @@ li{
                             <li><a class="dropdown-item" href="programming-language-php.html">PHP</a></li>
                             <li><a class="dropdown-item" href="programming-language-c++.html">C++</a></li>
                             <li><a class="dropdown-item" href="programming-language-c_sharp.html">C#</a></li>
-                            <li><a class="dropdown-item" href="programming-language-ios.html">IOS</a></li>
+                            <li><a class="dropdown-item" href="programming-language-ios.html">IOS - Objective-C</a></li>
                             <li><a class="dropdown-item" href="programming-language-Ruby on Rails.html">Ruby on Rails</a></li>
                             <li><a class="dropdown-item" href="programming-language-SQL.html">SQL</a></li>
                             <li><a class="dropdown-item" href="programming-language-Perl.html">Perl</a></li>
@@ -81,7 +81,7 @@ li{
                             <li><a class="dropdown-item" href="tutorials-php.html">PHP</a></li>
                             <li><a class="dropdown-item" href="tutorials-c++.html">C++</a></li>
                             <li><a class="dropdown-item" href="tutorials-c_shar.html">C#</a></li>
-                            <li><a class="dropdown-item" href="tutorials-ios.html">IOS</a></li>
+                            <li><a class="dropdown-item" href="tutorials-ios.html">IOS - Objective-C</a></li>
                             <li><a class="dropdown-item" href="tutorials-ror.html">Ruby on Rails</a></li>
                             <li><a class="dropdown-item" href="tutorials-sql.html">SQL</a></li>
                             <li><a class="dropdown-item" href="tutorials-perl.html">Perl</a></li>
@@ -99,6 +99,7 @@ li{
                             <li><a class="dropdown-item" href="prosoft-nb.html">NetBeans</a></li>
                             <li><a class="dropdown-item" href="prosoft-jc.html">JCreator</a></li>
                             <li><a class="dropdown-item" href="prosoft-st.html">Sublime Text</a></li>
+                            <li><a class="dropdown-item" href="prosoft-eclipse.html">Eclipse</a></li>
                             </ul>
                         </div>
                     </li><!-- end of programming softwares -->
@@ -133,7 +134,9 @@ li{
 </div>
                 
                 <p class="lead">
+<h1>Strings</h1>
 
+<<<<<<< HEAD
                 <h1>Creating and Formatting the String</h1>
 
                 Take a look at the apple documentation on NSString Class Reference to check the number of ways that you can create and return strings. The most common and the one you’re likely to be using is stringWithFormat:<br>
@@ -212,6 +215,95 @@ if you need to split on a set of several different characters, use NSString’s 
 <br>
 
 <div class="container" style="background-color: lightgrey;">
+=======
+Just like other languages, strings are enclosed and defined by the use of “double quotes”, however in Objective-C an NSString also comes with the prefix of the @ sign, Like so:<br>
+<br>
+
+<div class="container" style="background-color: lightgrey;">
+NSString *yourString = @"This is a string, you like?";
+</div>
+
+
+<h1>Creating and Formatting the String</h1>
+
+Take a look at the apple documentation on NSString Class Reference to check the number of ways that you can create and return strings. The most common and the one you’re likely to be using is stringWithFormat:<br>
+
+
+<div class="container" style="background-color: lightgrey;">
+NSString *yourString = @"iOS-Blog";<br>
+NSString *yourNewString = [NSString stringWithFormat:@"Check out:    %@ for awesome tutorials.];<br>
+// yourNewString is now @"Check out: iOS-Blog for awesome tutorials."
+</div>
+
+<br>
+Common string format specifiers are: %@ another object. (this calls the :description verb on the specified object, which must then return an NSString.), %d an integer number, %f, %.4f floating point number (with .n digits after the decimal place).<br>
+<br>
+
+You can also get the length of a string which can be obtained using the length method:<br>
+<br>
+
+<div class="container" style="background-color: lightgrey;">
+NSString *yourString = @"iOS-Blog";<br>
+int yourLength = [yourString length];       // yourLength is equals to 8 <br>
+Joining an Array of Strings
+</div>
+
+<br>
+For this, you need to use NSArray’s componentsJoinedByString:<br>
+<br>
+
+<div class="container" style="background-color: lightgrey;">
+NSArray *yourWords = [NSArray arrayWithObjects:@"iOS-Blog", @"is", @"just", @"awesome", nil];<br>
+NSString *sentence = [yourWords componentsJoinedByString:@" "];<br>
+<br>
+// *sentence is now: @"iOS-Blog is just awesome"
+</div>
+
+
+<h1>Equals to</h1>
+
+There may become a time you need to determine if two of your strings are equal, for this we use: isEqualToString and we implement it like so:<br>
+<br>
+
+<div class="container" style="background-color: lightgrey;">
+NSString *yourString = @"iOS-Blog";<br>
+<br>
+if ([yourString isEqualToString:@"iOS-Blog"]) {<br>
+    /// Out put the result to the NSLog<br>
+    NSLog(@"Yes, They are both equal");
+}
+</div>
+
+<h1>Replacing Characters in a String</h1>
+
+Many languages offer you the chance to replace information within a string, for example PHP used the str_replace method. However, in Objective-C we use the stringByReplacingOccurrencesOfString method.<br>
+<br>
+
+So lets say that you wanted to take out all the references to the word red:<br>
+<br>
+
+<div class="container" style="background-color: lightgrey;">
+NSString *newString = [textField.text stringByReplacingOccurrencesOfString:@"red" withString:@""];
+</div>
+
+<h1>Splitting Strings into an Array</h1>
+
+We use a method called componentsSeparatedByString to achieve this:<br>
+<br>
+
+<div class="container" style="background-color: lightgrey;">
+NSString *yourString = @"This is a test string";<br>
+NSArray *yourWords = [myString componentsSeparatedByString:@" "];<br>
+<br>
+// yourWords is now: [@"This", @"is", @"a", @"test", @"string"]
+</div>
+
+<br>
+if you need to split on a set of several different characters, use NSString’s componentsSeparatedByCharactersInSet:<br>
+<br>
+
+<div class="container" style="background-color: lightgrey;">
+>>>>>>> d96c524de208bd71ae71a7f1c2f4c953a2a6ebbd
 NSString *yourString = @"Foo-bar/iOS-Blog";<br>
 NSArray *yourWords = [myString componentsSeparatedByCharactersInSet:<br>
                       [NSCharacterSet characterSetWithCharactersInString:@"-/"]<br>
@@ -231,6 +323,7 @@ for (int i=0; i < [myString length]; i++) {<br>
     [characters addObject:ichar];<br>
 }
 </div>
+<<<<<<< HEAD
 
 <h1>Trim Spaces from the End of a String</h1>
 
@@ -292,11 +385,14 @@ For this we will use the NSString method: rangeOfString to find out whether a su
 NSString *theString = @"iOS-Blog.com";<br>
 NSRange isCom = [theString rangeOfString:@".com"];
 </div>
+=======
+>>>>>>> d96c524de208bd71ae71a7f1c2f4c953a2a6ebbd
 
 <br>
 NSRange is a struct with two parts:<br>
 <br>
 
+<<<<<<< HEAD
 <div class="container" style="background-color: lightgrey;">
     .location<br>
     .length
@@ -538,6 +634,583 @@ produces the same result as<br>
 <br>
 The difference comes out when you use them inside another expression. When put before the variable, they increment or decrement the value before it is used. When put after, they increments or decrement the value after using it.<br>
 <br>
+=======
+<h1>Trim Spaces from the End of a String</h1>
+
+Sometimes you might need to remove white spacing, sometimes you just want to, for this we will use the whitespaceCharacterSet method to remove the white spaces from both ends of the string:<br>
+<br>
+
+<div class="container" style="background-color: lightgrey;">
+NSString *yourString = [whitespaceString stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceCharacterSet]];
+</div>
+
+<br>
+If you want to also remove newlines from the string however, use the whitespaceAndNewlineCharacterSet:<br>
+<br>
+
+<div class="container" style="background-color: lightgrey;">
+NSString *yourString = [whitespaceString stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceAndNewlineCharacterSet]];
+</div>
+
+<h1>Concatenating and Appending Strings</h1>
+
+This is quite possibly the most useful thing that you will need to know. Concatenating strings. So you have two strings and you need them to go together. Like firstName and LastName. Then this is how you would do that:<br>
+<br>
+
+<div class="container" style="background-color: lightgrey;">
+NSString *firstName = @"iOS-";<br>
+NSString *lastName = @"Blog";<br>
+// Concatenate them into a new string<br>
+NSString *fullName = [string1 stringByAppendingString:string2];<br>
+// fullName is now @"iOS-Blog"  <br>
+// firstName and lastName are unchanged and can be used again. 
+</div>
+
+<br>
+This is a little different if you are using NSMutableString method, you just simply call the appendString method<br>
+<br>
+
+<div class="container" style="background-color: lightgrey;">
+NSMutableString *string1 = [NSMutableString stringWithString:@"This is"];<br>
+NSString *string2 = @" a test.";<br>
+[string1 appendString:string2];<br>
+NSLog(@"string1: %@", string1);         // string1 is now @"This is a test."
+</div>
+
+<br>
+If you would like to concatenate 3 strings then it’s probably easier to construct a new string out of the three by using stringWithFormat: method<br>
+<br>
+
+<div class="container" style="background-color: lightgrey;">
+NSString *allThreeStrings = [NSString stringWithFormat:@"%@ %@ and boring %@",<br>
+                             firstString, secondString, thirdString];
+
+</div>
+
+<h1>Finding and Replacing Substrings</h1>
+
+For this we will use the NSString method: rangeOfString to find out whether a substring exists within another string:<br>
+<br>
+
+<div class="container" style="background-color: lightgrey;">
+NSString *theString = @"iOS-Blog.com";<br>
+NSRange isCom = [theString rangeOfString:@".com"];
+</div>
+
+<br>
+NSRange is a struct with two parts:<br>
+<br>
+
+<div class="container" style="background-color: lightgrey;">
+    .location<br>
+    .length
+</div>
+
+<br>
+If the substring is not found, rangeOfString returns {NSNotFound, 0}.<br>
+<br>
+
+There is a shorter and easier way to test whether a s string is found:<br>
+<br>
+
+<div class="container" style="background-color: lightgrey;">
+if ( [theString rangeOfString:@".com"].location != NSNotFound ) {<br>
+    // do something here if the string is found<br>
+}
+</div>
+
+
+<h1>Replacing or removing a Substring:</h1>
+
+
+<div class="container" style="background-color: lightgrey;">
+NSString *theString = @"ios-blog.com";<br>
+NSRange tldr = [domainName rangeOfString:@".com"];<br>
+<br>
+if (tldr.location != NSNotFound) {<br>
+    NSLog(@"range of .com: %d, %d", tldr.location, tldr.length);<br>
+    domainName = [domainName stringByReplacingCharactersInRange:tldr withString:@""];<br>
+    NSLog(@"removed .com, domain is now: %@", domainName);<br>
+}
+</div>
+
+<h1>Comments</h1>
+
+Comments in Objective-C come directly from C and are similar to what you find in other languages. One line comments are written like this:<br>
+<br>
+
+<div class="container" style="background-color: lightgrey;">
+// This is a single line comment.
+</div>
+
+<br>
+Everything after the // is ignored by the compiler until the end of the line. They also work after instructions:<br>
+<br>
+
+<div class="container" style="background-color: lightgrey;">
+int counter = 0; // This is a counter.
+</div>
+
+<br>
+C allows also multiline comments, which some languages don’t have<br>
+<br>
+
+<div class="container" style="background-color: lightgrey;">
+/*<br>
+This is a multiline comment <br>
+which spans more than one line.<br>
+*/
+</div>
+
+<h1>Variables and basic types</h1>
+
+As in many other languages, you need to store your values and object inside variables. In some languages you can just use variables freely when you need them. Moreover you can change the content of the variable to anything you want: an integer, a decimal number, a string or an arbitrary object.<br>
+<br>
+
+This does not happen in C. Variables are typed, which means that you have to declare the type of data a variable will contain and you won’t be able to change it later. Variable declarations in C look like this:<br>
+<br>
+
+<div class="container" style="background-color: lightgrey;">
+int variable1 = 7;<br>
+float variable2 = 3.14;<br>
+char variable3 = 'm';
+</div>
+
+<br>
+Variable names can contain digits but cannot start with them and cannot include spaces, but can include capital letters (used for camel case) or the underscore character _<br>
+<br>
+
+As you might have noticed in the example above, each instruction in C ends with a semicolon, which is required. Many languages do to, but some don’t, so this might be new for you. You will learn fast to end instructions with semicolons.<br>
+<br>
+
+Take the habit of always initializing your variables to a specific value, even 0. In some languages variables are always initialized to 0 if no other value is specified. This does not happen in an Objective-C method, where non initialized variables will contain garbage and cause strange behaviours in your programs.<br>
+<br>
+
+These are the most common types of C used in Objective-C programs.
+
+
+Type            Description                             Examples
+
+int             integer numbers, including negatives    0, 105, -12
+unsigned int    positive integers                       0, 27, 315
+float, double   floating point decimal numbers          1.61, -17.375
+bool            boolean values                          true, false
+char            single text character                   'a', 'F', '?'
+
+
+<br>
+If you need bigger numbers that the int type can contain, there are the long and the long long types, with the related unsigned types.<br>
+<br>
+
+Now, the fact is that when you look at Objective-C code, you rarely find these basic types, which some developers and Apple SDKs still use, while you find others more. Here are some common ones you will find often:<br>
+<br>
+
+
+NSInteger, for integer numbers<br>
+NSUInteger, for positive integers<br>
+CGFloat, for floating point decimal numbers, used for graphical values like drawing coordinates or sizes of graphical objects<br>
+BOOL, for booleans, which uses YES and NO instead of true and false<br>
+
+
+<br>
+The reason these types where created was to make transition from 32 bits to 64 bits architectures easier. C types map to a specific sizes in memory, while the types above change regarding to the architecture the code is compiled for. Objective-C also has its own BOOL type (the reason for it is a bit more complicated).<br>
+<br>
+
+Try to use the latter types when you can and pay attention to which types are used and returend by APIs, or you might end with weird results if values are truncated when switching between the two types.<br>
+<br>
+
+C allows also to define other kind of simple types, a practice that is used extensively in Objective-C. We will see these types later.<br>
+
+<h1>Operators</h1>
+
+Like any other language, C has its own arithmetic operators to work with the numeric values stored in the variables (which are probably the same as the ones you already know).<br>
+<br>
+
+The arithmetic operators of C are the following:
+
+
+
+
+Operator   Description                              Syntax
+
++          addition                                 a + b
+-          subtraction                              a - b
+*          multiplication                           a * b
+/          division                                 a / b
+%          module (integer remainder of division)   a % b
+
+
+<br>
+Arithmetic operators follow standard math operator precedence, so multiplication, division and module have precedence over addition and subtraction.<br>
+<br>
+
+C has also increment and decrement operators:
+
+
+
+
+Operator   Description   Syntax
+
+++         increment     a++ or ++a
+--         decrement     a-- or --a
+
+
+<br>
+Increment and decrement operators have precedence over the arithmetic operators. Pay particular attention to these operators. When used in isolation, they are equivalent:<br>
+<br>
+
+<div class="container" style="background-color: lightgrey;">
+someVariable++;
+</div>
+
+<br>
+produces the same result as<br>
+<br>
+
+<div class="container" style="background-color: lightgrey;">
+++someVariable;
+</div>
+
+<br>
+The difference comes out when you use them inside another expression. When put before the variable, they increment or decrement the value before it is used. When put after, they increments or decrement the value after using it.<br>
+<br>
+
+This example explains how this works:<br>
+<br>
+
+<div class="container" style="background-color: lightgrey;">
+int  x;<br>
+int  y;<br>
+<br>
+// Increment operators<br>
+x = 1;<br>
+y = ++x; // x is now 2, y is also 2<br>
+y = x++; // x is now 3, y is 2<br>
+<br>
+// Decrement operators<br>
+x = 3;<br>
+y = x--; // x is now 2, y is 3<br>
+y = --x; // x is now 1, y is also 1
+</div>
+
+<br>
+We have already seen the assignment operator = which might be different in the languages you are used to. That is not the only assignment operator. The arithmetic operators (with the exception of the modulo) attach to the assignment and produce another four assignment operators, which are used as a shorthand for incrementing, decrementing, multiplying and dividing the content of a variable:<br>
+<br>
+
+
+Operator   Example    Shorthand for
+
++=         a += 10;   a = a + 10;
+-=         a -= 7;    a = a - 7;
+*=         a *= 3;    a = a * 3;
+/=         a /= 5;    a = a / 5;
+
+
+<br>
+Unlike in other languages, in Objective-C there is no operator overloading. This means that these operators (and the other operators we will see later) only work with basic types and they do not work with objects (to concatenate strings, for example).<br>
+
+<h1>Object variables</h1>
+
+Let’s have a first look at objects. Objective-C is an object oriented language after all, so we need variables to contain objects. The generic type for an object variable is id:<br>
+<br>
+
+<div class="container" style="background-color: lightgrey;">
+id myObject = nil;
+</div>
+
+<br>
+The id type means that the variable can contain any type of object. The nil value is equivalent to what is called null in some other languages (and in C) and means the variable is empty and does not contain any object. Objective-C is a dynamically typed language, so we can declare variables of type id and use them for any object. We can then call any method we want on that object, regardless of the fact that that method might exist or not. This might be useful in some cases, but the majority of the time we want the compiler to check for our mistakes as soon as possible and give variables a defined type.<br>
+<br>
+
+Object variables with a specific type are declared in a slightly different way:<br>
+<br>
+
+<div class="container" style="background-color: lightgrey;">
+NSString *aString = nil;
+</div>
+
+<br>
+Now what does that * mean? Well, strictly speaking that means that this variable is a pointer, a thing that makes many programmers recoil in horror. Pointers are one of those things coming from C you don’t want to deal with. Many modern languages don’t have pointers, so this might be a concept you are not familiar with. Although in the future, when you will be more familiar with the language, it might be useful to know what a pointer is, this is something you don’t have to worry about for now. You can write Objective-C without knowing this concept yet.<br>
+<br>
+
+When programming I rarely think in terms of pointers. Just remember this simple rule: you need a * when you declare an object variable and you don’t when you use it.<br>
+<br>
+
+A note on prefixes and namespaces<br>
+<br>
+
+As you probably noticed, all types in Objective-C have some prefix at the beginning of the name (NSString, CGFloat, etc). The reason is that Objective-C does not have namespaces. To avoid name collisions (different objects ending up having the same name) Apple decided to prepend a two letters prefix to its types and classes. The two letter are generally coming from the framework declaring the type: UIKit classes and types have a UI prefix (UIView, UILabel, etc.), Core Graphics uses the CG prefix (CGFloat, CGRect, etc.) and the Foundation and AppKit frameworks (the latter present only on the Mac) use NS (NSString, NSArray, etc.). Why NS? Because these libraries were first developed at NeXT for the NeXTSTEP operating system.<br>
+
+<br>
+It is a good practice to you add a prefix to your classes and types too. Even if you are not developing a framework but a normal app (which is often the case), just use letters from the app name to be sure to avoid collisions to code you might add later from a different source (like some open source code you might use in your project). There is no strict check from the compiler, so you can omit it, but it’s better not to.<br>
+
+<h1>Branching and decisions</h1>
+
+Let’s now see how flow control works in Objective-C. Flow control is another part that the language inherits directly from C, so the structures are the same. Decisions and branching happen, in Objective-C, through three branching statements.
+
+<h1>If-else statement</h1>
+
+The main statement to perform decisions in Objective-C is the if-else statement:<br>
+<br>
+
+<div class="container" style="background-color: lightgrey;">
+if (expression) {<br>
+    if-body<br>
+} else {<br>
+    else-body<br>
+}
+</div>
+
+<br>
+The if-body is executed only if the expression to YES, true or any non zero value. Otherwise the else-body is executed. The else clause can be omitted like in many other languages. In the case of just one instruction in the if-body or else-body, the respective curly braces can be omitted too. If you come from a language that has no curly braces, there are many different styles that state where to place them.<br>
+<br>
+
+I personally use the K&R style now, that in my experience seems to be quite widespread in the Objective-C community, but I’ve moved through many different styles during my programming career. The only solid advice I can give you regarding this topic is to be consistent: pick one style and always use it everywhere.<br>
+<br>
+
+If you want to use more than one condition, the if-else statement allows multiple branches. This is usually the case in many languages, although it’s not possible in a few.<br>
+<br>
+
+<div class="container" style="background-color: lightgrey;">
+if (expression1) {<br>
+    if-body<br>
+} else if (expression2) {<br>
+    else-if-body<br>
+} else {<br>
+    else-body<br>
+}
+</div>
+
+<br>
+The else if clause can be repeated as many times as needed.<br>
+
+<h1>Switch statement</h1>
+
+When you have multiple choices you can use, as we saw, the if-else statement with as many branches as needed. If the expression evaluates to an integer, though, C offers another branching facility, the switch statement:<br>
+
+
+<div class="container" style="background-color: lightgrey;">
+switch (expression) {<br>
+    case value1:<br>
+        case-body-1<br>
+        break;<br>
+    case value2:<br>
+        case-body-2<br>
+        break;<br>
+    ...<br>
+    default:<br>
+        default-body<br>
+        break;<br>
+}
+</div>
+
+<br>
+The values for the different cases must be constant integers, which means that you can either write a number or a constant in them, but not a variable.<br>
+<br>
+
+The break statements are actually used to exit immediately from the switch statement. They are not mandatory, but pay attention not to forget them, otherwise the execution will continue into the next case.<br>
+<br>
+
+The default statement is optional, and is executed when the value of the expression does not match any case. The break in the default statement is not mandatory either and not necessary unless you put another case after the default, which I strongly advise against, since it would be a poor coding practice.<br>
+
+<h1>Ternary operator</h1>
+
+Another branching facility that Objective-C inherits from C is the ternary operator, also known as conditional operator. This is an operator that in some languages might not be available, and it’s a shorthand of the if-else statement and a return statement (which we will see later, but you are probably already familiar with). The ternary operator takes this form:<br>
+
+
+<div class="container" style="background-color: lightgrey;">
+condition ? expression1 : expression2;
+</div>
+
+<br>
+If the condition evaluates to YES, true, or any non zero value, expression1 is executed and it’s value is returned, otherwise the same happens for expression2. Thus, it is equivalent to the following:<br>
+<br>
+
+<div class="container" style="background-color: lightgrey;">
+if (condition)<br>
+    return expression1;<br>
+else<br>
+    return expression2;
+</div>
+
+<br>
+The ternary operator has the advantage over the if-else statement that it can be written inside another expression, like an assignment. Thus this is possible and sometimes used:<br>
+<br>
+
+<div class="container" style="background-color: lightgrey;">
+a = condition ? expression1 : expression2;
+</div>
+
+
+<h1>Relational and logical operators</h1>
+
+To write the conditions for the branching statement and the loops we will see in a short while, C and Objective-C offer the following relational operators:<br>
+<br>
+
+
+Operator   Description                Syntax
+
+==         equal to                   a == b
+!=         not equal to               a != b
+>          greater than               a > b
+>=         greater than or equal to   a >= b
+<          less than                  a < b
+<=         less than or equal to      a <= b
+
+
+<br>
+Pay attention to the == operator. A very common mistake, especially when coming from other languages where this would not be allowed, is to use = in comparisons instead, which is the assignment operator. This is perfectly legal in C, as any assignment also returns a value that is checked by the if-else statement, which checks for 0 and non zero values. So, the program will compile and run perfectly, but probably not behave as you expect. This is a mistake that costs many people a lot of time in debugging. Luckily the latest versions of XCode might warn you of this common mistake when you build your project, if the proper settings are enabled.<br>
+<br>
+
+To combine conditions and form compound ones, C offers the common logical operators you find in many other languages:<br>
+<br>
+
+
+Operator   Description      Syntax
+
+!          negation (not)   !a
+&&         and              a && b
+||         or               a || b
+
+
+
+Pay attention to the double symbols used in and and or: C has also the single character versions, which are bitwise operators and not logical ones. We will have a look at these later.<br>
+<br>
+
+Many languages have a strict boolean notion of true and false. As we have seen, C, and Objective-C, have a more loose notion where zero and non zero values are checked instead. Some old versions of C don’t even have the bool type. It’s certainly beneficial to think in terms of truthiness of the conditions when writing them. It’s also useful nonetheless to know a bit of what happens behind the curtains. Objective-C NO and YES values are also mapped respectively to 0 and 1.<br>
+<br>
+
+This is useful to know for a very common idiom in Objective-C that comes from C. The nil value is also mapped to 0, which means that it is equivalent to NO. So, instead of checking if a variable (or value) is equal to nil, it’s common in Objective-C to check it’s negation, which is logically equivalent. So instead of writing:<br>
+<br>
+
+<div class="container" style="background-color: lightgrey;">
+if (someObject == nil)
+</div>
+
+<br>
+We Write:<br>
+<br>
+
+<div class="container" style="background-color: lightgrey;">
+if (!someObject)
+</div>
+
+<br>
+Many times, though, checking for nil values is not necessary as it is in other languages. We will see later why.<br>
+
+<h1>Loops</h1>
+
+Objective-C loops also come from C. In addition to these Objective-C also introduces a statement to enumerate collections that we will see later when we will talk about those. Looping over collections is much more common in an Objective-C program, but the basic loops are still useful nonetheless.<br>
+
+<h1>For loop</h1>
+
+The first loop statement, present in many modern languages as well is the for loop. In C it has the following syntax:<br>
+<br>
+
+<div class="container" style="background-color: lightgrey;">
+for (initialization-expression; loop-condition; update-expression) {<br>
+    loop-body<br>
+}
+</div>
+
+<br>
+Please notice that the separators between initialization-expression, loop-condition and update-expression are semicolons and not commas.<br>
+<br>
+
+The for loop is quite flexible and can accept different kind of expressions in it. In it’s most common form, it’s used like this:<br>
+<br>
+
+The initialization-expression is an expression executed before entering the loop. It’s most commonly used to declare and/or initialize an integer variable used to count through the loop.<br>
+<br>
+
+The loop-condition is a boolean condition used to check when to terminate the loop. It is evaluated before each pass through the loop. When the loop condition is false, the loop is terminated. This is usually used to check if the counter declared in the initialization-expression is over or under a certain value.<br>
+<br>
+
+The update-expression is an expression that is evaluated at the end of each pass through the loop, after the loop body has been executed, and just before looping back to evaluate the condition-expression again. It’s usually used to update the value of the counter variable declared in the initialization-expression.<br>
+<br>
+
+In it’s most common incarnation, the for loop takes the following form:<br>
+<br>
+
+<div class="container" style="background-color: lightgrey;">
+for (NSUInteger index = 0; index < someValue; index++) {<br>
+    loop-body<br>
+}
+</div>
+
+<br>
+Where someValue is a variable or a constant with some positive integer value. In this way the loop iterates exactly someValue times.<br>
+
+<h1>While loop</h1>
+
+The for-loop is normally used to iterate a fixed number of times. If we want to loop until a certain condition is met, then the while loop is normally used.<br>
+<br>
+
+<div class="container" style="background-color: lightgrey;">
+while (condition) {<br>
+    loop-body<br>
+}
+</div>
+
+<br>
+The condition is checked at the beginning of every iteration and the loop ends when the condition evaluates to a false value. If it evaluates to false on the first iteration (before executing the loop-body once), then the loop-body is not executed.<br>
+
+<h1>Do-while loop</h1>
+
+If we want the loop to iterate at least one time, we have the do-while loop:<br>
+<br>
+
+<div class="container" style="background-color: lightgrey;">
+do {<br>
+    loop-body<br>
+} while (condition);
+</div>
+
+<br>
+In this case the order of loop-body execution and condition evaluation is reversed. First the loop goes through one iteration and then checks the condition. If it evaluates to true, the loop continues, until it evaluates to false.<br>
+<br>
+
+As for the branching statement, the curly braces can be omitted in any loop if the loop body only has one instruction.<br>
+<br>
+<h1>Break and continue</h1>
+
+There are two statements that are used to alter the flow of the loop structures: break and continue. They can be used in any loop.<br>
+<br>
+
+The break statement is used when you want to terminate the loop prematurely, for reasons often different from the loop condition and at any point during an iteration, so you only execute part of it. This illustrates how usually it’s used:<br>
+<br>
+
+<div class="container" style="background-color: lightgrey;">
+while (loop-condition) {<br>
+    some-instructions<br>
+    if (exit-condition)<br>
+        break;<br>
+    some-other-instructions<br>
+}
+</div>
+
+<br>
+If the exit-condition evaluates to true during any iteration, the loop exits without executing some-other-instructions, and execution continues after the loop. You can of course use more than one break checks in the loop body.<br>
+<br>
+
+Sometimes you want to just skip the rest of the current iteration like with the break statement, but without exiting the loop. The continue statement is used for this specific reason.<br>
+<br>
+
+<div class="container" style="background-color: lightgrey;">
+while (loop-condition) {<br>
+    some-instructions<br>
+    if (skip-condition)<br>
+        continue;<br>
+    some-other-instructions<br>
+}
+</div>
+
+<br>
+When the skip-condition is true in any iteration, some-other-instructions are not executed, but the loop continues to the next iteration, checking again the loop-condition and executing the loop-body again.<br>
+<br>
+
+The break and continue statements can also be mixed inside the same loop, to have a more complex control over the flow structure.
+>>>>>>> d96c524de208bd71ae71a7f1c2f4c953a2a6ebbd
 
 This example explains how this works:<br>
 <br>
