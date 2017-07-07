@@ -133,8 +133,7 @@ li{
     <p class="lead">        </p>
   </div>
 </div>
-                
-                <p class="lead">
+
                 <h1>Python Keywords and Identifier</h1>
 
                 <h2>Python Keywords</h2>
@@ -154,7 +153,8 @@ There are 33 keywords in Python 3.3. This number can vary slightly in course of 
 All the keywords except <i>True</i>, <i>False</i> and <i>None</i> are in lowercase and they must be written as it is. The list of all the keywords are given below.<br>
 
 <br>
-<b>Keywords in Python programming language</b>
+<b>Keywords in Python programming language</b><br>
+<br>
 <table class="table">
   <tbody>
 
@@ -997,40 +997,48 @@ Arithmetic operators are used to perform mathematical operations like addition, 
 
 <b>Arithmetic operators in Python</b>
 
-<table class="table-striped">
+<table class="table">
+<thead>
+    <th>Operator</th>
+    <th>Meaning</th>
+    <th>Example</th>
+</thead>
     <tbody>
     <tr>
-    <th scope="row">Operator</th>
         <td>+</td>
-        <td>-</td>
-        <td>*</td>
-        <td>/</td>
-        <td>%</td>
-        <td>//</td>
-        <td>**</td>
-    </tr>
-    <tr>
-    <th scope="row">Meaning</th>
         <td>Add two operands or unary plus</td>
-        <td>Subtract right operand from the left or unary minus</td>
-        <td>Multiply two operands</td>
-        <td>Divide left operand by the right one (always results into float)</td>
-        <td>Modulus - remainder of the division of left operand by the right</td>
-        <td>Floor division - division that results into whole number adjusted to the left in the number line</td>
-        <td>Exponent - left operand raised to the power of right</td>
+        <td>x + y<br>+2</td>
     </tr>
     <tr>
-    <th scope="row">Example</th>
-        <td>x + y<br>
-+2</td>
-        <td>x - y<br>
--2</td>
+        <td>-</td>
+        <td>Subtract right operand from the left or unary minus</td>
+        <td>x - y<br>-2</td>
+    </tr>
+    <tr>
+        <td>*</td>
+        <td>Multiply two operands</td>
         <td>x * y</td>
-        <td>x / y</td>
-        <td>x % y (remainder of x/y)</td>
-        <td>x // y</td>
-        <td>x**y (x to the power y)</td>
     </tr>    
+    <tr>
+        <td>/</td>
+        <td>Divide left operand by the right one (always results into float)</td>
+        <td>x / y</td>
+    </tr>
+    <tr>
+        <td>%</td>
+        <td>Modulus - remainder of the division of left operand by the right</td>
+        <td>x % y (remainder of x/y)</td>
+    </tr>
+    <tr>
+        <td>//</td>
+        <td>Floor division - division that results into whole number adjusted to the left in the number line</td>
+        <td>x // y</td>
+    </tr>
+    <tr>
+        <td>**</td>
+        <td>Exponent - left operand raised to the power of right</td>
+        <td>x**y (x to the power y)</td>
+    </tr>
     </tbody>
 </table>
     
@@ -1078,35 +1086,44 @@ x ** y = 50625<br>
 Comparison operators are used to compare values. It either returns True or False according to the condition.<br>
 <br>
 
-<b>Comparision operators in Python</b>
+<b>Comparision operators in Python</b><br>
+<br>
 
-<table class="table-striped">
+<table class="table">
+<thead>
+    <th>Operator</th>
+    <th>Meaning</th>
+    <th>Example</th>
+</thead>
     <tbody>
     <tr>
-        <th>Operator</th>
         <td>></td>
-        <td><</td>
-        <td>==</td>
-        <td>!=</td>
-        <td>>=</td>
-        <td><=</td>
-    </tr>
-    <tr>
-        <th>Meaning </th>
         <td>Greater that - True if left operand is greater than the right</td>
-        <td>Less that - True if left operand is less than the right</td>
-        <td>Equal to - True if both operands are equal</td>
-        <td>Not equal to - True if operands are not equal</td>
-        <td>Greater than or equal to - True if left operand is greater than or equal to the right</td>
-        <td>Less than or equal to - True if left operand is less than or equal to the right</td>
+        <td>x > y</td>
     </tr>
     <tr>
-        <th>Example</th>
-        <td>x > y</td>
+        <td><</td>
+        <td>Less that - True if left operand is less than the right</td>
         <td>x < y</td>
+    </tr>
+    <tr>
+        <td>==</td>
+        <td>Equal to - True if both operands are equal</td>
         <td>x == y</td>
-        <td>x != y</td>
+    </tr>
+    <tr>
+        <td>!=</td>
+        <td>Not equal to - True if operands are not equal</td>
         <td>x >= y</td>
+    </tr>
+    <tr>
+        <td>>=</td>
+        <td>Greater than or equal to - True if left operand is greater than or equal to the right</td>
+        <td>x != y</td>
+    </tr>
+    <tr>
+        <td><=</td>
+        <td>Less than or equal to - True if left operand is less than or equal to the right</td>
         <td>x <= y</td>
     </tr>
     </tbody>
@@ -1145,26 +1162,29 @@ print('x <= y is',x<=y)
 Logical operators are the and, or, not operators.<br>
 <br>
 
-<b>Logical operators in Python</b>
+<b>Logical operators in Python</b><br>
+<br>
 
-<table class="table-striped">
+<table class="table">
+<thead>
+    <th>Operator</th>
+    <th>Meaning</th>
+    <th>Example</th>
+</thead>
     <tbody>
         <tr>
-            <th>Operator</th>
             <td>and</td>
-            <td>or</td>
-            <td>not</td>
-        </tr>
-        <tr>
-            <th>Meaning</th>
             <td>True if both the operands are true</td>
-            <td>True if either of the operands is true</td>
-            <td>True if operand is false (complements the operand)</td>
+            <td>x and y</td>
         </tr>
         <tr>
-            <th>Example</th>
-            <td>x and y</td>
+            <td>or</td>
+            <td>True if either of the operands is true</td>
             <td>x or y</td>
+        </tr>
+        <tr>
+            <td>not</td>
+            <td>True if operand is false (complements the operand)</td>
             <td>not x</td>
         </tr>
     </tbody>
@@ -1207,35 +1227,43 @@ For example, 2 is 10 in binary and 7 is 111.<br>
 <b>Bitwise operators in Python</b>
 <br>
 
-<table>
+<table class="table">
     <tbody>
-    <tr>
+    <thead>
         <th>Operator</th>
-        <td>&</td>
-        <td>|</td>
-        <td>~</td>
-        <td>^</td>
-        <td>>></td>
-        <td><<</td>
-    </tr>    
-    <tr>
         <th>Meaning</th>
+        <th>Example</th>
+    </thead>
+    <tr>
+        <td>&</td>
         <td>Bitwise AND</td>
-        <td>Bitwise OR</td>
-        <td>Bitwise NOT</td>
-        <td>Bitwise XOR</td>
-        <td>Bitwise right shift</td>
-        <td>Bitwise left shift</td>
+        <td>x& y = 0 (0000 0000)</td>
     </tr>    
     <tr>
-        <th>Example</th>
-        <td>x& y = 0 (0000 0000)</td>
+        <td>|</td>
+        <td>Bitwise OR</td>
         <td>x | y = 14 (0000 1110)</td>
-        <td>~x = -11 (1111 0101)</td>
-        <td>x ^ y = 14 (0000 1110)</td>
-        <td>x>> 2 = 2 (0000 0010)</td>
-        <td>x<< 2 = 40 (0010 1000)</td>
     </tr>    
+    <tr>
+        <td>~</td>
+        <td>Bitwise NOT</td>
+        <td>~x = -11 (1111 0101)</td>
+    </tr> 
+    <tr>
+        <td>^</td>
+        <td>Bitwise XOR</td>
+        <td>x ^ y = 14 (0000 1110)</td>
+    </tr>
+    <tr>
+        <td>>></td>
+        <td>Bitwise right shift</td>
+        <td>x>> 2 = 2 (0000 0010)</td>
+    </tr>
+    <tr>
+        <td><<</td>
+        <td>Bitwise left shift</td>
+        <td>x<< 2 = 40 (0010 1000)</td>
+    </tr>   
     </tbody>
 </table>
 
@@ -1251,56 +1279,78 @@ There are various compound operators in Python like a += 5 that adds to the vari
 <br>
 
 <b>Assignment operators in Python</b>
-<table>
+<table class="table">
+<thead>
+    <th>Operator</th>
+    <th>Example</th>
+    <th>Equivatent to</th>
+</thead>
     <tbody>
     <tr>
-    <th>Operator</th>
         <td>=</td>
+        <td>x = 5</td>
+        <td>x = 5</td>
+    </tr>    
+     <tr>
         <td>+=</td>
-        <td>-=</td>
-        <td>*=</td>
-        <td>/=</td>
-        <td>%=</td>
-        <td>//=</td>
-        <td>**=</td>
-        <td>&=</td>
-        <td>|=</td>
-        <td>^=</td>
-        <td>>>=</td>
-        <td><<=</td>
-    </tr>    
-     <tr>
-     <th>Example</th>
-        <td>x = 5</td>
         <td>x += 5</td>
-        <td>x -= 5</td>
-        <td>x *= 5</td>
-        <td>x /= 5</td>
-        <td>x %= 5</td>
-        <td>x //= 5</td>
-        <td>x **= 5</td>
-        <td>x &= 5</td>
-        <td>x |= 5</td>
-        <td>x ^= 5</td>
-        <td>x >>= 5</td>
-        <td>x <<= 5</td>
+        <td>x = x + 5</td>
     </tr>    
      <tr>
-     <th>Equivatent to</th>
-        <td>x = 5</td>
-        <td>x = x + 5</td>
+        <td>-=</td>
+        <td>x -= 5</td>
         <td>x = x - 5</td>
-        <td>x = x * 5</td>
-        <td>x = x / 5</td>
-        <td>x = x % 5</td>
-        <td>x = x // 5</td>
-        <td>x = x ** 5</td>
-        <td>x = x & 5</td>
-        <td>x = x | 5</td>
-        <td>x = x ^ 5</td>
-        <td>x = x >> 5</td>
-        <td>x = x << 5</td>
     </tr>    
+    <tr>
+        <td>*=</td>
+        <td>x *= 5</td>
+        <td>x = x * 5</td>
+    </tr>
+    <tr>
+        <td>/=</td>
+        <td>x /= 5</td>
+        <td>x = x / 5</td>
+    </tr>
+    <tr>
+        <td>%=</td>
+        <td>x %= 5</td>
+        <td>x = x % 5</td>
+    </tr>
+    <tr>
+        <td>//=</td>
+        <td>x //= 5</td>
+        <td>x = x // 5</td>
+    </tr>
+    <tr>
+        <td>**=</td>
+        <td>x **= 5</td>
+        <td>x = x ** 5</td>
+    </tr>
+    <tr>
+        <td>&=</td>
+        <td>x &= 5</td>
+        <td>x = x & 5</td>
+    </tr>
+    <tr>
+        <td>|=</td>
+        <td>x |= 5</td>
+        <td>x = x | 5</td>
+    </tr>
+    <tr>
+        <td>^=</td>
+        <td>x ^= 5</td>
+        <td>x = x ^ 5</td>
+    </tr>
+    <tr>
+        <td>>>=</td>
+        <td>x >>= 5</td>
+        <td>x = x >> 5</td>
+    </tr>
+    <tr>
+        <td><<=</td>
+        <td>x <<= 5</td>
+        <td>x = x << 5</td>
+    </tr>
     </tbody>
 </table>
 

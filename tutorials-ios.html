@@ -137,7 +137,6 @@ li{
                 <p class="lead">
 <h1>Strings</h1>
 
-<<<<<<< HEAD
                 <h1>Creating and Formatting the String</h1>
 
                 Take a look at the apple documentation on NSString Class Reference to check the number of ways that you can create and return strings. The most common and the one you’re likely to be using is stringWithFormat:<br>
@@ -215,8 +214,6 @@ NSArray *yourWords = [myString componentsSeparatedByString:@" "];<br>
 if you need to split on a set of several different characters, use NSString’s componentsSeparatedByCharactersInSet:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
-=======
 Just like other languages, strings are enclosed and defined by the use of “double quotes”, however in Objective-C an NSString also comes with the prefix of the @ sign, Like so:<br>
 <br>
 
@@ -228,7 +225,7 @@ NSString *yourString = @"This is a string, you like?";
 <h1>Creating and Formatting the String</h1>
 
 Take a look at the apple documentation on NSString Class Reference to check the number of ways that you can create and return strings. The most common and the one you’re likely to be using is stringWithFormat:<br>
-
+<br>
 
 <div class="container" style="background-color: lightgrey;">
 NSString *yourString = @"iOS-Blog";<br>
@@ -304,7 +301,6 @@ if you need to split on a set of several different characters, use NSString’s 
 <br>
 
 <div class="container" style="background-color: lightgrey;">
->>>>>>> d96c524de208bd71ae71a7f1c2f4c953a2a6ebbd
 NSString *yourString = @"Foo-bar/iOS-Blog";<br>
 NSArray *yourWords = [myString componentsSeparatedByCharactersInSet:<br>
                       [NSCharacterSet characterSetWithCharactersInString:@"-/"]<br>
@@ -324,7 +320,6 @@ for (int i=0; i < [myString length]; i++) {<br>
     [characters addObject:ichar];<br>
 }
 </div>
-<<<<<<< HEAD
 
 <h1>Trim Spaces from the End of a String</h1>
 
@@ -386,14 +381,11 @@ For this we will use the NSString method: rangeOfString to find out whether a su
 NSString *theString = @"iOS-Blog.com";<br>
 NSRange isCom = [theString rangeOfString:@".com"];
 </div>
-=======
->>>>>>> d96c524de208bd71ae71a7f1c2f4c953a2a6ebbd
 
 <br>
 NSRange is a struct with two parts:<br>
 <br>
 
-<<<<<<< HEAD
 <div class="container" style="background-color: lightgrey;">
     .location<br>
     .length
@@ -634,8 +626,7 @@ produces the same result as<br>
 
 <br>
 The difference comes out when you use them inside another expression. When put before the variable, they increment or decrement the value before it is used. When put after, they increments or decrement the value after using it.<br>
-<br>
-=======
+
 <h1>Trim Spaces from the End of a String</h1>
 
 Sometimes you might need to remove white spacing, sometimes you just want to, for this we will use the whitespaceCharacterSet method to remove the white spaces from both ends of the string:<br>
@@ -1211,7 +1202,6 @@ When the skip-condition is true in any iteration, some-other-instructions are no
 <br>
 
 The break and continue statements can also be mixed inside the same loop, to have a more complex control over the flow structure.
->>>>>>> d96c524de208bd71ae71a7f1c2f4c953a2a6ebbd
 
 This example explains how this works:<br>
 <br>
