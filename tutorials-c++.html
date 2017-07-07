@@ -147,7 +147,7 @@ The most common type of instruction in a program is the <b>statement</b>. A stat
 There are many different kinds of statements in C++. The following are some of the most common types of simple statements:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1    int x;<br>
 2    x = 5;<br>
 3    std::cout << x;
@@ -188,7 +188,7 @@ The C++ core language is actually very small and minimalistic (and you’ll lear
 Now that you have a brief understanding of what statements, functions, and libraries are, let’s look at a simple “hello world” program:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   #include <iostream><br>
 2    <br>
 3   int main()<br>
@@ -239,7 +239,7 @@ For example, you learned above that statements must end in a semicolon.<br>
 Let’s see what happens if we omit the semicolon in the following program:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   #include <iostream><br>
 2   <br>
 3   int main()<br>
@@ -270,7 +270,7 @@ A <b>comment</b> is a line (or multiple lines) of text that are inserted into th
 The // symbol begins a C++ single-line comment, which tells the compiler to ignore everything to the end of the line. For example:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   std::cout << "Hello world!" << std::endl; // Everything from here to the right is ignored.
 </div>
 
@@ -278,7 +278,7 @@ The // symbol begins a C++ single-line comment, which tells the compiler to igno
 Typically, the single line comment is used to make a quick comment about a single line of code.<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   std::cout << "Hello world!" << std::endl; // cout and endl live in the iostream library<br>
 2   std::cout << "It is very nice to meet you!" << std::endl; // these comments make the code hard to read<br>
 3   std::cout << "Yeah!" << std::endl; // especially when lines are different lengths
@@ -288,7 +288,7 @@ Typically, the single line comment is used to make a quick comment about a singl
 Having comments to the right of a line can make both the code and the comment hard to read, particularly if the line is long. Consequently, the // comment is often placed above the line it is commenting.<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   // cout and endl live in the iostream library<br>
 2   std::cout << "Hello world!" << std::endl;<br>
 3<br>
@@ -303,7 +303,7 @@ Having comments to the right of a line can make both the code and the comment ha
 The /* and */ pair of symbols denotes a C-style multi-line comment. Everything in between the symbols is ignored.<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   /* This is a multi-line comment.<br>
 2      This line will be ignored.<br>
 3      So will this one. */
@@ -313,7 +313,7 @@ The /* and */ pair of symbols denotes a C-style multi-line comment. Everything i
 Since everything between the symbols is ignored, you will sometimes see programmers “beautify” their multiline comments:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   /* This is a multi-line comment.<br>
 2    * the matching asterisks to the left<br>
 3    * can make this easier to read<br>
@@ -324,7 +324,7 @@ Since everything between the symbols is ignored, you will sometimes see programm
 Multi-line style comments do not nest. Consequently, the following will have unexpected results:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   /* This is a multi-line /* comment */ this is not inside the comment */<br>
 2   // The above comment ends at the first */, not the second */
 </div>
@@ -337,19 +337,19 @@ Multi-line style comments do not nest. Consequently, the following will have une
 Typically, comments should be used for three things. For a given library, program, or function, comments are best used to describe what the library, program, or function, does. For example:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   // This program calculate the student's final grade based on his test and homework scores.
 </div>
 
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   // This function uses newton's method to approximate the root of a given equation.
 </div>
 
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   // The following lines generate a random item based on rarity, level, and a weight factor.
 </div>
 
@@ -360,7 +360,7 @@ All of these comments give the reader a good idea of what the program is trying 
 Second, within a library, program, or function described above, comments can be used to describe how the code is going to accomplish its goal.<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   /* To calculate the final grade, we sum all the weighted midterm and homework scores<br>
 2       and then divide by the number of scores to assign a percentage.  This percentage is<br>
 3       used to calculate a letter grade. */
@@ -368,7 +368,7 @@ Second, within a library, program, or function described above, comments can be 
 
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   // To generate a random item, we're going to do the following:<br>
 2   // 1) Put all of the items of the desired rarity on a list<br>
 3   // 2) Calculate a probability for each item based on level and weight factor<br>
@@ -389,7 +389,7 @@ Here are some examples of bad line comments and good statement comments.<br>
 Bad comment:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   // Set sight range to 0<br>
 2   sight = 0;
 </div>
@@ -399,7 +399,7 @@ Bad comment:<br>
 Good comment:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   // The player just drank a potion of blindness and can not see anything<br>
 2   sight = 0;
 </div>
@@ -410,7 +410,7 @@ Good comment:<br>
 Bad comment:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   // Calculate the cost of the items<br>
 2   cost = items / 2 * storePrice;
 </div>
@@ -421,7 +421,7 @@ Bad comment:<br>
 Good comment:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   // We need to divide items by 2 here because they are bought in pairs<br>
 2   cost = items / 2 * storePrice;
 </div>
@@ -436,14 +436,14 @@ Programmers often have to make a tough decision between solving a problem one wa
 Good comments:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   // We decided to use a linked list instead of an array because<br>
 2   // arrays do insertion too slowly.
 </div>
 
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   // We're going to use newton's method to find the root of a number because<br>
 2   // there is no deterministic way to solve these equations.
 </div>
@@ -470,7 +470,7 @@ To comment out a single line of code, simply use the // style comment to turn a 
 Uncommented out:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   std::cout << 1;
 </div>
     
@@ -479,7 +479,7 @@ Uncommented out:<br>
 Commented out:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   //    std::cout << 1;
 </div>
 
@@ -490,7 +490,7 @@ To comment out a block of code, use // on multiple lines of code, or the /* */ s
 Uncommented out:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   std::cout << 1;<br>
 2   std::cout << 2;<br>
 3   std::cout << 3;
@@ -500,7 +500,7 @@ Uncommented out:<br>
 Commented out:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   //    std::cout << 1;<br>
 2   //    std::cout << 2;<br>
 3   //    std::cout << 3;
@@ -510,7 +510,7 @@ Commented out:<br>
 or<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   /*<br>
 2       std::cout << 1;<br>
 3       std::cout << 2;<br>
@@ -563,7 +563,7 @@ In this section, we are only going to consider integer variables. An <b>integer<
 In order to create a variable, we generally use a special kind of declaration statement called a <b>definition</b> (we’ll explain the precise difference between a declaration and a definition later). Here’s an example of defining variable x as an integer variable (one that can hold integer values):<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   int x;
 </div>
 
@@ -574,7 +574,7 @@ When this statement is executed by the CPU, a piece of memory from RAM will be s
 One of the most common operations done with variables is assignment. To do this, we use the assignment operator, more commonly known as the = symbol. For example:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   x = 5;
 </div>
 
@@ -585,7 +585,7 @@ When the CPU executes this statement, it translates this to “put the value of 
 Later in our program, we could print that value to the screen using std::cout:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   std::cout << x;  // prints the value of x (memory location 140) to the console
 </div>
 
@@ -601,7 +601,7 @@ The opposite of l-values are r-values (pronounced arr-values). An <b>r-value</b>
 Here is an example of some assignment statements, showing how the r-values evaluate:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   int y;      // define y as an integer variable<br>
 2   y = 4;      // 4 evaluates to 4, which is then assigned to y<br>
 3   y = 2 + 5;  // 2 + 5 evaluates to 7, which is then assigned to y<br>
@@ -616,7 +616,7 @@ Here is an example of some assignment statements, showing how the r-values evalu
 Let’s take a closer look at the last assignment statement above, since it causes the most confusion.<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   x = x + 1;
 </div>
 
@@ -624,7 +624,7 @@ Let’s take a closer look at the last assignment statement above, since it caus
 In this statement, the variable x is being used in two different contexts. On the left side of the assignment operator, “x” is being used as an l-value (variable with an address). On the right side of the assignment operator, x is being used as an r-value, and will be evaluated to produce a value (in this case, 7). When C++ evaluates the above statement, it evaluates as:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   x = 7 + 1;
 </div>
 
@@ -645,7 +645,7 @@ C++ supports two related concepts that new programmers often get mixed up: assig
 After a variable is defined, a value may be <b>assigned</b> to it via the assignment operator (the = sign):<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   int x; // this is a variable definition<br>
 2   x = 5; // assign the value 5 to variable x
 </div>
@@ -654,7 +654,7 @@ After a variable is defined, a value may be <b>assigned</b> to it via the assign
 C++ will let you both define a variable AND give it an initial value in the same step. This is called <b>initialization</b>.<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   int x = 5; // initialize variable x with the value 5
 </div>
 
@@ -678,7 +678,7 @@ Note: Some compilers, such as Visual Studio, will initialize the contents of mem
 Using the values of uninitialized variables can lead to unexpected results. Consider the following short program:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   // #include "stdafx.h" // Uncomment if Visual Studio user<br>
 2   #include <iostream><br>
 3    <br>
@@ -752,7 +752,7 @@ C++ contains many cases that can result in undefined behavior if you’re not ca
 As noted in previous sections, the std::cout object (in the iostream library) can be used to output text to the console. As a reminder, here’s our Hello world program:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   #include <iostream><br>
 2    <br>
 3   int main()<br>
@@ -766,7 +766,7 @@ As noted in previous sections, the std::cout object (in the iostream library) ca
 To print more than one thing on the same line, the output operator (<<) can be used multiple times. For example:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   #include <iostream><br>
 2    <br>
 3   int main()<br>
@@ -787,7 +787,7 @@ x is equal to: 4
 What would you expect this program to print?<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   #include <iostream><br>
 2    <br>
 3   int main()<br>
@@ -813,7 +813,7 @@ If we want to print things to more than one line, we can do that by using std::e
 For example:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   #include <iostream><br>
 2    <br>
 3   int main()<br>
@@ -839,7 +839,7 @@ std::cin is the opposite of std::cout -- whereas std::cout prints data to the co
 <br>
 
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   //#include "stdafx.h" // Uncomment this line if using Visual Studio<br>
 2   #include <iostream><br>
 3    <br>
@@ -902,7 +902,7 @@ The function initiating the function call is called the <b>caller</b>, and the f
 Here is a sample program that shows how new functions are defined and called:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   //#include "stdafx.h" // Visual Studio users need to uncomment this line<br>
 2   #include <iostream> // for std::cout and std::endl<br>
 3    <br>
@@ -954,7 +954,7 @@ Let’s take a look at a simple function that returns an integer value, and a sa
 <br>
 
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   // int means the function returns an integer value to the caller<br>
 2   int return5()<br>
 3   {<br>
@@ -987,7 +987,7 @@ In the third function call of return5(), the function returns the value of 5 bac
 Functions are not required to return a value. To tell the compiler that a function does not return a value, a return type of <b>void</b> is used. Let’s look at the doPrint() function from the program above:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   void doPrint() // void is the return type<br>
 2   {<br>
 3       std::cout << "In doPrint()" << std::endl;<br>
@@ -1003,7 +1003,7 @@ Here’s another example of a function that returns void, and a sample program t
 <br>
 
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   // void means the function does not return a value to the caller<br>
 2   void returnNothing()<br>
 3   {<br>
@@ -1062,7 +1062,7 @@ Finally, note that a function is free to define what its return value means. Som
 The same function can be called multiple times, which is useful if you need to do something more than once.<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   //#include "stdafx.h" // Visual Studio users need to uncomment this line<br>
 2   #include <iostream><br>
 3    <br>
@@ -1103,7 +1103,7 @@ Note that main() isn’t the only function that can call other functions. Any fu
 <br>
 
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   //#include "stdafx.h" // Visual Studio users need to uncomment this line<br>
 2   #include <iostream><br>
 3    <br>
@@ -1148,7 +1148,7 @@ Functions can not be defined inside other functions (called nesting) in C++. The
 <br>
 
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   #include <iostream><br>
 2    <br>
 3   int main()<br>
@@ -1169,7 +1169,7 @@ The proper way to write the above program is:<br>
 <br>
 
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   #include <iostream><br>
 2    <br>
 3   int foo() // no longer inside of main()<br>
