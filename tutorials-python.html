@@ -100,6 +100,7 @@ li{
                             <li><a class="dropdown-item" href="prosoft-jc.html">JCreator</a></li>
                             <li><a class="dropdown-item" href="prosoft-st.html">Sublime Text</a></li>
                             <li><a class="dropdown-item" href="prosoft-eclipse.html">Eclipse</a></li>
+                            <li><a class="dropdown-item" href="prosoft-xcode.html">Xcode</a></li>
                             </ul>
                         </div>
                     </li><!-- end of programming softwares -->
@@ -132,8 +133,7 @@ li{
     <p class="lead">        </p>
   </div>
 </div>
-                
-                <p class="lead">
+
                 <h1>Python Keywords and Identifier</h1>
 
                 <h2>Python Keywords</h2>
@@ -153,7 +153,8 @@ There are 33 keywords in Python 3.3. This number can vary slightly in course of 
 All the keywords except <i>True</i>, <i>False</i> and <i>None</i> are in lowercase and they must be written as it is. The list of all the keywords are given below.<br>
 
 <br>
-<b>Keywords in Python programming language</b>
+<b>Keywords in Python programming language</b><br>
+<br>
 <table class="table">
   <tbody>
 
@@ -234,7 +235,7 @@ Identifier is the name given to entities like class, functions, variables etc. i
 <li style="color: black">Keywords cannot be used as identifiers.</li>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 >>> global = 1<br>
   File "<interactive input>", line 1<br>
     global = 1<br>
@@ -246,7 +247,7 @@ SyntaxError: invalid syntax<br>
 <li style="color: black"> We cannot use special symbols like !, @, #, $, % etc. in our identifier.</li>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 >>> a@ = 0<br>
   File "<interactive input>", line 1<br>
     a@ = 0<br>
@@ -281,7 +282,7 @@ Instructions that a Python interpreter can execute are called statements. For ex
 In Python, end of a statement is marked by a newline character. But we can make a statement extend over multiple lines with the line continuation character (\). For example:<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 a = 1 + 2 + 3 + \<br>
     4 + 5 + 6 + \<br>
     7 + 8 + 9<br>
@@ -291,7 +292,7 @@ a = 1 + 2 + 3 + \<br>
 This is explicit line continuation. In Python, line continuation is implied inside parentheses ( ), brackets [ ] and braces { }. For instance, we can implement the above multi-line statement as<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 a = (1 + 2 + 3 +<br>
     4 + 5 + 6 +<br>
     7 + 8 + 9)<br>
@@ -301,7 +302,7 @@ a = (1 + 2 + 3 +<br>
 Here, the surrounding parentheses ( ) do the line continuation implicitly. Same is the case with [ ] and { }. For example:<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 colors = ['red',<br>
           'blue',<br>
           'green']<br>
@@ -311,7 +312,7 @@ colors = ['red',<br>
 We could also put multiple statements in a single line using semicolons, as follows<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 a = 1; b = 2; c = 3
 </div>
 
@@ -326,7 +327,7 @@ A code block (body of a function, loop etc.) starts with indentation and ends wi
 Generally four whitespaces are used for indentation and is preferred over tabs. Here is an example.<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 for i in range(1,11):<br>
     print(i)<br>
     if i == 5:<br>
@@ -340,7 +341,7 @@ The enforcement of indentation in Python makes the code look neat and clean. Thi
 Indentation can be ignored <br>in line continuation. But it's a good idea to always indent. It makes the code more readable. For example:<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 if True:<br>
     print('Hello')<br>
     a = 5<br>
@@ -350,7 +351,7 @@ if True:<br>
 and<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 if True: print('Hello'); a = 5
 </div>
 
@@ -372,7 +373,7 @@ In Python, we use the hash (#) symbol to start writing a comment.<br>
 It extends up to the newline character. Comments are for programmers for better understanding of a program. Python Interpreter ignores comment. <br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 #This is a comment<br>
 #print out Hello<br>
 print('Hello')<br>
@@ -383,7 +384,7 @@ print('Hello')<br>
 If we have comments that extend multiple lines, one way of doing it is to use hash (#) in the beginning of each line. For example:<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 #This is a long comment<br>
 #and it extends<br>
 #to multiple lines<br>
@@ -394,7 +395,7 @@ Another way of doing this is to use triple quotes, either <i>'''</i> or <i>"""</
 These triple quotes are generally used for multi-line strings. But they can be used as multi-line comment as well. Unless they are not docstrings, they do not generate any extra code.<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 """This is also a<br>
 perfect example of<br>
 multi-line comments"""<br>
@@ -409,7 +410,7 @@ It is a string that occurs as the first statement in a module, function, class, 
 Triple quotes are used while writing docstrings. For example:<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 def double(num):<br>
     """Function to double the value"""<br>
     return 2*num<br>
@@ -419,7 +420,7 @@ def double(num):<br>
     Docstring is available to us as the attribute <i>__doc__</i> of the function. Issue the following code in shell once you run the above program.<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 >>> print(double.__doc__)<br>
 Function to double the value<br>
 </div>
@@ -441,7 +442,7 @@ We don't need to declare a variable before using it. In Python, we simply assign
 We use the assignment operator (=) to assign values to a variable. Any type of value can be assigned to any valid variable.<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 a = 5<br>
 b = 3.2<br>
 c = "Hello"<br>
@@ -458,7 +459,7 @@ Similarly, <i>3.2</i> is a floating point number and <i>"Hello"</i> is a string 
 In Python, multiple assignments can be made in a single statement as follows:<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 a, b, c = 5, 3.2, "Hello"
 </div>
 
@@ -466,7 +467,7 @@ a, b, c = 5, 3.2, "Hello"
 If we want to assign the same value to multiple variables at once, we can do this as<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 x = y = z = "same"
 </div>
 
@@ -487,7 +488,7 @@ Integers, floating point numbers and complex numbers falls under Python numbers 
 We can use the <i>type()</i> function to know which class a variable or a value belongs to and the <i>isinstance()</i> function to check if an object belongs to a particular class.<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 a = 5<br>
 print(a, "is of type", type(a))<br>
 <br>
@@ -508,7 +509,7 @@ A floating point number is accurate up to 15 decimal places. Integer and floatin
 Complex numbers are written in the form, <i>x + yj</i>, where <i>x </i>is the real part and <i>y</i> is the imaginary part. <br>Here are some examples.<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 >>> a = 1234567890123456789<br>
 >>> a<br>
 1234567890123456789<br>
@@ -530,7 +531,7 @@ List is an ordered sequence of items. It is one of the most used datatype in Pyt
 Declaring a list is pretty straight forward. Items separated by commas are enclosed within brackets [ ].<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 >>> a = [1, 2.2, 'python']
 </div>
 
@@ -538,7 +539,7 @@ Declaring a list is pretty straight forward. Items separated by commas are enclo
 We can use the slicing operator [ ] to extract an item or a range of items from a list. Index starts form 0 in Python.<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 a = [5,10,15,20,25,30,35,40]<br>
 <br>
 # a[2] = 15<br>
@@ -555,7 +556,7 @@ print("a[5:] = ", a[5:])
 Lists are mutable, meaning, value of elements of a list can be altered.<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 >>> a = [1,2,3]<br>
 >>> a[2]=4<br>
 >>> a<br>
@@ -573,7 +574,7 @@ Tuples are used to write-protect data and are usually faster than list as it can
 It is defined within parentheses () where items are separated by commas.<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 >>> t = (5,'program', 1+3j)
 </div>
 
@@ -581,7 +582,7 @@ It is defined within parentheses () where items are separated by commas.<br>
 We can use the slicing operator [] to extract items but we cannot change its value.<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 t = (5,'program', 1+3j)<br>
 <br>
 # t[1] = 'program'<br>
@@ -600,7 +601,7 @@ t[0] = 10<br>
 String is sequence of Unicode characters. We can use single quotes or double quotes to represent strings. Multi-line strings can be denoted using triple quotes, <i>'''</i> or <i>"""</i>.<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 >>> s = "This is a string"
 >>> s = '''a multiline
 </div>
@@ -609,7 +610,7 @@ String is sequence of Unicode characters. We can use single quotes or double quo
 Like list and tuple, slicing operator [ ] can be used with string. Strings are immutable.<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 s = 'Hello world!'<br>
 <br>
 # s[4] = 'o'<br>
@@ -628,7 +629,7 @@ s[5] ='d'<br>
 Set is an unordered collection of unique items. Set is defined by values separated by comma inside braces { }. Items in a set are not ordered.<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 a = {5,2,3,1,4}<br>
 <br>
 # printing set variable<br>
@@ -642,7 +643,7 @@ print(type(a))<br>
 We can perform set operations like union, intersection on two sets. Set have unique values. They eliminate duplicates.<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 >>> a = {1,2,2,3,3,3}<br>
 >>> a<br>
 {1, 2, 3}<br>
@@ -652,7 +653,7 @@ We can perform set operations like union, intersection on two sets. Set have uni
 Since, set are unordered collection, indexing has no meaning. Hence the slicing operator [] does not work.<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 >>> a = {1,2,3}<br>
 >>> a[1]<br>
 Traceback (most recent call last):<br>
@@ -672,7 +673,7 @@ It is generally used when we have a huge amount of data. Dictionaries are optimi
 In Python, dictionaries are defined within braces {} with each item being a pair in the form <i>key:value</i>. Key and value can be of any type.<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 >>> d = {1:'value','key':2}<br>
 >>> type(d)
 <class 'dict'>
@@ -682,7 +683,7 @@ In Python, dictionaries are defined within braces {} with each item being a pair
 We use key to retrieve the respective value. But not the other way around.<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 d = {1:'value','key':2}<br>
 print(type(d))<br>
 <br>
@@ -699,7 +700,7 @@ print("d[2] = ", d[2]);
 We can convert between different data types by using different type conversion functions like int(), float(), str() etc.<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 >>> float(5)<br>
 5.0
 </div>
@@ -708,7 +709,7 @@ We can convert between different data types by using different type conversion f
 Conversion from float to int will truncate the value (make it closer to zero).<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 >>> int(10.6)<br>
 10<br>
 >>> int(-10.6)<br>
@@ -719,7 +720,7 @@ Conversion from float to int will truncate the value (make it closer to zero).<b
 Conversion to and from string must contain compatible values.<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 >>> float('2.5')<br>
 2.5<br>
 >>> str(25)<br>
@@ -735,7 +736,7 @@ ValueError: invalid literal for int() with base 10: '1p'
 We can even convert one sequence to another.<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 >>> set([1,2,3])<br>
 {1, 2, 3}<br>
 >>> tuple({5,6,7})<br>
@@ -748,7 +749,7 @@ We can even convert one sequence to another.<br>
 To convert to dictionary, each element must be a pair<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 >>> dict([[1,2],[3,4]])<br>
 {1: 2, 3: 4}<br>
 >>> dict([(3,26),(4,44)])<br>
@@ -770,7 +771,7 @@ We use the <i>print()</i> function to output data to the standard output device 
 We can also output data to a file, but this will be discussed later. An example use is given below.<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 print('This sentence is output to the screen')<br>
 # Output: This sentence is output to the screen<br>
 <br>
@@ -787,7 +788,7 @@ In the second print() statement, we can notice that a space was added between th
 The actual syntax of the <i>print()</i> function is<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
 </div>
 
@@ -804,7 +805,7 @@ After all values are printed, <i>end</i> is printed. It defaults into a new line
 <i>The file</i> is the object where the values are printed and its default value is <i>sys.stdout</i> (screen). Here are an example to illustrate this.<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 print(1,2,3,4)<br>
 # Output: 1 2 3 4<br>
 <br>
@@ -820,7 +821,7 @@ print(1,2,3,4,sep='#',end='&')<br>
 Sometimes we would like to format our output to make it look attractive. This can be done by using the <i>str.format()</i> method. This method is visible to any string object.<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 >>> x = 5; y = 10<br>
 >>> print('The value of x is {} and y is {}'.format(x,y))<br>
 The value of x is 5 and y is 10
@@ -831,7 +832,7 @@ Here the curly braces {} are used as placeholders. We can specify the order in w
 <br>
 
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 print('I love {0} and {1}'.format('bread','butter'))<br>
 # Output: I love bread and butter<br>
 <br>
@@ -843,7 +844,7 @@ print('I love {1} and {0}'.format('bread','butter'))<br>
 We can even use keyword arguments to format the string.<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 >>> print('Hello {name}, {greeting}'.format(greeting = 'Goodmorning', name = 'John'))<br>
 Hello John, Goodmorning
 </div>
@@ -852,7 +853,7 @@ Hello John, Goodmorning
 We can even format strings like the old <i>sprintf()</i> style used in C programming language. We use the <i>%</i> operator to accomplish this.<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 >>> x = 12.3456789<br>
 >>> print('The value of x is %3.2f' %x)<br>
 The value of x is 12.35<br>
@@ -868,7 +869,7 @@ Up till now, our programs were static. The value of variables were defined or ha
 To allow flexibility we might want to take the input from the user. In Python, we have the <i>input()</i> function to allow this. The syntax for <i>input()</i> is<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 input([prompt])
 </div>
 
@@ -876,7 +877,7 @@ input([prompt])
 where <i>prompt</i> is the string we wish to display on the screen. It is optional.<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 >>> num = input('Enter a number: ')<br>
 Enter a number: 10<br>
 >>> num<br>
@@ -887,7 +888,7 @@ Enter a number: 10<br>
 Here, we can see that the entered value <i>10</i> is a string, not a number. To convert this into a number we can use <i>int()</i> or <i>float()</i> functions.<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 >>> int('10')<br>
 10<br>
 >>> float('10')<br>
@@ -898,7 +899,7 @@ Here, we can see that the entered value <i>10</i> is a string, not a number. To 
 This same operation can be performed using the <i>eval()</i> function. But it takes it further. It can evaluate even expressions, provided the input is a string<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 >>> int('2+3')<br>
 Traceback (most recent call last):<br>
   File "<string>", line 301, in runcode<br>
@@ -922,7 +923,7 @@ Definitions inside a module can be imported to another module or the interactive
 For example, we can import the <i>math</i> module by typing in <i>import math</i>.<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 import math<br>
 print(math.pi)
 </div>
@@ -931,7 +932,7 @@ print(math.pi)
 Now all the definitions inside <i>math</i> module are available in our scope. We can also import some specific attributes and functions only, using the <i>from</i> keyword. For example:<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 >>> from math import pi<br>
 >>> pi<br>
 3.141592653589793
@@ -941,7 +942,7 @@ Now all the definitions inside <i>math</i> module are available in our scope. We
 While importing a module, Python looks at several places defined in <i>sys.path</i>. It is a list of directory locations.<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 >>> import sys<br>
 >>> sys.path<br>
 ['', <br>
@@ -965,7 +966,7 @@ Operators are special symbols in Python that carry out arithmetic or logical com
 For example:<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 >>> 2+3
 5
 </div>
@@ -996,46 +997,54 @@ Arithmetic operators are used to perform mathematical operations like addition, 
 
 <b>Arithmetic operators in Python</b>
 
-<table class="table-striped">
+<table class="table">
+<thead>
+    <th>Operator</th>
+    <th>Meaning</th>
+    <th>Example</th>
+</thead>
     <tbody>
     <tr>
-    <th scope="row">Operator</th>
         <td>+</td>
-        <td>-</td>
-        <td>*</td>
-        <td>/</td>
-        <td>%</td>
-        <td>//</td>
-        <td>**</td>
-    </tr>
-    <tr>
-    <th scope="row">Meaning</th>
         <td>Add two operands or unary plus</td>
-        <td>Subtract right operand from the left or unary minus</td>
-        <td>Multiply two operands</td>
-        <td>Divide left operand by the right one (always results into float)</td>
-        <td>Modulus - remainder of the division of left operand by the right</td>
-        <td>Floor division - division that results into whole number adjusted to the left in the number line</td>
-        <td>Exponent - left operand raised to the power of right</td>
+        <td>x + y<br>+2</td>
     </tr>
     <tr>
-    <th scope="row">Example</th>
-        <td>x + y<br>
-+2</td>
-        <td>x - y<br>
--2</td>
+        <td>-</td>
+        <td>Subtract right operand from the left or unary minus</td>
+        <td>x - y<br>-2</td>
+    </tr>
+    <tr>
+        <td>*</td>
+        <td>Multiply two operands</td>
         <td>x * y</td>
-        <td>x / y</td>
-        <td>x % y (remainder of x/y)</td>
-        <td>x // y</td>
-        <td>x**y (x to the power y)</td>
     </tr>    
+    <tr>
+        <td>/</td>
+        <td>Divide left operand by the right one (always results into float)</td>
+        <td>x / y</td>
+    </tr>
+    <tr>
+        <td>%</td>
+        <td>Modulus - remainder of the division of left operand by the right</td>
+        <td>x % y (remainder of x/y)</td>
+    </tr>
+    <tr>
+        <td>//</td>
+        <td>Floor division - division that results into whole number adjusted to the left in the number line</td>
+        <td>x // y</td>
+    </tr>
+    <tr>
+        <td>**</td>
+        <td>Exponent - left operand raised to the power of right</td>
+        <td>x**y (x to the power y)</td>
+    </tr>
     </tbody>
 </table>
     
 <h2>Example #1: Arithmetic operators in Python</h2>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 x = 15<br>
 y = 4<br>
 <br>
@@ -1062,7 +1071,7 @@ print('x ** y =',x**y)
 When you run the program, the output will be:<br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 x + y = 19<br>
 x - y = 11<br>
 x * y = 60<br>
@@ -1077,35 +1086,44 @@ x ** y = 50625<br>
 Comparison operators are used to compare values. It either returns True or False according to the condition.<br>
 <br>
 
-<b>Comparision operators in Python</b>
+<b>Comparision operators in Python</b><br>
+<br>
 
-<table class="table-striped">
+<table class="table">
+<thead>
+    <th>Operator</th>
+    <th>Meaning</th>
+    <th>Example</th>
+</thead>
     <tbody>
     <tr>
-        <th>Operator</th>
         <td>></td>
-        <td><</td>
-        <td>==</td>
-        <td>!=</td>
-        <td>>=</td>
-        <td><=</td>
-    </tr>
-    <tr>
-        <th>Meaning </th>
         <td>Greater that - True if left operand is greater than the right</td>
-        <td>Less that - True if left operand is less than the right</td>
-        <td>Equal to - True if both operands are equal</td>
-        <td>Not equal to - True if operands are not equal</td>
-        <td>Greater than or equal to - True if left operand is greater than or equal to the right</td>
-        <td>Less than or equal to - True if left operand is less than or equal to the right</td>
+        <td>x > y</td>
     </tr>
     <tr>
-        <th>Example</th>
-        <td>x > y</td>
+        <td><</td>
+        <td>Less that - True if left operand is less than the right</td>
         <td>x < y</td>
+    </tr>
+    <tr>
+        <td>==</td>
+        <td>Equal to - True if both operands are equal</td>
         <td>x == y</td>
-        <td>x != y</td>
+    </tr>
+    <tr>
+        <td>!=</td>
+        <td>Not equal to - True if operands are not equal</td>
         <td>x >= y</td>
+    </tr>
+    <tr>
+        <td>>=</td>
+        <td>Greater than or equal to - True if left operand is greater than or equal to the right</td>
+        <td>x != y</td>
+    </tr>
+    <tr>
+        <td><=</td>
+        <td>Less than or equal to - True if left operand is less than or equal to the right</td>
         <td>x <= y</td>
     </tr>
     </tbody>
@@ -1115,7 +1133,7 @@ Comparison operators are used to compare values. It either returns True or False
 <b>Example #2: Comparison operators in Python</b><br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 x = 10<br>
 y = 12<br>
 <br>
@@ -1144,26 +1162,29 @@ print('x <= y is',x<=y)
 Logical operators are the and, or, not operators.<br>
 <br>
 
-<b>Logical operators in Python</b>
+<b>Logical operators in Python</b><br>
+<br>
 
-<table class="table-striped">
+<table class="table">
+<thead>
+    <th>Operator</th>
+    <th>Meaning</th>
+    <th>Example</th>
+</thead>
     <tbody>
         <tr>
-            <th>Operator</th>
             <td>and</td>
-            <td>or</td>
-            <td>not</td>
-        </tr>
-        <tr>
-            <th>Meaning</th>
             <td>True if both the operands are true</td>
-            <td>True if either of the operands is true</td>
-            <td>True if operand is false (complements the operand)</td>
+            <td>x and y</td>
         </tr>
         <tr>
-            <th>Example</th>
-            <td>x and y</td>
+            <td>or</td>
+            <td>True if either of the operands is true</td>
             <td>x or y</td>
+        </tr>
+        <tr>
+            <td>not</td>
+            <td>True if operand is false (complements the operand)</td>
             <td>not x</td>
         </tr>
     </tbody>
@@ -1175,7 +1196,7 @@ Logical operators are the and, or, not operators.<br>
 <b>Example #3: Logical Operators in Python</b><br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 x = True<br>
 y = False<br>
 <br>
@@ -1206,35 +1227,43 @@ For example, 2 is 10 in binary and 7 is 111.<br>
 <b>Bitwise operators in Python</b>
 <br>
 
-<table>
+<table class="table">
     <tbody>
-    <tr>
+    <thead>
         <th>Operator</th>
-        <td>&</td>
-        <td>|</td>
-        <td>~</td>
-        <td>^</td>
-        <td>>></td>
-        <td><<</td>
-    </tr>    
-    <tr>
         <th>Meaning</th>
+        <th>Example</th>
+    </thead>
+    <tr>
+        <td>&</td>
         <td>Bitwise AND</td>
-        <td>Bitwise OR</td>
-        <td>Bitwise NOT</td>
-        <td>Bitwise XOR</td>
-        <td>Bitwise right shift</td>
-        <td>Bitwise left shift</td>
+        <td>x& y = 0 (0000 0000)</td>
     </tr>    
     <tr>
-        <th>Example</th>
-        <td>x& y = 0 (0000 0000)</td>
+        <td>|</td>
+        <td>Bitwise OR</td>
         <td>x | y = 14 (0000 1110)</td>
-        <td>~x = -11 (1111 0101)</td>
-        <td>x ^ y = 14 (0000 1110)</td>
-        <td>x>> 2 = 2 (0000 0010)</td>
-        <td>x<< 2 = 40 (0010 1000)</td>
     </tr>    
+    <tr>
+        <td>~</td>
+        <td>Bitwise NOT</td>
+        <td>~x = -11 (1111 0101)</td>
+    </tr> 
+    <tr>
+        <td>^</td>
+        <td>Bitwise XOR</td>
+        <td>x ^ y = 14 (0000 1110)</td>
+    </tr>
+    <tr>
+        <td>>></td>
+        <td>Bitwise right shift</td>
+        <td>x>> 2 = 2 (0000 0010)</td>
+    </tr>
+    <tr>
+        <td><<</td>
+        <td>Bitwise left shift</td>
+        <td>x<< 2 = 40 (0010 1000)</td>
+    </tr>   
     </tbody>
 </table>
 
@@ -1250,56 +1279,78 @@ There are various compound operators in Python like a += 5 that adds to the vari
 <br>
 
 <b>Assignment operators in Python</b>
-<table>
+<table class="table">
+<thead>
+    <th>Operator</th>
+    <th>Example</th>
+    <th>Equivatent to</th>
+</thead>
     <tbody>
     <tr>
-    <th>Operator</th>
         <td>=</td>
+        <td>x = 5</td>
+        <td>x = 5</td>
+    </tr>    
+     <tr>
         <td>+=</td>
-        <td>-=</td>
-        <td>*=</td>
-        <td>/=</td>
-        <td>%=</td>
-        <td>//=</td>
-        <td>**=</td>
-        <td>&=</td>
-        <td>|=</td>
-        <td>^=</td>
-        <td>>>=</td>
-        <td><<=</td>
-    </tr>    
-     <tr>
-     <th>Example</th>
-        <td>x = 5</td>
         <td>x += 5</td>
-        <td>x -= 5</td>
-        <td>x *= 5</td>
-        <td>x /= 5</td>
-        <td>x %= 5</td>
-        <td>x //= 5</td>
-        <td>x **= 5</td>
-        <td>x &= 5</td>
-        <td>x |= 5</td>
-        <td>x ^= 5</td>
-        <td>x >>= 5</td>
-        <td>x <<= 5</td>
+        <td>x = x + 5</td>
     </tr>    
      <tr>
-     <th>Equivatent to</th>
-        <td>x = 5</td>
-        <td>x = x + 5</td>
+        <td>-=</td>
+        <td>x -= 5</td>
         <td>x = x - 5</td>
-        <td>x = x * 5</td>
-        <td>x = x / 5</td>
-        <td>x = x % 5</td>
-        <td>x = x // 5</td>
-        <td>x = x ** 5</td>
-        <td>x = x & 5</td>
-        <td>x = x | 5</td>
-        <td>x = x ^ 5</td>
-        <td>x = x >> 5</td>
-        <td>x = x << 5</td>
     </tr>    
+    <tr>
+        <td>*=</td>
+        <td>x *= 5</td>
+        <td>x = x * 5</td>
+    </tr>
+    <tr>
+        <td>/=</td>
+        <td>x /= 5</td>
+        <td>x = x / 5</td>
+    </tr>
+    <tr>
+        <td>%=</td>
+        <td>x %= 5</td>
+        <td>x = x % 5</td>
+    </tr>
+    <tr>
+        <td>//=</td>
+        <td>x //= 5</td>
+        <td>x = x // 5</td>
+    </tr>
+    <tr>
+        <td>**=</td>
+        <td>x **= 5</td>
+        <td>x = x ** 5</td>
+    </tr>
+    <tr>
+        <td>&=</td>
+        <td>x &= 5</td>
+        <td>x = x & 5</td>
+    </tr>
+    <tr>
+        <td>|=</td>
+        <td>x |= 5</td>
+        <td>x = x | 5</td>
+    </tr>
+    <tr>
+        <td>^=</td>
+        <td>x ^= 5</td>
+        <td>x = x ^ 5</td>
+    </tr>
+    <tr>
+        <td>>>=</td>
+        <td>x >>= 5</td>
+        <td>x = x >> 5</td>
+    </tr>
+    <tr>
+        <td><<=</td>
+        <td>x <<= 5</td>
+        <td>x = x << 5</td>
+    </tr>
     </tbody>
 </table>
 
@@ -1322,7 +1373,7 @@ is not  True if the operands are not identical (do not refer to the same object)
 <b>Example #4: Identity operators in Python</b>
 <br><br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 x1 = 5<br>
 y1 = 5<br>
 x2 = 'Hello'<br>
@@ -1362,7 +1413,7 @@ not in  True if value/variable is not found in the sequence 5 not in x
 <b>Example #5: Membership operators in Python</b><br>
 <br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 x = 'Hello world'<br>
 y = {1:'a',2:'b'}<br>
 <br>

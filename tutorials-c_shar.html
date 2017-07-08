@@ -100,6 +100,7 @@ li{
                             <li><a class="dropdown-item" href="prosoft-jc.html">JCreator</a></li>
                             <li><a class="dropdown-item" href="prosoft-st.html">Sublime Text</a></li>
                             <li><a class="dropdown-item" href="prosoft-eclipse.html">Eclipse</a></li>
+                            <li><a class="dropdown-item" href="prosoft-xcode.html">Xcode</a></li>
                             </ul>
                         </div>
                     </li><!-- end of programming softwares -->
@@ -139,7 +140,7 @@ li{
 If you have ever learned a programming language, you know that they all start with the "Hello, world!" example, and who are we to break such a fine tradition? Start Visual C# Express (introduced in the last chapter), and select File -> New project… From the project dialog, select the Console application. This is the most basic application type on a Windows system, but don't worry, we won't stay here for long. Once you click Ok, Visual C# Express creates a new project for you, including a file called Program.cs. This is where all the fun is, and it should look something like this: <br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 using System;<br>
 using System.Collections.Generic;<br>
 using System.Text;<br>
@@ -159,7 +160,7 @@ namespace ConsoleApplication1<br>
 Actually, all these lines doesn't really accomplish anything, or at least it may seem so. Try running the application by pushing F5 on your keyboard. This will make Visual C# Express compile and execute your code, but as you will see, it doesn't do much. You will likely just see a black window launch and close again. That is because our application doesn't do anything yet. In the next chapter we will go through these lines to see what they are all about, but for now, we really would like to see some results, so let's pretend that we know all about C# and add a couple of lines to get some output. Within the last set of { }, add these lines: <br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 Console.WriteLine("Hello, world!");<br>
 Console.ReadLine();
 </div>
@@ -168,7 +169,7 @@ Console.ReadLine();
 The code of your first application should now look like this:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 using System;<br>
 using System.Collections.Generic;<br>
 using System.Text;<br>
@@ -204,7 +205,7 @@ In the previous chapter, we tried writing a piece of text to the console, in our
 Now let's start from the beginning:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 using System;<br>
 using System.Collections.Generic;<br>
 using System.Text;
@@ -217,7 +218,7 @@ using is a keyword, highlighted with blue by the editor. The using keyword impor
 As you can see, we even get our own namespace:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 namespace ConsoleApplication1
 </div>
 
@@ -228,7 +229,7 @@ The namespace ConsoleApplication1 is now the main namespace for this application
 Next, we define our class. Since C# is truly an Object Oriented language, every line of code that actually does something, is wrapped inside a class. In the case, the class is simply called Program:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 class Program
 </div>
 
@@ -236,7 +237,7 @@ class Program
 We can have more classes, even in the same file. For now, we only need one class. A class can contain several variables, properties and methods, concepts we will go deeper into later on. For now, all you need to know is that our current class only contains one method and nothing else. It's declared like this:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 static void Main(string[] args)
 </div>
 
@@ -279,7 +280,7 @@ Data types are used everywhere in a programming language like C#. Because it's a
 A variable can be compared to a storage room, and is essential for the programmer. In C#, a variable is declared like this: <br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 <data type> <name>; 
 </div>
 
@@ -287,7 +288,7 @@ A variable can be compared to a storage room, and is essential for the programme
 An example could look like this: <br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 string name; 
 </div>
 
@@ -295,7 +296,7 @@ string name;
 That's the most basic version. Usually, you wish to assign a visibility to the variable, and perhaps assign a value to it at the same time. It can be done like this: <br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 <visibility> <data type> <name> = <value>; 
 </div>
 
@@ -303,7 +304,7 @@ That's the most basic version. Usually, you wish to assign a visibility to the v
 And with an example:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 private string name = "John Doe";
 </div>
 
@@ -313,7 +314,7 @@ using System;<br>
 <br>
 
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 namespace ConsoleApplication1<br>
 {<br>
     class Program<br>
@@ -346,7 +347,7 @@ Next, we urge the user to enter a new first name, and then we use the ReadLine()
 Another interesting example is doing math. Here is one, based on a lot of the same code we have just used:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 int number1, number2;<br>
 <br>
 Console.WriteLine("Please enter a number:");<br>
@@ -371,7 +372,7 @@ One of the single most important statements in every programming language is the
 In the previous chapter we looked at variables, so we will expand on one of the examples to see how conditional logic can be used.<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 using System;<br>
 <br>
 namespace ConsoleApplication1<br>
@@ -406,7 +407,7 @@ We use 2 if statements to check if the entered number is between 0 and 10, and a
 As you may have noticed, we don't use the { and } characters to define the conditional blocks of code. The rule is that if a block only contains a single line of code, the block characters are not required. Now, this seems like a lot of lines to simply check a number, doesn't it? It can be done with fewer lines of code, like this:<br>
 
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 if((number > 10) || (number < 0))<br>
     Console.WriteLine("Hey! The number should be 0 or more and 10 or less!");<br>
 else<br>
@@ -417,7 +418,7 @@ else<br>
 We put each condition in a set of parentheses, and then we use the || operator, which simply means "or", to check if the number is either more than 10 OR less than 0. Another operator you will be using a lot is the AND operator, which is written like this: &&. Could we have used the AND operator instead? Of course, we simply turn it around a bit, like this:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 if((number <= 10) && (number >= 0))<br>
     Console.WriteLine("Good job!");<br>
 else<br>
@@ -432,7 +433,7 @@ This introduces a couple of new operators, the "less than or equal too" and the 
 The switch statement is like a set of if statements. It's a list of possibilities, with an action for each possibility, and an optional default action, in case nothing else evaluates to true. A simple switch statement looks like this:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 int number = 1;<br>
 switch(number)<br>
 {<br>
@@ -452,7 +453,7 @@ The identifier to check is put after the switch keyword, and then there's the li
 In this case, we use an integer, but it could be a string too, or any other simple type. Also, you can specify the same action for multiple cases. We will do that in the next example too, where we take a piece of input from the user and use it in our switch statement:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 Console.WriteLine("Do you enjoy C# ? (yes/no/maybe)");<br>
 string input = Console.ReadLine();<br>
 switch(input.ToLower())<br>
@@ -474,7 +475,7 @@ In this example, we ask the user a question, and suggest that they enter either 
 Still, the user might make a typo or try writing something completely different, and in that case, no output will be generated by this specific switch statement. Enter the default keyword!<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 Console.WriteLine("Do you enjoy C# ? (yes/no/maybe)");<br>
 string input = Console.ReadLine();<br>
 switch(input.ToLower())<br>
@@ -504,7 +505,7 @@ Another essential technique when writing software is looping - the ability to re
 The while loop is probably the most simple one, so we will start with that. The while loop simply executes a block of code as long as the condition you give it is true. A small example, and then some more explanation:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 using System;<br>
 <br>
 namespace ConsoleApplication1<br>
@@ -535,7 +536,7 @@ Try running the code. You will get a nice listing of numbers, from 0 to 4. The n
 The opposite is true for the do loop, which works like the while loop in other aspects through. The do loop evaluates the condition after the loop has executed, which makes sure that the code block is always executed at least once.<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 do<br>
 {<br>
     Console.WriteLine(number);<br>
@@ -551,7 +552,7 @@ The output is the same though - once the number is more than 5, the loop is exit
 The for loop is a bit different. It's preferred when you know how many iterations you want, either because you know the exact amount of iterations, or because you have a variable containing the amount. Here is an example on the for loop.<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 using System;<br>
 <br>
 namespace ConsoleApplication1<br>
@@ -585,7 +586,7 @@ Try running the program, and afterwards, try changing the number variable to som
 The last loop we will look at, is the foreach loop. It operates on collections of items, for instance arrays or other built-in list types. In our example we will use one of the simple lists, called an ArrayList. It works much like an array, but don't worry, we will look into it in a later chapter.<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 using System;<br>
 using System.Collections;<br>
 <br>
@@ -620,7 +621,7 @@ When working with collections, you are very likely to be using the foreach loop 
 A function allows you to encapsulate a piece of code and call it from other parts of your code. You may very soon run into a situation where you need to repeat a piece of code, from multiple places, and this is where functions come in. In C#, they are basically declared like this:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 <visibility> <return type> <name>(<parameters>)<br>
 {<br>
     <function code><br>
@@ -631,7 +632,7 @@ A function allows you to encapsulate a piece of code and call it from other part
 To call a function, you simply write its name, an open parenthesis, then parameters, if any, and then a closing parenthesis, like this:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 DoStuff();
 </div>
 
@@ -639,7 +640,7 @@ DoStuff();
 Here is an example of our DoStuff() function:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 public void DoStuff()<br>
 {<br>
     Console.WriteLine("I'm doing something...");<br>
@@ -653,7 +654,7 @@ The first part, public, is the visibility, and is optional. If you don't define 
 Next is the type to return. It could be any valid type in C#, or as we have done it here, void. A void means that this function returns absolutely nothing. Also, this function takes no parameters, as you can see from the empty set of parentheses, so it's actually just a tad bit boring. Let's change that:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 public int AddNumbers(int number1, int number2)<br>
 {<br>
     int result = number1 + number2;<br>
@@ -666,7 +667,7 @@ We've changed almost everything. The function now returns an integer, it takes t
 function is called like this:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 int result = AddNumbers(10, 5);<br>
 Console.WriteLine(result);
 </div>
@@ -675,7 +676,7 @@ Console.WriteLine(result);
 As mentioned, this function actually returns something, and it has to, because we told C# that it's supposed to do so. When declaring anything else than void as a return type, we are forcing our self to return something. You can try removing the return line from the example above, and see the compiler complain: <br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 'AddNumbers(int, int)': not all code paths return a value 
 </div>
 
@@ -683,7 +684,7 @@ As mentioned, this function actually returns something, and it has to, because w
 The compiler is reminding us that we have a function which doesn't return something, although we promised. And the compiler is pretty clever! Instead of removing the line, try something like this:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 public int AddNumbers(int number1, int number2)<br>
 {<br>
     int result = number1 + number2;<br>
@@ -698,7 +699,7 @@ public int AddNumbers(int number1, int number2)<br>
 You will see the exact same error - but why? Because there is no guarantee that our if statement will evaluate to true and the return line being executed. You can solve this by having a second, default like return statement in the end:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 public int AddNumbers(int number1, int number2)
 {<br>
     int result = number1 + number2;<br>
@@ -728,7 +729,7 @@ With the ref and the out keyword, we can change this behavior, so we pass along 
 Consider the following example:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 static void Main(string[] args)<br>
 {<br>
     int number = 20;<br>
@@ -747,7 +748,7 @@ static void AddFive(int number)<br>
 We create an integer, assign the number 20 to it, and then we use the AddFive() method, which should add 5 to the number. But does it? No. The value we assign to number inside the function, is never carried out of the function, because we have passed a copy of the number value instead of a reference to it. This is simply how C# works, and in a lot of cases, it's the preferred result. However, in this case, we actually wish to modify the number inside our function. Enter the ref keyword:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 static void Main(string[] args)<br>
 {<br>
     int number = 20;<br>
@@ -780,7 +781,7 @@ Using the out modifier is just like using the ref modifier, as shown above. Simp
 So far, all of our functions have accepted a fixed amount of parameters. However, in some cases, you might need a function which takes an arbitrary number of parameters. This could of course be done by accepting an array or a list as a parameter, like this:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 static void GreetPersons(string[] names) { }
 </div>
 
@@ -788,7 +789,7 @@ static void GreetPersons(string[] names) { }
 However, calling it would be a bit clumsy. In the shortest form, it would look like this:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 GreetPersons(new string[] { "John", "Jane", "Tarzan" });<br>
 </div>
 
@@ -796,7 +797,7 @@ GreetPersons(new string[] { "John", "Jane", "Tarzan" });<br>
 It is acceptable, but it can be done even smarter, with the params keyword:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 static void GreetPersons(params string[] names) { }
 </div>
 
@@ -804,7 +805,7 @@ static void GreetPersons(params string[] names) { }
 Calling it would then look like this:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 GreetPersons("John", "Jane", "Tarzan");
 </div>
 
@@ -815,7 +816,7 @@ Another advantage of using the params approach, is that you are allowed to pass 
 Functions with params can even take other parameters as well, as long as the parameter with the params keyword are the last one. Besides that, only one parameter using the params keyword can be used per function. Here is a last and more complete example:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 static void Main(string[] args)<br>
 {<br>
     GreetPersons(0);<br>
@@ -838,7 +839,7 @@ Arrays works as collections of items, for instance strings. You can use them to 
 Arrays are declared much like variables, with a set of [] brackets after the datatype, like this:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 string[] names;
 </div>
 
@@ -846,7 +847,7 @@ string[] names;
 You need to instantiate the array to use it, which is done like this:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 string[] names = new string[2];
 </div>
 
@@ -854,7 +855,7 @@ string[] names = new string[2];
 The number (2) is the size of the array, that is, the amount of items we can put in it. Putting items into the array is pretty simple as well:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 names[0] = "John Doe";
 </div>
 
@@ -865,7 +866,7 @@ But why 0? As it is with so many things in the world of programming, the countin
 Earlier, we learned about loops, and obviously these go great with arrays. The most common way of getting data out of an array, is to loop through it and perform some sort of operation with each value. Let's use the array from before, to make a real example:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 using System;<br>
 using System.Collections;<br>
 <br>
@@ -893,7 +894,7 @@ namespace ConsoleApplication1<br>
 We use the foreach loop, because it's the easiest, but of course we could have used one of the other types of loop instead. The for loop is good with arrays as well, for instance if you need to count each item, like this:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 for(int i = 0; i < names.Length; i++)<br>
     Console.WriteLine("Item number " + i + ": " + names[i]);
 </div>
@@ -905,7 +906,7 @@ It's actually very simple. We use the Length property of the array to decide how
 I told you earlier that we could use an array to sort a range of values, and it's actually very easy. The Array class contains a bunch of smart methods for working with arrays. This example will use numbers instead of strings, just to try something else, but it could just as easily have been strings. I wish to show you another way of populating an array, which is much easier if you have a small, predefined set of items that you wish to put into your array. Take a look:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 int[] numbers = new int[5] { 4, 3, 8, 0, 5 };
 </div>
 
@@ -916,7 +917,7 @@ With one line, we have created an array with a size of 5, and filled it with 5 i
 Actually, it can be done even shorter, like this:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 int[] numbers = { 4, 3, 8, 0, 5 };
 </div>
 
@@ -927,7 +928,7 @@ This is short, and you don't have to specify a size. The first approach may be e
 Let's try sorting the array - here's a complete example:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 using System;<br>
 using System.Collections;<br>
 <br>

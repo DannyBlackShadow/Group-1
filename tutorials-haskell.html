@@ -100,6 +100,7 @@ li{
                             <li><a class="dropdown-item" href="prosoft-jc.html">JCreator</a></li>
                             <li><a class="dropdown-item" href="prosoft-st.html">Sublime Text</a></li>
                             <li><a class="dropdown-item" href="prosoft-eclipse.html">Eclipse</a></li>
+                            <li><a class="dropdown-item" href="prosoft-xcode.html">Xcode</a></li>
                             </ul>
                         </div>
                     </li><!-- end of programming softwares -->
@@ -146,7 +147,7 @@ Values are terms, such as 5 (an integer number), "Hello World!" (a character str
 We can combine multiple values and functions, by using the result of a function application as input value for another function, as in<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 length ("Hello " ++ "World!")
 </div>
 
@@ -158,7 +159,7 @@ The application of ++ to "Hello " and "World!" results in the string "Hello Worl
 Values can be grouped into sets with similar properties. For example, values which represent integers, strings, booleans, or floating point numbers. We call such sets of values types. Some examples of types which are present in most programming languages are the following:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 Int = {…, -3, -2, -1, 0, 1, 2, 3, …}
 </div>
 
@@ -166,7 +167,7 @@ Int = {…, -3, -2, -1, 0, 1, 2, 3, …}
 A subset of the mathematical integer type. The smallest and largest Int value depends on the programming language and may also depend on hardware parameters.<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 Float = {…, -1232.42342, …, 1.0, 3.141, …}
 </div>
 
@@ -174,7 +175,7 @@ Float = {…, -1232.42342, …, 1.0, 3.141, …}
 Real numbers cannot be represented accurately on a computer with a fixed number of bits. Float approximates real numbers.<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 Double = {… , -1232.42342, …, 1.0, 3.141, …}
 </div>
 
@@ -182,7 +183,7 @@ Double = {… , -1232.42342, …, 1.0, 3.141, …}
 Same as Float, but uses twice as many bits to store the information and provides double the precision.<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 Char = {…, 'a', 'A', 'b', 'B', …'1', …, '@', '#', …}
 </div>
 
@@ -190,7 +191,7 @@ Char = {…, 'a', 'A', 'b', 'B', …'1', …, '@', '#', …}
 Characters representing letters, digits, newlines, tabs and other symbols. (In Haskell, they include the entire Unicode range.)<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 String = {"", "a", "b", …, "Hi" ,"3423#", …}
 </div>
 
@@ -198,7 +199,7 @@ String = {"", "a", "b", …, "Hi" ,"3423#", …}
 Strings are (possibly empty) sequences of characters.<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 Bool = {False, True}
 </div>
 
@@ -218,7 +219,7 @@ We have seen that, by applying functions to values, we can compute new values; b
 A function definition comprises a head and a body separated by an equals sign. The head consists of the name of the function as well as names for the arguments to the function. In our example, there is only one argument denoted by the x. When inc is applied to an argument value, the result of the application is computed by replacing all occurrences of the variable x in the function body by the argument value:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 inc 2  ⇒  2 + 1  ⇒  3
 </div>
 
@@ -229,7 +230,7 @@ The arrow “ ⇒ ” represents a step in progressing from an expression to
 We can apply the function inc multiple times to a value by nesting the function application:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 inc (inc 5)  ⇒  inc (5 + 1)  ⇒  inc 6  ⇒  6 + 1  ⇒  7
 </div>
 
@@ -250,7 +251,7 @@ Moreover, when defining new functions, we have to be careful not to use a functi
 If we use an identifier the compiler does not know, as for example in the following incorrect definition of inc<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 inc x = y + 1
 </div>
 
@@ -258,7 +259,7 @@ inc x = y + 1
 we will get an error message from the compiler of the form<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 Not in scope: `y'
 </div>
 
@@ -273,7 +274,7 @@ Functions map input values to output values, for example, inc maps integers to i
 Thus, we denote the type of inc as Int -> Int. Overall, a complete function definition appears as follows:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 inc :: Int -> Int     -- type signature<br>
 inc x = x + 1         -- function equation
 </div>
@@ -285,7 +286,7 @@ Function signatures are optional, but they provide documentation for other progr
 In general, two functions, such as inc and double,<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 double :: Int -> Int<br>
 double x = 2 * x
 </div>
@@ -297,7 +298,7 @@ may have the same type, but perform different operations. Nevertheless, like val
 As an example of a function with a type different from inc and double consider<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 exclaim :: String -> String<br>
 exclaim sentence  = sentence ++ "!"
 </div>
@@ -310,14 +311,14 @@ The functions inc and double expect integers as arguments, whereas exclaim expec
 We can compute the average value of the two floating point values 3.0 and 4.0 as follows:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 (3.0 + 4.0) / 2.0</div>
 
 <br>
 If we generalise this to computing the average of two numbers a and b, we get<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 (a + b) / 2.0
 </div>
 
@@ -325,7 +326,7 @@ If we generalise this to computing the average of two numbers a and b, we get<br
 which we can turn into a function with two arguments as follows:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 average :: Float -> Float -> Float<br>
 average a b  = (a + b) / 2.0
 </div>
@@ -334,7 +335,7 @@ average a b  = (a + b) / 2.0
 So, we have<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 average 3.0 4.0  ⇒  (3.0 + 4.0)/2.0  ⇒  3.5
 </div>
 
@@ -354,7 +355,7 @@ Only when the second argument is provided, and all slots are filled, can the fun
 This means that, conceptually, we can view average as a function which, when applied to a single Float, will return a new function from Float to Float, or as a function which takes two Float values to produce a Float. In fact,  Float -> Float -> Float is just short hand for Float -> (Float -> Float), as -> is right associative. Application is left associative, so<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 average 3.0 4.0
 </div>
 
@@ -362,7 +363,7 @@ average 3.0 4.0
 is just short hand for<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 (average 3.0) 4.0
 </div>
 
@@ -384,7 +385,7 @@ In Haskell for Mac, we edit the program in the module editor. Once a function is
 Functions like + and * are binary functions, that is, functions which expect exactly two arguments, just like our average function. When we want to apply average, we first write the function name and then the arguments<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 average 6.9 7.25
 </div>
 
@@ -392,7 +393,7 @@ average 6.9 7.25
 while with addition and multiplication, we place the function in-between the arguments:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 1   + 5<br>
 3.4 * 7.2
 </div>
@@ -401,7 +402,7 @@ while with addition and multiplication, we place the function in-between the arg
 We call the former notation prefix, as the function appears before the arguments, and the latter infix, as it is in-between its argument. We can easily convert an infix function into a prefix one by simply placing it in parenthesis:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 (+) 1   5<br>
 (*) 3.4 7.2
 </div>
@@ -410,7 +411,7 @@ We call the former notation prefix, as the function appears before the arguments
 and conversely, we can use a regular binary function as infix operator by placing its name between backquotes:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 6.9  `average` 7.25
 </div>
 
@@ -418,7 +419,7 @@ and conversely, we can use a regular binary function as infix operator by placin
 Binary functions in backquotes are, by default, left associative, this means that multiple applications, as in<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 6.9  `average` 7.25 `average` 3.4
 </div>
 
@@ -426,7 +427,7 @@ Binary functions in backquotes are, by default, left associative, this means tha
 are implicitely grouped to the left; so, the above expression is the same as<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 (6.9  `average` 7.25) `average` 3.4
 </div>
 
@@ -438,7 +439,7 @@ Which notation you use is a matter of style. In general, people can parse arithm
 All serious programming languages provide some functions whose argument types are not restricted to a single type, but instead a whole family of types is admitted. For example, both 1 + 2 (where the arguments are of type Int) as well as  1.5 + 1.2 (where the arguments are of type Float) make sense. Consequently, the function + simultaneously has the type<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 (+) :: Int -> Int -> Int
 </div>
 
@@ -446,7 +447,7 @@ All serious programming languages provide some functions whose argument types ar
 as well as the type<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 (+) :: Float -> Float -> Float
 </div>
 
@@ -460,7 +461,7 @@ Unfortunately, all of this means that, given our current knowledge, we cannot de
 Using the type class Num, we can specify the type of + to be a -> a -> a, where the type a is a member of set Num, or, using mathematical notation a ∈ Num. Haskell abbreviates a ∈ Num to Num a and places it in front of the function type separated by a double arrow =>. Hence, the closed form of the type signature for + is<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 (+) :: Num a => a -> a -> a
 </div>
 
@@ -471,7 +472,7 @@ Other binary arithmetic operations, such as - and *, have the same type. Note ho
 In addition to Num, another important type class is Eq. It contains all those types for which the function == is defined, which checks whether its two arguments are equal. All types that we have encountered so far, except function types, are part of Eq. So, all of the following make sense:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 2 == 2  ⇒  True<br>
 <br>
 5.0 == 6.0  ⇒  False<br>
@@ -483,7 +484,7 @@ In addition to Num, another important type class is Eq. It contains all those ty
 The type of == is<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 (==) :: Eq a => a -> a -> Bool
 </div>
 
@@ -494,7 +495,7 @@ where Bool is the type of Boolean values False and True.<br>
 Another important type class is Show. It contains all types for which the system knows how to convert them to a string representation, and the most important function of this class of values is the show function:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 show :: Show a => a -> String
 </div>
 
@@ -502,7 +503,7 @@ show :: Show a => a -> String
 All the basic types we have looked at are in this type class. For example:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 show 123  ⇒  “123”<br>
 <br>
 show 1.75  ⇒  "1.75”<br>
@@ -519,7 +520,7 @@ It is important to note that the Int value 123 and the string "123" are two fund
 Functions are not in the type class Show, so if we try and apply show to the function inc, for example, the compiler will complain:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
     No instance for (Show (Int -> Int)) arising from a use of `show'<br>
     Possible fix: add an instance declaration for (Show (Int -> Int))<br>
     In the expression: show inc<br>
@@ -539,7 +540,7 @@ Frequently used type classes and overloaded functions. We will cover type classe
 <ul>
 <li style="color: black"><h4>Typeclass Show</h4></li>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 functions: show :: Show a => a -> String: convert the given value into a string.<br>
 <br>
 member types: almost all predefined types, excluding function types.
@@ -547,7 +548,7 @@ member types: almost all predefined types, excluding function types.
 
 <li style="color: black"><h4>Typeclass Eq</h4></li>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 functions: (==), (/=) :: Eq a => a -> a -> Bool: equality and inequality.<br>
 <br>
 member types: almost all predefined types, excluding function types.
@@ -555,7 +556,7 @@ member types: almost all predefined types, excluding function types.
 
 <li style="color: black"><h4>Typeclass Ord</h4></li>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 functions: (<), (>), (<=), (>=) :: Ord a => a -> a-> Bool: less than, greater than, less or equal, greater or equal<br>
 <br>
 member types: almost all predefined types, excluding function types.<br>
@@ -565,7 +566,7 @@ all types in Ord are already in Eq, so if you are using both == and < on a value
 
 <li style="color: black"><h4>Typeclass Num</h4></li>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 functions: (+), (-), (*) :: Num a => a -> a -> a: arithmetic operations.<br>
 <br>
 member types: Float, Double, Int, Integer
@@ -573,7 +574,7 @@ member types: Float, Double, Int, Integer
 
 <li style="color: black"><h4>Typeclass Integral</h4></li>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 functions: div, mod :: Integral a => a -> a -> a: division.<br>
 <br>
 member types: Int (fixed precision), Integer (arbitrary precision)
@@ -581,7 +582,7 @@ member types: Int (fixed precision), Integer (arbitrary precision)
 
 <li style="color: black"><h4>Typeclass Fractional</h4></li>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 functions: (/) :: Fractional a => a -> a -> a: division.<br>
 <br>
 member types: Float, Double
@@ -589,7 +590,7 @@ member types: Float, Double
 
 <li style="color: black"><h4>Typeclass Floating</h4></li>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 functions: sin, cos, tan, exp, sqrt,… :: Floating a => a -> a: trigonometric and other functions.<br>
 <br>
 member types: Float, Double
@@ -601,7 +602,7 @@ We will introduce more type classes and operations as we use them. If you want t
 <br>
 
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 (5:(6:(2:[]))) ++ (4:(2:[]))  ⇒  5:((6:(2:[])) ++ (4:(2:[])))
 </div>
 
@@ -610,7 +611,7 @@ We will introduce more type classes and operations as we use them. If you want t
 All the types that we used so far were either already provided by the standard Prelude, such as Float, Char, Double, or  Int, or they were lists or tuples of these types. We also used type synonyms to define more convenient and descriptive names, as in<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 type Point = (Float, Float)<br>
 type Line  = (Point, Point)
 </div>
@@ -619,7 +620,7 @@ type Line  = (Point, Point)
 While type synonyms are convenient, they only associate new names with existing types. Sometimes we need entirely new types to be able to model data properly. For example, to create more varied graphics, we might want to extent the Line type with a line style; then, instead of always drawing solid lines, we can offer dotted and dashed lines as alternative styles. How can we represent this attribute? We might be tempted to use strings and define<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 type LineStyle = String<br>
 type FancyLine = (Point, Point, LineStyle)
 </div>
@@ -628,7 +629,7 @@ type FancyLine = (Point, Point, LineStyle)
 and use it as in<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 myLine :: FancyLine<br>
 myLine = ((0, 0), (1, 1), "dashed")
 </div>
@@ -637,7 +638,7 @@ myLine = ((0, 0), (1, 1), "dashed")
 Unfortunately, this has a number of serious drawbacks. For one, it's easy to introduce mistakes that will lead to unpredictable behaviour — we might accidentally write<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 myLine :: FancyLine<br>
 myLine = ((0, 0), (1, 1), "bashed")
 </div>
@@ -646,7 +647,7 @@ myLine = ((0, 0), (1, 1), "bashed")
 which (as far as the compiler is concerned) conforms to the type definition. After all, "bashed" is a String, even if it is not a valid line style. Consequently, each function using the line styles has to check —at runtime— if the string is a valid style. Here is an example of such a function (where the function elem checks if an item is an element of a given list):<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 changeLineStyle :: FancyLine -> LineStyle -> FancyLine<br>
 changeLineStyle (x, y, _) newStyle<br>
   | newStyle `elem` ["solid", "dashed", "dotted"] = (x, y, newStyle)<br>
@@ -661,7 +662,7 @@ This is unsatisfactory! It is a hassle to implement all the error checking — a
 A much better approach is to introduce a new data type that comprises exactly the three admissible line style value, so that the compiler can reject any program that attempts to use an illegal value. In Haskell, the keyword data introduces the definition of a data type. It is followed by the name of the new type and its values (separated by | characters), as in<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 data LineStyle<br>
   = Solid<br>
   | Dashed<br>
@@ -672,7 +673,7 @@ data LineStyle<br>
 The identifiers representing the elements of the new type (here, Solid, Dashed, and Dotted) are called the data constructors of type LineStyle. Just as type names, they must start with an uppercase letter. Now, we can define<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 myLine :: FancyLine<br>
 myLine = ((0, 0), (1, 1), Dashed)<br>
 and, if we misspell,<br>
@@ -685,7 +686,7 @@ myLine = ((0, 0), (1, 1), Bashed)   -- Error: unknown data constructor
 the compiler will be able to assist us by pointing out that the data constructor Bashed is unknown. If we accidentally start the data constructor with a lower case letter, as in<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 myLine :: Line<br>
 myLine = ((0,0), (1, 1), dashed)    -- Error: identifier not in scope
 </div>
@@ -694,7 +695,7 @@ myLine = ((0,0), (1, 1), dashed)    -- Error: identifier not in scope
 the compiler will treat it as a variable and report that dashed is not in scope. Moreover, the check for a runtime error in our previous definition of changeLineStyle is now obsolete and we can simply write<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 changeLineStyle :: FancyLine -> LineStyle -> FancyLine<br>
 changeLineStyle (x, y, _) newStyle = (x, y, newStyle)
 </div>
@@ -707,7 +708,7 @@ All around, a better solution!<br>
 Types, such as LineStyle, which consist of fixed set of simple data constructors, are called enumeration types. Another example of an enumeration type are the days of the week:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 data Day<br>
   = Sunday<br>
   | Monday<br>
@@ -723,7 +724,7 @@ data Day<br>
 In addition to defining the new data type Day, the deriving clause in this example instructs the Haskell compiler to include the new type Day into the standard type class Enum — the code for the methods of that type class are automatically synthesised by the Haskell compiler for us. Hence, we can now make use of Haskell's range syntax for values of Day — for example,<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 [Monday .. Friday]   ⇒   [Monday, Tuesday, Wednesday, Thursday, Friday]
 </div>
 
@@ -731,7 +732,7 @@ In addition to defining the new data type Day, the deriving clause in this examp
 Another well-known enumeration type is Bool, which is not a somewhat magical builtin type, but —in the Prelude— simply defined as<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 data Bool = False | True
 </div>
 
@@ -739,7 +740,7 @@ data Bool = False | True
 To summarise, definitions of enumeration types have the general form<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 data <TypeName> = <DataConstructorName1> | ⋯ | <DataConstructorNameN><br>
                 deriving <Classes>
 </div>
@@ -753,7 +754,7 @@ where the deriving clause is optional and the name of the new type as well as al
 Values of enumeration types are often scrutinised by way of pattern matching. For example, let us write a function that checks whether a given Day is a week day. If it is a week day, we want to return True; otherwise, False.<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 isWeekday :: Day -> Bool<br>
 isWeekday Sunday   = False<br>
 isWeekday Saturday = False<br>
@@ -764,7 +765,7 @@ isWeekday _        = True
 With this definition, we have<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 isWeekday Monday   ⇒   True
 </div>
 
@@ -772,7 +773,7 @@ isWeekday Monday   ⇒   True
 Pattern matching by way of multiple equations in a function definition (such as in the definition of isWeekday) is merely a convenient shorthand for the more verbose, but also more flexible case expressions, which can occur anywhere in an expression (not just in the argument position of a function definition). Hence, we can rewrite isWeekend as follows:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 isWeekday :: Day -> Bool<br>
 isWeekday day = case day of<br>
                   Sunday   -> False<br>
@@ -784,7 +785,7 @@ isWeekday day = case day of<br>
 Case expressions have the following general form<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 case <Expr> of<br>
   <Pattern1> -> <BodyExpr1><br>
   <Pattern2> -> <BodyExpr2><br>
@@ -798,7 +799,7 @@ where <Expr> can be an arbitrary expression. Evaluation attempts to match the va
 Case expressions are another example of Haskell notation where the indentation matters: all the patterns need to be indented to the same level (c.f., Layout). However, we can always opt to group the patterns explicitly using curly braces, separated by semicolon. It is usually considered good style to nevertheless align the patterns, such as in<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 isWeekday :: Day -> Bool<br>
 isWeekday day = case day of<br>
                 { Sunday   -> False<br>
@@ -811,7 +812,7 @@ isWeekday day = case day of<br>
 With explicit braces and semicolon, layout is no longer required — i.e., the following code is also correct, albeit not particularly readable:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 isWeekday :: Day -> Bool<br>
 isWeekday day = case day of {Sunday -> False ; Saturday -> False; _ -> True}
 </div>
@@ -822,7 +823,7 @@ isWeekday day = case day of {Sunday -> False ; Saturday -> False; _ -> True}
 Even simple functions, such as isWeekday, can usually be implemented in a variety of ways. As an alternative to the explicit pattern matching in isWeekday, we could construct a list containing the two days of the weekend, and then, test —with the Predude function elem— whether the argument to isWeekday is contained in that list. This leads to a compact one-liner:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 isWeekday :: Day -> Bool<br>
 isWeekday day = not $ day `elem` [Saturday, Sunday]
 </div>
@@ -831,7 +832,7 @@ isWeekday day = not $ day `elem` [Saturday, Sunday]
 Unfortunately, it gives us a compiler error of the form<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 No instance for (Eq Day) arising from a use of ‘elem’<br>
 In the second argument of ‘($)’, namely<br>
   ‘day `elem` [Saturday, Sunday]’<br>
@@ -844,7 +845,7 @@ In an equation for ‘isWeekday’:<br>
 What went wrong? The type of elem is<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 elem :: Eq a => a -> [a] -> Bool
 </div>
 
@@ -858,7 +859,7 @@ How can we fix this? In general, if we want a type to be a member of a type clas
 However, for some type classes, the compiler can derive (that is, generate) a standard definition automatically. We have encountered this before in the form of the deriving clause for the Enum type class. The derivation process is quite straight forward when generating Eq instances for enumeration types. Presented with a new enumeration type of the form<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 data <TypeName> = <DataConstructorName1> | ⋯ | <DataConstructorNameN>
 </div>
 
@@ -866,7 +867,7 @@ data <TypeName> = <DataConstructorName1> | ⋯ | <DataConstructorNameN>
 the compiler simply generates<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 <DataConstructorName1> == <DataConstructorName1> = True<br>
 ⋯<br>
 <DataConstructorNameN> == <DataConstructorNameN> = True<br>
@@ -877,7 +878,7 @@ _                      == _                      = False
 Hence, if we define Day as<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 data Day<br>
   = Sunday<br>
   | Monday<br>
@@ -903,7 +904,7 @@ Whether you want to derive Eq, Ord, and Enum depends very much on how you use th
 We defined a simple interface for line graphics including the following type synonym definitions:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 -- LineGraphics Interface<br>
 type Point   = (Float, Float)<br>
 type Vector  = (Float, Float)<br>
@@ -918,7 +919,7 @@ Type synonyms are convenient. They shorten type signatures (e.g., we can write C
 In other words, type synonyms give new names to existing types, but during type checking, the Haskell compiler does not distinguish between the new type name and the existing type that the new name refers to. To illustrate this, let us consider a function that moves a point by n-times a given vector:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 movePointN :: Float -> Vector -> Point -> Point<br>
 movePointN n (vx, vy) (x, y) = (n * vx + x, n * vy + y)
 </div>
@@ -930,7 +931,7 @@ Now, if we accidentally pass the arguments in the incorrect order, as in movePoi
 To avoid this problem —and thus, to increase type safety— a type synonym is not sufficient, we need to introduce a new data type instead:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 data Point = Point Float Float<br>
            deriving (Show, Eq)
 </div>
@@ -939,7 +940,7 @@ data Point = Point Float Float<br>
 Just as our previous type synonym to represent points, this data type definition introduces the new type name Point. In addition, it also introduces a new data constructor, which is also named Point. This new data constructor gets two parameters (or arguments), each of type Float; hence, we can construct a value of type Point as follows:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 zeroPoint :: Point<br>
 zeroPoint = Point 0 0   -- point at (0, 0)
 </div>
@@ -948,7 +949,7 @@ zeroPoint = Point 0 0   -- point at (0, 0)
 The type signature of the data constructor is<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 Point :: Float -> Float -> Point
 </div>
 
@@ -959,7 +960,7 @@ Here, the Point on the left is the data constructor (a value) and the Point on t
 The general form of a data type definition with just one data constructor is<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 data <Type> = <Constructor> <Type1> ⋯ <TypeN><br>
             deriving <Classes>
 </div>
@@ -968,7 +969,7 @@ data <Type> = <Constructor> <Type1> ⋯ <TypeN><br>
 where the type of the data constructor is<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 <Constructor> :: <Type1> -> ⋯ -> <TypeN> -> <Type>
 </div>
 
@@ -979,7 +980,7 @@ Such data type definitions are called product types, just like a tuple, they com
 Analogous to Point, we introduce a corresponding definition for vectors:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 data Vector = Vector Float Float<br>
             deriving (Show, Eq)
 </div>
@@ -988,7 +989,7 @@ data Vector = Vector Float Float<br>
 Now, we can no longer accidentally confuse expressions that build a vector, such as Vector 1 1, with those that construct a point, such as Point 1 1. Moreover, they have got distinct types, which enables the type checker to keep points and vectors apart as well. If we want to convert one into the other, we need an explicit casting function that performs the conversion:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 pointToVector :: Point -> Vector<br>
 pointToVector (Point x y) = Vector x y
 </div>
@@ -1000,7 +1001,7 @@ Pattern matching decomposes the function argument of type Point into its two com
 Now, we are in a position define a type safe version of the function movePointN, using the new definitions of Point and  Vector:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 movePointN :: Float -> Vector -> Point -> Point<br>
 movePointN n (Vector vx vy) (Point x y) <br>
   = Point (n * vx + x) (n * vy + y)
@@ -1010,7 +1011,7 @@ movePointN n (Vector vx vy) (Point x y) <br>
 We now have<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 movePointN 5 (Vector 1 3) (Point 0 0)   ⇒   Point (5 * 1 + 0) (5 * 3 + 0)   ⇒   Point 5 15
 </div>
 
@@ -1021,7 +1022,7 @@ If we accidentally confuse the order of the parameters, the type checker will co
 Finally, we can also redefine Colour as a product type instead of as a type synonym for a quadruple (4-tuple):<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 data Colour = Colour Int Int Int Int  -- red, green, blue, and opacity component<br>
             deriving (Show, Eq)
 </div>
@@ -1030,7 +1031,7 @@ data Colour = Colour Int Int Int Int  -- red, green, blue, and opacity component
 We of course also need to adapt the definition of the pre-defined colour, such as:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 red :: Colour<br>
 red = Colour 255 0 0 255
 </div>
@@ -1043,7 +1044,7 @@ Now that we improved the type safety of the simple interface for line graphics f
 To this end, we introduce a new data type PictureObject. A value of type PictureObject, can be either a path, a circle, an ellipse, or a polygon. A simple enumeration type is not sufficient, though; in contrast to Day and LineStyle, where the name of the data constructor was all the information needed to characterise a variant, picture objects are more demanding. For example, for a path, we need to maintain the list of points that constitute the path, along with a line style and colour. As in the case of Point and Vector, we need a product type; i.e., the data constructor Path requires parameters that describe the characteristics of the represented path. More precisely, we want the data constructor Path to have the following type:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 Path :: [Point] -> Colour -> LineStyle -> PictureObject
 </div>
 
@@ -1051,7 +1052,7 @@ Path :: [Point] -> Colour -> LineStyle -> PictureObject
 In other words, to construct a value of type PictureObject with the data constructor Path, we need to apply the latter to a list of points, a colour, and a line style. For example, we can now define a path object as follows<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 myPath :: PictureObject<br>
 myPath = Path [Point 210 200, Point 270 200, Point 545 600,<br>
                Point 525 600, Point 380 390, Point 250 600,<br>
@@ -1064,7 +1065,7 @@ myPath = Path [Point 210 200, Point 270 200, Point 545 600,<br>
 How about circles? A circle is usually characterised by its center point as well as its radius. For our purposes, we also want to fix a line style and a fill style, where we use the following enumeration type for the latter:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 data FillStyle<br>
   = NoFill<br>
   | SolidFill<br>
@@ -1075,7 +1076,7 @@ data FillStyle<br>
 Overall, we want the Circle constructor to have the type<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 Circle :: Point -> Float -> Colour -> LineStyle -> FillStyle -> PictureObject
 </div>
 
@@ -1083,7 +1084,7 @@ Circle :: Point -> Float -> Colour -> LineStyle -> FillStyle -> PictureObject
 where the line style has no effect whenever the fill style is Solid. Equipped with this data constructor, we can define three different circles as follows:<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 dashedCircle, dottedCircle, solidCircle :: PictureObject<br>
 dashedCircle = Circle (Point 400 400) 180 blue  Dashed NoFill<br>
 dottedCircle = Circle (Point 400 400)  90 green Dotted NoFill<br>
@@ -1097,7 +1098,7 @@ n a similar manner, we characterise an ellipse by its center point, its length a
 To combine the Path, Circle, Ellipse, and Polygon constructors into a single data type definition for PictureObject, we combine the notation for enumeration types with that for product types. More precisely, we separate the alternative data constructors by a vertical bar | and add the types of the data constructor parameters as arguments, which gets us<br>
 <br>
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 data PictureObject <br>
   = Path    [Point]                   Colour LineStyle <br>
   | Circle  Point   Float             Colour LineStyle FillStyle <br>
@@ -1117,7 +1118,7 @@ The following three definitions make use of the Ellipse constructor:<br>
 <br>
 
 
-<div class="container" style="background-color: lightgrey;">
+<div class="alert alert-info" role="alert">
 redEllipse, greenEllipse, blueEllipse :: PictureObject<br>
 redEllipse   = Ellipse (Point 400 400) 300 100      0 red   Solid SolidFill<br>
 greenEllipse = Ellipse (Point 400 400) 300 100 (pi/4) green Solid SolidFill<br>

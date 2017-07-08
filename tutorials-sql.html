@@ -100,6 +100,7 @@ li{
                             <li><a class="dropdown-item" href="prosoft-jc.html">JCreator</a></li>
                             <li><a class="dropdown-item" href="prosoft-st.html">Sublime Text</a></li>
                             <li><a class="dropdown-item" href="prosoft-eclipse.html">Eclipse</a></li>
+                            <li><a class="dropdown-item" href="prosoft-xcode.html">Xcode</a></li>
                             </ul>
                         </div>
                     </li><!-- end of programming softwares -->
@@ -140,7 +141,7 @@ li{
 
 The most commonly used SQL command is SELECT statement. SQL SELECT statement is used to query or retrieve data from a table in the database. A query may retrieve information from specified columns or from all of the columns in the table. To create a simple SQL SELECT Statement, you must specify the column(s) name and the table name. The whole query is called SQL SELECT Statement.
 <h2>Syntax of SQL SELECT Statement:</h2>
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 SELECT column_list FROM table-name <br>
 [WHERE Clause]<br>
 [GROUP BY clause]<br>
@@ -216,7 +217,7 @@ SELECT column_list FROM table-name <br>
 <br>
 For example, consider the table student_details. To select the first name of all the students the query would be like:<br>
 <br>
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 SELECT first_name FROM student_details;
 </div>
 <br>
@@ -228,7 +229,7 @@ NOTE: SQL commands are not case sensitive. The above SELECT statement can also b
 <br>
 You can also retrieve data from more than one column. For example, to select first name and last name of all the students.<br>
 <br>
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 SELECT first_name, last_name FROM student_details;
 </div>
 <br>
@@ -247,14 +248,14 @@ The operators are evaluated in a specific order of precedence, when more than on
 
 If we want to display the first and last name of an employee combined together, the SQL Select Statement would be like<br>
 <br>
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 SELECT first_name + ' ' + last_name FROM employee;
 </div>
 <br>
 
 <b>Output:</b><br>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 first_name + ' ' + last_name<br>
 ---------------------------------<br>
 Rahul Sharma<br>
@@ -268,13 +269,13 @@ Priya Chandra<br>
 You can also provide aliases as below.
 <br>
 <br>
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 SELECT first_name + ' ' + last_name AS emp_name FROM employee;
 </div>
 <br>
 
 <b>Output:</b><br>
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 emp_name<br>
 -------------<br>
 Rahul Sharma<br>
@@ -294,7 +295,7 @@ We can insert data to a table in two ways,
 
 <h2>Syntax for SQL INSERT is:</h2>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 INSERT INTO TABLE_NAME <br>
 [ (col1, col2, col3,...colN)] <br>
 VALUES (value1, value2, value3,...valueN); <br>
@@ -307,7 +308,7 @@ VALUES (value1, value2, value3,...valueN); <br>
 While inserting a row, if you are adding value for all the columns of the table you need not specify the column(s) name in the sql query. But you need to make sure the order of the values is in the same order as the columns in the table. The sql insert query will be as follows
 <br>
 <br>
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 INSERT INTO TABLE_NAME <br>
 VALUES (value1, value2, value3,...valueN); <br>
 </div>
@@ -315,7 +316,7 @@ VALUES (value1, value2, value3,...valueN); <br>
 <b>For Example:</b> If you want to insert a row to the employee table, the query would be like,
 <br>
 <br>
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 INSERT INTO employee (id, name, dept, age, salary location) VALUES (105, 'Srinath', 'Aeronautics', 27, 33000);
 </div>
 <br>
@@ -324,7 +325,7 @@ INSERT INTO employee (id, name, dept, age, salary location) VALUES (105, 'Srinat
 If you are inserting data to all the columns, the column names can be omitted. The above insert statement can also be written as,
 <br>
 <br>
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 INSERT INTO employee 
 VALUES (105, 'Srinath', 'Aeronautics', 27, 33000); 
 </div>
@@ -333,7 +334,7 @@ VALUES (105, 'Srinath', 'Aeronautics', 27, 33000);
 
 <h2>Syntax for SQL INSERT is:</h2>
 <br>
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 INSERT INTO table_name 
 [(column1, column2, ... columnN)] 
 SELECT column1, column2, ...columnN 
@@ -343,7 +344,7 @@ FROM table_name [WHERE condition];
 <b>For Example:</b> To insert a row into the employee table from a temporary table, the sql insert query would be like,
 <br>
 <br>
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 INSERT INTO employee (id, name, dept, age, salary location) SELECT emp_id, emp_name, dept, age, salary, location 
 FROM temp_employee;
 </div>
@@ -351,7 +352,7 @@ FROM temp_employee;
 If you are inserting data to all the columns, the above insert statement can also be written as,
 <br>
 <br>
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 INSERT INTO employee 
 SELECT * FROM temp_employee; 
 </div>
@@ -372,7 +373,7 @@ The UPDATE Statement is used to modify the existing rows in a table.
 
 <h2>The Syntax for SQL UPDATE Command is:</h2>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 UPDATE table_name <br>
 SET column_name1 = value1, <br>
 column_name2 = value2, ... <br>
@@ -391,7 +392,7 @@ column_name2 = value2, ... <br>
 <b>For Example:</b> To update the location of an employee, the sql update query would be like,
 <br>
 <br>
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 UPDATE employee 
 SET location ='Mysore' 
 WHERE id = 101; 
@@ -400,7 +401,7 @@ WHERE id = 101;
 To change the salaries of all the employees, the query would be,
 <br>
 <br>
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 UPDATE employee <br>
 SET salary = salary + (salary * 0.2); <br>
 </div>
@@ -412,7 +413,7 @@ The DELETE Statement is used to delete rows from a table.
 
 <h2>Syntax of a SQL DELETE Statement</h2>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 DELETE FROM table_name [WHERE condition];
 </div>
 <br>
@@ -427,14 +428,14 @@ DELETE FROM table_name [WHERE condition];
 To delete an employee with id 100 from the employee table, the sql delete query would be like,
 <br>
 <br>
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 DELETE FROM employee WHERE id = 100;
 </div>
 <br>
 To delete all the rows from the employee table, the query would be like,
 <br>
 <br>
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 DELETE FROM employee;
 </div>
 
@@ -444,7 +445,7 @@ The SQL TRUNCATE command is used to delete all the rows from the table and free 
 <br>
 <h2>Syntax to TRUNCATE a table:</h2>
 <br>
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 TRUNCATE TABLE table_name;
 </div>
 
@@ -453,7 +454,7 @@ TRUNCATE TABLE table_name;
 To delete all the rows from employee table, the query would be like,
 <br>
 <br>
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 TRUNCATE TABLE employee;
 </div>
 <br>
@@ -472,7 +473,7 @@ The SQL DROP command is used to remove an object from the database. If you drop 
 <b>Syntax to drop a sql table structure:</b>
 <br>
 <br>
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 DROP TABLE table_name;
 </div>
 
@@ -481,7 +482,7 @@ DROP TABLE table_name;
 To drop the table employee, the query would be like
 <br>
 <br>
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 DROP TABLE employee;
 </div>
 <br>
@@ -496,7 +497,7 @@ The CREATE TABLE Statement is used to create tables to store data. Integrity Con
 <br>
 <h2>The Syntax for the CREATE TABLE Statement is:</h2>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 CREATE TABLE table_name <br>
 (column_name1 datatype, <br>
 column_name2 datatype, <br>
@@ -513,7 +514,7 @@ column_name2 datatype, <br>
 For Example: If you want to create the employee table, the statement would be like,
 <br>
 <br>
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 CREATE TABLE employee <br>
 ( id number(5), <br>
 name char(20), <br>
@@ -529,7 +530,7 @@ In Oracle database, the datatype for an integer column is represented as "number
 Oracle provides another way of creating a table.
 <br>
 <br>
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 CREATE TABLE temp_employee 
 SELECT * FROM employee 
 </div>
@@ -549,40 +550,40 @@ The SQL ALTER TABLE command is used to modify the definition (structure) of a ta
 </ol>
 <h2>Syntax to add a column</h2>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 ALTER TABLE table_name ADD column_name datatype;
 </div>
 <br>
 <b>For Example:</b> To add a column "experience" to the employee table, the query would be like
 <br>
 <br>
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 ALTER TABLE employee ADD experience number(3);
 </div>
 
 <h2>Syntax to drop a column</h2>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 ALTER TABLE table_name DROP column_name;
 </div>
 <br>
 <b>For Example:</b> To drop the column "location" from the employee table, the query would be like
 <br>
 <br>
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 ALTER TABLE employee DROP location;
 </div>
 
 <h2>Syntax to modify a column</h2>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 ALTER TABLE table_name MODIFY column_name datatype;
 </div>
 <br>
 <b>For Example:</b> To modify the column salary in the employee table, the query would be like
 <br>
 <br>
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 ALTER TABLE employee MODIFY salary number(15,2);
 </div>
 
@@ -594,14 +595,14 @@ If you change the object's name any reference to the old name will be affected. 
 
 <h2>Syntax to rename a table</h2>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 RENAME old_table_name To new_table_name;
 </div>
 <br>
 <b>For Example:</b> To change the name of the table employee to my_employee, the query would be like
 <br>
 <br>
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 RENAME employee TO my_emloyee;
 </div>
 
@@ -616,7 +617,7 @@ For example renaming a table through MS SQL Server you must use storage procedur
 
 <h2>Syntax for SQL RENAME is:</h2>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 RENAME TABLE {tbl_name} TO {new_tbl_name};
 </div>
 <br>
@@ -624,14 +625,14 @@ RENAME TABLE {tbl_name} TO {new_tbl_name};
 <br>
 <h4>As for Oracle may also be use the following option:</h4>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 ALTER TABLE {tbl_name} RENAME TO {new_tbl_name};
 </div>
 <br>
 As Example
 <br>
 <br>
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 CREATE TABLE employees<br>
 ( id NUMBER(6),<br>
 name VARCHAR(20)<br>
@@ -641,14 +642,14 @@ INSERT INTO employees( id, name ) values( 2, 'name 2');<br>
 INSERT INTO employees( id, name ) values( 3, 'name 3');<br>
 </div>
 
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 SELECT * FROM employees;
 </div>
 <br>
 <b>SELECT Output:</b>
 <br>
 <br>
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 id  name<br>
 ------------------- -------------------<br>
 1   name 1<br>
@@ -662,7 +663,7 @@ SELECT * FROM employees_new;
 <b>SELECT Output:</b>
 <br>
 <br>
-<div class="container" style="color: blue">
+<div class="alert alert-info" role="alert">
 id  name<br>
 ------------------- -------------------<br>
 1   name 1<br>
