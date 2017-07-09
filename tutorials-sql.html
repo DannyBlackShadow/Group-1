@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
     <meta charset="utf-8">
@@ -398,14 +397,13 @@ SET location ='Mysore'
 WHERE id = 101; 
 </div>
 <br>
-To change the salaries of all the employees, the query would be,
+To change the salaries of all the employees, the query would be,<br>
 <br>
-<br>
+
 <div class="alert alert-info" role="alert">
 UPDATE employee <br>
 SET salary = salary + (salary * 0.2); <br>
 </div>
-
 
 <h2>SQL Delete Statement</h2>
 
@@ -416,85 +414,92 @@ The DELETE Statement is used to delete rows from a table.
 <div class="alert alert-info" role="alert">
 DELETE FROM table_name [WHERE condition];
 </div>
+
 <br>
 <ul>
 <li>table_name -- the table name which has to be updated.
 </ul>
+
 <br>
 <b>NOTE:</b> The WHERE clause in the sql delete command is optional and it identifies the rows in the column that gets deleted. If you do not include the WHERE clause all the rows in the table is deleted, so be careful while writing a DELETE query without WHERE clause.
 <br>
+
 <h2>SQL DELETE Example</h2>
 
-To delete an employee with id 100 from the employee table, the sql delete query would be like,
+To delete an employee with id 100 from the employee table, the sql delete query would be like,<br>
 <br>
-<br>
+
 <div class="alert alert-info" role="alert">
 DELETE FROM employee WHERE id = 100;
 </div>
+
 <br>
-To delete all the rows from the employee table, the query would be like,
+To delete all the rows from the employee table, the query would be like,<br>
 <br>
-<br>
+
 <div class="alert alert-info" role="alert">
 DELETE FROM employee;
 </div>
 
 <h2>SQL TRUNCATE Statement</h2>
 
-The SQL TRUNCATE command is used to delete all the rows from the table and free the space containing the table.
-<br>
+The SQL TRUNCATE command is used to delete all the rows from the table and free the space containing the table.<br>
+
 <h2>Syntax to TRUNCATE a table:</h2>
-<br>
+
 <div class="alert alert-info" role="alert">
 TRUNCATE TABLE table_name;
 </div>
 
 <h2>SQL TRUNCATE Statement Example</h2>
 
-To delete all the rows from employee table, the query would be like,
+To delete all the rows from employee table, the query would be like,<br>
 <br>
-<br>
+
 <div class="alert alert-info" role="alert">
 TRUNCATE TABLE employee;
 </div>
+
 <br>
-<b>Difference between DELETE and TRUNCATE Statements:</b>
+<b>Difference between DELETE and TRUNCATE Statements:</b><br>
 <br>
+
+<b>DELETE Statement:</b> This command deletes only the rows from the table based on the condition given in the where clause or deletes all the rows from the table if no condition is specified. But it does not free the space containing the table.<br>
 <br>
-<b>DELETE Statement:</b> This command deletes only the rows from the table based on the condition given in the where clause or deletes all the rows from the table if no condition is specified. But it does not free the space containing the table.
-<br>
-<br>
-<b>TRUNCATE statement:</b> This command is used to delete all the rows from the table and free the space containing the table.
-<br>
+
+<b>TRUNCATE statement:</b> This command is used to delete all the rows from the table and free the space containing the table.<br>
+
 <h2>SQL DROP Statement:</h2>
 
-The SQL DROP command is used to remove an object from the database. If you drop a table, all the rows in the table is deleted and the table structure is removed from the database. Once a table is dropped we cannot get it back, so be careful while using DROP command. When a table is dropped all the references to the table will not be valid.
+The SQL DROP command is used to remove an object from the database. If you drop a table, all the rows in the table is deleted and the table structure is removed from the database. Once a table is dropped we cannot get it back, so be careful while using DROP command. When a table is dropped all the references to the table will not be valid.<br>
 <br>
-<b>Syntax to drop a sql table structure:</b>
+
+<b>Syntax to drop a sql table structure:</b><br>
 <br>
-<br>
+
 <div class="alert alert-info" role="alert">
 DROP TABLE table_name;
 </div>
 
 <h2>SQL DROP Statement Example</h2>
+
+To drop the table employee, the query would be like<br>
 <br>
-To drop the table employee, the query would be like
-<br>
-<br>
+
 <div class="alert alert-info" role="alert">
 DROP TABLE employee;
 </div>
+
 <br>
-<b>Difference between DROP and TRUNCATE Statement:</b>
+<b>Difference between DROP and TRUNCATE Statement:</b><br>
+<br>
 
-If a table is dropped, all the relationships with other tables will no longer be valid, the integrity constraints will be dropped, grant or access privileges on the table will also be dropped, if you want use the table again it has to be recreated with the integrity constraints, access privileges and the relationships with other tables should be established again. But, if a table is truncated, the table structure remains the same, therefore any of the above problems will not exist.
-
+If a table is dropped, all the relationships with other tables will no longer be valid, the integrity constraints will be dropped, grant or access privileges on the table will also be dropped, if you want use the table again it has to be recreated with the integrity constraints, access privileges and the relationships with other tables should be established again. But, if a table is truncated, the table structure remains the same, therefore any of the above problems will not exist.<br>
 
 <h2>SQL CREATE TABLE Statement</h2>
 
-The CREATE TABLE Statement is used to create tables to store data. Integrity Constraints like primary key, unique key, foreign key can be defined for the columns while creating the table. The integrity constraints can be defined at column level or table level. The implementation and the syntax of the CREATE Statements differs for different RDBMS.
-<br>
+The CREATE TABLE Statement is used to create tables to store data. Integrity Constraints like primary key, unique key, foreign key can be defined for the columns while creating the table. The integrity constraints can be defined at column level or table level. The implementation and the syntax of the CREATE Statements differs for different RDBMS.<br>
+
 <h2>The Syntax for the CREATE TABLE Statement is:</h2>
 
 <div class="alert alert-info" role="alert">
@@ -504,6 +509,7 @@ column_name2 datatype, <br>
 ... column_nameN datatype <br>
 );
 </div>
+
 <br>
 <ul>
 <li style="color: black">table_name - is the name of the table.</li>
@@ -511,9 +517,9 @@ column_name2 datatype, <br>
 <li style="color: black">datatype - is the datatype for the column like char, date, number etc.</li>
 </ul>
 
-For Example: If you want to create the employee table, the statement would be like,
+For Example: If you want to create the employee table, the statement would be like,<br>
 <br>
-<br>
+
 <div class="alert alert-info" role="alert">
 CREATE TABLE employee <br>
 ( id number(5), <br>
@@ -522,41 +528,45 @@ dept char(10), <br>
 age number(2), <br>
 salary number(10), <br>
 location char(10) 
-);<br>
+);
 </div>
+
 <br>
-In Oracle database, the datatype for an integer column is represented as "number". In Sybase it is represented as "int".
+In Oracle database, the datatype for an integer column is represented as "number". In Sybase it is represented as "int".<br>
 <br>
-Oracle provides another way of creating a table.
+
+Oracle provides another way of creating a table.<br>
 <br>
-<br>
+
 <div class="alert alert-info" role="alert">
 CREATE TABLE temp_employee 
 SELECT * FROM employee 
 </div>
-<br>
-In the above statement, temp_employee table is created with the same number of columns and datatype as employee table.
 
+<br>
+In the above statement, temp_employee table is created with the same number of columns and datatype as employee table.<br>
 
 <h1>SQL ALTER TABLE Statement</h1>
 <br>
-The SQL ALTER TABLE command is used to modify the definition (structure) of a table by modifying the definition of its columns. The ALTER command is used to perform the following functions.
+The SQL ALTER TABLE command is used to modify the definition (structure) of a table by modifying the definition of its columns. The ALTER command is used to perform the following functions.<br>
 <br>
-<br>
+
 <ol>
  <li style="color: black">Add, drop, modify table columns </li>
  <li style="color: black">Add and drop constraints </li>
  <li style="color: black">Enable and Disable constraints </li>
 </ol>
+
 <h2>Syntax to add a column</h2>
 
 <div class="alert alert-info" role="alert">
 ALTER TABLE table_name ADD column_name datatype;
 </div>
+
 <br>
-<b>For Example:</b> To add a column "experience" to the employee table, the query would be like
+<b>For Example:</b> To add a column "experience" to the employee table, the query would be like<br>
 <br>
-<br>
+
 <div class="alert alert-info" role="alert">
 ALTER TABLE employee ADD experience number(3);
 </div>
@@ -566,10 +576,11 @@ ALTER TABLE employee ADD experience number(3);
 <div class="alert alert-info" role="alert">
 ALTER TABLE table_name DROP column_name;
 </div>
+
 <br>
-<b>For Example:</b> To drop the column "location" from the employee table, the query would be like
+<b>For Example:</b> To drop the column "location" from the employee table, the query would be like<br>
 <br>
-<br>
+
 <div class="alert alert-info" role="alert">
 ALTER TABLE employee DROP location;
 </div>
@@ -579,40 +590,43 @@ ALTER TABLE employee DROP location;
 <div class="alert alert-info" role="alert">
 ALTER TABLE table_name MODIFY column_name datatype;
 </div>
+
 <br>
-<b>For Example:</b> To modify the column salary in the employee table, the query would be like
+<b>For Example:</b> To modify the column salary in the employee table, the query would be like<br>
 <br>
-<br>
+
 <div class="alert alert-info" role="alert">
 ALTER TABLE employee MODIFY salary number(15,2);
 </div>
 
 <h1>SQL RENAME Command</h1>
 
-The SQL RENAME command is used to change the name of the table or a database object.
+The SQL RENAME command is used to change the name of the table or a database object.<br>
 <br>
-If you change the object's name any reference to the old name will be affected. You have to manually change the old name to the new name in every reference.
+If you change the object's name any reference to the old name will be affected. You have to manually change the old name to the new name in every reference.<br>
 
 <h2>Syntax to rename a table</h2>
 
 <div class="alert alert-info" role="alert">
 RENAME old_table_name To new_table_name;
 </div>
+
 <br>
-<b>For Example:</b> To change the name of the table employee to my_employee, the query would be like
+<b>For Example:</b> To change the name of the table employee to my_employee, the query would be like<br>
 <br>
-<br>
+
 <div class="alert alert-info" role="alert">
 RENAME employee TO my_emloyee;
 </div>
-
 
 <h1>SQL RENAME Statement</h1>
 
 With RENAME statement you can rename a table.<br>
 <br>
+
 Some of the relational database management system (RDBMS) does not support this command, because this is not standardizing statement.<br>
 <br>
+
 For example renaming a table through MS SQL Server you must use storage procedure SP_RENAME.<br>
 
 <h2>Syntax for SQL RENAME is:</h2>
@@ -620,18 +634,21 @@ For example renaming a table through MS SQL Server you must use storage procedur
 <div class="alert alert-info" role="alert">
 RENAME TABLE {tbl_name} TO {new_tbl_name};
 </div>
+
 <br>
 <b>Where {tbl_name} table that exists in the current database, and {new_tbl_name} is new table name.</b>
 <br>
+
 <h4>As for Oracle may also be use the following option:</h4>
 
 <div class="alert alert-info" role="alert">
 ALTER TABLE {tbl_name} RENAME TO {new_tbl_name};
 </div>
+
 <br>
-As Example
+As Example<br>
 <br>
-<br>
+
 <div class="alert alert-info" role="alert">
 CREATE TABLE employees<br>
 ( id NUMBER(6),<br>
@@ -639,16 +656,17 @@ name VARCHAR(20)<br>
 );<br>
 INSERT INTO employees( id, name ) values( 1, 'name 1');<br>
 INSERT INTO employees( id, name ) values( 2, 'name 2');<br>
-INSERT INTO employees( id, name ) values( 3, 'name 3');<br>
+INSERT INTO employees( id, name ) values( 3, 'name 3');
 </div>
 
 <div class="alert alert-info" role="alert">
 SELECT * FROM employees;
 </div>
+
 <br>
-<b>SELECT Output:</b>
+<b>SELECT Output:</b><br>
 <br>
-<br>
+
 <div class="alert alert-info" role="alert">
 id  name<br>
 ------------------- -------------------<br>
@@ -659,10 +677,11 @@ RENAME TABLE employees TO employees_new;<br>
 <br>
 SELECT * FROM employees_new;
 </div>
+
 <br>
-<b>SELECT Output:</b>
+<b>SELECT Output:</b><br>
 <br>
-<br>
+
 <div class="alert alert-info" role="alert">
 id  name<br>
 ------------------- -------------------<br>
@@ -670,9 +689,9 @@ id  name<br>
 2   name 2<br>
 3   name 3<br>
 </div>
+
 <br>
-<b>SQL RENAME NOTES</b>
-<br>
+<b>SQL RENAME NOTES</b><br>
 1)The minimum version that supports table renaming is Oracle 8i. All the dependencies of the table will automatically updated. No need of updating them after wards
 
 </p>

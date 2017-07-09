@@ -139,7 +139,7 @@ li{
 
                 <h1>Creating and Formatting the String</h1>
 
-                Take a look at the apple documentation on NSString Class Reference to check the number of ways that you can create and return strings. The most common and the one you’re likely to be using is stringWithFormat:<br>
+                The most common and the one you’re likely to be using is stringWithFormat:<br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -149,7 +149,7 @@ NSString *yourNewString = [NSString stringWithFormat:@"Check out:    %@ for awes
 </div>
 
 <br>
-Common string format specifiers are: %@ another object. (this calls the :description verb on the specified object, which must then return an NSString.), %d an integer number, %f, %.4f floating point number (with .n digits after the decimal place).<br>
+Common string format specifiers are: <b>%@</b> another object. (this calls the :description verb on the specified object, which must then return an NSString.), <b>%d</b> an integer number, <b>%f, %.4f</b> floating point number (with .n digits after the decimal place).<br>
 
 <br>
 You can also get the length of a string which can be obtained using the length method:<br>
@@ -162,7 +162,7 @@ int yourLength = [yourString length];       // yourLength is equals to 8
 
 <h1>Joining an Array of Strings</h1>
 
-For this, you need to use NSArray’s componentsJoinedByString:<br>
+For this, you need to use NSArray’s <b class="c" style="color: royalblue">componentsJoinedByString:</b><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -174,7 +174,7 @@ NSString *sentence = [yourWords componentsJoinedByString:@" "];<br>
 
 <h1>Equals to</h1>
 
-There may become a time you need to determine if two of your strings are equal, for this we use: isEqualToString and we implement it like so:<br>
+There may become a time you need to determine if two of your strings are equal, for this we use: <b class="c" style="color: royalblue">isEqualToString</b> and we implement it like so:<br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -188,7 +188,7 @@ if ([yourString isEqualToString:@"iOS-Blog"]) {<br>
 
 <h1>Replacing Characters in a String</h1>
 
-Many languages offer you the chance to replace information within a string, for example PHP used the str_replace method. However, in Objective-C we use the stringByReplacingOccurrencesOfString method.<br>
+Many languages offer you the chance to replace information within a string, for example PHP used the <b class="c" style="color: royalblue">str_replace</b> method. However, in Objective-C we use the <b class="c" style="color: royalblue">stringByReplacingOccurrencesOfString</b> method.<br>
 <br>
 
 So lets say that you wanted to take out all the references to the word red:<br>
@@ -310,7 +310,7 @@ NSArray *yourWords = [myString componentsSeparatedByCharactersInSet:<br>
 </div>
 
 <br>
-Note however that the separator string can’t be blank. If you need to separate a string into its individual characters, just loop through the length of the string and convert each char into a new string:<br>
+Note however that the separator string <b>can’t</b> be blank. If you need to separate a string into its individual characters, just loop through the length of the string and convert each char into a new string:<br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -353,7 +353,7 @@ NSString *fullName = [string1 stringByAppendingString:string2];<br>
 </div>
 
 <br>
-This is a little different if you are using NSMutableString method, you just simply call the appendString method<br>
+This is a little different if you are using <b class="c" style="color: royalblue">NSMutableString</b> method, you just simply call the appendString method<br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -392,7 +392,7 @@ NSRange is a struct with two parts:<br>
 </div>
 
 <br>
-If the substring is not found, rangeOfString returns {NSNotFound, 0}.<br>
+If the substring is not found, rangeOfString returns <b>{NSNotFound, 0}</b>.<br>
 <br>
 
 There is a shorter and easier way to test whether a s string is found:<br>
@@ -461,7 +461,7 @@ char variable3 = 'm';<br>
 </div>
 
 <br>
-Variable names can contain digits but cannot start with them and cannot include spaces, but can include capital letters (used for camel case) or the underscore character _<br>
+Variable names can contain digits but cannot start with them and cannot include spaces, but can include capital letters (used for <b class="c" style="color: royalblue">camel case</b>) or the underscore character _<br>
 
 <br>
 As you might have noticed in the example above, each instruction in C ends with a semicolon, which is required. Many languages do to, but some don’t, so this might be new for you. You will learn fast to end instructions with semicolons.<br>
@@ -529,7 +529,7 @@ CGFloat, for floating point decimal numbers, used for graphical values like draw
 BOOL, for booleans, which uses YES and NO instead of true and false<br>
 <br>
 
-The reason these types where created was to make transition from 32 bits to 64 bits architectures easier. C types map to a specific sizes in memory, while the types above change regarding to the architecture the code is compiled for. Objective-C also has its own BOOL type (the reason for it is a bit more complicated).<br>
+The reason these types where created was to make transition from 32 bits to 64 bits architectures easier. C types map to a specific sizes in memory, while the types above change regarding to the architecture the code is compiled for. Objective-C also has its own <b>BOOL</b> type (<b class="c" style="color: royalblue">the reason for it is a bit more complicated</b>).<br>
 <br>
 
 Try to use the latter types when you can and pay attention to which types are used and returend by APIs, or you might end with weird results if values are truncated when switching between the two types.<br>
@@ -778,17 +778,45 @@ As you might have noticed in the example above, each instruction in C ends with 
 Take the habit of always initializing your variables to a specific value, even 0. In some languages variables are always initialized to 0 if no other value is specified. This does not happen in an Objective-C method, where non initialized variables will contain garbage and cause strange behaviours in your programs.<br>
 <br>
 
-These are the most common types of C used in Objective-C programs.
+These are the most common types of C used in Objective-C programs.<br>
+<br>
 
-
-Type            Description                             Examples
-
-int             integer numbers, including negatives    0, 105, -12
-unsigned int    positive integers                       0, 27, 315
-float, double   floating point decimal numbers          1.61, -17.375
-bool            boolean values                          true, false
-char            single text character                   'a', 'F', '?'
-
+<table class="table">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Examples</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>int</td>
+      <td>integer numbers, including negatives</td>
+      <td>0, 105, -12</td>
+    </tr>
+    <tr>
+      <td>unsigned int</td>
+      <td>positive integers</td>
+      <td> 0, 27, 315</td>
+    </tr>
+    <tr>
+      <td>float, double</td>
+      <td>floating point decimal numbers</td>
+      <td>1.61, -17.375</td>
+    </tr>
+    <tr>
+      <td>bool</td>
+      <td>boolean values</td>
+      <td> true, false</td>
+    </tr>
+    <tr>
+      <td>char</td>
+      <td>single text character</td>
+      <td>'a', 'F', '?'</td>
+    </tr>
+  </tbody>
+</table>
 
 <br>
 If you need bigger numbers that the int type can contain, there are the long and the long long types, with the related unsigned types.<br>
@@ -818,34 +846,74 @@ C allows also to define other kind of simple types, a practice that is used exte
 Like any other language, C has its own arithmetic operators to work with the numeric values stored in the variables (which are probably the same as the ones you already know).<br>
 <br>
 
-The arithmetic operators of C are the following:
+The arithmetic operators of C are the following:<br>
+<br>
 
-
-
-
-Operator   Description                              Syntax
-
-+          addition                                 a + b
--          subtraction                              a - b
-*          multiplication                           a * b
-/          division                                 a / b
-%          module (integer remainder of division)   a % b
-
+<table class="table">
+  <thead>
+    <tr>
+      <th>Operator</th>
+      <th>Description </th>
+      <th>Syntax</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>+</td>
+      <td>addition</td>
+      <td>a + b</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>subtraction</td>
+      <td>a - b</td>
+    </tr>
+    <tr>
+      <td>*</td>
+      <td>multiplication</td>
+      <td> a * b</td>
+    </tr>
+    <tr>
+      <td>/</td>
+      <td>division</td>
+      <td>a / b</td>
+    </tr>
+    <tr>
+      <td>%</td>
+      <td>module (integer remainder of division)</td>
+      <td>a % b</td>
+    </tr>
+  </tbody>
+</table>
 
 <br>
 Arithmetic operators follow standard math operator precedence, so multiplication, division and module have precedence over addition and subtraction.<br>
 <br>
 
-C has also increment and decrement operators:
+C has also increment and decrement operators:<br>
+<br>
 
-
-
-
-Operator   Description   Syntax
-
-++         increment     a++ or ++a
---         decrement     a-- or --a
-
+<table class="table">
+  <thead>
+    <tr>
+      <th>Operator</th>
+      <th>Description</th>
+      <th>Syntax</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>++</td>
+      <td>increment</td>
+      <td>a++ or ++a</td>
+    </tr>
+    <tr>
+      <td>--</td>
+      <td>decrement</td>
+      <td>a-- or --a</td>
+    </tr>
+  </tbody>
+</table>
 
 <br>
 Increment and decrement operators have precedence over the arithmetic operators. Pay particular attention to these operators. When used in isolation, they are equivalent:<br>
@@ -886,343 +954,7 @@ y = --x; // x is now 1, y is also 1
 </div>
 
 <br>
-We have already seen the assignment operator = which might be different in the languages you are used to. That is not the only assignment operator. The arithmetic operators (with the exception of the modulo) attach to the assignment and produce another four assignment operators, which are used as a shorthand for incrementing, decrementing, multiplying and dividing the content of a variable:<br>
-<br>
-
-
-Operator   Example    Shorthand for
-
-+=         a += 10;   a = a + 10;
--=         a -= 7;    a = a - 7;
-*=         a *= 3;    a = a * 3;
-/=         a /= 5;    a = a / 5;
-
-
-<br>
-Unlike in other languages, in Objective-C there is no operator overloading. This means that these operators (and the other operators we will see later) only work with basic types and they do not work with objects (to concatenate strings, for example).<br>
-
-<h1>Object variables</h1>
-
-Let’s have a first look at objects. Objective-C is an object oriented language after all, so we need variables to contain objects. The generic type for an object variable is id:<br>
-<br>
-
-<div class="alert alert-info" role="alert">
-id myObject = nil;
-</div>
-
-<br>
-The id type means that the variable can contain any type of object. The nil value is equivalent to what is called null in some other languages (and in C) and means the variable is empty and does not contain any object. Objective-C is a dynamically typed language, so we can declare variables of type id and use them for any object. We can then call any method we want on that object, regardless of the fact that that method might exist or not. This might be useful in some cases, but the majority of the time we want the compiler to check for our mistakes as soon as possible and give variables a defined type.<br>
-<br>
-
-Object variables with a specific type are declared in a slightly different way:<br>
-<br>
-
-<div class="alert alert-info" role="alert">
-NSString *aString = nil;
-</div>
-
-<br>
-Now what does that * mean? Well, strictly speaking that means that this variable is a pointer, a thing that makes many programmers recoil in horror. Pointers are one of those things coming from C you don’t want to deal with. Many modern languages don’t have pointers, so this might be a concept you are not familiar with. Although in the future, when you will be more familiar with the language, it might be useful to know what a pointer is, this is something you don’t have to worry about for now. You can write Objective-C without knowing this concept yet.<br>
-<br>
-
-When programming I rarely think in terms of pointers. Just remember this simple rule: you need a * when you declare an object variable and you don’t when you use it.<br>
-<br>
-
-A note on prefixes and namespaces<br>
-<br>
-
-As you probably noticed, all types in Objective-C have some prefix at the beginning of the name (NSString, CGFloat, etc). The reason is that Objective-C does not have namespaces. To avoid name collisions (different objects ending up having the same name) Apple decided to prepend a two letters prefix to its types and classes. The two letter are generally coming from the framework declaring the type: UIKit classes and types have a UI prefix (UIView, UILabel, etc.), Core Graphics uses the CG prefix (CGFloat, CGRect, etc.) and the Foundation and AppKit frameworks (the latter present only on the Mac) use NS (NSString, NSArray, etc.). Why NS? Because these libraries were first developed at NeXT for the NeXTSTEP operating system.<br>
-
-<br>
-It is a good practice to you add a prefix to your classes and types too. Even if you are not developing a framework but a normal app (which is often the case), just use letters from the app name to be sure to avoid collisions to code you might add later from a different source (like some open source code you might use in your project). There is no strict check from the compiler, so you can omit it, but it’s better not to.<br>
-
-<h1>Branching and decisions</h1>
-
-Let’s now see how flow control works in Objective-C. Flow control is another part that the language inherits directly from C, so the structures are the same. Decisions and branching happen, in Objective-C, through three branching statements.
-
-<h1>If-else statement</h1>
-
-The main statement to perform decisions in Objective-C is the if-else statement:<br>
-<br>
-
-<div class="alert alert-info" role="alert">
-if (expression) {<br>
-    if-body<br>
-} else {<br>
-    else-body<br>
-}
-</div>
-
-<br>
-The if-body is executed only if the expression to YES, true or any non zero value. Otherwise the else-body is executed. The else clause can be omitted like in many other languages. In the case of just one instruction in the if-body or else-body, the respective curly braces can be omitted too. If you come from a language that has no curly braces, there are many different styles that state where to place them.<br>
-<br>
-
-I personally use the K&R style now, that in my experience seems to be quite widespread in the Objective-C community, but I’ve moved through many different styles during my programming career. The only solid advice I can give you regarding this topic is to be consistent: pick one style and always use it everywhere.<br>
-<br>
-
-If you want to use more than one condition, the if-else statement allows multiple branches. This is usually the case in many languages, although it’s not possible in a few.<br>
-<br>
-
-<div class="alert alert-info" role="alert">
-if (expression1) {<br>
-    if-body<br>
-} else if (expression2) {<br>
-    else-if-body<br>
-} else {<br>
-    else-body<br>
-}
-</div>
-
-<br>
-The else if clause can be repeated as many times as needed.<br>
-
-<h1>Switch statement</h1>
-
-When you have multiple choices you can use, as we saw, the if-else statement with as many branches as needed. If the expression evaluates to an integer, though, C offers another branching facility, the switch statement:<br>
-
-
-<div class="alert alert-info" role="alert">
-switch (expression) {<br>
-    case value1:<br>
-        case-body-1<br>
-        break;<br>
-    case value2:<br>
-        case-body-2<br>
-        break;<br>
-    ...<br>
-    default:<br>
-        default-body<br>
-        break;<br>
-}
-</div>
-
-<br>
-The values for the different cases must be constant integers, which means that you can either write a number or a constant in them, but not a variable.<br>
-<br>
-
-The break statements are actually used to exit immediately from the switch statement. They are not mandatory, but pay attention not to forget them, otherwise the execution will continue into the next case.<br>
-<br>
-
-The default statement is optional, and is executed when the value of the expression does not match any case. The break in the default statement is not mandatory either and not necessary unless you put another case after the default, which I strongly advise against, since it would be a poor coding practice.<br>
-
-<h1>Ternary operator</h1>
-
-Another branching facility that Objective-C inherits from C is the ternary operator, also known as conditional operator. This is an operator that in some languages might not be available, and it’s a shorthand of the if-else statement and a return statement (which we will see later, but you are probably already familiar with). The ternary operator takes this form:<br>
-
-
-<div class="alert alert-info" role="alert">
-condition ? expression1 : expression2;
-</div>
-
-<br>
-If the condition evaluates to YES, true, or any non zero value, expression1 is executed and it’s value is returned, otherwise the same happens for expression2. Thus, it is equivalent to the following:<br>
-<br>
-
-<div class="alert alert-info" role="alert">
-if (condition)<br>
-    return expression1;<br>
-else<br>
-    return expression2;
-</div>
-
-<br>
-The ternary operator has the advantage over the if-else statement that it can be written inside another expression, like an assignment. Thus this is possible and sometimes used:<br>
-<br>
-
-<div class="alert alert-info" role="alert">
-a = condition ? expression1 : expression2;
-</div>
-
-
-<h1>Relational and logical operators</h1>
-
-To write the conditions for the branching statement and the loops we will see in a short while, C and Objective-C offer the following relational operators:<br>
-<br>
-
-
-Operator   Description                Syntax
-
-==         equal to                   a == b
-!=         not equal to               a != b
->          greater than               a > b
->=         greater than or equal to   a >= b
-<          less than                  a < b
-<=         less than or equal to      a <= b
-
-
-<br>
-Pay attention to the == operator. A very common mistake, especially when coming from other languages where this would not be allowed, is to use = in comparisons instead, which is the assignment operator. This is perfectly legal in C, as any assignment also returns a value that is checked by the if-else statement, which checks for 0 and non zero values. So, the program will compile and run perfectly, but probably not behave as you expect. This is a mistake that costs many people a lot of time in debugging. Luckily the latest versions of XCode might warn you of this common mistake when you build your project, if the proper settings are enabled.<br>
-<br>
-
-To combine conditions and form compound ones, C offers the common logical operators you find in many other languages:<br>
-<br>
-
-
-Operator   Description      Syntax
-
-!          negation (not)   !a
-&&         and              a && b
-||         or               a || b
-
-
-
-Pay attention to the double symbols used in and and or: C has also the single character versions, which are bitwise operators and not logical ones. We will have a look at these later.<br>
-<br>
-
-Many languages have a strict boolean notion of true and false. As we have seen, C, and Objective-C, have a more loose notion where zero and non zero values are checked instead. Some old versions of C don’t even have the bool type. It’s certainly beneficial to think in terms of truthiness of the conditions when writing them. It’s also useful nonetheless to know a bit of what happens behind the curtains. Objective-C NO and YES values are also mapped respectively to 0 and 1.<br>
-<br>
-
-This is useful to know for a very common idiom in Objective-C that comes from C. The nil value is also mapped to 0, which means that it is equivalent to NO. So, instead of checking if a variable (or value) is equal to nil, it’s common in Objective-C to check it’s negation, which is logically equivalent. So instead of writing:<br>
-<br>
-
-<div class="alert alert-info" role="alert">
-if (someObject == nil)
-</div>
-
-<br>
-We Write:<br>
-<br>
-
-<div class="alert alert-info" role="alert">
-if (!someObject)
-</div>
-
-<br>
-Many times, though, checking for nil values is not necessary as it is in other languages. We will see later why.<br>
-
-<h1>Loops</h1>
-
-Objective-C loops also come from C. In addition to these Objective-C also introduces a statement to enumerate collections that we will see later when we will talk about those. Looping over collections is much more common in an Objective-C program, but the basic loops are still useful nonetheless.<br>
-
-<h1>For loop</h1>
-
-The first loop statement, present in many modern languages as well is the for loop. In C it has the following syntax:<br>
-<br>
-
-<div class="alert alert-info" role="alert">
-for (initialization-expression; loop-condition; update-expression) {<br>
-    loop-body<br>
-}
-</div>
-
-<br>
-Please notice that the separators between initialization-expression, loop-condition and update-expression are semicolons and not commas.<br>
-<br>
-
-The for loop is quite flexible and can accept different kind of expressions in it. In it’s most common form, it’s used like this:<br>
-<br>
-
-The initialization-expression is an expression executed before entering the loop. It’s most commonly used to declare and/or initialize an integer variable used to count through the loop.<br>
-<br>
-
-The loop-condition is a boolean condition used to check when to terminate the loop. It is evaluated before each pass through the loop. When the loop condition is false, the loop is terminated. This is usually used to check if the counter declared in the initialization-expression is over or under a certain value.<br>
-<br>
-
-The update-expression is an expression that is evaluated at the end of each pass through the loop, after the loop body has been executed, and just before looping back to evaluate the condition-expression again. It’s usually used to update the value of the counter variable declared in the initialization-expression.<br>
-<br>
-
-In it’s most common incarnation, the for loop takes the following form:<br>
-<br>
-
-<div class="alert alert-info" role="alert">
-for (NSUInteger index = 0; index < someValue; index++) {<br>
-    loop-body<br>
-}
-</div>
-
-<br>
-Where someValue is a variable or a constant with some positive integer value. In this way the loop iterates exactly someValue times.<br>
-
-<h1>While loop</h1>
-
-The for-loop is normally used to iterate a fixed number of times. If we want to loop until a certain condition is met, then the while loop is normally used.<br>
-<br>
-
-<div class="alert alert-info" role="alert">
-while (condition) {<br>
-    loop-body<br>
-}
-</div>
-
-<br>
-The condition is checked at the beginning of every iteration and the loop ends when the condition evaluates to a false value. If it evaluates to false on the first iteration (before executing the loop-body once), then the loop-body is not executed.<br>
-
-<h1>Do-while loop</h1>
-
-If we want the loop to iterate at least one time, we have the do-while loop:<br>
-<br>
-
-<div class="alert alert-info" role="alert">
-do {<br>
-    loop-body<br>
-} while (condition);
-</div>
-
-<br>
-In this case the order of loop-body execution and condition evaluation is reversed. First the loop goes through one iteration and then checks the condition. If it evaluates to true, the loop continues, until it evaluates to false.<br>
-<br>
-
-As for the branching statement, the curly braces can be omitted in any loop if the loop body only has one instruction.<br>
-<br>
-<h1>Break and continue</h1>
-
-There are two statements that are used to alter the flow of the loop structures: break and continue. They can be used in any loop.<br>
-<br>
-
-The break statement is used when you want to terminate the loop prematurely, for reasons often different from the loop condition and at any point during an iteration, so you only execute part of it. This illustrates how usually it’s used:<br>
-<br>
-
-<div class="alert alert-info" role="alert">
-while (loop-condition) {<br>
-    some-instructions<br>
-    if (exit-condition)<br>
-        break;<br>
-    some-other-instructions<br>
-}
-</div>
-
-<br>
-If the exit-condition evaluates to true during any iteration, the loop exits without executing some-other-instructions, and execution continues after the loop. You can of course use more than one break checks in the loop body.<br>
-<br>
-
-Sometimes you want to just skip the rest of the current iteration like with the break statement, but without exiting the loop. The continue statement is used for this specific reason.<br>
-<br>
-
-<div class="alert alert-info" role="alert">
-while (loop-condition) {<br>
-    some-instructions<br>
-    if (skip-condition)<br>
-        continue;<br>
-    some-other-instructions<br>
-}
-</div>
-
-<br>
-When the skip-condition is true in any iteration, some-other-instructions are not executed, but the loop continues to the next iteration, checking again the loop-condition and executing the loop-body again.<br>
-<br>
-
-The break and continue statements can also be mixed inside the same loop, to have a more complex control over the flow structure.
-
-This example explains how this works:<br>
-<br>
-
-<div class="alert alert-info" role="alert">
-int  x;<br>
-int  y;<br>
-<br>
-// Increment operators<br>
-x = 1;<br>
-y = ++x; // x is now 2, y is also 2<br>
-y = x++; // x is now 3, y is 2<br>
-<br>
-// Decrement operators<br>
-x = 3;<br>
-y = x--; // x is now 2, y is 3<br>
-y = --x; // x is now 1, y is also 1
-</div>
-
-<br>
-We have already seen the assignment operator = which might be different in the languages you are used to. That is not the only assignment operator. The arithmetic operators (with the exception of the modulo) attach to the assignment and produce another four assignment operators, which are used as a shorthand for incrementing, decrementing, multiplying and dividing the content of a variable:<br>
+We have already seen the assignment operator <b>=</b> which might be different in the languages you are used to. That is not the only assignment operator. The arithmetic operators (with the exception of the modulo) attach to the assignment and produce another four assignment operators, which are used as a shorthand for incrementing, decrementing, multiplying and dividing the content of a variable:<br>
 <br>
 
 <table class="table">
@@ -1234,7 +966,7 @@ We have already seen the assignment operator = which might be different in the l
     </tr>
   </thead>
   <tbody>
-    <tr class="table-info">
+    <tr>
       <td>+=</td>
       <td>a += 10;</td>
       <td>a = a + 10;</td>
@@ -1255,13 +987,14 @@ We have already seen the assignment operator = which might be different in the l
       <td>a = a / 5;</td>
     </tr>
   </tbody>
-</table>            
+</table>
 
+<br>
 Unlike in other languages, in Objective-C there is no operator overloading. This means that these operators (and the other operators we will see later) only work with basic types and they do not work with objects (to concatenate strings, for example).<br>
 
 <h1>Object variables</h1>
 
-Let’s have a first look at objects. Objective-C is an object oriented language after all, so we need variables to contain objects. The generic type for an object variable is id:<br>
+Let’s have a first look at objects. Objective-C is an object oriented language after all, so we need variables to contain objects. The generic type for an object variable is <b>id</b>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -1269,7 +1002,7 @@ id myObject = nil;
 </div>
 
 <br>
-The id type means that the variable can contain any type of object. The nil value is equivalent to what is called null in some other languages (and in C) and means the variable is empty and does not contain any object. Objective-C is a dynamically typed language, so we can declare variables of type id and use them for any object. We can then call any method we want on that object, regardless of the fact that that method might exist or not. This might be useful in some cases, but the majority of the time we want the compiler to check for our mistakes as soon as possible and give variables a defined type.<br>
+The <b>id</b> type means that the variable can contain any type of object. The <b>nil</b> value is equivalent to what is called <b>null</b> in some other languages (and in C) and means the variable is empty and does not contain any object. Objective-C is a dynamically typed language, so we can declare variables of type <b>id</b> and use them for any object. We can then call any method we want on that object, regardless of the fact that that method might exist or not. This might be useful in some cases, but the majority of the time we want the compiler to check for our mistakes as soon as possible and give variables a defined type.<br>
 <br>
 
 Object variables with a specific type are declared in a slightly different way:<br>
@@ -1280,27 +1013,27 @@ NSString *aString = nil;
 </div>
 
 <br>
-Now what does that * mean? Well, strictly speaking that means that this variable is a pointer, a thing that makes many programmers recoil in horror. Pointers are one of those things coming from C you don’t want to deal with. Many modern languages don’t have pointers, so this might be a concept you are not familiar with. Although in the future, when you will be more familiar with the language, it might be useful to know what a pointer is, this is something you don’t have to worry about for now. You can write Objective-C without knowing this concept yet.<br>
+Now what does that <b>*</b> mean? Well, strictly speaking that means that this variable is a pointer, a thing that makes many programmers recoil in horror. Pointers are one of those things coming from C you don’t want to deal with. Many modern languages don’t have pointers, so this might be a concept you are not familiar with. Although in the future, when you will be more familiar with the language, it might be useful to know what a pointer is, this is something you don’t have to worry about for now. You can write Objective-C without knowing this concept yet.<br>
 <br>
 
-When programming I rarely think in terms of pointers. Just remember this simple rule: you need a * when you declare an object variable and you don’t when you use it.<br>
+When programming I rarely think in terms of pointers. Just remember this simple rule: you need a <b>*</b> when you declare an object variable and you don’t when you use it.<br>
 <br>
 
 A note on prefixes and namespaces<br>
 <br>
 
-As you probably noticed, all types in Objective-C have some prefix at the beginning of the name (NSString, CGFloat, etc). The reason is that Objective-C does not have namespaces. To avoid name collisions (different objects ending up having the same name) Apple decided to prepend a two letters prefix to its types and classes. The two letter are generally coming from the framework declaring the type: UIKit classes and types have a UI prefix (UIView, UILabel, etc.), Core Graphics uses the CG prefix (CGFloat, CGRect, etc.) and the Foundation and AppKit frameworks (the latter present only on the Mac) use NS (NSString, NSArray, etc.). Why NS? Because these libraries were first developed at NeXT for the NeXTSTEP operating system.<br>
-<br>
+As you probably noticed, all types in Objective-C have some prefix at the beginning of the name (<b>NSString, CGFloat</b>, etc). The reason is that Objective-C does not have namespaces. To avoid name collisions (different objects ending up having the same name) Apple decided to prepend a two letters prefix to its types and classes. The two letter are generally coming from the framework declaring the type: UIKit classes and types have a UI prefix (<b>UIView, UILabel</b>, etc.), Core Graphics uses the CG prefix (<b>CGFloat, CGRect</b>, etc.) and the Foundation and AppKit frameworks (the latter present only on the Mac) use NS (<b>NSString, NSArray</b>, etc.). Why NS? Because these libraries were first developed at NeXT for the NeXTSTEP operating system.<br>
 
+<br>
 It is a good practice to you add a prefix to your classes and types too. Even if you are not developing a framework but a normal app (which is often the case), just use letters from the app name to be sure to avoid collisions to code you might add later from a different source (like some open source code you might use in your project). There is no strict check from the compiler, so you can omit it, but it’s better not to.<br>
 
 <h1>Branching and decisions</h1>
 
-Let’s now see how flow control works in Objective-C. Flow control is another part that the language inherits directly from C, so the structures are the same. Decisions and branching happen, in Objective-C, through three branching statements.<br>
+Let’s now see how flow control works in Objective-C. Flow control is another part that the language inherits directly from C, so the structures are the same. Decisions and branching happen, in Objective-C, through three branching statements.
 
-<h1>If-else statement</h1>
+<b>If-else statement</b>
 
-The main statement to perform decisions in Objective-C is the if-else statement:<br>
+The main statement to perform decisions in Objective-C is the <b>if-else</b> statement:<br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -1312,7 +1045,7 @@ if (expression) {<br>
 </div>
 
 <br>
-The if-body is executed only if the expression to YES, true or any non zero value. Otherwise the else-body is executed. The else clause can be omitted like in many other languages. In the case of just one instruction in the if-body or else-body, the respective curly braces can be omitted too. If you come from a language that has no curly braces, there are many different styles that state where to place them.<br>
+The <b>if-body</b> is executed only if the expression to <b>YES, true</b> or any non zero value. Otherwise the <b>else-body</b> is executed. The <b>else</b> clause can be omitted like in many other languages. In the case of just one instruction in the <b>if-body</b> or <b>else-body</b>, the respective curly braces can be omitted too. If you come from a language that has no curly braces, there are <b class="c" style="color: royalblue">many different styles</b> that state where to place them.<br>
 <br>
 
 I personally use the K&R style now, that in my experience seems to be quite widespread in the Objective-C community, but I’ve moved through many different styles during my programming career. The only solid advice I can give you regarding this topic is to be consistent: pick one style and always use it everywhere.<br>
@@ -1332,12 +1065,12 @@ if (expression1) {<br>
 </div>
 
 <br>
-The else if clause can be repeated as many times as needed.<br>
+The <b>else if</b> clause can be repeated as many times as needed.<br>
 
 <h1>Switch statement</h1>
 
 When you have multiple choices you can use, as we saw, the if-else statement with as many branches as needed. If the expression evaluates to an integer, though, C offers another branching facility, the switch statement:<br>
-<br>
+
 
 <div class="alert alert-info" role="alert">
 switch (expression) {<br>
@@ -1358,24 +1091,24 @@ switch (expression) {<br>
 The values for the different cases must be constant integers, which means that you can either write a number or a constant in them, but not a variable.<br>
 <br>
 
-The break statements are actually used to exit immediately from the switch statement. They are not mandatory, but pay attention not to forget them, otherwise the execution will continue into the next case.<br>
+The <b>break</b> statements are actually used to exit immediately from the switch statement. They are not mandatory, but pay attention not to forget them, otherwise the execution will continue into the next <b>case</b>.<br>
 <br>
 
-The default statement is optional, and is executed when the value of the expression does not match any case. The break in the default statement is not mandatory either and not necessary unless you put another case after the default, which I strongly advise against, since it would be a poor coding practice.<br>
+The <b>default</b> statement is optional, and is executed when the value of the expression does not match any case. The <b>break</b> in the <b>default</b> statement is not mandatory either and not necessary unless you put another case after the <b>default</b>, which I strongly advise against, since it would be a poor coding practice.<br>
 
 <h1>Ternary operator</h1>
 
-Another branching facility that Objective-C inherits from C is the ternary operator, also known as conditional operator. This is an operator that in some languages might not be available, and it’s a shorthand of the if-else statement and a return statement (which we will see later, but you are probably already familiar with). The ternary operator takes this form:<br>
-<br>
+Another branching facility that Objective-C inherits from C is the ternary operator, also known as conditional operator. This is an operator that in some languages might not be available, and it’s a shorthand of the <b>if-else</b> statement and a <b>return</b> statement (which we will see later, but you are probably already familiar with). The ternary operator takes this form:<br>
+
 
 <div class="alert alert-info" role="alert">
 condition ? expression1 : expression2;
 </div>
 
 <br>
-If the condition evaluates to YES, true, or any non zero value, expression1 is executed and it’s value is returned, otherwise the same happens for expression2. Thus, it is equivalent to the following:<br>
-
+If the condition evaluates to <b>YES, true</b>, or any non zero value, <b>expression1</b> is executed and it’s value is returned, otherwise the same happens for <b>expression2</b>. Thus, it is equivalent to the following:<br>
 <br>
+
 <div class="alert alert-info" role="alert">
 if (condition)<br>
     return expression1;<br>
@@ -1391,6 +1124,7 @@ The ternary operator has the advantage over the if-else statement that it can be
 a = condition ? expression1 : expression2;
 </div>
 
+
 <h1>Relational and logical operators</h1>
 
 To write the conditions for the branching statement and the loops we will see in a short while, C and Objective-C offer the following relational operators:<br>
@@ -1400,19 +1134,19 @@ To write the conditions for the branching statement and the loops we will see in
   <thead>
     <tr>
       <th>Operator</th>
-      <th>Description </th>
+      <th>Description</th>
       <th>Syntax</th>
     </tr>
   </thead>
   <tbody>
-    <tr class="table-info">
+    <tr>
       <td>==</td>
       <td>equal to</td>
       <td>a == b</td>
     </tr>
     <tr>
       <td>!=</td>
-      <td>not equal to </td>
+      <td>not equal to</td>
       <td>a != b</td>
     </tr>
     <tr>
@@ -1438,7 +1172,8 @@ To write the conditions for the branching statement and the loops we will see in
   </tbody>
 </table>
 
-Pay attention to the == operator. A very common mistake, especially when coming from other languages where this would not be allowed, is to use = in comparisons instead, which is the assignment operator. This is perfectly legal in C, as any assignment also returns a value that is checked by the if-else statement, which checks for 0 and non zero values. So, the program will compile and run perfectly, but probably not behave as you expect. This is a mistake that costs many people a lot of time in debugging. Luckily the latest versions of XCode might warn you of this common mistake when you build your project, if the proper settings are enabled.<br>
+<br>
+Pay attention to the <b>==</b> operator. A very common mistake, especially when coming from other languages where this would not be allowed, is to use <b>=</b> in comparisons instead, which is the assignment operator. This is perfectly legal in C, as any assignment also returns a value that is checked by the <b>if-else</b> statement, which checks for 0 and non zero values. So, the program will compile and run perfectly, but probably not behave as you expect. This is a mistake that costs many people a lot of time in debugging. Luckily the latest versions of XCode might warn you of this common mistake when you build your project, if the proper settings are enabled.<br>
 <br>
 
 To combine conditions and form compound ones, C offers the common logical operators you find in many other languages:<br>
@@ -1453,7 +1188,7 @@ To combine conditions and form compound ones, C offers the common logical operat
     </tr>
   </thead>
   <tbody>
-    <tr class="table-info">
+    <tr>
       <td>!</td>
       <td>negation (not)</td>
       <td>!a</td>
@@ -1463,7 +1198,7 @@ To combine conditions and form compound ones, C offers the common logical operat
       <td>and</td>
       <td>a && b</td>
     </tr>
-        <tr>
+    <tr>
       <td>||</td>
       <td>or</td>
       <td>a || b</td>
@@ -1471,13 +1206,14 @@ To combine conditions and form compound ones, C offers the common logical operat
   </tbody>
 </table>
 
+<br>
 Pay attention to the double symbols used in and and or: C has also the single character versions, which are bitwise operators and not logical ones. We will have a look at these later.<br>
 <br>
 
-Many languages have a strict boolean notion of true and false. As we have seen, C, and Objective-C, have a more loose notion where zero and non zero values are checked instead. Some old versions of C don’t even have the bool type. It’s certainly beneficial to think in terms of truthiness of the conditions when writing them. It’s also useful nonetheless to know a bit of what happens behind the curtains. Objective-C NO and YES values are also mapped respectively to 0 and 1.<br>
+Many languages have a strict boolean notion of true and false. As we have seen, C, and Objective-C, have a more loose notion where zero and non zero values are checked instead. Some old versions of C don’t even have the <b>bool</b> type. It’s certainly beneficial to think in terms of truthiness of the conditions when writing them. It’s also useful nonetheless to know a bit of what happens behind the curtains. Objective-C NO and YES values are also mapped respectively to 0 and 1.<br>
 <br>
 
-This is useful to know for a very common idiom in Objective-C that comes from C. The nil value is also mapped to 0, which means that it is equivalent to NO. So, instead of checking if a variable (or value) is equal to nil, it’s common in Objective-C to check it’s negation, which is logically equivalent. So instead of writing:<br>
+This is useful to know for a very common idiom in Objective-C that comes from C. The <b>nil</b> value is also mapped to 0, which means that it is equivalent to NO. So, instead of checking if a variable (or value) is equal to <b>nil</b>, it’s common in Objective-C to check it’s negation, which is logically equivalent. So instead of writing:<br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -1493,7 +1229,7 @@ if (!someObject)
 </div>
 
 <br>
-Many times, though, checking for nil values is not necessary as it is in other languages. We will see later why.<br>
+Many times, though, checking for <b>nil</b> values is not necessary as it is in other languages. We will see later why.<br>
 
 <h1>Loops</h1>
 
@@ -1511,19 +1247,19 @@ for (initialization-expression; loop-condition; update-expression) {<br>
 </div>
 
 <br>
-Please notice that the separators between initialization-expression, loop-condition and update-expression are semicolons and not commas.<br>
+Please notice that the separators between <b>initialization-expression, loop-condition</b> and <b>update-expression</b> are semicolons and not commas.<br>
 <br>
 
 The for loop is quite flexible and can accept different kind of expressions in it. In it’s most common form, it’s used like this:<br>
 <br>
 
-The initialization-expression is an expression executed before entering the loop. It’s most commonly used to declare and/or initialize an integer variable used to count through the loop.<br>
+The <b>initialization-expression</b> is an expression executed before entering the loop. It’s most commonly used to declare and/or initialize an integer variable used to count through the loop.<br>
 <br>
 
-The loop-condition is a boolean condition used to check when to terminate the loop. It is evaluated before each pass through the loop. When the loop condition is false, the loop is terminated. This is usually used to check if the counter declared in the initialization-expression is over or under a certain value.<br>
+The <b>loop-condition</b> is a boolean condition used to check when to terminate the loop. It is evaluated before each pass through the loop. When the loop condition is false, the loop is terminated. This is usually used to check if the counter declared in the initialization-expression is over or under a certain value.<br>
 <br>
 
-The update-expression is an expression that is evaluated at the end of each pass through the loop, after the loop body has been executed, and just before looping back to evaluate the condition-expression again. It’s usually used to update the value of the counter variable declared in the initialization-expression.<br>
+The <b>update-expression</b> is an expression that is evaluated at the end of each pass through the loop, after the loop body has been executed, and just before looping back to evaluate the <b>condition-expression</b> again. It’s usually used to update the value of the counter variable declared in the <b>initialization-expression</b>.<br>
 <br>
 
 In it’s most common incarnation, the for loop takes the following form:<br>
@@ -1536,7 +1272,7 @@ for (NSUInteger index = 0; index < someValue; index++) {<br>
 </div>
 
 <br>
-Where someValue is a variable or a constant with some positive integer value. In this way the loop iterates exactly someValue times.<br>
+Where <b>someValue</b> is a variable or a constant with some positive integer value. In this way the loop iterates exactly <b>someValue</b> times.<br>
 
 <h1>While loop</h1>
 
@@ -1550,11 +1286,11 @@ while (condition) {<br>
 </div>
 
 <br>
-The condition is checked at the beginning of every iteration and the loop ends when the condition evaluates to a false value. If it evaluates to false on the first iteration (before executing the loop-body once), then the loop-body is not executed.<br>
+The <b>condition</b> is checked at the beginning of every iteration and the loop ends when the condition evaluates to a false value. If it evaluates to false on the first iteration (before executing the <b>loop-body</b> once), then the <b>loop-body</b> is not executed.<br>
 
 <h1>Do-while loop</h1>
 
-If we want the loop to iterate at least one time, we have the do-while loop:<br>
+If we want the loop to iterate at least one time, we have the <b>do-while</b> loop:<br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -1564,17 +1300,17 @@ do {<br>
 </div>
 
 <br>
-In this case the order of loop-body execution and condition evaluation is reversed. First the loop goes through one iteration and then checks the condition. If it evaluates to true, the loop continues, until it evaluates to false.<br>
+In this case the order of <b>loop-body</b> execution and <b>condition</b> evaluation is reversed. First the loop goes through one iteration and then checks the <b>condition</b>. If it evaluates to true, the loop continues, until it evaluates to false.<br>
 <br>
 
 As for the branching statement, the curly braces can be omitted in any loop if the loop body only has one instruction.<br>
-
+<br>
 <h1>Break and continue</h1>
 
-There are two statements that are used to alter the flow of the loop structures: break and continue. They can be used in any loop.<br>
+There are two statements that are used to alter the flow of the loop structures: <b>break</b> and <b>continue</b>. They can be used in any loop.<br>
 <br>
 
-The break statement is used when you want to terminate the loop prematurely, for reasons often different from the loop condition and at any point during an iteration, so you only execute part of it. This illustrates how usually it’s used:<br>
+The <b>break</b> statement is used when you want to terminate the loop prematurely, for reasons often different from the loop condition and at any point during an iteration, so you only execute part of it. This illustrates how usually it’s used:<br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -1587,10 +1323,10 @@ while (loop-condition) {<br>
 </div>
 
 <br>
-If the exit-condition evaluates to true during any iteration, the loop exits without executing some-other-instructions, and execution continues after the loop. You can of course use more than one break checks in the loop body.<br>
+If the <b>exit-condition</b> evaluates to true during any iteration, the loop exits without executing <b>some-other-instructions</b>, and execution continues after the loop. You can of course use more than one break checks in the loop body.<br>
 <br>
 
-Sometimes you want to just skip the rest of the current iteration like with the break statement, but without exiting the loop. The continue statement is used for this specific reason.<br>
+Sometimes you want to just skip the rest of the current iteration like with the <b>break</b> statement, but without exiting the loop. The <b>continue</b> statement is used for this specific reason.<br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -1603,11 +1339,10 @@ while (loop-condition) {<br>
 </div>
 
 <br>
-When the skip-condition is true in any iteration, some-other-instructions are not executed, but the loop continues to the next iteration, checking again the loop-condition and executing the loop-body again.<br>
+When the <b>skip-condition</b> is true in any iteration, <b>some-other-instructions</b> are not executed, but the loop continues to the next iteration, checking again the <b>loop-condition</b> and executing the <b>loop-body</b> again.<br>
 <br>
 
- The break and continue statements can also be mixed inside the same loop, to have a more complex control over the flow structure.
-
+The break and continue statements can also be mixed inside the same loop, to have a more complex control over the flow structure.
                 </p>
 <br>
 <br>
