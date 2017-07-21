@@ -139,8 +139,7 @@ li{
 
                 <h1>Creating and Formatting the String</h1>
 
-                <p style="text-indent: 40px">The most common and the one you’re likely to be using is stringWithFormat:</p><br>
-<br>
+                <p style="text-indent: 40px">The most common and the one you’re likely to be using is stringWithFormat:</p>
 
 <div class="alert alert-info" role="alert">
 NSString *yourString = @"iOS-Blog";<br>
@@ -148,11 +147,9 @@ NSString *yourNewString = [NSString stringWithFormat:@"Check out:    %@ for awes
 // yourNewString is now @"Check out: iOS-Blog for awesome tutorials."
 </div>
 
-<br>
-<p style="text-indent: 40px">Common string format specifiers are: <b>%@</b> another object. (this calls the :description verb on the specified object, which must then return an NSString.), <b>%d</b> an integer number, <b>%f, %.4f</b> floating point number (with .n digits after the decimal place).</p><br>
+<p style="text-indent: 40px">Common string format specifiers are: <b>%@</b> another object. (this calls the :description verb on the specified object, which must then return an NSString.), <b>%d</b> an integer number, <b>%f, %.4f</b> floating point number (with .n digits after the decimal place).</p>
 
-<p style="text-indent: 40px">You can also get the length of a string which can be obtained using the length method:</p><br>
-<br>
+<p style="text-indent: 40px">You can also get the length of a string which can be obtained using the length method:</p>
 
 <div class="alert alert-info" role="alert">
 NSString *yourString = @"iOS-Blog";<br>
@@ -161,8 +158,7 @@ int yourLength = [yourString length];       // yourLength is equals to 8
 
 <h1>Joining an Array of Strings</h1>
 
-<p style="text-indent: 40px">For this, you need to use NSArray’s <b class="c" style="color: royalblue">componentsJoinedByString:</b></p><br>
-<br>
+<p style="text-indent: 40px">For this, you need to use NSArray’s <b class="c" style="color: royalblue">componentsJoinedByString:</b></p>
 
 <div class="alert alert-info" role="alert">
 NSArray *yourWords = [NSArray arrayWithObjects:@"iOS-Blog", @"is", @"just", @"awesome", nil];<br>
@@ -173,8 +169,7 @@ NSString *sentence = [yourWords componentsJoinedByString:@" "];<br>
 
 <h1>Equals to</h1>
 
-<p style="text-indent: 40px">There may become a time you need to determine if two of your strings are equal, for this we use: <b class="c" style="color: royalblue">isEqualToString</b> and we implement it like so:</p><br>
-<br>
+<p style="text-indent: 40px">There may become a time you need to determine if two of your strings are equal, for this we use: <b class="c" style="color: royalblue">isEqualToString</b> and we implement it like so:</p>
 
 <div class="alert alert-info" role="alert">
 NSString *yourString = @"iOS-Blog";<br>
@@ -187,11 +182,9 @@ if ([yourString isEqualToString:@"iOS-Blog"]) {<br>
 
 <h1>Replacing Characters in a String</h1>
 
-<p style="text-indent: 40px">Many languages offer you the chance to replace information within a string, for example PHP used the <b class="c" style="color: royalblue">str_replace</b> method. However, in Objective-C we use the <b class="c" style="color: royalblue">stringByReplacingOccurrencesOfString</b> method.</p><br>
-<br>
+<p style="text-indent: 40px">Many languages offer you the chance to replace information within a string, for example PHP used the <b class="c" style="color: royalblue">str_replace</b> method. However, in Objective-C we use the <b class="c" style="color: royalblue">stringByReplacingOccurrencesOfString</b> method.</p>
 
-<p style="text-indent: 40px">So lets say that you wanted to take out all the references to the word red:</p><br>
-<br>
+<p style="text-indent: 40px">So lets say that you wanted to take out all the references to the word red:</p>
 
 <div class="alert alert-info" role="alert">
 NSString *newString = [textField.text stringByReplacingOccurrencesOfString:@"red" withString:@""];
@@ -199,8 +192,7 @@ NSString *newString = [textField.text stringByReplacingOccurrencesOfString:@"red
 
 <h1>Splitting Strings into an Array</h1>
 
-<p style="text-indent: 40px">We use a method called componentsSeparatedByString to achieve this:</p><br>
-<br>
+<p style="text-indent: 40px">We use a method called componentsSeparatedByString to achieve this:</p>
 
 <div class="alert alert-info" role="alert">
 NSString *yourString = @"This is a test string";<br>
@@ -209,22 +201,17 @@ NSArray *yourWords = [myString componentsSeparatedByString:@" "];<br>
 // yourWords is now: [@"This", @"is", @"a", @"test", @"string"]
 </div>
 
-<br>
-<p style="text-indent: 40px">if you need to split on a set of several different characters, use NSString’s componentsSeparatedByCharactersInSet:</p><br>
-<br>
+<p style="text-indent: 40px">if you need to split on a set of several different characters, use NSString’s componentsSeparatedByCharactersInSet:</p>
 
-<p style="text-indent: 40px">Just like other languages, strings are enclosed and defined by the use of “double quotes”, however in Objective-C an NSString also comes with the prefix of the @ sign, Like so:</p><br>
-<br>
+<p style="text-indent: 40px">Just like other languages, strings are enclosed and defined by the use of “double quotes”, however in Objective-C an NSString also comes with the prefix of the @ sign, Like so:</p>
 
 <div class="alert alert-info" role="alert">
 NSString *yourString = @"This is a string, you like?";
 </div>
 
-
 <h1>Creating and Formatting the String</h1>
 
-<p style="text-indent: 40px">Take a look at the apple documentation on NSString Class Reference to check the number of ways that you can create and return strings. The most common and the one you’re likely to be using is stringWithFormat:</p><br>
-<br>
+<p style="text-indent: 40px">Take a look at the apple documentation on NSString Class Reference to check the number of ways that you can create and return strings. The most common and the one you’re likely to be using is stringWithFormat:</p>
 
 <div class="alert alert-info" role="alert">
 NSString *yourString = @"iOS-Blog";<br>
@@ -232,12 +219,9 @@ NSString *yourNewString = [NSString stringWithFormat:@"Check out:    %@ for awes
 // yourNewString is now @"Check out: iOS-Blog for awesome tutorials."
 </div>
 
-<br>
-<p style="text-indent: 40px">Common string format specifiers are: %@ another object. (this calls the :description verb on the specified object, which must then return an NSString.), %d an integer number, %f, %.4f floating point number (with .n digits after the decimal place).</p><br>
-<br>
+<p style="text-indent: 40px">Common string format specifiers are: %@ another object. (this calls the :description verb on the specified object, which must then return an NSString.), %d an integer number, %f, %.4f floating point number (with .n digits after the decimal place).</p>
 
-<p style="text-indent: 40px">You can also get the length of a string which can be obtained using the length method:</p><br>
-<br>
+<p style="text-indent: 40px">You can also get the length of a string which can be obtained using the length method:</p>
 
 <div class="alert alert-info" role="alert">
 NSString *yourString = @"iOS-Blog";<br>
@@ -245,9 +229,7 @@ int yourLength = [yourString length];       // yourLength is equals to 8 <br>
 Joining an Array of Strings
 </div>
 
-<br>
-<p style="text-indent: 40px">For this, you need to use NSArray’s componentsJoinedByString:</p><br>
-<br>
+<p style="text-indent: 40px">For this, you need to use NSArray’s componentsJoinedByString:</p>
 
 <div class="alert alert-info" role="alert">
 NSArray *yourWords = [NSArray arrayWithObjects:@"iOS-Blog", @"is", @"just", @"awesome", nil];<br>
@@ -256,11 +238,9 @@ NSString *sentence = [yourWords componentsJoinedByString:@" "];<br>
 // *sentence is now: @"iOS-Blog is just awesome"
 </div>
 
-
 <h1>Equals to</h1>
 
-<p style="text-indent: 40px">There may become a time you need to determine if two of your strings are equal, for this we use: isEqualToString and we implement it like so:</p><br>
-<br>
+<p style="text-indent: 40px">There may become a time you need to determine if two of your strings are equal, for this we use: isEqualToString and we implement it like so:</p>
 
 <div class="alert alert-info" role="alert">
 NSString *yourString = @"iOS-Blog";<br>
@@ -273,11 +253,9 @@ if ([yourString isEqualToString:@"iOS-Blog"]) {<br>
 
 <h1>Replacing Characters in a String</h1>
 
-<p style="text-indent: 40px">Many languages offer you the chance to replace information within a string, for example PHP used the str_replace method. However, in Objective-C we use the stringByReplacingOccurrencesOfString method.</p><br>
-<br>
+<p style="text-indent: 40px">Many languages offer you the chance to replace information within a string, for example PHP used the str_replace method. However, in Objective-C we use the stringByReplacingOccurrencesOfString method.</p>
 
-<p style="text-indent: 40px">So lets say that you wanted to take out all the references to the word red:</p><br>
-<br>
+<p style="text-indent: 40px">So lets say that you wanted to take out all the references to the word red:</p>
 
 <div class="alert alert-info" role="alert">
 NSString *newString = [textField.text stringByReplacingOccurrencesOfString:@"red" withString:@""];
@@ -285,8 +263,7 @@ NSString *newString = [textField.text stringByReplacingOccurrencesOfString:@"red
 
 <h1>Splitting Strings into an Array</h1>
 
-<p style="text-indent: 40px">We use a method called componentsSeparatedByString to achieve this:</p><br>
-<br>
+<p style="text-indent: 40px">We use a method called componentsSeparatedByString to achieve this:</p>
 
 <div class="alert alert-info" role="alert">
 NSString *yourString = @"This is a test string";<br>
@@ -295,9 +272,7 @@ NSArray *yourWords = [myString componentsSeparatedByString:@" "];<br>
 // yourWords is now: [@"This", @"is", @"a", @"test", @"string"]
 </div>
 
-<br>
-<p style="text-indent: 40px">if you need to split on a set of several different characters, use NSString’s componentsSeparatedByCharactersInSet:</p><br>
-<br>
+<p style="text-indent: 40px">if you need to split on a set of several different characters, use NSString’s componentsSeparatedByCharactersInSet:</p>
 
 <div class="alert alert-info" role="alert">
 NSString *yourString = @"Foo-bar/iOS-Blog";<br>
@@ -308,9 +283,7 @@ NSArray *yourWords = [myString componentsSeparatedByCharactersInSet:<br>
 // yourWords is now: [@"Foo", @"bar", @"iOS", @"Blog"]
 </div>
 
-<br>
-<p style="text-indent: 40px">Note however that the separator string <b>can’t</b> be blank. If you need to separate a string into its individual characters, just loop through the length of the string and convert each char into a new string:</p><br>
-<br>
+<p style="text-indent: 40px">Note however that the separator string <b>can’t</b> be blank. If you need to separate a string into its individual characters, just loop through the length of the string and convert each char into a new string:</p>
 
 <div class="alert alert-info" role="alert">
 NSMutableArray *characters = [[NSMutableArray alloc] initWithCapacity:[myString length]];<br>
@@ -322,16 +295,13 @@ for (int i=0; i < [myString length]; i++) {<br>
 
 <h1>Trim Spaces from the End of a String</h1>
 
-<p style="text-indent: 40px">Sometimes you might need to remove white spacing, sometimes you just want to, for this we will use the whitespaceCharacterSet method to remove the white spaces from both ends of the string:</p><br>
-<br>
+<p style="text-indent: 40px">Sometimes you might need to remove white spacing, sometimes you just want to, for this we will use the whitespaceCharacterSet method to remove the white spaces from both ends of the string:</p>
 
 <div class="alert alert-info" role="alert">
 NSString *yourString = [whitespaceString stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceCharacterSet]];
 </div>
 
-<br>
-<p style="text-indent: 40px">If you want to also remove newlines from the string however, use the whitespaceAndNewlineCharacterSet:</p><br>
-<br>
+<p style="text-indent: 40px">If you want to also remove newlines from the string however, use the whitespaceAndNewlineCharacterSet:</p>
 
 <div class="alert alert-info" role="alert">
 NSString *yourString = [whitespaceString stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceAndNewlineCharacterSet]];
@@ -339,8 +309,7 @@ NSString *yourString = [whitespaceString stringByTrimmingCharactersInSet: [NSCha
 
 <h1>Concatenating and Appending Strings</h1>
 
-<p style="text-indent: 40px">This is quite possibly the most useful thing that you will need to know. Concatenating strings. So you have two strings and you need them to go together. Like firstName and LastName. Then this is how you would do that:</p><br>
-<br>
+<p style="text-indent: 40px">This is quite possibly the most useful thing that you will need to know. Concatenating strings. So you have two strings and you need them to go together. Like firstName and LastName. Then this is how you would do that:</p>
 
 <div class="alert alert-info" role="alert">
 NSString *firstName = @"iOS-";<br>
@@ -351,9 +320,7 @@ NSString *fullName = [string1 stringByAppendingString:string2];<br>
 // firstName and lastName are unchanged and can be used again. 
 </div>
 
-<br>
-<p style="text-indent: 40px">This is a little different if you are using <b class="c" style="color: royalblue">NSMutableString</b> method, you just simply call the appendString method</p><br>
-<br>
+<p style="text-indent: 40px">This is a little different if you are using <b class="c" style="color: royalblue">NSMutableString</b> method, you just simply call the appendString method</p>
 
 <div class="alert alert-info" role="alert">
 NSMutableString *string1 = [NSMutableString stringWithString:@"This is"];<br>
@@ -362,9 +329,7 @@ NSString *string2 = @" a test.";<br>
 NSLog(@"string1: %@", string1);         // string1 is now @"This is a test."
 </div>
 
-<br>
-<p style="text-indent: 40px">If you would like to concatenate 3 strings then it’s probably easier to construct a new string out of the three by using stringWithFormat: method</p><br>
-<br>
+<p style="text-indent: 40px">If you would like to concatenate 3 strings then it’s probably easier to construct a new string out of the three by using stringWithFormat: method</p>
 
 <div class="alert alert-info" role="alert">
 NSString *allThreeStrings = [NSString stringWithFormat:@"%@ %@ and boring %@",<br>
@@ -373,29 +338,23 @@ NSString *allThreeStrings = [NSString stringWithFormat:@"%@ %@ and boring %@",<b
 
 <h1>Finding and Replacing Substrings</h1>
 
-<p style="text-indent: 40px">For this we will use the NSString method: rangeOfString to find out whether a substring exists within another string:</p><br>
-<br>
+<p style="text-indent: 40px">For this we will use the NSString method: rangeOfString to find out whether a substring exists within another string:</p>
 
 <div class="alert alert-info" role="alert">
 NSString *theString = @"iOS-Blog.com";<br>
 NSRange isCom = [theString rangeOfString:@".com"];
 </div>
 
-<br>
-NSRange is a struct with two parts:<br>
-<br>
+<p style="text-indent: 40px">NSRange is a struct with two parts:</p>
 
 <div class="alert alert-info" role="alert">
     .location<br>
     .length
 </div>
 
-<br>
-<p style="text-indent: 40px">If the substring is not found, rangeOfString returns <b>{NSNotFound, 0}</b></p>.<br>
-<br>
+<p style="text-indent: 40px">If the substring is not found, rangeOfString returns <b>{NSNotFound, 0}</b></p>.
 
-<p style="text-indent: 40px">There is a shorter and easier way to test whether a s string is found:</p><br>
-<br>
+<p style="text-indent: 40px">There is a shorter and easier way to test whether a s string is found:</p>
 
 <div class="alert alert-info" role="alert">
 if ( [theString rangeOfString:@".com"].location != NSNotFound ) {<br>
@@ -404,7 +363,6 @@ if ( [theString rangeOfString:@".com"].location != NSNotFound ) {<br>
 </div>
 
 <h1>Replacing or removing a Substring:</h1>
-
 
 <div class="alert alert-info" role="alert">
 NSString *theString = @"ios-blog.com";<br>
@@ -419,24 +377,19 @@ if (tldr.location != NSNotFound) {<br>
 
 <h1>Comments</h1>
 
-<p style="text-indent: 40px">Comments in Objective-C come directly from C and are similar to what you find in other languages. One line comments are written like this:</p><br>
-<br>
+<p style="text-indent: 40px">Comments in Objective-C come directly from C and are similar to what you find in other languages. One line comments are written like this:</p>
 
 <div class="alert alert-info" role="alert">
 // This is a single line comment.
 </div>
 
-<br>
-<p style="text-indent: 40px">Everything after the // is ignored by the compiler until the end of the line. They also work after instructions:</p><br>
-<br>
+<p style="text-indent: 40px">Everything after the // is ignored by the compiler until the end of the line. They also work after instructions:</p>
 
 <div class="alert alert-info" role="alert">
 int counter = 0; // This is a counter.
 </div>
 
-<br>
-<p style="text-indent: 40px">C allows also multiline comments, which some languages don’t have</p><br>
-<br>
+<p style="text-indent: 40px">C allows also multiline comments, which some languages don’t have</p>
 
 <div class="alert alert-info" role="alert">
 /*<br>
@@ -447,11 +400,9 @@ which spans more than one line.<br>
 
 <h1>Variables and basic types</h1>
 
-<p style="text-indent: 40px">As in many other languages, you need to store your values and object inside variables. In some languages you can just use variables freely when you need them. Moreover you can change the content of the variable to anything you want: an integer, a decimal number, a string or an arbitrary object.</p><br>
-<br>
+<p style="text-indent: 40px">As in many other languages, you need to store your values and object inside variables. In some languages you can just use variables freely when you need them. Moreover you can change the content of the variable to anything you want: an integer, a decimal number, a string or an arbitrary object.</p>
 
-<p style="text-indent: 40px">This does not happen in C. Variables are typed, which means that you have to declare the type of data a variable will contain and you won’t be able to change it later. Variable declarations in C look like this:</p><br>
-<br>
+<p style="text-indent: 40px">This does not happen in C. Variables are typed, which means that you have to declare the type of data a variable will contain and you won’t be able to change it later. Variable declarations in C look like this:</p>
 
 <div class="alert alert-info" role="alert">
 int variable1 = 7;<br>
@@ -459,19 +410,13 @@ float variable2 = 3.14;<br>
 char variable3 = 'm';<br>
 </div>
 
-<br>
-<p style="text-indent: 40px">Variable names can contain digits but cannot start with them and cannot include spaces, but can include capital letters (used for <b class="c" style="color: royalblue">camel case</b>) or the underscore character _</p><br>
+<p style="text-indent: 40px">Variable names can contain digits but cannot start with them and cannot include spaces, but can include capital letters (used for <b class="c" style="color: royalblue">camel case</b>) or the underscore character _</p>
 
-<br>
-<p style="text-indent: 40px">As you might have noticed in the example above, each instruction in C ends with a semicolon, which is required. Many languages do to, but some don’t, so this might be new for you. You will learn fast to end instructions with semicolons.</p><br>
-<br>
+<p style="text-indent: 40px">As you might have noticed in the example above, each instruction in C ends with a semicolon, which is required. Many languages do to, but some don’t, so this might be new for you. You will learn fast to end instructions with semicolons.</p>
 
-<p style="text-indent: 40px">Take the habit of always initializing your variables to a specific value, even 0. In some languages variables are always initialized to 0 if no other value is specified. This does not happen in an Objective-C method, where non initialized variables will contain garbage and cause strange behaviours in your programs.</p><br>
-<br>
+<p style="text-indent: 40px">Take the habit of always initializing your variables to a specific value, even 0. In some languages variables are always initialized to 0 if no other value is specified. This does not happen in an Objective-C method, where non initialized variables will contain garbage and cause strange behaviours in your programs.</p>
 
-<p style="text-indent: 40px">These are the most common types of C used in Objective-C programs.</p><br>
-<br>
-
+<p style="text-indent: 40px">These are the most common types of C used in Objective-C programs.</p>
 
 <table class="table">
   <thead>
@@ -509,37 +454,28 @@ char variable3 = 'm';<br>
   </tbody>
 </table>
 
+<p style="text-indent: 40px">If you need bigger numbers that the int type can contain, there are the long and the long long types, with the related unsigned types.</p>
 
-<p style="text-indent: 40px">If you need bigger numbers that the int type can contain, there are the long and the long long types, with the related unsigned types.</p><br>
-<br>
-
-<p style="text-indent: 40px">Now, the fact is that when you look at Objective-C code, you rarely find these basic types, which some developers and Apple SDKs still use, while you find others more. Here are some common ones you will find often:</p><br>
-<br>
+<p style="text-indent: 40px">Now, the fact is that when you look at Objective-C code, you rarely find these basic types, which some developers and Apple SDKs still use, while you find others more. Here are some common ones you will find often:</p>
 
 <div class="alert alert-info" role="alert">
 NSInteger, for integer numbers<br>
 NSUInteger, for positive integers
 </div>
 
-<br>
-<p style="text-indent: 40px">CGFloat, for floating point decimal numbers, used for graphical values like drawing coordinates or sizes of graphical objects</p><br>
-<br>
+<p style="text-indent: 40px">CGFloat, for floating point decimal numbers, used for graphical values like drawing coordinates or sizes of graphical objects</p>
 
-<p style="text-indent: 40px">BOOL, for booleans, which uses YES and NO instead of true and false</p><br>
-<br>
+<p style="text-indent: 40px">BOOL, for booleans, which uses YES and NO instead of true and false</p>
 
-<p style="text-indent: 40px">The reason these types where created was to make transition from 32 bits to 64 bits architectures easier. C types map to a specific sizes in memory, while the types above change regarding to the architecture the code is compiled for. Objective-C also has its own <b>BOOL</b> type (<b class="c" style="color: royalblue">the reason for it is a bit more complicated</b>).</p><br>
-<br>
+<p style="text-indent: 40px">The reason these types where created was to make transition from 32 bits to 64 bits architectures easier. C types map to a specific sizes in memory, while the types above change regarding to the architecture the code is compiled for. Objective-C also has its own <b>BOOL</b> type (<b class="c" style="color: royalblue">the reason for it is a bit more complicated</b>).</p>
 
-<p style="text-indent: 40px">Try to use the latter types when you can and pay attention to which types are used and returend by APIs, or you might end with weird results if values are truncated when switching between the two types.</p><br>
-<br>
+<p style="text-indent: 40px">Try to use the latter types when you can and pay attention to which types are used and returend by APIs, or you might end with weird results if values are truncated when switching between the two types.</p>
 
-<p style="text-indent: 40px">C allows also to define other kind of simple types, a practice that is used extensively in Objective-C. We will see these types later.</p><br>
+<p style="text-indent: 40px">C allows also to define other kind of simple types, a practice that is used extensively in Objective-C. We will see these types later.</p>
 
 <h1>Operators</h1>
 
-<p style="text-indent: 40px">Like any other language, C has its own arithmetic operators to work with the numeric values stored in the variables (which are probably the same as the ones you already know).</p><br>
-<br>
+<p style="text-indent: 40px">Like any other language, C has its own arithmetic operators to work with the numeric values stored in the variables (which are probably the same as the ones you already know).</p>
 
 The arithmetic operators of C are the following:
 <table class="table">
@@ -579,12 +515,9 @@ The arithmetic operators of C are the following:
   </tbody>
 </table>
       
-<p style="text-indent: 40px">Arithmetic operators follow standard math operator precedence, so multiplication, division and module have precedence over addition and subtraction.</p><br>
-<br>
+<p style="text-indent: 40px">Arithmetic operators follow standard math operator precedence, so multiplication, division and module have precedence over addition and subtraction.</p>
 
-<p style="text-indent: 40px">C has also increment and decrement operators:</p><br>
-<br>
-
+<p style="text-indent: 40px">C has also increment and decrement operators:</p>
 
 <table class="table">
   <thead>
@@ -608,36 +541,29 @@ The arithmetic operators of C are the following:
   </tbody>
 </table>
 
-<p style="text-indent: 40px">Increment and decrement operators have precedence over the arithmetic operators. Pay particular attention to these operators. When used in isolation, they are equivalent:</p><br>
-<br>
+<p style="text-indent: 40px">Increment and decrement operators have precedence over the arithmetic operators. Pay particular attention to these operators. When used in isolation, they are equivalent:</p>
 
 <div class="alert alert-info" role="alert">
 someVariable++;
 </div>
 
-<br>
-<p style="text-indent: 40px">produces the same result as<br>
-<br>
+<p style="text-indent: 40px">produces the same result as
 
 <div class="alert alert-info" role="alert">
 ++someVariable;
 </div>
 
-<br>
-<p style="text-indent: 40px"><p style="text-indent: 40px">The difference comes out when you use them inside another expression. When put before the variable, they increment or decrement the value before it is used. When put after, they increments or decrement the value after using it.</p><br>
+<p style="text-indent: 40px"><p style="text-indent: 40px">The difference comes out when you use them inside another expression. When put before the variable, they increment or decrement the value before it is used. When put after, they increments or decrement the value after using it.</p>
 
 <h1>Trim Spaces from the End of a String</h1>
 
-<p style="text-indent: 40px"><p style="text-indent: 40px">Sometimes you might need to remove white spacing, sometimes you just want to, for this we will use the whitespaceCharacterSet method to remove the white spaces from both ends of the string:</p><br>
-<br>
+<p style="text-indent: 40px"><p style="text-indent: 40px">Sometimes you might need to remove white spacing, sometimes you just want to, for this we will use the whitespaceCharacterSet method to remove the white spaces from both ends of the string:</p>
 
 <div class="alert alert-info" role="alert">
 NSString *yourString = [whitespaceString stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceCharacterSet]];
 </div>
 
-<br>
-<p style="text-indent: 40px"><p style="text-indent: 40px">If you want to also remove newlines from the string however, use the whitespaceAndNewlineCharacterSet:</p><br>
-<br>
+<p style="text-indent: 40px"><p style="text-indent: 40px">If you want to also remove newlines from the string however, use the whitespaceAndNewlineCharacterSet:</p>
 
 <div class="alert alert-info" role="alert">
 NSString *yourString = [whitespaceString stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceAndNewlineCharacterSet]];
@@ -645,8 +571,7 @@ NSString *yourString = [whitespaceString stringByTrimmingCharactersInSet: [NSCha
 
 <h1>Concatenating and Appending Strings</h1>
 
-<p style="text-indent: 40px">This is quite possibly the most useful thing that you will need to know. Concatenating strings. So you have two strings and you need them to go together. Like firstName and LastName. Then this is how you would do that:</p><br>
-<br>
+<p style="text-indent: 40px">This is quite possibly the most useful thing that you will need to know. Concatenating strings. So you have two strings and you need them to go together. Like firstName and LastName. Then this is how you would do that:</p>
 
 <div class="alert alert-info" role="alert">
 NSString *firstName = @"iOS-";<br>
@@ -657,9 +582,7 @@ NSString *fullName = [string1 stringByAppendingString:string2];<br>
 // firstName and lastName are unchanged and can be used again. 
 </div>
 
-<br>
-<p style="text-indent: 40px">This is a little different if you are using NSMutableString method, you just simply call the appendString method</p><br>
-<br>
+<p style="text-indent: 40px">This is a little different if you are using NSMutableString method, you just simply call the appendString method</p>
 
 <div class="alert alert-info" role="alert">
 NSMutableString *string1 = [NSMutableString stringWithString:@"This is"];<br>
@@ -668,9 +591,7 @@ NSString *string2 = @" a test.";<br>
 NSLog(@"string1: %@", string1);         // string1 is now @"This is a test."
 </div>
 
-<br>
-<p style="text-indent: 40px">If you would like to concatenate 3 strings then it’s probably easier to construct a new string out of the three by using stringWithFormat: method</p><br>
-<br>
+<p style="text-indent: 40px">If you would like to concatenate 3 strings then it’s probably easier to construct a new string out of the three by using stringWithFormat: method</p>
 
 <div class="alert alert-info" role="alert">
 NSString *allThreeStrings = [NSString stringWithFormat:@"%@ %@ and boring %@",<br>
@@ -680,29 +601,23 @@ NSString *allThreeStrings = [NSString stringWithFormat:@"%@ %@ and boring %@",<b
 
 <h1>Finding and Replacing Substrings</h1>
 
-<p style="text-indent: 40px">For this we will use the NSString method: rangeOfString to find out whether a substring exists within another string:</p><br>
-<br>
+<p style="text-indent: 40px">For this we will use the NSString method: rangeOfString to find out whether a substring exists within another string:</p>
 
 <div class="alert alert-info" role="alert">
 NSString *theString = @"iOS-Blog.com";<br>
 NSRange isCom = [theString rangeOfString:@".com"];
 </div>
 
-<br>
-NSRange is a struct with two parts:<br>
-<br>
+<p style="text-indent: 40px">NSRange is a struct with two parts:</p>
 
 <div class="alert alert-info" role="alert">
     .location<br>
     .length
 </div>
 
-<br>
-<p style="text-indent: 40px">If the substring is not found, rangeOfString returns {NSNotFound, 0}.</p><br>
-<br>
+<p style="text-indent: 40px">If the substring is not found, rangeOfString returns {NSNotFound, 0}.</p>
 
-<p style="text-indent: 40px">There is a shorter and easier way to test whether a s string is found:</p><br>
-<br>
+<p style="text-indent: 40px">There is a shorter and easier way to test whether a s string is found:</p>
 
 <div class="alert alert-info" role="alert">
 if ( [theString rangeOfString:@".com"].location != NSNotFound ) {<br>
@@ -710,9 +625,7 @@ if ( [theString rangeOfString:@".com"].location != NSNotFound ) {<br>
 }
 </div>
 
-
 <h1>Replacing or removing a Substring:</h1>
-
 
 <div class="alert alert-info" role="alert">
 NSString *theString = @"ios-blog.com";<br>
@@ -727,24 +640,19 @@ if (tldr.location != NSNotFound) {<br>
 
 <h1>Comments</h1>
 
-<p style="text-indent: 40px">Comments in Objective-C come directly from C and are similar to what you find in other languages. One line comments are written like this:</p><br>
-<br>
+<p style="text-indent: 40px">Comments in Objective-C come directly from C and are similar to what you find in other languages. One line comments are written like this:</p>
 
 <div class="alert alert-info" role="alert">
 // This is a single line comment.
 </div>
 
-<br>
-<p style="text-indent: 40px">Everything after the // is ignored by the compiler until the end of the line. They also work after instructions:</p><br>
-<br>
+<p style="text-indent: 40px">Everything after the // is ignored by the compiler until the end of the line. They also work after instructions:</p>
 
 <div class="alert alert-info" role="alert">
 int counter = 0; // This is a counter.
 </div>
 
-<br>
-<p style="text-indent: 40px">C allows also multiline comments, which some languages don’t have</p><br>
-<br>
+<p style="text-indent: 40px">C allows also multiline comments, which some languages don’t have</p>
 
 <div class="alert alert-info" role="alert">
 /*<br>
@@ -755,11 +663,9 @@ which spans more than one line.<br>
 
 <h1>Variables and basic types</h1>
 
-<p style="text-indent: 40px">As in many other languages, you need to store your values and object inside variables. In some languages you can just use variables freely when you need them. Moreover you can change the content of the variable to anything you want: an integer, a decimal number, a string or an arbitrary object.</p><br>
-<br>
+<p style="text-indent: 40px">As in many other languages, you need to store your values and object inside variables. In some languages you can just use variables freely when you need them. Moreover you can change the content of the variable to anything you want: an integer, a decimal number, a string or an arbitrary object.</p>
 
-<p style="text-indent: 40px">This does not happen in C. Variables are typed, which means that you have to declare the type of data a variable will contain and you won’t be able to change it later. Variable declarations in C look like this:</p><br>
-<br>
+<p style="text-indent: 40px">This does not happen in C. Variables are typed, which means that you have to declare the type of data a variable will contain and you won’t be able to change it later. Variable declarations in C look like this:</p>
 
 <div class="alert alert-info" role="alert">
 int variable1 = 7;<br>
@@ -767,15 +673,11 @@ float variable2 = 3.14;<br>
 char variable3 = 'm';
 </div>
 
-<br>
-<p style="text-indent: 40px">Variable names can contain digits but cannot start with them and cannot include spaces, but can include capital letters (used for camel case) or the underscore character _</p><br>
-<br>
+<p style="text-indent: 40px">Variable names can contain digits but cannot start with them and cannot include spaces, but can include capital letters (used for camel case) or the underscore character _</p>
 
-<p style="text-indent: 40px">As you might have noticed in the example above, each instruction in C ends with a semicolon, which is required. Many languages do to, but some don’t, so this might be new for you. You will learn fast to end instructions with semicolons.</p><br>
-<br>
+<p style="text-indent: 40px">As you might have noticed in the example above, each instruction in C ends with a semicolon, which is required. Many languages do to, but some don’t, so this might be new for you. You will learn fast to end instructions with semicolons.</p>
 
-<p style="text-indent: 40px">Take the habit of always initializing your variables to a specific value, even 0. In some languages variables are always initialized to 0 if no other value is specified. This does not happen in an Objective-C method, where non initialized variables will contain garbage and cause strange behaviours in your programs.</p><br>
-<br>
+<p style="text-indent: 40px">Take the habit of always initializing your variables to a specific value, even 0. In some languages variables are always initialized to 0 if no other value is specified. This does not happen in an Objective-C method, where non initialized variables will contain garbage and cause strange behaviours in your programs.</p>
 
 <p style="text-indent: 40px">These are the most common types of C used in Objective-C programs.</p><br>
 <br>
@@ -817,33 +719,25 @@ char variable3 = 'm';
   </tbody>
 </table>
 
-<br>
-<p style="text-indent: 40px">If you need bigger numbers that the int type can contain, there are the long and the long long types, with the related unsigned types.</p><br>
-<br>
+<p style="text-indent: 40px">If you need bigger numbers that the int type can contain, there are the long and the long long types, with the related unsigned types.</p>
 
-<p style="text-indent: 40px">Now, the fact is that when you look at Objective-C code, you rarely find these basic types, which some developers and Apple SDKs still use, while you find others more. Here are some common ones you will find often:</p><br>
-<br>
+<p style="text-indent: 40px">Now, the fact is that when you look at Objective-C code, you rarely find these basic types, which some developers and Apple SDKs still use, while you find others more. Here are some common ones you will find often:</p>
 
-
+<div class="alert alert-info" role="alert">
 NSInteger, for integer numbers<br>
 NSUInteger, for positive integers<br>
 CGFloat, for floating point decimal numbers, used for graphical values like drawing coordinates or sizes of graphical objects<br>
-BOOL, for booleans, which uses YES and NO instead of true and false<br>
+BOOL, for booleans, which uses YES and NO instead of true and false
+</div>
 
+<p style="text-indent: 40px">The reason these types where created was to make transition from 32 bits to 64 bits architectures easier. C types map to a specific sizes in memory, while the types above change regarding to the architecture the code is compiled for. Objective-C also has its own BOOL type (the reason for it is a bit more complicated).</p>
 
-<br>
-<p style="text-indent: 40px">The reason these types where created was to make transition from 32 bits to 64 bits architectures easier. C types map to a specific sizes in memory, while the types above change regarding to the architecture the code is compiled for. Objective-C also has its own BOOL type (the reason for it is a bit more complicated).</p><br>
-<br>
+<p style="text-indent: 40px">Try to use the latter types when you can and pay attention to which types are used and returend by APIs, or you might end with weird results if values are truncated when switching between the two types.</p>
 
-<p style="text-indent: 40px">Try to use the latter types when you can and pay attention to which types are used and returend by APIs, or you might end with weird results if values are truncated when switching between the two types.</p><br>
-<br>
-
-<p style="text-indent: 40px">C allows also to define other kind of simple types, a practice that is used extensively in Objective-C. We will see these types later.</p><br>
-
+<p style="text-indent: 40px">C allows also to define other kind of simple types, a practice that is used extensively in Objective-C. We will see these types later.</p>
 <h1>Operators</h1>
 
-<p style="text-indent: 40px">Like any other language, C has its own arithmetic operators to work with the numeric values stored in the variables (which are probably the same as the ones you already know).</p><br>
-<br>
+<p style="text-indent: 40px">Like any other language, C has its own arithmetic operators to work with the numeric values stored in the variables (which are probably the same as the ones you already know).</p>
 
 The arithmetic operators of C are the following:<br>
 <br>
@@ -885,9 +779,7 @@ The arithmetic operators of C are the following:<br>
   </tbody>
 </table>
 
-<br>
-<p style="text-indent: 40px">Arithmetic operators follow standard math operator precedence, so multiplication, division and module have precedence over addition and subtraction.</p><br>
-<br>
+<p style="text-indent: 40px">Arithmetic operators follow standard math operator precedence, so multiplication, division and module have precedence over addition and subtraction.</p>
 
 <p style="text-indent: 40px">C has also increment and decrement operators:</p><br>
 <br>
@@ -914,28 +806,21 @@ The arithmetic operators of C are the following:<br>
   </tbody>
 </table>
 
-<br>
-<p style="text-indent: 40px">Increment and decrement operators have precedence over the arithmetic operators. Pay particular attention to these operators. When used in isolation, they are equivalent:</p><br>
-<br>
+<p style="text-indent: 40px">Increment and decrement operators have precedence over the arithmetic operators. Pay particular attention to these operators. When used in isolation, they are equivalent:</p>
 
 <div class="alert alert-info" role="alert">
 someVariable++;
 </div>
 
-<br>
-<p style="text-indent: 40px">produces the same result as</p><br>
-<br>
+<p style="text-indent: 40px">produces the same result as</p>
 
 <div class="alert alert-info" role="alert">
 ++someVariable;
 </div>
 
-<br>
-<p style="text-indent: 40px">The difference comes out when you use them inside another expression. When put before the variable, they increment or decrement the value before it is used. When put after, they increments or decrement the value after using it.</p><br>
-<br>
+<p style="text-indent: 40px">The difference comes out when you use them inside another expression. When put before the variable, they increment or decrement the value before it is used. When put after, they increments or decrement the value after using it.</p>
 
-<p style="text-indent: 40px">This example explains how this works:</p><br>
-<br>
+<p style="text-indent: 40px">This example explains how this works:</p>
 
 <div class="alert alert-info" role="alert">
 int  x;<br>
@@ -952,7 +837,6 @@ y = x--; // x is now 2, y is 3<br>
 y = --x; // x is now 1, y is also 1
 </div>
 
-<br>
 <p style="text-indent: 40px">We have already seen the assignment operator <b>=</b> which might be different in the languages you are used to. That is not the only assignment operator. The arithmetic operators (with the exception of the modulo) attach to the assignment and produce another four assignment operators, which are used as a shorthand for incrementing, decrementing, multiplying and dividing the content of a variable:</p><br>
 <br>
 
@@ -988,53 +872,41 @@ y = --x; // x is now 1, y is also 1
   </tbody>
 </table>
 
-<br>
-<p style="text-indent: 40px">Unlike in other languages, in Objective-C there is no operator overloading. This means that these operators (and the other operators we will see later) only work with basic types and they do not work with objects (to concatenate strings, for example).</p><br>
+<p style="text-indent: 40px">Unlike in other languages, in Objective-C there is no operator overloading. This means that these operators (and the other operators we will see later) only work with basic types and they do not work with objects (to concatenate strings, for example).</p>
 
 <h1>Object variables</h1>
 
 <p style="text-indent: 40px">Let’s have a first look at objects. Objective-C is an object oriented language after all, so we need variables to contain objects. The generic type for an object variable is <b>id</b></p>
-<br>
 
 <div class="alert alert-info" role="alert">
 id myObject = nil;
 </div>
 
-<br>
-<p style="text-indent: 40px">The <b>id</b> type means that the variable can contain any type of object. The <b>nil</b> value is equivalent to what is called <b>null</b> in some other languages (and in C) and means the variable is empty and does not contain any object. Objective-C is a dynamically typed language, so we can declare variables of type <b>id</b> and use them for any object. We can then call any method we want on that object, regardless of the fact that that method might exist or not. This might be useful in some cases, but the majority of the time we want the compiler to check for our mistakes as soon as possible and give variables a defined type.</p><br>
-<br>
+<p style="text-indent: 40px">The <b>id</b> type means that the variable can contain any type of object. The <b>nil</b> value is equivalent to what is called <b>null</b> in some other languages (and in C) and means the variable is empty and does not contain any object. Objective-C is a dynamically typed language, so we can declare variables of type <b>id</b> and use them for any object. We can then call any method we want on that object, regardless of the fact that that method might exist or not. This might be useful in some cases, but the majority of the time we want the compiler to check for our mistakes as soon as possible and give variables a defined type.</p>
 
-<p style="text-indent: 40px">Object variables with a specific type are declared in a slightly different way:</p><br>
-<br>
+<p style="text-indent: 40px">Object variables with a specific type are declared in a slightly different way:</p>
 
 <div class="alert alert-info" role="alert">
 NSString *aString = nil;
 </div>
 
-<br>
-<p style="text-indent: 40px">Now what does that <b>*</b> mean? Well, strictly speaking that means that this variable is a pointer, a thing that makes many programmers recoil in horror. Pointers are one of those things coming from C you don’t want to deal with. Many modern languages don’t have pointers, so this might be a concept you are not familiar with. Although in the future, when you will be more familiar with the language, it might be useful to know what a pointer is, this is something you don’t have to worry about for now. You can write Objective-C without knowing this concept yet.</p><br>
-<br>
+<p style="text-indent: 40px">Now what does that <b>*</b> mean? Well, strictly speaking that means that this variable is a pointer, a thing that makes many programmers recoil in horror. Pointers are one of those things coming from C you don’t want to deal with. Many modern languages don’t have pointers, so this might be a concept you are not familiar with. Although in the future, when you will be more familiar with the language, it might be useful to know what a pointer is, this is something you don’t have to worry about for now. You can write Objective-C without knowing this concept yet.</p>
 
-<p style="text-indent: 40px">When programming I rarely think in terms of pointers. Just remember this simple rule: you need a <b>*</b> when you declare an object variable and you don’t when you use it.</p><br>
-<br>
+<p style="text-indent: 40px">When programming I rarely think in terms of pointers. Just remember this simple rule: you need a <b>*</b> when you declare an object variable and you don’t when you use it.</p>
 
-<p style="text-indent: 40px">A note on prefixes and namespaces</p><br>
-<br>
+<p style="text-indent: 40px">A note on prefixes and namespaces</p>
 
-<p style="text-indent: 40px">As you probably noticed, all types in Objective-C have some prefix at the beginning of the name (<b>NSString, CGFloat</b>, etc). The reason is that Objective-C does not have namespaces. To avoid name collisions (different objects ending up having the same name) Apple decided to prepend a two letters prefix to its types and classes. The two letter are generally coming from the framework declaring the type: UIKit classes and types have a UI prefix (<b>UIView, UILabel</b>, etc.), Core Graphics uses the CG prefix (<b>CGFloat, CGRect</b>, etc.) and the Foundation and AppKit frameworks (the latter present only on the Mac) use NS (<b>NSString, NSArray</b>, etc.). Why NS? Because these libraries were first developed at NeXT for the NeXTSTEP operating system.</p><br>
+<p style="text-indent: 40px">As you probably noticed, all types in Objective-C have some prefix at the beginning of the name (<b>NSString, CGFloat</b>, etc). The reason is that Objective-C does not have namespaces. To avoid name collisions (different objects ending up having the same name) Apple decided to prepend a two letters prefix to its types and classes. The two letter are generally coming from the framework declaring the type: UIKit classes and types have a UI prefix (<b>UIView, UILabel</b>, etc.), Core Graphics uses the CG prefix (<b>CGFloat, CGRect</b>, etc.) and the Foundation and AppKit frameworks (the latter present only on the Mac) use NS (<b>NSString, NSArray</b>, etc.). Why NS? Because these libraries were first developed at NeXT for the NeXTSTEP operating system.</p>
 
-<br>
-<p style="text-indent: 40px">It is a good practice to you add a prefix to your classes and types too. Even if you are not developing a framework but a normal app (which is often the case), just use letters from the app name to be sure to avoid collisions to code you might add later from a different source (like some open source code you might use in your project). There is no strict check from the compiler, so you can omit it, but it’s better not to.</p><br>
+<p style="text-indent: 40px">It is a good practice to you add a prefix to your classes and types too. Even if you are not developing a framework but a normal app (which is often the case), just use letters from the app name to be sure to avoid collisions to code you might add later from a different source (like some open source code you might use in your project). There is no strict check from the compiler, so you can omit it, but it’s better not to.</p>
 
 <h1>Branching and decisions</h1>
 
-<p style="text-indent: 40px">Let’s now see how flow control works in Objective-C. Flow control is another part that the language inherits directly from C, so the structures are the same. Decisions and branching happen, in Objective-C, through three branching statements.</p><br>
-<br>
+<p style="text-indent: 40px">Let’s now see how flow control works in Objective-C. Flow control is another part that the language inherits directly from C, so the structures are the same. Decisions and branching happen, in Objective-C, through three branching statements.</p>
 
 <b>If-else statement</b>
 
-<p style="text-indent: 40px">The main statement to perform decisions in Objective-C is the <b>if-else</b> statement:</p><br>
-<br>
+<p style="text-indent: 40px">The main statement to perform decisions in Objective-C is the <b>if-else</b> statement:</p>
 
 <div class="alert alert-info" role="alert">
 if (expression) {<br>
@@ -1044,15 +916,11 @@ if (expression) {<br>
 }
 </div>
 
-<br>
-<p style="text-indent: 40px">The <b>if-body</b> is executed only if the expression to <b>YES, true</b> or any non zero value. Otherwise the <b>else-body</b> is executed. The <b>else</b> clause can be omitted like in many other languages. In the case of just one instruction in the <b>if-body</b> or <b>else-body</b>, the respective curly braces can be omitted too. If you come from a language that has no curly braces, there are <b class="c" style="color: royalblue">many different styles</b> that state where to place them.</p><br>
-<br>
+<p style="text-indent: 40px">The <b>if-body</b> is executed only if the expression to <b>YES, true</b> or any non zero value. Otherwise the <b>else-body</b> is executed. The <b>else</b> clause can be omitted like in many other languages. In the case of just one instruction in the <b>if-body</b> or <b>else-body</b>, the respective curly braces can be omitted too. If you come from a language that has no curly braces, there are <b class="c" style="color: royalblue">many different styles</b> that state where to place them.</p>
 
-<p style="text-indent: 40px">I personally use the K&R style now, that in my experience seems to be quite widespread in the Objective-C community, but I’ve moved through many different styles during my programming career. The only solid advice I can give you regarding this topic is to be consistent: pick one style and always use it everywhere.</p><br>
-<br>
+<p style="text-indent: 40px">I personally use the K&R style now, that in my experience seems to be quite widespread in the Objective-C community, but I’ve moved through many different styles during my programming career. The only solid advice I can give you regarding this topic is to be consistent: pick one style and always use it everywhere.</p>
 
-<p style="text-indent: 40px">If you want to use more than one condition, the if-else statement allows multiple branches. This is usually the case in many languages, although it’s not possible in a few.</p><br>
-<br>
+<p style="text-indent: 40px">If you want to use more than one condition, the if-else statement allows multiple branches. This is usually the case in many languages, although it’s not possible in a few.</p>
 
 <div class="alert alert-info" role="alert">
 if (expression1) {<br>
@@ -1064,13 +932,11 @@ if (expression1) {<br>
 }
 </div>
 
-<br>
-<p style="text-indent: 40px">The <b>else if</b> clause can be repeated as many times as needed.</p><br>
+<p style="text-indent: 40px">The <b>else if</b> clause can be repeated as many times as needed.</p>
 
 <h1>Switch statement</h1>
 
-<p style="text-indent: 40px">When you have multiple choices you can use, as we saw, the if-else statement with as many branches as needed. If the expression evaluates to an integer, though, C offers another branching facility, the switch statement:</p><br>
-
+<p style="text-indent: 40px">When you have multiple choices you can use, as we saw, the if-else statement with as many branches as needed. If the expression evaluates to an integer, though, C offers another branching facility, the switch statement:</p>
 
 <div class="alert alert-info" role="alert">
 switch (expression) {<br>
@@ -1087,27 +953,21 @@ switch (expression) {<br>
 }
 </div>
 
-<br>
-<p style="text-indent: 40px">The values for the different cases must be constant integers, which means that you can either write a number or a constant in them, but not a variable.</p><br>
-<br>
+<p style="text-indent: 40px">The values for the different cases must be constant integers, which means that you can either write a number or a constant in them, but not a variable.</p>
 
-<p style="text-indent: 40px">The <b>break</b> statements are actually used to exit immediately from the switch statement. They are not mandatory, but pay attention not to forget them, otherwise the execution will continue into the next <b>case</b>.</p><br>
-<br>
+<p style="text-indent: 40px">The <b>break</b> statements are actually used to exit immediately from the switch statement. They are not mandatory, but pay attention not to forget them, otherwise the execution will continue into the next <b>case</b>.</p>
 
-<p style="text-indent: 40px">The <b>default</b> statement is optional, and is executed when the value of the expression does not match any case. The <b>break</b> in the <b>default</b> statement is not mandatory either and not necessary unless you put another case after the <b>default</b>, which I strongly advise against, since it would be a poor coding practice.</p><br>
+<p style="text-indent: 40px">The <b>default</b> statement is optional, and is executed when the value of the expression does not match any case. The <b>break</b> in the <b>default</b> statement is not mandatory either and not necessary unless you put another case after the <b>default</b>, which I strongly advise against, since it would be a poor coding practice.</p>
 
 <h1>Ternary operator</h1>
 
-<p style="text-indent: 40px">Another branching facility that Objective-C inherits from C is the ternary operator, also known as conditional operator. This is an operator that in some languages might not be available, and it’s a shorthand of the <b>if-else</b> statement and a <b>return</b> statement (which we will see later, but you are probably already familiar with). The ternary operator takes this form:</p><br>
-
+<p style="text-indent: 40px">Another branching facility that Objective-C inherits from C is the ternary operator, also known as conditional operator. This is an operator that in some languages might not be available, and it’s a shorthand of the <b>if-else</b> statement and a <b>return</b> statement (which we will see later, but you are probably already familiar with). The ternary operator takes this form:</p>
 
 <div class="alert alert-info" role="alert">
 condition ? expression1 : expression2;
 </div>
 
-<br>
-<p style="text-indent: 40px">If the condition evaluates to <b>YES, true</b>, or any non zero value, <b>expression1</b> is executed and it’s value is returned, otherwise the same happens for <b>expression2</b>. Thus, it is equivalent to the following:</p><br>
-<br>
+<p style="text-indent: 40px">If the condition evaluates to <b>YES, true</b>, or any non zero value, <b>expression1</b> is executed and it’s value is returned, otherwise the same happens for <b>expression2</b>. Thus, it is equivalent to the following:</p>
 
 <div class="alert alert-info" role="alert">
 if (condition)<br>
@@ -1116,14 +976,11 @@ else<br>
     return expression2;
 </div>
 
-<br>
-<p style="text-indent: 40px">The ternary operator has the advantage over the if-else statement that it can be written inside another expression, like an assignment. Thus this is possible and sometimes used:</p><br>
-<br>
+<p style="text-indent: 40px">The ternary operator has the advantage over the if-else statement that it can be written inside another expression, like an assignment. Thus this is possible and sometimes used:</p>
 
 <div class="alert alert-info" role="alert">
 a = condition ? expression1 : expression2;
 </div>
-
 
 <h1>Relational and logical operators</h1>
 
@@ -1172,12 +1029,9 @@ a = condition ? expression1 : expression2;
   </tbody>
 </table>
 
-<br>
-<p style="text-indent: 40px">Pay attention to the <b>==</b> operator. A very common mistake, especially when coming from other languages where this would not be allowed, is to use <b>=</b> in comparisons instead, which is the assignment operator. This is perfectly legal in C, as any assignment also returns a value that is checked by the <b>if-else</b> statement, which checks for 0 and non zero values. So, the program will compile and run perfectly, but probably not behave as you expect. This is a mistake that costs many people a lot of time in debugging. Luckily the latest versions of XCode might warn you of this common mistake when you build your project, if the proper settings are enabled.</p><br>
-<br>
+<p style="text-indent: 40px">Pay attention to the <b>==</b> operator. A very common mistake, especially when coming from other languages where this would not be allowed, is to use <b>=</b> in comparisons instead, which is the assignment operator. This is perfectly legal in C, as any assignment also returns a value that is checked by the <b>if-else</b> statement, which checks for 0 and non zero values. So, the program will compile and run perfectly, but probably not behave as you expect. This is a mistake that costs many people a lot of time in debugging. Luckily the latest versions of XCode might warn you of this common mistake when you build your project, if the proper settings are enabled.</p>
 
-<p style="text-indent: 40px">To combine conditions and form compound ones, C offers the common logical operators you find in many other languages:</p><br>
-<br>
+<p style="text-indent: 40px">To combine conditions and form compound ones, C offers the common logical operators you find in many other languages:</p>
 
 <table class="table">
   <thead>
@@ -1206,39 +1060,31 @@ a = condition ? expression1 : expression2;
   </tbody>
 </table>
 
-<br>
-<p style="text-indent: 40px">Pay attention to the double symbols used in and and or: C has also the single character versions, which are bitwise operators and not logical ones. We will have a look at these later.</p><br>
-<br>
+<p style="text-indent: 40px">Pay attention to the double symbols used in and and or: C has also the single character versions, which are bitwise operators and not logical ones. We will have a look at these later.</p>
 
-<p style="text-indent: 40px">Many languages have a strict boolean notion of true and false. As we have seen, C, and Objective-C, have a more loose notion where zero and non zero values are checked instead. Some old versions of C don’t even have the <b>bool</b> type. It’s certainly beneficial to think in terms of truthiness of the conditions when writing them. It’s also useful nonetheless to know a bit of what happens behind the curtains. Objective-C NO and YES values are also mapped respectively to 0 and 1.</p><br>
-<br>
+<p style="text-indent: 40px">Many languages have a strict boolean notion of true and false. As we have seen, C, and Objective-C, have a more loose notion where zero and non zero values are checked instead. Some old versions of C don’t even have the <b>bool</b> type. It’s certainly beneficial to think in terms of truthiness of the conditions when writing them. It’s also useful nonetheless to know a bit of what happens behind the curtains. Objective-C NO and YES values are also mapped respectively to 0 and 1.</p>
 
-<p style="text-indent: 40px">This is useful to know for a very common idiom in Objective-C that comes from C. The <b>nil</b> value is also mapped to 0, which means that it is equivalent to NO. So, instead of checking if a variable (or value) is equal to <b>nil</b>, it’s common in Objective-C to check it’s negation, which is logically equivalent. So instead of writing:</p><br>
-<br>
+<p style="text-indent: 40px">This is useful to know for a very common idiom in Objective-C that comes from C. The <b>nil</b> value is also mapped to 0, which means that it is equivalent to NO. So, instead of checking if a variable (or value) is equal to <b>nil</b>, it’s common in Objective-C to check it’s negation, which is logically equivalent. So instead of writing:</p>
 
 <div class="alert alert-info" role="alert">
 if (someObject == nil)
 </div>
 
-<br>
-We Write:<br>
-<br>
+<p style="text-indent: 40px">We Write:</p>
 
 <div class="alert alert-info" role="alert">
 if (!someObject)
 </div>
 
-<br>
-<p style="text-indent: 40px">Many times, though, checking for <b>nil</b> values is not necessary as it is in other languages. We will see later why.</p><br>
+<p style="text-indent: 40px">Many times, though, checking for <b>nil</b> values is not necessary as it is in other languages. We will see later why.</p>
 
 <h1>Loops</h1>
 
-<p style="text-indent: 40px">Objective-C loops also come from C. In addition to these Objective-C also introduces a statement to enumerate collections that we will see later when we will talk about those. Looping over collections is much more common in an Objective-C program, but the basic loops are still useful nonetheless.</p><br>
+<p style="text-indent: 40px">Objective-C loops also come from C. In addition to these Objective-C also introduces a statement to enumerate collections that we will see later when we will talk about those. Looping over collections is much more common in an Objective-C program, but the basic loops are still useful nonetheless.</p>
 
 <h1>For loop</h1>
 
-<p style="text-indent: 40px">The first loop statement, present in many modern languages as well is the for loop. In C it has the following syntax:</p><br>
-<br>
+<p style="text-indent: 40px">The first loop statement, present in many modern languages as well is the for loop. In C it has the following syntax:</p>
 
 <div class="alert alert-info" role="alert">
 for (initialization-expression; loop-condition; update-expression) {<br>
@@ -1246,24 +1092,17 @@ for (initialization-expression; loop-condition; update-expression) {<br>
 }
 </div>
 
-<br>
-<p style="text-indent: 40px">Please notice that the separators between <b>initialization-expression, loop-condition</b> and <b>update-expression</b> are semicolons and not commas.</p><br>
-<br>
+<p style="text-indent: 40px">Please notice that the separators between <b>initialization-expression, loop-condition</b> and <b>update-expression</b> are semicolons and not commas.</p>
 
-<p style="text-indent: 40px">The for loop is quite flexible and can accept different kind of expressions in it. In it’s most common form, it’s used like this:</p><br>
-<br>
+<p style="text-indent: 40px">The for loop is quite flexible and can accept different kind of expressions in it. In it’s most common form, it’s used like this:</p>
 
-<p style="text-indent: 40px">The <b>initialization-expression</b> is an expression executed before entering the loop. It’s most commonly used to declare and/or initialize an integer variable used to count through the loop.</p><br>
-<br>
+<p style="text-indent: 40px">The <b>initialization-expression</b> is an expression executed before entering the loop. It’s most commonly used to declare and/or initialize an integer variable used to count through the loop.</p>
 
-<p style="text-indent: 40px">The <b>loop-condition</b> is a boolean condition used to check when to terminate the loop. It is evaluated before each pass through the loop. When the loop condition is false, the loop is terminated. This is usually used to check if the counter declared in the initialization-expression is over or under a certain value.</p><br>
-<br>
+<p style="text-indent: 40px">The <b>loop-condition</b> is a boolean condition used to check when to terminate the loop. It is evaluated before each pass through the loop. When the loop condition is false, the loop is terminated. This is usually used to check if the counter declared in the initialization-expression is over or under a certain value.</p>
 
-<p style="text-indent: 40px">The <b>update-expression</b> is an expression that is evaluated at the end of each pass through the loop, after the loop body has been executed, and just before looping back to evaluate the <b>condition-expression</b> again. It’s usually used to update the value of the counter variable declared in the <b>initialization-expression</b>.</p><br>
-<br>
+<p style="text-indent: 40px">The <b>update-expression</b> is an expression that is evaluated at the end of each pass through the loop, after the loop body has been executed, and just before looping back to evaluate the <b>condition-expression</b> again. It’s usually used to update the value of the counter variable declared in the <b>initialization-expression</b>.</p>
 
-<p style="text-indent: 40px">In it’s most common incarnation, the for loop takes the following form:</p><br>
-<br>
+<p style="text-indent: 40px">In it’s most common incarnation, the for loop takes the following form:</p>
 
 <div class="alert alert-info" role="alert">
 for (NSUInteger index = 0; index < someValue; index++) {<br>
@@ -1271,13 +1110,11 @@ for (NSUInteger index = 0; index < someValue; index++) {<br>
 }
 </div>
 
-<br>
-<p style="text-indent: 40px">Where <b>someValue</b> is a variable or a constant with some positive integer value. In this way the loop iterates exactly <b>someValue</b> times.</p><br>
+<p style="text-indent: 40px">Where <b>someValue</b> is a variable or a constant with some positive integer value. In this way the loop iterates exactly <b>someValue</b> times.</p>
 
 <h1>While loop</h1>
 
-<p style="text-indent: 40px">The for-loop is normally used to iterate a fixed number of times. If we want to loop until a certain condition is met, then the while loop is normally used.</p><br>
-<br>
+<p style="text-indent: 40px">The for-loop is normally used to iterate a fixed number of times. If we want to loop until a certain condition is met, then the while loop is normally used.</p>
 
 <div class="alert alert-info" role="alert">
 while (condition) {<br>
@@ -1285,13 +1122,11 @@ while (condition) {<br>
 }
 </div>
 
-<br>
-<p style="text-indent: 40px">The <b>condition</b> is checked at the beginning of every iteration and the loop ends when the condition evaluates to a false value. If it evaluates to false on the first iteration (before executing the <b>loop-body</b> once), then the <b>loop-body</b> is not executed.</p><br>
+<p style="text-indent: 40px">The <b>condition</b> is checked at the beginning of every iteration and the loop ends when the condition evaluates to a false value. If it evaluates to false on the first iteration (before executing the <b>loop-body</b> once), then the <b>loop-body</b> is not executed.</p>
 
 <h1>Do-while loop</h1>
 
-<p style="text-indent: 40px">If we want the loop to iterate at least one time, we have the <b>do-while</b> loop:</p><br>
-<br>
+<p style="text-indent: 40px">If we want the loop to iterate at least one time, we have the <b>do-while</b> loop:</p>
 
 <div class="alert alert-info" role="alert">
 do {<br>
@@ -1299,19 +1134,15 @@ do {<br>
 } while (condition);
 </div>
 
-<br>
-<p style="text-indent: 40px">In this case the order of <b>loop-body</b> execution and <b>condition</b> evaluation is reversed. First the loop goes through one iteration and then checks the <b>condition</b>. If it evaluates to true, the loop continues, until it evaluates to false.</p><br>
-<br>
+<p style="text-indent: 40px">In this case the order of <b>loop-body</b> execution and <b>condition</b> evaluation is reversed. First the loop goes through one iteration and then checks the <b>condition</b>. If it evaluates to true, the loop continues, until it evaluates to false.</p>
 
-<p style="text-indent: 40px">As for the branching statement, the curly braces can be omitted in any loop if the loop body only has one instruction.</p><br>
-<br>
+<p style="text-indent: 40px">As for the branching statement, the curly braces can be omitted in any loop if the loop body only has one instruction.</p>
+
 <h1>Break and continue</h1>
 
-<p style="text-indent: 40px">There are two statements that are used to alter the flow of the loop structures: <b>break</b> and <b>continue</b>. They can be used in any loop.</p><br>
-<br>
+<p style="text-indent: 40px">There are two statements that are used to alter the flow of the loop structures: <b>break</b> and <b>continue</b>. They can be used in any loop.</p>
 
-<p style="text-indent: 40px">The <b>break</b> statement is used when you want to terminate the loop prematurely, for reasons often different from the loop condition and at any point during an iteration, so you only execute part of it. This illustrates how usually it’s used:</p><br>
-<br>
+<p style="text-indent: 40px">The <b>break</b> statement is used when you want to terminate the loop prematurely, for reasons often different from the loop condition and at any point during an iteration, so you only execute part of it. This illustrates how usually it’s used:</p>
 
 <div class="alert alert-info" role="alert">
 while (loop-condition) {<br>
@@ -1322,12 +1153,9 @@ while (loop-condition) {<br>
 }
 </div>
 
-<br>
-<p style="text-indent: 40px">If the <b>exit-condition</b> evaluates to true during any iteration, the loop exits without executing <b>some-other-instructions</b>, and execution continues after the loop. You can of course use more than one break checks in the loop body.</p><br>
-<br>
+<p style="text-indent: 40px">If the <b>exit-condition</b> evaluates to true during any iteration, the loop exits without executing <b>some-other-instructions</b>, and execution continues after the loop. You can of course use more than one break checks in the loop body.</p>
 
-<p style="text-indent: 40px">Sometimes you want to just skip the rest of the current iteration like with the <b>break</b> statement, but without exiting the loop. The <b>continue</b> statement is used for this specific reason.</p><br>
-<br>
+<p style="text-indent: 40px">Sometimes you want to just skip the rest of the current iteration like with the <b>break</b> statement, but without exiting the loop. The <b>continue</b> statement is used for this specific reason.</p>
 
 <div class="alert alert-info" role="alert">
 while (loop-condition) {<br>
@@ -1338,9 +1166,7 @@ while (loop-condition) {<br>
 }
 </div>
 
-<br>
-<p style="text-indent: 40px">When the <b>skip-condition</b> is true in any iteration, <b>some-other-instructions</b> are not executed, but the loop continues to the next iteration, checking again the <b>loop-condition</b> and executing the <b>loop-body</b> again.</p><br>
-<br>
+<p style="text-indent: 40px">When the <b>skip-condition</b> is true in any iteration, <b>some-other-instructions</b> are not executed, but the loop continues to the next iteration, checking again the <b>loop-condition</b> and executing the <b>loop-body</b> again.</p>
 
 <p style="text-indent: 40px">The break and continue statements can also be mixed inside the same loop, to have a more complex control over the flow structure.
                 </p>

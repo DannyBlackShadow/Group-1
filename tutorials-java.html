@@ -139,11 +139,9 @@ li{
                 <p class="lead">
                 <h1>Hello, World!</h1>
 
-<p style="text-indent: 40px">Java is an object oriented language (OOP). Objects in Java are called "classes".</p><br>
-<br>
+<p style="text-indent: 40px">Java is an object oriented language (OOP). Objects in Java are called "classes".</p>
 
-<p style="text-indent: 40px">Let's go over the Hello world program, which simply prints "Hello, World!" to the screen.</p><br>
-<br>
+<p style="text-indent: 40px">Let's go over the Hello world program, which simply prints "Hello, World!" to the screen.</p>
 
 <div class="alert alert-info" role="alert">
    public class Main {<br>
@@ -153,34 +151,25 @@ li{
 }
 </div>
 
-<br>
-<p style="text-indent: 40px">The first line defines a class called Main.</p><br>
-<br>
+<p style="text-indent: 40px">The first line defines a class called Main.</p>
 
 <div class="alert alert-info" role="alert">
 public class Main {
 </div>
 
-<br>
-<p style="text-indent: 40px">In Java, every line of code that can actually run needs to be inside a class. This line declares a class named Main, which is public, that means that any other class can access it. This is not important for now, so don't worry. For now, we'll just write our code in a class called Main, and talk about objects later on.</p><br>
-<br>
+<p style="text-indent: 40px">In Java, every line of code that can actually run needs to be inside a class. This line declares a class named Main, which is public, that means that any other class can access it. This is not important for now, so don't worry. For now, we'll just write our code in a class called Main, and talk about objects later on.</p>
 
-<p style="text-indent: 40px">Notice that when we declare a public class, we must declare it inside a file with the same name (Main.java), otherwise we'll get an error when compiling.</p><br>
-<br>
+<p style="text-indent: 40px">Notice that when we declare a public class, we must declare it inside a file with the same name (Main.java), otherwise we'll get an error when compiling.</p>
 
-<p style="text-indent: 40px">When running the examples on the site, we will not use the public keyword, since we write all our code in one file.</p><br>
-<br>
+<p style="text-indent: 40px">When running the examples on the site, we will not use the public keyword, since we write all our code in one file.</p>
 
-<p style="text-indent: 40px">The next line is:</p><br>
-<br>
+<p style="text-indent: 40px">The next line is:</p>
 
 <div class="alert alert-info" role="alert">
 public static void main(String[] args) {
 </div>
 
-<br>
-<p style="text-indent: 40px">This is the entry point of our Java program. the main method has to have this exact signature in order to be able to run our program.</p><br>
-<br>
+<p style="text-indent: 40px">This is the entry point of our Java program. the main method has to have this exact signature in order to be able to run our program.</p>
 
 <ul>
 <li style="color: black">public again means that anyone can access it.</li>
@@ -189,29 +178,23 @@ public static void main(String[] args) {
 <li style="color: black">main is the name of the method.</li>
 </ul>
 
-<br>
-<p style="text-indent: 40px">The arguments we get inside the method are the arguments that we will get when running the program with parameters. It's an array of strings. We will use it in our next lesson, so don't worry if you don't understand it all now.</p><br>
-<br>
+<p style="text-indent: 40px">The arguments we get inside the method are the arguments that we will get when running the program with parameters. It's an array of strings. We will use it in our next lesson, so don't worry if you don't understand it all now.</p>
 
 <div class="alert alert-info" role="alert">
 System.out.println("Hello, World!");
 </div>
 
-<br>
 <ul>
 <li style="color: black">System is a pre-defined class that Java provides us and it holds some useful methods and variables.</li>
 <li style="color: black">out is a static variable within System that represents the output of your program (stdout).</li>
 <li style="color: black">println is a method of out that can be used to print a line.</li>
 </ul>
 
-
 <h1>Variables and Types</h1>
 
-<p style="text-indent: 40px">Although Java is object oriented, not all types are objects. It is built on top of basic variable types called primitives.</p><br>
+<p style="text-indent: 40px">Although Java is object oriented, not all types are objects. It is built on top of basic variable types called primitives.</p>
 
-<br>
-<p style="text-indent: 40px">Here is a list of all primitives in Java:</p><br>
-<br>
+<p style="text-indent: 40px">Here is a list of all primitives in Java:</p>
 
 <ul>
 <li style="color: black">byte (number, 1 byte)</li>
@@ -224,46 +207,37 @@ System.out.println("Hello, World!");
 <li style="color: black">boolean (true or false, 1 byte)</li>
 </ul>
 
-<p style="text-indent: 40px">Java is a strong typed language, which means variables need to be defined before we use them.</p><br>
+<p style="text-indent: 40px">Java is a strong typed language, which means variables need to be defined before we use them.</p>
 
 <h2>Numbers</h2>
 
-<p style="text-indent: 40px">To declare and assign a number use the following syntax:</p><br>
-<br>
+<p style="text-indent: 40px">To declare and assign a number use the following syntax:</p>
 
 <div class="alert alert-info" role="alert">
 int myNumber;
 myNumber = 5;
 </div>
 
-<br>
-<p style="text-indent: 40px">Or you can combine them:</p><br>
-<br>
+<p style="text-indent: 40px">Or you can combine them:</p>
 
 <div class="alert alert-info" role="alert">
 int myNumber = 5;
 </div>
 
-<br>
-<p style="text-indent: 40px">To define a double floating point number, use the following syntax:</p><br>
-<br>
+<p style="text-indent: 40px">To define a double floating point number, use the following syntax:</p>
 
 <div class="alert alert-info" role="alert">
 double d = 4.5;<br>
 d = 3.0;
 </div>
 
-<br>
-<p style="text-indent: 40px">If you want to use float, you will have to cast:</p><br>
-<br>
+<p style="text-indent: 40px">If you want to use float, you will have to cast:</p>
 
 <div class="alert alert-info" role="alert">
 float f = (float) 4.5;
 </div>
 
-<br>
-<p style="text-indent: 40px">Or, You can use this:</p><br>
-<br>
+<p style="text-indent: 40px">Or, You can use this:</p>
 
 <div class="alert alert-info" role="alert">
 float f = 4.5f (f is a shorter way of casting float)
@@ -271,19 +245,15 @@ float f = 4.5f (f is a shorter way of casting float)
 
 <h2>Characters and Strings</h2>
 
-<p style="text-indent: 40px">In Java, a character is it's own type and it's not simply a number, so it's not common to put an ascii value in it, there is a special syntax for chars:</p><br>
-<br>
+<p style="text-indent: 40px">In Java, a character is it's own type and it's not simply a number, so it's not common to put an ascii value in it, there is a special syntax for chars:</p>
 
 <div class="alert alert-info" role="alert">
 char c = 'g';
 </div>
 
-<br>
-<p style="text-indent: 40px">String is not a primitive. It's a real type, but Java has special treatment for String.</p><br>
-<br>
+<p style="text-indent: 40px">String is not a primitive. It's a real type, but Java has special treatment for String.</p>
 
-<p style="text-indent: 40px">Here are some ways to use a string:</p><br>
-<br>
+<p style="text-indent: 40px">Here are some ways to use a string:</p>
 
 <div class="alert alert-info" role="alert">
 // Create a string with a constructor<br>
@@ -294,23 +264,18 @@ String s2 = "Who who who who!";<br>
 String s3 = s1 + s2;
 </div>
 
-<br>
-<p style="text-indent: 40px">There is no operator overloading in Java! The operator + is only defined for strings, you will never see it with other objects, only primitives.</p><br>
-<br>
+<p style="text-indent: 40px">There is no operator overloading in Java! The operator + is only defined for strings, you will never see it with other objects, only primitives.</p>
 
-<p style="text-indent: 40px">You can also concat string to primitives:</p><br>
-<br>
+<p style="text-indent: 40px">You can also concat string to primitives:</p>
 
 <div class="alert alert-info" role="alert">
 int num = 5;<br>
 String s = "I have " + num + " cookies"; //Be sure not to use "" with primitives.
 </div>
 
-
 <h2>boolean</h2>
 
-<p style="text-indent: 40px">Every comparison operator in java will return the type boolean that not like other languages can only accept two special values: true or false.</p><br>
-<br>
+<p style="text-indent: 40px">Every comparison operator in java will return the type boolean that not like other languages can only accept two special values: true or false.</p>
 
 <div class="alert alert-info" role="alert">
 boolean b = false;<br>
@@ -331,8 +296,7 @@ if (children) { // Will not work<br>
 
 <h1>Conditionals</h1>
 
-<p style="text-indent: 40px">Java uses boolean variables to evaluate conditions. The boolean values true and false are returned when an expression is compared or evaluated. For example:</p><br>
-<br>
+<p style="text-indent: 40px">Java uses boolean variables to evaluate conditions. The boolean values true and false are returned when an expression is compared or evaluated. For example:</p>
 
 <div class="alert alert-info" role="alert">
 int a = 4;<br>
@@ -343,9 +307,7 @@ if (b) {<br>
 }
 </div>
 
-<br>
-<p style="text-indent: 40px">Of course we don't normally assign a conditional expression to a boolean, we just use the short version:</p><br>
-<br>
+<p style="text-indent: 40px">Of course we don't normally assign a conditional expression to a boolean, we just use the short version:</p>
 
 <div class="alert alert-info" role="alert">
 int a = 4;<br>
@@ -355,11 +317,9 @@ if (a == 4) {<br>
 }
 </div>
 
-
 <h2>Boolean operators</h2>
 
-<p style="text-indent: 40px">There aren't that many operators to use in conditional statements and most of them are pretty strait forward:</p><br>
-<br>
+<p style="text-indent: 40px">There aren't that many operators to use in conditional statements and most of them are pretty strait forward:</p>
 
 <div class="alert alert-info" role="alert">
 int a = 4;<br>
@@ -376,11 +336,9 @@ result = 3 < a && a < 6; // Logical and - true<br>
 result = !result; // Logical not - false
 </div>
 
-
 <h2>if - else and between</h2>
 
-<p style="text-indent: 40px">The if, else statement in java is pretty simple.</p><br>
-<br>
+<p style="text-indent: 40px">The if, else statement in java is pretty simple.</p>
 
 <div class="alert alert-info" role="alert">
 if (a == b) {<br>
@@ -388,9 +346,7 @@ if (a == b) {<br>
 }
 </div>
 
-<br>
-<p style="text-indent: 40px">And we can also add an else statement after an if, to do something if the condition is not true</p><br>
-<br>
+<p style="text-indent: 40px">And we can also add an else statement after an if, to do something if the condition is not true</p>
 
 <div class="alert alert-info" role="alert">
 if (a == b) {<br>
@@ -400,9 +356,7 @@ if (a == b) {<br>
 }
 </div>
 
-<br>
-<p style="text-indent: 40px">The if - else statements doesn't have to be in several lines with {}, if can be used in one line, or without the {}, for a single line statment.</p><br>
-<br>
+<p style="text-indent: 40px">The if - else statements doesn't have to be in several lines with {}, if can be used in one line, or without the {}, for a single line statment.</p>
 
 <div class="alert alert-info" role="alert">
 if (a == b)
@@ -411,13 +365,11 @@ else
     System.out.println("Double rainbow!");
 </div>
 
-<br>
-<p style="text-indent: 40px">Although this method might be useful for making your code shorter by using fewer lines, we strongly recommend for beginners not to use this short version of statements and always use the full version with {}. This goes to every statement that can be shorted to a single line (for, while, etc).</p><br>
+<p style="text-indent: 40px">Although this method might be useful for making your code shorter by using fewer lines, we strongly recommend for beginners not to use this short version of statements and always use the full version with {}. This goes to every statement that can be shorted to a single line (for, while, etc).</p>
 
 <h2>The ugly side of if</h2>
 
-<p style="text-indent: 40px">There is a another way to write a one line if - else statement by using the operator ? :</p><br>
-<br>
+<p style="text-indent: 40px">There is a another way to write a one line if - else statement by using the operator ? :</p>
 
 <div class="alert alert-info" role="alert">
 int a = 4;<br>
@@ -434,14 +386,11 @@ if (a == 4) {<br>
 }
 </div>
 
-<br>
 <p style="text-indent: 40px">Again, we strongly recommend for beginners not to use this version of if.</p>
-<br>
 
 <h2>== and equals</h2>
 
-<p style="text-indent: 40px">The operator == works a bit different on objects than on primitives. When we are using objects and want to check if they are equal, the operator == wiil say if they are the same, if you want to check if they are logically equal, you should use the equals method on the object. For example:</p><br>
-<br>
+<p style="text-indent: 40px">The operator == works a bit different on objects than on primitives. When we are using objects and want to check if they are equal, the operator == wiil say if they are the same, if you want to check if they are logically equal, you should use the equals method on the object. For example:</p>
 
 <div class="alert alert-info" role="alert">
 String a = new String("Wow");<br>
@@ -455,41 +404,31 @@ boolean r3 = a == sameA;  // This is true, since a and sameA are really the same
 
 <h1>Arrays</h1>
 
-<p style="text-indent: 40px">Arrays in Java are also objects. They need to be declared and then created. In order to declare a variable that will hold an array of integers, we use the following syntax:</p><br>
-<br>
+<p style="text-indent: 40px">Arrays in Java are also objects. They need to be declared and then created. In order to declare a variable that will hold an array of integers, we use the following syntax:</p>
 
 <div class="alert alert-info" role="alert">
 int[] arr;
 </div>
 
-<br>
-<p style="text-indent: 40px">Notice there is no size, since we didn't create the array yet.</p><br>
-<br>
+<p style="text-indent: 40px">Notice there is no size, since we didn't create the array yet.</p>
 
 <div class="alert alert-info" role="alert">
 arr = new int[10];
 </div>
 
-<br>
-<p style="text-indent: 40px">This will create a new array with the size of 10. We can check the size by printing the array's length:</p><br>
-<br>
-
+<p style="text-indent: 40px">This will create a new array with the size of 10. We can check the size by printing the array's length:</p>
 <div class="alert alert-info" role="alert">
 System.out.println(arr.length);
 </div>
 
-<br>
-<p style="text-indent: 40px">We can access the array and set values:</p><br>
-<br>
+<p style="text-indent: 40px">We can access the array and set values:</p>
 
 <div class="alert alert-info" role="alert">
 arr[0] = 4;<br>
 arr[1] = arr[0] + 5;
 </div>
 
-<br>
-<p style="text-indent: 40px">Java arrays are 0 based, which means the first element in an array is accessed at index 0 (e.g: arr[0], which accesses the first element). Also, as an example, an array of size 5 will only go up to index 4 due to it being 0 based.</p><br>
-<br>
+<p style="text-indent: 40px">Java arrays are 0 based, which means the first element in an array is accessed at index 0 (e.g: arr[0], which accesses the first element). Also, as an example, an array of size 5 will only go up to index 4 due to it being 0 based.</p>
 
 <div class="alert alert-info" role="alert">
 int[] arr = new int[5];<br>
@@ -497,42 +436,33 @@ int[] arr = new int[5];<br>
 arr[0] = 4;
 </div>
 
-<br>
-<p style="text-indent: 40px">We can also create an array with values in the same line:</p><br>
-<br>
+<p style="text-indent: 40px">We can also create an array with values in the same line:</p>
 
 <div class="alert alert-info" role="alert">
 int[] arr = {1, 2, 3, 4, 5};
 </div>
 
-<br>
-<p style="text-indent: 40px">Don't try to print the array without a loop, it will print something nasty like [I@f7e6a96.</p><br>
+<p style="text-indent: 40px">Don't try to print the array without a loop, it will print something nasty like [I@f7e6a96.</p>
 
 <h1>Loops</h1>
 
-<p style="text-indent: 40px">There are two kind of loops in Java, <b>for</b> and <b>while</b>.</p><br>
+<p style="text-indent: 40px">There are two kind of loops in Java, <b>for</b> and <b>while</b>.</p>
 
 <h2>For</h2>
 
-<p style="text-indent: 40px">The for loop has three sections:</p><br>
-<br>
+<p style="text-indent: 40px">The for loop has three sections:</p>
 
 <div class="alert alert-info" role="alert">
 for (int i = 0; i < 3; i++) {}
 </div>
 
-<br>
-<p style="text-indent: 40px">First section runs once when we enter the loop.</p><br>
-<br>
+<p style="text-indent: 40px">First section runs once when we enter the loop.</p>
 
-<p style="text-indent: 40px">Second section is the gate keeper, if it returns <b>true</b>, we run the statements in the loop, if it returns <b>false</b>, we exit the loop. It runs right after the first section for the first time, then every time the loop is finished and the third section is run.</p><br>
-<br>
+<p style="text-indent: 40px">Second section is the gate keeper, if it returns <b>true</b>, we run the statements in the loop, if it returns <b>false</b>, we exit the loop. It runs right after the first section for the first time, then every time the loop is finished and the third section is run.</p>
 
-<p style="text-indent: 40px">The third section is the final statement that will run every time the loop runs.</p><br>
-<br>
+<p style="text-indent: 40px">The third section is the final statement that will run every time the loop runs.</p>
 
-<p style="text-indent: 40px">So in the case we have just seen, the loop will run 3 times. Here is the order of the commands:</p><br>
-<br>
+<p style="text-indent: 40px">So in the case we have just seen, the loop will run 3 times. Here is the order of the commands:</p>
 
 <div class="alert alert-info" role="alert">
 int i = 0;<br>
@@ -549,32 +479,25 @@ i < 3 // 3 < 3 = false<br>
       // Loop is done...
 </div>
 
-<br>
-<p style="text-indent: 40px">We can omit the first and third section of the loop (although it will be weird), and the loop will still work:</p><br>
-<br>
+<p style="text-indent: 40px">We can omit the first and third section of the loop (although it will be weird), and the loop will still work:</p>
 
 <div class="alert alert-info" role="alert">
 for (;i < 5;) {}
 </div>
 
-<br>
-<p style="text-indent: 40px">For cases where we want to use a loop that look like that, we use a <b>while</b> loop</p><br>
+<p style="text-indent: 40px">For cases where we want to use a loop that look like that, we use a <b>while</b> loop</p>
 
 <h2>While</h2>
 
-<p style="text-indent: 40px">The syntax is very similar to the previous for we looked at:</p><br>
-<br>
+<p style="text-indent: 40px">The syntax is very similar to the previous for we looked at:</p>
 
 <div class="alert alert-info" role="alert">
 while (condition) {}
 </div>
 
-<br>
-<p style="text-indent: 40px">The condition will run for the first time when entering and every time the loop is done. If it returns false, the loop will not run.</p><br>
-<br>
+<p style="text-indent: 40px">The condition will run for the first time when entering and every time the loop is done. If it returns false, the loop will not run.</p>
 
-<p style="text-indent: 40px">If we want the loop to always run at least one, we can use do-while</p><br>
-<br>
+<p style="text-indent: 40px">If we want the loop to always run at least one, we can use do-while</p>
 
 <div class="alert alert-info" role="alert">
 do {<br>
@@ -582,13 +505,11 @@ do {<br>
 } while(condition);
 </div>
 
-<br>
-<p style="text-indent: 40px">Notice the <b>;</b> in the end of the do-while.</p><br>
+<p style="text-indent: 40px">Notice the <b>;</b> in the end of the do-while.</p>
 
 <h2>Foreach</h2>
 
-<p style="text-indent: 40px">Another version of for, is the foreach. The keyword we use is still <b>for</b>, but when we want to iterate on the elements inside an array we can simply use it:</p><br>
-<br>
+<p style="text-indent: 40px">Another version of for, is the foreach. The keyword we use is still <b>for</b>, but when we want to iterate on the elements inside an array we can simply use it:</p>
 
 <div class="alert alert-info" role="alert">
 int[] arr = {2, 0, 1, 3};<br>
@@ -597,9 +518,7 @@ for (int el : arr) {<br>
 }
 </div>
 
-<br>
-<p style="text-indent: 40px">This is a short version and equivalent to:</p><br>
-<br>
+<p style="text-indent: 40px">This is a short version and equivalent to:</p>
 
 <div class="alert alert-info" role="alert">
 int[] arr = {1, 9, 9, 5};<br>
@@ -609,14 +528,11 @@ for (int i = 0; i < arr.length; i++) {<br>
 }
 </div>
 
-<br>
-<p style="text-indent: 40px">Notice that if you want to use the index of the element inside the loop, you have to use the longer version and can't use foreach.</p><br>
-
+<p style="text-indent: 40px">Notice that if you want to use the index of the element inside the loop, you have to use the longer version and can't use foreach.</p>
 
 <h2>break and continue</h2>
 
-<p style="text-indent: 40px">These two keywords help us control the loop from within it. <b>break</b> will cause the loop to stop and will go immediately to the next statement after the loop:</p><br>
-<br>
+<p style="text-indent: 40px">These two keywords help us control the loop from within it. <b>break</b> will cause the loop to stop and will go immediately to the next statement after the loop:</p>
 
 <div class="alert alert-info" role="alert">
 int i;<br>
@@ -633,9 +549,7 @@ System.out.println(i);<br>
 // 2
 </div>
 
-<br>
-<p style="text-indent: 40px"><b>continue</b> will stop the current iteration and will move to the next one. Notice that inside a for loop, it will still run the third section.</p><br>
-<br>
+<p style="text-indent: 40px"><b>continue</b> will stop the current iteration and will move to the next one. Notice that inside a for loop, it will still run the third section.</p>
 
 <div class="alert alert-info" role="alert">
 int i;<br>
@@ -660,8 +574,7 @@ System.out.println(i);<br>
 
 <h1>Functions</h1>
 
-<p style="text-indent: 40px">In Java, all function definitions must be inside classes. We also call functions methods. Let's look at an example method</p><br>
-<br>
+<p style="text-indent: 40px">In Java, all function definitions must be inside classes. We also call functions methods. Let's look at an example method</p>
 
 <div class="alert alert-info" role="alert">
 public class Main {<br>
@@ -671,9 +584,7 @@ public class Main {<br>
 }
 </div>
 
-<br>
-<p style="text-indent: 40px"><b>foo</b> is a method we defined in class Main. Notice a few things about <b>foo</b>.</p><br>
-<br>
+<p style="text-indent: 40px"><b>foo</b> is a method we defined in class Main. Notice a few things about <b>foo</b>.</p>
 
 <ul>
 <li style="color: black;"><b>static</b> means this method belongs to the class Main and not to a specific instance of Main. Which means we can call the method from a different class like that <b>Main.foo()</b>.</li>
@@ -683,11 +594,9 @@ public class Main {<br>
 
 <h2>Arguments</h2>
 
-<p style="text-indent: 40px">I always like to say that arguments to Java methods are passed by value, although some might disagree with my choice of words, I find it the best way to explain and understand how it works exactly.</p><br>
-<br>
+<p style="text-indent: 40px">I always like to say that arguments to Java methods are passed by value, although some might disagree with my choice of words, I find it the best way to explain and understand how it works exactly.</p><
 
-<p style="text-indent: 40px">By value means that arguments are copied when the method runs. Let's look at an example.</p><br>
-<br>
+<p style="text-indent: 40px">By value means that arguments are copied when the method runs. Let's look at an example.</p>
 
 <div class="alert alert-info" role="alert">
 public void bar(int num1, int num2) {<br>
@@ -695,9 +604,7 @@ public void bar(int num1, int num2) {<br>
 }
 </div>
 
-<p style="text-indent: 40px">Here is a another place in the code, where bar is called</p><br>
-<br>
-<br>
+<p style="text-indent: 40px">Here is a another place in the code, where bar is called</p>
 
 <div class="alert alert-info" role="alert">
 int a = 3;<br>
@@ -705,24 +612,18 @@ int b = 5;<br>
 bar(a, b);
 </div>
 
-<p style="text-indent: 40px">You can picture in your head that when bar(a, b) is run, it's like in the beginning of bar the following two lines are written:</p><br>
-<br>
-<br>
+<p style="text-indent: 40px">You can picture in your head that when bar(a, b) is run, it's like in the beginning of bar the following two lines are written:</p>
 
 <div class="alert alert-info" role="alert">
 int num1 = a;<br>
 int num2 = b;
 </div>
 
-<p style="text-indent: 40px">And only then the rest of the method is run.</p><br>
-<br>
+<p style="text-indent: 40px">And only then the rest of the method is run.</p>
 
-<p style="text-indent: 40px">This means that a value get copied to num1 and b value get copied to num2. Changing the values of num1 and num2 will not affect a and b.</p><br>
-<br>
-<br>
-<p style="text-indent: 40px">If the arguments were objects, the rules remain the same, but it acts a bit differently. Here is a an example:</p><br>
+<p style="text-indent: 40px">This means that a value get copied to num1 and b value get copied to num2. Changing the values of num1 and num2 will not affect a and b.</p>
 
-<br>
+<p style="text-indent: 40px">If the arguments were objects, the rules remain the same, but it acts a bit differently. Here is a an example:</p>
 
 <div class="alert alert-info" role="alert">
 public void bar2(Student s1, Student s2) {<br>
@@ -730,9 +631,7 @@ public void bar2(Student s1, Student s2) {<br>
 }
 </div>
 
-And here is how we use it<br>
-<br>
-<br>
+<p style="text-indent: 40px">And here is how we use it</p>
 
 <div class="alert alert-info" role="alert">
 Student joe = new Student("joe");<br>
@@ -740,17 +639,14 @@ Student jack = new Student("jack");<br>
 bar2(joe, jack);
 </div>
 
-<p style="text-indent: 40px">Again we can picture the same two lines in the beginning of bar2</p><br>
-<br>
+<p style="text-indent: 40px">Again we can picture the same two lines in the beginning of bar2</p>
 
 <div class="alert alert-info" role="alert">
 Student s1 = joe;<br>
 Student s2 = jack;
 </div>
 
-<p style="text-indent: 40px">But when we assign objects, it's a bit different than assigning primitives. s1 and joe are two different references to the same object. s1 == joe is true. This means that running methods on s1 will change the object joe. But if we'll change the value of s1 as a reference, it will not affect the reference joe.</p><br>
-<br>
-<br>
+<p style="text-indent: 40px">But when we assign objects, it's a bit different than assigning primitives. s1 and joe are two different references to the same object. s1 == joe is true. This means that running methods on s1 will change the object joe. But if we'll change the value of s1 as a reference, it will not affect the reference joe.</p>
 
 <div class="alert alert-info" role="alert">
 s1.setName("Chuck"); // joe name is now Chuck as well<br>
@@ -758,13 +654,10 @@ s1 = new Student("Norris"); // s1 is a new student, different than joe with the 
 // s1 == joe   is not true anymore
 </div>
 
-
 <h2>Non static methods</h2>
-<p style="text-indent: 40px">Non static methods in Java are used more than static methods. Those methods can only be run on objects and not on the whole class.</p><br>
+<p style="text-indent: 40px">Non static methods in Java are used more than static methods. Those methods can only be run on objects and not on the whole class.</p>
 
-<p style="text-indent: 40px">Non static methods can access and alter the field of the object.</p><br>
-<br>
-<br>
+<p style="text-indent: 40px">Non static methods can access and alter the field of the object.</p>
 
 <div class="alert alert-info" role="alert">
 public class Student {<br>
@@ -778,9 +671,7 @@ public class Student {<br>
 }
 </div>
 
-<p style="text-indent: 40px">Calling the methods will require an object of type Student.</p><br>
-<br>
-<br>
+<p style="text-indent: 40px">Calling the methods will require an object of type Student.</p>
 
 <div class="alert alert-info" role="alert">
 Student s = new Student();<br>
@@ -791,7 +682,6 @@ Student.setName("Bob"); // Will not work!<br>
 Student.getName(); // Will not work!
 </div>
 
-
 <h2>Summary</h2>
 
 <ul>
@@ -801,11 +691,9 @@ Student.getName(); // Will not work!
 </ul>
 
 <h1>Objects</h1>
-<p style="text-indent: 40px">Everything in Java is within classes and objects. Java objects hold a state, state are variables which are saved together within an object, we call them fields or member variables.</p><br>
+<p style="text-indent: 40px">Everything in Java is within classes and objects. Java objects hold a state, state are variables which are saved together within an object, we call them fields or member variables.</p>
 
-<br>
-<p style="text-indent: 40px">Let start with an example:</p><br>
-<br>
+<p style="text-indent: 40px">Let start with an example:</p>
 
 <div class="alert alert-info" role="alert">
 class Point {<br>
@@ -814,23 +702,17 @@ class Point {<br>
 }
 </div>
 
-<p style="text-indent: 40px">This class defined a point with x and y values.</p><br>
-<br>
+<p style="text-indent: 40px">This class defined a point with x and y values.</p>
 
-<p style="text-indent: 40px">In order to create an instance of this class, we need to use the keyword <b>new</b>.</p><br>
-
-<br>
+<p style="text-indent: 40px">In order to create an instance of this class, we need to use the keyword <b>new</b>.</p>
 
 <div class="alert alert-info" role="alert">
 Point p = new Point();
 </div>
 
-<br>
-In this case, we used a default constructor (constructor that doesn't get arguments) to create a Point. All classes that don't explicitly define a constructor has a default constructor that does nothing.</p><br>
-<br>
+<p style="text-indent: 40px">In this case, we used a default constructor (constructor that doesn't get arguments) to create a Point. All classes that don't explicitly define a constructor has a default constructor that does nothing.</p>
 
-<p style="text-indent: 40px">We can define our own constructor:</p><br>
-<br>
+<p style="text-indent: 40px">We can define our own constructor:</p>
 
 <div class="alert alert-info" role="alert">
 class Point {<br>
@@ -844,12 +726,9 @@ class Point {<br>
 }
 </div>
 
-<br>
-<p style="text-indent: 40px">This means we can not longer use the default constructor <b>new Point()</b>. We can now only use the defined constructor <b>new Point(4, 1)</b>.</p><br>
+<p style="text-indent: 40px">This means we can not longer use the default constructor <b>new Point()</b>. We can now only use the defined constructor <b>new Point(4, 1)</b>.</p>
 
-<br>
-<p style="text-indent: 40px">We can define more than one constructor, so <b>Point</b> can be created in several ways. Let's define the default constructor again.</p><br>
-<br>
+<p style="text-indent: 40px">We can define more than one constructor, so <b>Point</b> can be created in several ways. Let's define the default constructor again.</p>
 
 <div class="alert alert-info" role="alert">
 class Point {<br>
@@ -867,24 +746,19 @@ class Point {<br>
 }
 </div>
 
-<br>
-<p style="text-indent: 40px">Notice the usage of the <b>this</b> keyword here. We can use it within a constructor to call a different constructor (in order to avoid code duplication). It can only be the first line within the constructor.</p><br>
-<br>
-We also used the <b>this</b> keyword as a reference of the current object we are running on.</p><br>
+<p style="text-indent: 40px">Notice the usage of the <b>this</b> keyword here. We can use it within a constructor to call a different constructor (in order to avoid code duplication). It can only be the first line within the constructor.</p>
 
-<br>
-<p style="text-indent: 40px">After we defined <b>p</b> we can access <b>x</b> and <b>y</b>.</p><br>
-<br>
+<p style="text-indent: 40px">We also used the <b>this</b> keyword as a reference of the current object we are running on.</p>
+
+<p style="text-indent: 40px">After we defined <b>p</b> we can access <b>x</b> and <b>y</b>.</p>
 
 <div class="alert alert-info" role="alert">
 p.x = 3;<br>
 p.y = 6;
 </div>
 
-
 <h2>Methods</h2>
-<p style="text-indent: 40px">We can now define methods on <b>Point</b>.</p><br>
-<br>
+<p style="text-indent: 40px">We can now define methods on <b>Point</b>.</p>
 
 <div class="alert alert-info" role="alert">
 class Point {<br>
@@ -902,45 +776,35 @@ class Point {<br>
 </div>
 
 <h2>Public and Private</h2>
-<p style="text-indent: 40px">Although we'll talk about modifiers later on, it's important to understand the different between private and public variables and methods.</p><br>
 
-<br>
-<p style="text-indent: 40px">When using the keyword <b>private</b> before a variable or a method, it means only the class itself can access the variable or method, when we're using <b>public</b> it means everybody can access it. We usually see constructors defined as public, variables defined as private and methods are separated, some public and some private.</p><br>
+<p style="text-indent: 40px">Although we'll talk about modifiers later on, it's important to understand the different between private and public variables and methods.</p>
 
+<p style="text-indent: 40px">When using the keyword <b>private</b> before a variable or a method, it means only the class itself can access the variable or method, when we're using <b>public</b> it means everybody can access it. We usually see constructors defined as public, variables defined as private and methods are separated, some public and some private.</p>
 
 <h1>Compiling and Running with Arguments</h1>
-<p style="text-indent: 40px">This section is used for you to use Java at home and understand the basics of how things are done.</p><br>
 
-<br>
-<p style="text-indent: 40px">After creating a simple application that prints something to the screen, you need to compile your code and run it.</p><br>
+<p style="text-indent: 40px">This section is used for you to use Java at home and understand the basics of how things are done.</p>
 
-<br>
-<p style="text-indent: 40px">It shouldn't really matter if you use Linux, Mac or Windows. You need to have a console and you need to have the following commands available in order to compile and run Java.</p><br>
+<p style="text-indent: 40px">After creating a simple application that prints something to the screen, you need to compile your code and run it.</p>
 
-<br>
+<p style="text-indent: 40px">It shouldn't really matter if you use Linux, Mac or Windows. You need to have a console and you need to have the following commands available in order to compile and run Java.</p>
 
 <ul>
 <li style="color: black">java (or java.exe)</li>
 <li style="color: black">javac (or javac.exe)</li>
 </ul>
 
-<br>
 <p style="text-indent: 40px">In order for those to be available you must download and install JDK (Java Development Kit).</p><br>
 
-<br>
-If we take the code from the previous lesson and put it in a file called MyFirstClass.java, in order to compile it we need to run:</p><br>
-<br>
+<p style="text-indent: 40px">If we take the code from the previous lesson and put it in a file called MyFirstClass.java, in order to compile it we need to run:</p>
 
 <div class="alert alert-info" role="alert">
 javac MyFirstClass.java
 </div>
 
-<br>
-<p style="text-indent: 40px">This will create a file called MyFirstClass.class that holds the compiled java code.</p><br>
+<p style="text-indent: 40px">This will create a file called MyFirstClass.class that holds the compiled java code.</p>
 
-<br>
-<p style="text-indent: 40px">To run it, we need to run java with the name of the class as the argument (Not the file!)</p><br>
-<br>
+<p style="text-indent: 40px">To run it, we need to run java with the name of the class as the argument (Not the file!)</p>
 
 <b>Wrong</b><br>
 <br>
@@ -958,15 +822,12 @@ java MyFirstClass
 </div>
 
 <h2>Arguments</h2>
-<p style="text-indent: 40px">The main methods get an array of strings as an argument, these are the command line arguments you may pass to your program.</p><br>
 
-<br>
-<p style="text-indent: 40px">Every array in java holds a variable called length that says how many elements are within that array.</p><br>
+<p style="text-indent: 40px">The main methods get an array of strings as an argument, these are the command line arguments you may pass to your program.</p>
 
-<br>
-<p style="text-indent: 40px">We can go over the arguments with a simple for</p><br>
+<p style="text-indent: 40px">Every array in java holds a variable called length that says how many elements are within that array.</p>
 
-<br>
+<p style="text-indent: 40px">We can go over the arguments with a simple for</p>
 
 <div class="alert alert-info" role="alert">
 public class Arguments {<br>
@@ -978,9 +839,7 @@ public class Arguments {<br>
 }
 </div>
 
-<br>
-<p style="text-indent: 40px">And to compile and run it with arguments:</p><br>
-<br>
+<p style="text-indent: 40px">And to compile and run it with arguments:</p>
 
 <div class="alert alert-info" role="alert">
 javac Arguments.java<br>
