@@ -138,8 +138,10 @@ li{
                 <p class="lead">
                 <h2>SQL SELECT Statement</h2>
 
-The most commonly used SQL command is SELECT statement. SQL SELECT statement is used to query or retrieve data from a table in the database. A query may retrieve information from specified columns or from all of the columns in the table. To create a simple SQL SELECT Statement, you must specify the column(s) name and the table name. The whole query is called SQL SELECT Statement.
+<p style="text-indent: 40px">The most commonly used SQL command is SELECT statement. SQL SELECT statement is used to query or retrieve data from a table in the database. A query may retrieve information from specified columns or from all of the columns in the table. To create a simple SQL SELECT Statement, you must specify the column(s) name and the table name. The whole query is called SQL SELECT Statement.</p>
+
 <h2>Syntax of SQL SELECT Statement:</h2>
+
 <div class="alert alert-info" role="alert">
 SELECT column_list FROM table-name <br>
 [WHERE Clause]<br>
@@ -214,44 +216,56 @@ SELECT column_list FROM table-name <br>
 
 <b>NOTE:</b> These database tables are used here for better explanation of SQL commands. In reality, the tables can have different columns and different data.<br>
 <br>
-For example, consider the table student_details. To select the first name of all the students the query would be like:<br>
+<p style="text-indent: 40px">For example, consider the table student_details. To select the first name of all the students the query would be like:</p><br>
 <br>
+
 <div class="alert alert-info" role="alert">
 SELECT first_name FROM student_details;
 </div>
+
 <br>
 <b>SELECT Statements: Syntax</b><br>
 <br>
+
 NOTE: SQL commands are not case sensitive. The above SELECT statement can also be written as<br>
 <br>
+
 "select first_name from students_details;"<br>
 <br>
-You can also retrieve data from more than one column. For example, to select first name and last name of all the students.<br>
+
+<p style="text-indent: 40px">You can also retrieve data from more than one column. For example, to select first name and last name of all the students.</p><br>
 <br>
+
 <div class="alert alert-info" role="alert">
 SELECT first_name, last_name FROM student_details;
 </div>
+
 <br>
-You can also use clauses like WHERE, GROUP BY, HAVING, ORDER BY with SELECT statement. We will discuss these commands in coming chapters.<br>
+<p style="text-indent: 40px">You can also use clauses like WHERE, GROUP BY, HAVING, ORDER BY with SELECT statement. We will discuss these commands in coming chapters.</p><br>
 <br>
+
 <b>NOTE:</b> In a SQL SELECT statement only SELECT and FROM statements are mandatory. Other clauses like WHERE, ORDER BY, GROUP BY, HAVING are optional.<br>
 
 <h2>How to use expressions in SQL SELECT Statement?</h2>
-Expressions combine many arithmetic operators, they can be used in SELECT, WHERE and ORDER BY Clauses of the SQL SELECT Statement.<br>
+
+<p style="text-indent: 40px">Expressions combine many arithmetic operators, they can be used in SELECT, WHERE and ORDER BY Clauses of the SQL SELECT Statement.</p><br>
 <br>
-Here we will explain how to use expressions in the SQL SELECT Statement. About using expressions in WHERE and ORDER BY clause, they will be explained in their respective sections.<br>
+
+<p style="text-indent: 40px">Here we will explain how to use expressions in the SQL SELECT Statement. About using expressions in WHERE and ORDER BY clause, they will be explained in their respective sections.</p><br>
 <br>
-The operators are evaluated in a specific order of precedence, when more than one arithmetic operator is used in an expression. The order of evaluation is: parentheses, division, multiplication, addition, and subtraction. The evaluation is performed from the left to the right of the expression.<br>
+
+<p style="text-indent: 40px">The operators are evaluated in a specific order of precedence, when more than one arithmetic operator is used in an expression. The order of evaluation is: parentheses, division, multiplication, addition, and subtraction. The evaluation is performed from the left to the right of the expression.</p><br>
 
 <h2>SELECT Statement Example?</h2>
 
-If we want to display the first and last name of an employee combined together, the SQL Select Statement would be like<br>
+<p style="text-indent: 40px">If we want to display the first and last name of an employee combined together, the SQL Select Statement would be like</p><br>
 <br>
+
 <div class="alert alert-info" role="alert">
 SELECT first_name + ' ' + last_name FROM employee;
 </div>
-<br>
 
+<br>
 <b>Output:</b><br>
 
 <div class="alert alert-info" role="alert">
@@ -286,10 +300,11 @@ Priya Chandra
 
 <h2>SQL INSERT Statement</h2>
 
-The INSERT Statement is used to add new rows of data to a table.
+<p style="text-indent: 40px">The INSERT Statement is used to add new rows of data to a table./
 
-We can insert data to a table in two ways,
+<p style="text-indent: 40px">We can insert data to a table in two ways,/
 <br>
+
 <b>1) Inserting the data directly to a table.</b>
 
 <h2>Syntax for SQL INSERT is:</h2>
@@ -299,76 +314,83 @@ INSERT INTO TABLE_NAME <br>
 [ (col1, col2, col3,...colN)] <br>
 VALUES (value1, value2, value3,...valueN); <br>
 </div>
+
 <br>
 <ul>
 <li style="color: black">col1, col2,...colN -- the names of the columns in the table into which you want to insert data.</li>
 </ul>
+
 <br>
-While inserting a row, if you are adding value for all the columns of the table you need not specify the column(s) name in the sql query. But you need to make sure the order of the values is in the same order as the columns in the table. The sql insert query will be as follows
+<p style="text-indent: 40px">While inserting a row, if you are adding value for all the columns of the table you need not specify the column(s) name in the sql query. But you need to make sure the order of the values is in the same order as the columns in the table. The sql insert query will be as follows/<br>
 <br>
-<br>
+
 <div class="alert alert-info" role="alert">
 INSERT INTO TABLE_NAME <br>
 VALUES (value1, value2, value3,...valueN); <br>
 </div>
+
 <br>
-<b>For Example:</b> If you want to insert a row to the employee table, the query would be like,
+<p style="text-indent: 40px"><b>For Example:</b> If you want to insert a row to the employee table, the query would be like,/<br>
 <br>
-<br>
+
 <div class="alert alert-info" role="alert">
 INSERT INTO employee (id, name, dept, age, salary location) VALUES (105, 'Srinath', 'Aeronautics', 27, 33000);
 </div>
+
 <br>
-<b>NOTE:</b> When adding a row, only the characters or date values should be enclosed with single quotes.
+<b>NOTE:</b> When adding a row, only the characters or date values should be enclosed with single quotes./<br>
+
+<p style="text-indent: 40px">If you are inserting data to all the columns, the column names can be omitted. The above insert statement can also be written as,/<br>
 <br>
-If you are inserting data to all the columns, the column names can be omitted. The above insert statement can also be written as,
-<br>
-<br>
+
 <div class="alert alert-info" role="alert">
 INSERT INTO employee 
 VALUES (105, 'Srinath', 'Aeronautics', 27, 33000); 
 </div>
+
 <br>
-<b>Inserting data to a table through a select statement.</b>
+<p style="text-indent: 40px"><b>Inserting data to a table through a select statement./</b>
 
 <h2>Syntax for SQL INSERT is:</h2>
-<br>
+
 <div class="alert alert-info" role="alert">
 INSERT INTO table_name 
 [(column1, column2, ... columnN)] 
 SELECT column1, column2, ...columnN 
 FROM table_name [WHERE condition]; 
 </div>
+
 <br>
-<b>For Example:</b> To insert a row into the employee table from a temporary table, the sql insert query would be like,
+<p style="text-indent: 40px"><b>For Example:</b> To insert a row into the employee table from a temporary table, the sql insert query would be like,/<br>
 <br>
-<br>
+
 <div class="alert alert-info" role="alert">
 INSERT INTO employee (id, name, dept, age, salary location) SELECT emp_id, emp_name, dept, age, salary, location 
 FROM temp_employee;
 </div>
+
 <br>
-If you are inserting data to all the columns, the above insert statement can also be written as,
+<p style="text-indent: 40px">If you are inserting data to all the columns, the above insert statement can also be written as,/<br>
 <br>
-<br>
+
 <div class="alert alert-info" role="alert">
 INSERT INTO employee 
 SELECT * FROM temp_employee; 
 </div>
+
 <br>
-<b>NOTE:</b> We have assumed the temp_employee table has columns emp_id, emp_name, dept, age, salary, location in the above given order and the same datatype.
+<p style="text-indent: 40px"><b>NOTE:</b> We have assumed the temp_employee table has columns emp_id, emp_name, dept, age, salary, location in the above given order and the same datatype.</p><br>
 <br>
-<br>
+
 <b>IMPORTANT NOTE:</b>
 <br>
-1) When adding a new row, you should ensure the datatype of the value and the column matches
+<p style="text-indent: 40px">1) When adding a new row, you should ensure the datatype of the value and the column matches</p>
 <br>
-2) You follow the integrity constraints, if any, defined for the table.
-
+<p style="text-indent: 40px">2) You follow the integrity constraints, if any, defined for the table.</p>
 
 <h2>SQL UPDATE Statement</h2>
 
-The UPDATE Statement is used to modify the existing rows in a table.
+<p style="text-indent: 40px">The UPDATE Statement is used to modify the existing rows in a table.</p>
 
 <h2>The Syntax for SQL UPDATE Command is:</h2>
 
@@ -378,26 +400,29 @@ SET column_name1 = value1, <br>
 column_name2 = value2, ... <br>
 [WHERE condition] <br>
 </div>
+
 <br>
 <ul>
 <li style="color: black">table_name - the table name which has to be updated.</li>
 <li style="color: black">column_name1, column_name2.. - the columns that gets changed.</li>
 <li style="color: black">value1, value2... - are the new values.</li>
 </ul>
+
 <br>
-<b>NOTE:</b> In the Update statement, WHERE clause identifies the rows that get affected. If you do not include the WHERE clause, column values for all the rows get affected.
+<p style="text-indent: 40px"><b>NOTE:</b> In the Update statement, WHERE clause identifies the rows that get affected. If you do not include the WHERE clause, column values for all the rows get affected.<br>
 <br>
+
+<p style="text-indent: 40px"><b>For Example:</b> To update the location of an employee, the sql update query would be like,<br>
 <br>
-<b>For Example:</b> To update the location of an employee, the sql update query would be like,
-<br>
-<br>
+
 <div class="alert alert-info" role="alert">
 UPDATE employee 
 SET location ='Mysore' 
 WHERE id = 101; 
 </div>
+
 <br>
-To change the salaries of all the employees, the query would be,<br>
+<p style="text-indent: 40px">To change the salaries of all the employees, the query would be,<br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -407,7 +432,7 @@ SET salary = salary + (salary * 0.2); <br>
 
 <h2>SQL Delete Statement</h2>
 
-The DELETE Statement is used to delete rows from a table.
+<p style="text-indent: 40px">The DELETE Statement is used to delete rows from a table.
 
 <h2>Syntax of a SQL DELETE Statement</h2>
 
@@ -421,12 +446,12 @@ DELETE FROM table_name [WHERE condition];
 </ul>
 
 <br>
-<b>NOTE:</b> The WHERE clause in the sql delete command is optional and it identifies the rows in the column that gets deleted. If you do not include the WHERE clause all the rows in the table is deleted, so be careful while writing a DELETE query without WHERE clause.
+<p style="text-indent: 40px"><b>NOTE:</b> The WHERE clause in the sql delete command is optional and it identifies the rows in the column that gets deleted. If you do not include the WHERE clause all the rows in the table is deleted, so be careful while writing a DELETE query without WHERE clause.
 <br>
 
 <h2>SQL DELETE Example</h2>
 
-To delete an employee with id 100 from the employee table, the sql delete query would be like,<br>
+<p style="text-indent: 40px">To delete an employee with id 100 from the employee table, the sql delete query would be like,<br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -434,7 +459,7 @@ DELETE FROM employee WHERE id = 100;
 </div>
 
 <br>
-To delete all the rows from the employee table, the query would be like,<br>
+<p style="text-indent: 40px">To delete all the rows from the employee table, the query would be like,<br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -443,7 +468,7 @@ DELETE FROM employee;
 
 <h2>SQL TRUNCATE Statement</h2>
 
-The SQL TRUNCATE command is used to delete all the rows from the table and free the space containing the table.<br>
+<p style="text-indent: 40px">The SQL TRUNCATE command is used to delete all the rows from the table and free the space containing the table.<br>
 
 <h2>Syntax to TRUNCATE a table:</h2>
 
@@ -453,7 +478,7 @@ TRUNCATE TABLE table_name;
 
 <h2>SQL TRUNCATE Statement Example</h2>
 
-To delete all the rows from employee table, the query would be like,<br>
+<p style="text-indent: 40px">To delete all the rows from employee table, the query would be like,<br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -461,7 +486,7 @@ TRUNCATE TABLE employee;
 </div>
 
 <br>
-<b>Difference between DELETE and TRUNCATE Statements:</b><br>
+<p style="text-indent: 40px"><b>Difference between DELETE and TRUNCATE Statements:</b><br>
 <br>
 
 <b>DELETE Statement:</b> This command deletes only the rows from the table based on the condition given in the where clause or deletes all the rows from the table if no condition is specified. But it does not free the space containing the table.<br>
@@ -471,10 +496,10 @@ TRUNCATE TABLE employee;
 
 <h2>SQL DROP Statement:</h2>
 
-The SQL DROP command is used to remove an object from the database. If you drop a table, all the rows in the table is deleted and the table structure is removed from the database. Once a table is dropped we cannot get it back, so be careful while using DROP command. When a table is dropped all the references to the table will not be valid.<br>
+<p style="text-indent: 40px">The SQL DROP command is used to remove an object from the database. If you drop a table, all the rows in the table is deleted and the table structure is removed from the database. Once a table is dropped we cannot get it back, so be careful while using DROP command. When a table is dropped all the references to the table will not be valid.</p><br>
 <br>
 
-<b>Syntax to drop a sql table structure:</b><br>
+<p style="text-indent: 40px"><b>Syntax to drop a sql table structure:</b></p><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -483,7 +508,7 @@ DROP TABLE table_name;
 
 <h2>SQL DROP Statement Example</h2>
 
-To drop the table employee, the query would be like<br>
+<p style="text-indent: 40px">To drop the table employee, the query would be like:</p><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -491,14 +516,14 @@ DROP TABLE employee;
 </div>
 
 <br>
-<b>Difference between DROP and TRUNCATE Statement:</b><br>
+<p style="text-indent: 40px"><b>Difference between DROP and TRUNCATE Statement:</b></p><br>
 <br>
 
-If a table is dropped, all the relationships with other tables will no longer be valid, the integrity constraints will be dropped, grant or access privileges on the table will also be dropped, if you want use the table again it has to be recreated with the integrity constraints, access privileges and the relationships with other tables should be established again. But, if a table is truncated, the table structure remains the same, therefore any of the above problems will not exist.<br>
+<p style="text-indent: 40px">If a table is dropped, all the relationships with other tables will no longer be valid, the integrity constraints will be dropped, grant or access privileges on the table will also be dropped, if you want use the table again it has to be recreated with the integrity constraints, access privileges and the relationships with other tables should be established again. But, if a table is truncated, the table structure remains the same, therefore any of the above problems will not exist.</p><br>
 
 <h2>SQL CREATE TABLE Statement</h2>
 
-The CREATE TABLE Statement is used to create tables to store data. Integrity Constraints like primary key, unique key, foreign key can be defined for the columns while creating the table. The integrity constraints can be defined at column level or table level. The implementation and the syntax of the CREATE Statements differs for different RDBMS.<br>
+<p style="text-indent: 40px">The CREATE TABLE Statement is used to create tables to store data. Integrity Constraints like primary key, unique key, foreign key can be defined for the columns while creating the table. The integrity constraints can be defined at column level or table level. The implementation and the syntax of the CREATE Statements differs for different RDBMS.</p><br>
 
 <h2>The Syntax for the CREATE TABLE Statement is:</h2>
 
@@ -517,7 +542,7 @@ column_name2 datatype, <br>
 <li style="color: black">datatype - is the datatype for the column like char, date, number etc.</li>
 </ul>
 
-For Example: If you want to create the employee table, the statement would be like,<br>
+<p style="text-indent: 40px">For Example: If you want to create the employee table, the statement would be like,</p><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -532,10 +557,10 @@ location char(10)
 </div>
 
 <br>
-In Oracle database, the datatype for an integer column is represented as "number". In Sybase it is represented as "int".<br>
+<p style="text-indent: 40px">In Oracle database, the datatype for an integer column is represented as "number". In Sybase it is represented as "int".</p><br>
 <br>
 
-Oracle provides another way of creating a table.<br>
+<p style="text-indent: 40px">Oracle provides another way of creating a table.</p><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -544,11 +569,11 @@ SELECT * FROM employee
 </div>
 
 <br>
-In the above statement, temp_employee table is created with the same number of columns and datatype as employee table.<br>
+<p style="text-indent: 40px">In the above statement, temp_employee table is created with the same number of columns and datatype as employee table.</p><br>
 
 <h1>SQL ALTER TABLE Statement</h1>
-<br>
-The SQL ALTER TABLE command is used to modify the definition (structure) of a table by modifying the definition of its columns. The ALTER command is used to perform the following functions.<br>
+
+<p style="text-indent: 40px">The SQL ALTER TABLE command is used to modify the definition (structure) of a table by modifying the definition of its columns. The ALTER command is used to perform the following functions.</p><br>
 <br>
 
 <ol>
@@ -564,7 +589,7 @@ ALTER TABLE table_name ADD column_name datatype;
 </div>
 
 <br>
-<b>For Example:</b> To add a column "experience" to the employee table, the query would be like<br>
+<p style="text-indent: 40px"><b>For Example:</b> To add a column "experience" to the employee table, the query would be like.</p><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -578,7 +603,7 @@ ALTER TABLE table_name DROP column_name;
 </div>
 
 <br>
-<b>For Example:</b> To drop the column "location" from the employee table, the query would be like<br>
+<p style="text-indent: 40px"><b>For Example:</b> To drop the column "location" from the employee table, the query would be like.</p><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -592,7 +617,7 @@ ALTER TABLE table_name MODIFY column_name datatype;
 </div>
 
 <br>
-<b>For Example:</b> To modify the column salary in the employee table, the query would be like<br>
+<p style="text-indent: 40px"><b>For Example:</b> To modify the column salary in the employee table, the query would be like.</p><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -601,9 +626,9 @@ ALTER TABLE employee MODIFY salary number(15,2);
 
 <h1>SQL RENAME Command</h1>
 
-The SQL RENAME command is used to change the name of the table or a database object.<br>
+<p style="text-indent: 40px">The SQL RENAME command is used to change the name of the table or a database object.</p><br>
 <br>
-If you change the object's name any reference to the old name will be affected. You have to manually change the old name to the new name in every reference.<br>
+<p style="text-indent: 40px">If you change the object's name any reference to the old name will be affected. You have to manually change the old name to the new name in every reference.</p><br>
 
 <h2>Syntax to rename a table</h2>
 
@@ -612,7 +637,7 @@ RENAME old_table_name To new_table_name;
 </div>
 
 <br>
-<b>For Example:</b> To change the name of the table employee to my_employee, the query would be like<br>
+<p style="text-indent: 40px"><b>For Example:</b> To change the name of the table employee to my_employee, the query would be like.</p><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -621,13 +646,13 @@ RENAME employee TO my_emloyee;
 
 <h1>SQL RENAME Statement</h1>
 
-With RENAME statement you can rename a table.<br>
+<p style="text-indent: 40px">With RENAME statement you can rename a table.</p><br>
 <br>
 
-Some of the relational database management system (RDBMS) does not support this command, because this is not standardizing statement.<br>
+<p style="text-indent: 40px">Some of the relational database management system (RDBMS) does not support this command, because this is not standardizing statement.</p><br>
 <br>
 
-For example renaming a table through MS SQL Server you must use storage procedure SP_RENAME.<br>
+<p style="text-indent: 40px">For example renaming a table through MS SQL Server you must use storage procedure SP_RENAME.</p><br>
 
 <h2>Syntax for SQL RENAME is:</h2>
 
@@ -636,7 +661,7 @@ RENAME TABLE {tbl_name} TO {new_tbl_name};
 </div>
 
 <br>
-<b>Where {tbl_name} table that exists in the current database, and {new_tbl_name} is new table name.</b>
+<p style="text-indent: 40px"><b>Where {tbl_name} table that exists in the current database, and {new_tbl_name} is new table name.</b></b>
 <br>
 
 <h4>As for Oracle may also be use the following option:</h4>
@@ -692,7 +717,7 @@ id  name<br>
 
 <br>
 <b>SQL RENAME NOTES</b><br>
-1)The minimum version that supports table renaming is Oracle 8i. All the dependencies of the table will automatically updated. No need of updating them after wards
+<p style="text-indent: 40px">1)The minimum version that supports table renaming is Oracle 8i. All the dependencies of the table will automatically updated. No need of updating them after wards</p>
 
 </p>
 <br>
