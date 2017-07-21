@@ -19,6 +19,8 @@
     body {
         padding-top: 70px;
         /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+        font-size: 15px;
+        font-style: verdana;
     }
 li{
         color: #33AAFF;
@@ -61,7 +63,6 @@ li{
                             <li><a class="dropdown-item" href="programming-language-c++.html">C++</a></li>
                             <li><a class="dropdown-item" href="programming-language-c_sharp.html">C#</a></li>
                             <li><a class="dropdown-item" href="programming-language-ios.html">IOS - Objective-C</a></li>
-                            <li><a class="dropdown-item" href="programming-language-Ruby on Rails.html">Ruby on Rails</a></li>
                             <li><a class="dropdown-item" href="programming-language-SQL.html">SQL</a></li>
                             <li><a class="dropdown-item" href="programming-language-Perl.html">Perl</a></li>
                             <li><a class="dropdown-item" href="programming-language-JavaScript.html">JavaScript</a></li>
@@ -82,7 +83,6 @@ li{
                             <li><a class="dropdown-item" href="tutorials-c++.html">C++</a></li>
                             <li><a class="dropdown-item" href="tutorials-c_shar.html">C#</a></li>
                             <li><a class="dropdown-item" href="tutorials-ios.html">IOS - Objective-C</a></li>
-                            <li><a class="dropdown-item" href="tutorials-ror.html">Ruby on Rails</a></li>
                             <li><a class="dropdown-item" href="tutorials-sql.html">SQL</a></li>
                             <li><a class="dropdown-item" href="tutorials-perl.html">Perl</a></li>
                             <li><a class="dropdown-item" href="tutorials-js.html">JavaScript</a></li>
@@ -137,7 +137,7 @@ li{
                 <p class="lead">
 <h1>Hello, world!</h1>
 
-If you have ever learned a programming language, you know that they all start with the "Hello, world!" example, and who are we to break such a fine tradition? Start Visual C# Express (introduced in the last chapter), and select File -> New project… From the project dialog, select the Console application. This is the most basic application type on a Windows system, but don't worry, we won't stay here for long. Once you click Ok, Visual C# Express creates a new project for you, including a file called Program.cs. This is where all the fun is, and it should look something like this: <br>
+<p style="text-indent: 40px">If you have ever learned a programming language, you know that they all start with the "Hello, world!" example, and who are we to break such a fine tradition? Start Visual C# Express (introduced in the last chapter), and select File -> New project… From the project dialog, select the Console application. This is the most basic application type on a Windows system, but don't worry, we won't stay here for long. Once you click Ok, Visual C# Express creates a new project for you, including a file called Program.cs. This is where all the fun is, and it should look something like this:</p> <br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -157,7 +157,7 @@ namespace ConsoleApplication1<br>
 </div>
 
 <br>
-Actually, all these lines doesn't really accomplish anything, or at least it may seem so. Try running the application by pushing F5 on your keyboard. This will make Visual C# Express compile and execute your code, but as you will see, it doesn't do much. You will likely just see a black window launch and close again. That is because our application doesn't do anything yet. In the next chapter we will go through these lines to see what they are all about, but for now, we really would like to see some results, so let's pretend that we know all about C# and add a couple of lines to get some output. Within the last set of { }, add these lines: <br>
+<p style="text-indent: 40px">Actually, all these lines doesn't really accomplish anything, or at least it may seem so. Try running the application by pushing F5 on your keyboard. This will make Visual C# Express compile and execute your code, but as you will see, it doesn't do much. You will likely just see a black window launch and close again. That is because our application doesn't do anything yet. In the next chapter we will go through these lines to see what they are all about, but for now, we really would like to see some results, so let's pretend that we know all about C# and add a couple of lines to get some output. Within the last set of { }, add these lines:</p> <br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -166,7 +166,7 @@ Console.ReadLine();
 </div>
 
 <br>
-The code of your first application should now look like this:<br>
+<p style="text-indent: 40px">The code of your first application should now look like this:</p><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -188,22 +188,18 @@ namespace ConsoleApplication1<br>
 </div>
 
 <br>
-Once again, hit F5 to run it, and you will see the black window actually staying, and even displaying our greeting to the world. Okay, so we added two lines of code, but what to they do? One of the nice things about C# and the .NET framework is the fact that a lot of the code makes sense even to the untrained eye, which this example shows.<br> 
-<br>
+<p style="text-indent: 40px">Once again, hit F5 to run it, and you will see the black window actually staying, and even displaying our greeting to the world. Okay, so we added two lines of code, but what to they do? One of the nice things about C# and the .NET framework is the fact that a lot of the code makes sense even to the untrained eye, which this example shows.</p><br> 
 
-The first line uses the Console class to output a line of text, and the second one reads a line of text from the console. Read? Why? Actually this is a bit of a trick, since without it, the application would just end and close the window with the output before anyone could see it.<br> 
-<br>
+<p style="text-indent: 40px">The first line uses the Console class to output a line of text, and the second one reads a line of text from the console. Read? Why? Actually this is a bit of a trick, since without it, the application would just end and close the window with the output before anyone could see it.</p><br> 
 
-The ReadLine command tells the application to wait for input from the user, and as you will notice, the console window now allows you to enter text. Press Enter to close it. Congratulations, you have just created your first C# application! Read on in the next chapter for even more information about what's actually going on.<br>
+<p style="text-indent: 40px">The ReadLine command tells the application to wait for input from the user, and as you will notice, the console window now allows you to enter text. Press Enter to close it. Congratulations, you have just created your first C# application! Read on in the next chapter for even more information about what's actually going on.</p><br>
 
 <h1>Hello world explained</h1>
 
-
-In the previous chapter, we tried writing a piece of text to the console, in our first C# application. To see some actual progress, we didn't go into much detail about the lines of code we used, so this chapter is an explanation of the Hello world example code. As you can probably see from the code, some of the lines look similar, so we will bring them back in groups for an individual explanation. Let's start with the shortest and most common characters in our code: The { and }. They are often referred to as curly braces, and in C#, they mark the beginning and end of a logical block of code. The curly braces are used in lots of other languages, including C++, Java, JavaScript and many others. As you can see in the code, they are used to wrap several lines of code which belongs together. In later examples, it will be clearer how they are used. <br>
+<p style="text-indent: 40px">In the previous chapter, we tried writing a piece of text to the console, in our first C# application. To see some actual progress, we didn't go into much detail about the lines of code we used, so this chapter is an explanation of the Hello world example code. As you can probably see from the code, some of the lines look similar, so we will bring them back in groups for an individual explanation. Let's start with the shortest and most common characters in our code: The { and }. They are often referred to as curly braces, and in C#, they mark the beginning and end of a logical block of code. The curly braces are used in lots of other languages, including C++, Java, JavaScript and many others. As you can see in the code, they are used to wrap several lines of code which belongs together. In later examples, it will be clearer how they are used.</p> <br>
 
 <br>
-Now let's start from the beginning:<br>
-<br>
+<p style="text-indent: 40px">Now let's start from the beginning:<br>
 
 <div class="alert alert-info" role="alert">
 using System;<br>
@@ -212,10 +208,10 @@ using System.Text;
 </div>
 
 <br>
-using is a keyword, highlighted with blue by the editor. The using keyword imports a namespace, and a namespace is a collection of classes. Classes brings us some sort of functionality, and when working with an advanced IDE like Visual C# Express, it will usually create parts of the trivial code for us. In this case, it created a class for us, and imported the namespaces which is required or expected to be used commonly. In this case, 3 namespaces are imported for us, each containing lots of useful classes. For instance, we use the Console class, which is a part of the System namespace. <br>
+<p style="text-indent: 40px">using is a keyword, highlighted with blue by the editor. The using keyword imports a namespace, and a namespace is a collection of classes. Classes brings us some sort of functionality, and when working with an advanced IDE like Visual C# Express, it will usually create parts of the trivial code for us. In this case, it created a class for us, and imported the namespaces which is required or expected to be used commonly. In this case, 3 namespaces are imported for us, each containing lots of useful classes. For instance, we use the Console class, which is a part of the System namespace.</p> <br>
 <br>
 
-As you can see, we even get our own namespace:<br>
+<p style="text-indent: 40px">As you can see, we even get our own namespace:</p><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -223,10 +219,10 @@ namespace ConsoleApplication1
 </div>
 
 <br>
-The namespace ConsoleApplication1 is now the main namespace for this application, and new classes will be a part of it by default. Obviously, you can change this, and create classes in another namespace. In that case, you will have to import this new namespace to use it in your application, with the using statement, like any other namespace. <br>
+<p style="text-indent: 40px">The namespace ConsoleApplication1 is now the main namespace for this application, and new classes will be a part of it by default. Obviously, you can change this, and create classes in another namespace. In that case, you will have to import this new namespace to use it in your application, with the using statement, like any other namespace.</p> <br>
 
 <br>
-Next, we define our class. Since C# is truly an Object Oriented language, every line of code that actually does something, is wrapped inside a class. In the case, the class is simply called Program:<br>
+<p style="text-indent: 40px">Next, we define our class. Since C# is truly an Object Oriented language, every line of code that actually does something, is wrapped inside a class. In the case, the class is simply called Program:</p><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -234,7 +230,7 @@ class Program
 </div>
 
 <br>
-We can have more classes, even in the same file. For now, we only need one class. A class can contain several variables, properties and methods, concepts we will go deeper into later on. For now, all you need to know is that our current class only contains one method and nothing else. It's declared like this:<br>
+<p style="text-indent: 40px">We can have more classes, even in the same file. For now, we only need one class. A class can contain several variables, properties and methods, concepts we will go deeper into later on. For now, all you need to know is that our current class only contains one method and nothing else. It's declared like this:</p><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -242,23 +238,23 @@ static void Main(string[] args)
 </div>
 
 <br>
-This line is probably the most complicated one in this example, so let's split it up a bit. The first word is static. The static keyword tells us that this method should be accesible without instantiating the class, but more about this in our chapter about classes.<br> 
+<p style="text-indent: 40px">This line is probably the most complicated one in this example, so let's split it up a bit. The first word is static. The static keyword tells us that this method should be accesible without instantiating the class, but more about this in our chapter about classes.</p><br> 
 <br>
 
-The next keyword is void, and tells us what this method should return. For instance, int could be an integer or a string of text, but in this case, we don't want our method to return anything, or void, which is the same as no type. <br>
+<p style="text-indent: 40px">The next keyword is void, and tells us what this method should return. For instance, int could be an integer or a string of text, but in this case, we don't want our method to return anything, or void, which is the same as no type.</p> <br>
 <br>
 
-The next word is Main, which is simply the name of our method. This method is the so-called entry-point of our application, that is, the first piece of code to be executed, and in our example, the only piece to be executed. <br>
+<p style="text-indent: 40px">The next word is Main, which is simply the name of our method. This method is the so-called entry-point of our application, that is, the first piece of code to be executed, and in our example, the only piece to be executed.</p> <br>
 
 <br>
-Now, after the name of a method, a set of arguments can be specified within a set of parentheses. In our example, our method takes only one argument, called args. The type of the argument is a string, or to be more precise, an array of strings, but more on that later. If you think about it, this makes perfect sense, since Windows applications can always be called with an optinal set of arguments. These arguments will be passed as text strings to our main method. <br>
+<p style="text-indent: 40px">Now, after the name of a method, a set of arguments can be specified within a set of parentheses. In our example, our method takes only one argument, called args. The type of the argument is a string, or to be more precise, an array of strings, but more on that later. If you think about it, this makes perfect sense, since Windows applications can always be called with an optinal set of arguments. These arguments will be passed as text strings to our main method.</p> <br>
 
 <br>
-And that's it. You should now have a basic understanding of our first C# application, as well as the basic principles of what makes a console application work.<br>
+<p style="text-indent: 40px">And that's it. You should now have a basic understanding of our first C# application, as well as the basic principles of what makes a console application work.<br>
 
 <h1>Data types</h1>
 
-Data types are used everywhere in a programming language like C#. Because it's a strongly typed language, you are required to inform the compiler about which data types you wish to use every time you declare a variable, as you will see in the chapter about variables. In this chapter we will take a look at some of the most used data types and how they work.<br> 
+<p style="text-indent: 40px">Data types are used everywhere in a programming language like C#. Because it's a strongly typed language, you are required to inform the compiler about which data types you wish to use every time you declare a variable, as you will see in the chapter about variables. In this chapter we will take a look at some of the most used data types and how they work.</p><br> 
 
 
 <h4>bool</h4> is one of the simplest data types. It can contain only 2 values - false or true. The bool type is important to understand when using logical operators like the if statement. <br>
@@ -277,7 +273,7 @@ Data types are used everywhere in a programming language like C#. Because it's a
 
 <h1>Variables</h1>
 
-A variable can be compared to a storage room, and is essential for the programmer. In C#, a variable is declared like this: <br>
+<p style="text-indent: 40px">A variable can be compared to a storage room, and is essential for the programmer. In C#, a variable is declared like this:/ <br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -285,7 +281,7 @@ A variable can be compared to a storage room, and is essential for the programme
 </div>
 
 <br>
-An example could look like this: <br>
+<p style="text-indent: 40px">An example could look like this:/ <br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -293,7 +289,7 @@ string name;
 </div>
 
 <br>
-That's the most basic version. Usually, you wish to assign a visibility to the variable, and perhaps assign a value to it at the same time. It can be done like this: <br>
+<p style="text-indent: 40px">That's the most basic version. Usually, you wish to assign a visibility to the variable, and perhaps assign a value to it at the same time. It can be done like this: </p><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -301,7 +297,7 @@ That's the most basic version. Usually, you wish to assign a visibility to the v
 </div>
 
 <br>
-And with an example:<br>
+<p style="text-indent: 40px">And with an example:</p><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -309,8 +305,8 @@ private string name = "John Doe";
 </div>
 
 <br>
-The visibility part is explained elsewhere in this tutorial, so let's concentrate on the variable part. We will jump straight to an example of actually using a couple of them:
-using System;<br>
+<p style="text-indent: 40px">The visibility part is explained elsewhere in this tutorial, so let's concentrate on the variable part. We will jump straight to an example of actually using a couple of them:<br>
+using System;</p><br>
 <br>
 
 
@@ -338,13 +334,13 @@ namespace ConsoleApplication1<br>
 </div>
 
 <br>
-Okay, a lot of this has already been explained, so we will jump directly to the interesting part. First of all, we declare a couple of variables of the string type. A string simply contains text, as you can see, since we give them a value straight away. Next, we output a line of text to the console, where we use the two variables. The string is made up by using the + characters to "collect" the different parts. <br>
+<p style="text-indent: 40px">Okay, a lot of this has already been explained, so we will jump directly to the interesting part. First of all, we declare a couple of variables of the string type. A string simply contains text, as you can see, since we give them a value straight away. Next, we output a line of text to the console, where we use the two variables. The string is made up by using the + characters to "collect" the different parts.</p> <br>
 <br>
 
-Next, we urge the user to enter a new first name, and then we use the ReadLine() method to read the user input from the console and into the firstName variable. Once the user presses the Enter key, the new first name is assigned to the variable, and in the next line we output the name presentation again, to show the change. We have just used our first variable and the single most important feature of a variable: The ability to change its value at runtime. <br>
+<p style="text-indent: 40px">Next, we urge the user to enter a new first name, and then we use the ReadLine() method to read the user input from the console and into the firstName variable. Once the user presses the Enter key, the new first name is assigned to the variable, and in the next line we output the name presentation again, to show the change. We have just used our first variable and the single most important feature of a variable: The ability to change its value at runtime.</p> <br>
 <br>
 
-Another interesting example is doing math. Here is one, based on a lot of the same code we have just used:<br>
+<p style="text-indent: 40px">Another interesting example is doing math. Here is one, based on a lot of the same code we have just used:</p><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -362,14 +358,14 @@ Console.ReadLine();
 </div>
 
 <br>
-Put this in our Main method, and try it out. The only new "trick" we use here, is the int.Parse() method. It simply reads a string and converts it into an integer. As you can see, this application makes no effort to validate the user input, and if you enter something which is not a number, an exception will be raised. More about those later.<br>
+<p style="text-indent: 40px">Put this in our Main method, and try it out. The only new "trick" we use here, is the int.Parse() method. It simply reads a string and converts it into an integer. As you can see, this application makes no effort to validate the user input, and if you enter something which is not a number, an exception will be raised. More about those later.</p><br>
 
 <h1>The if statement</h1>
 
-One of the single most important statements in every programming language is the if statement. Being able to set up conditional blocks of code is a fundamental principal of writing software. In C#, the if statement is very simple to use. If you have already used another programming language, chances are that you can use the if statement of C# straight away. In any case, read on to see how it's used. The if statement needs a boolean result, that is, true or false. In some programming languages, several datatypes can be automatically converted into booleans, but in C#, you have to specifically make the result boolean. For instance, you can't use if(number), but you can compare number to something, to generate a true or false, like we do later on. <br>
+<p style="text-indent: 40px">One of the single most important statements in every programming language is the if statement. Being able to set up conditional blocks of code is a fundamental principal of writing software. In C#, the if statement is very simple to use. If you have already used another programming language, chances are that you can use the if statement of C# straight away. In any case, read on to see how it's used. The if statement needs a boolean result, that is, true or false. In some programming languages, several datatypes can be automatically converted into booleans, but in C#, you have to specifically make the result boolean. For instance, you can't use if(number), but you can compare number to something, to generate a true or false, like we do later on.</p> <br>
 <br>
 
-In the previous chapter we looked at variables, so we will expand on one of the examples to see how conditional logic can be used.<br>
+<p style="text-indent: 40px">In the previous chapter we looked at variables, so we will expand on one of the examples to see how conditional logic can be used.</p><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -401,10 +397,10 @@ namespace ConsoleApplication1<br>
 </div>
 
 <br>
-We use 2 if statements to check if the entered number is between 0 and 10, and a companion of the if statement: The else keyword. Its meaning should be obvious to anyone speaking English - it simply offers an alternative to the code being executed if the condition of the if statement is not met.<br> 
+<p style="text-indent: 40px">We use 2 if statements to check if the entered number is between 0 and 10, and a companion of the if statement: The else keyword. Its meaning should be obvious to anyone speaking English - it simply offers an alternative to the code being executed if the condition of the if statement is not met.</p><br> 
 <br>
 
-As you may have noticed, we don't use the { and } characters to define the conditional blocks of code. The rule is that if a block only contains a single line of code, the block characters are not required. Now, this seems like a lot of lines to simply check a number, doesn't it? It can be done with fewer lines of code, like this:<br>
+<p style="text-indent: 40px">As you may have noticed, we don't use the { and } characters to define the conditional blocks of code. The rule is that if a block only contains a single line of code, the block characters are not required. Now, this seems like a lot of lines to simply check a number, doesn't it? It can be done with fewer lines of code, like this:</p><br>
 
 
 <div class="alert alert-info" role="alert">
@@ -415,7 +411,7 @@ else<br>
 </div>
 
 <br>
-We put each condition in a set of parentheses, and then we use the || operator, which simply means "or", to check if the number is either more than 10 OR less than 0. Another operator you will be using a lot is the AND operator, which is written like this: &&. Could we have used the AND operator instead? Of course, we simply turn it around a bit, like this:<br>
+<p style="text-indent: 40px">We put each condition in a set of parentheses, and then we use the || operator, which simply means "or", to check if the number is either more than 10 OR less than 0. Another operator you will be using a lot is the AND operator, which is written like this: &&. Could we have used the AND operator instead? Of course, we simply turn it around a bit, like this:</p><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -426,11 +422,11 @@ else<br>
 </div>
 
 <br>
-This introduces a couple of new operators, the "less than or equal too" and the "bigger than or equal too".<br>
+<p style="text-indent: 40px">This introduces a couple of new operators, the "less than or equal too" and the "bigger than or equal too".</p><br>
 
 <h1>The switch statement</h1>
 
-The switch statement is like a set of if statements. It's a list of possibilities, with an action for each possibility, and an optional default action, in case nothing else evaluates to true. A simple switch statement looks like this:<br>
+<p style="text-indent: 40px">The switch statement is like a set of if statements. It's a list of possibilities, with an action for each possibility, and an optional default action, in case nothing else evaluates to true. A simple switch statement looks like this:</p><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -447,10 +443,10 @@ switch(number)<br>
 </div>
 
 <br>
-The identifier to check is put after the switch keyword, and then there's the list of case statements, where we check the identifier against a given value. You will notice that we have a break statement at the end of each case. C# simply requires that we leave the block before it ends. In case you were writing a function, you could use a return statement instead of the break statement. <br>
+<p style="text-indent: 40px">The identifier to check is put after the switch keyword, and then there's the list of case statements, where we check the identifier against a given value. You will notice that we have a break statement at the end of each case. C# simply requires that we leave the block before it ends. In case you were writing a function, you could use a return statement instead of the break statement.</p> <br>
 
 <br>
-In this case, we use an integer, but it could be a string too, or any other simple type. Also, you can specify the same action for multiple cases. We will do that in the next example too, where we take a piece of input from the user and use it in our switch statement:<br>
+<p style="text-indent: 40px">In this case, we use an integer, but it could be a string too, or any other simple type. Also, you can specify the same action for multiple cases. We will do that in the next example too, where we take a piece of input from the user and use it in our switch statement:</p><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -469,10 +465,10 @@ switch(input.ToLower())<br>
 </div>
 
 <br>
-In this example, we ask the user a question, and suggest that they enter either yes, no or maybe. We then read the user input, and create a switch statement for it. To help the user, we convert the input to lowercase before we check it against our lowercase strings, so that there is no difference between lowercase and uppercase letters. <br>
+<p style="text-indent: 40px">In this example, we ask the user a question, and suggest that they enter either yes, no or maybe. We then read the user input, and create a switch statement for it. To help the user, we convert the input to lowercase before we check it against our lowercase strings, so that there is no difference between lowercase and uppercase letters.</p> <br>
 <br>
 
-Still, the user might make a typo or try writing something completely different, and in that case, no output will be generated by this specific switch statement. Enter the default keyword!<br>
+<p style="text-indent: 40px">Still, the user might make a typo or try writing something completely different, and in that case, no output will be generated by this specific switch statement. Enter the default keyword!</p><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -494,15 +490,15 @@ switch(input.ToLower())<br>
 </div>
 
 <br>
-If none of the case statements has evaluated to true, then the default statement, if any, will be executed. It is optional, as we saw in the previous examples.<br>
+<p style="text-indent: 40px">If none of the case statements has evaluated to true, then the default statement, if any, will be executed. It is optional, as we saw in the previous examples.</p><br>
 
 <h1>Loops</h1>
 
-Another essential technique when writing software is looping - the ability to repeat a block of code X times. In C#, they come in 4 different variants, and we will have a look at each one of them.<br>
+<p style="text-indent: 40px">Another essential technique when writing software is looping - the ability to repeat a block of code X times. In C#, they come in 4 different variants, and we will have a look at each one of them.</p><br>
 
 <h4>The while loop</h4>
 
-The while loop is probably the most simple one, so we will start with that. The while loop simply executes a block of code as long as the condition you give it is true. A small example, and then some more explanation:<br>
+<p style="text-indent: 40px">The while loop is probably the most simple one, so we will start with that. The while loop simply executes a block of code as long as the condition you give it is true. A small example, and then some more explanation:</p><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -529,11 +525,11 @@ namespace ConsoleApplication1<br>
 </div>
 
 <br>
-Try running the code. You will get a nice listing of numbers, from 0 to 4. The number is first defined as 0, and each time the code in the loop is executed, it's incremented by one. But why does it only get to 4, when the code says 5? For the condition to return true, the number has to be less than 5, which in this case means that the code which outputs the number is not reached once the number is equal to 5. This is because the condition of the while loop is evaluated before it enters the code block.<br>
+<p style="text-indent: 40px">Try running the code. You will get a nice listing of numbers, from 0 to 4. The number is first defined as 0, and each time the code in the loop is executed, it's incremented by one. But why does it only get to 4, when the code says 5? For the condition to return true, the number has to be less than 5, which in this case means that the code which outputs the number is not reached once the number is equal to 5. This is because the condition of the while loop is evaluated before it enters the code block.</p><br>
 
 <h4>The do loop</h4>
 
-The opposite is true for the do loop, which works like the while loop in other aspects through. The do loop evaluates the condition after the loop has executed, which makes sure that the code block is always executed at least once.<br>
+<p style="text-indent: 40px">The opposite is true for the do loop, which works like the while loop in other aspects through. The do loop evaluates the condition after the loop has executed, which makes sure that the code block is always executed at least once.</p><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -545,11 +541,11 @@ do<br>
 </div>
 
 <br>
-The output is the same though - once the number is more than 5, the loop is exited.<br>
+<p style="text-indent: 40px">The output is the same though - once the number is more than 5, the loop is exited.</p><br>
 
 <h4>The for loop</h4>
 
-The for loop is a bit different. It's preferred when you know how many iterations you want, either because you know the exact amount of iterations, or because you have a variable containing the amount. Here is an example on the for loop.<br>
+<p style="text-indent: 40px">The for loop is a bit different. It's preferred when you know how many iterations you want, either because you know the exact amount of iterations, or because you have a variable containing the amount. Here is an example on the for loop.</p><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -573,17 +569,16 @@ namespace ConsoleApplication1<br>
 </div>
 
 <br>
-This produces the exact same output, but as you can see, the for loop is a bit more compact. It consists of 3 parts - we initialize a variable for counting, set up a conditional statement to test it, and increment the counter (++ means the same as "variable = variable + 1"). <br>
+<p style="text-indent: 40px">This produces the exact same output, but as you can see, the for loop is a bit more compact. It consists of 3 parts - we initialize a variable for counting, set up a conditional statement to test it, and increment the counter (++ means the same as "variable = variable + 1").</p> <br>
 <br>
 
-The first part, where we define the i variable and set it to 0, is only executed once, before the loop starts. The last 2 parts are executed for each iteration of the loop. Each time, i is compared to our number variable - if i is smaller than number, the loop runs one more time. After that, i is increased by one. <br>
+<p style="text-indent: 40px">The first part, where we define the i variable and set it to 0, is only executed once, before the loop starts. The last 2 parts are executed for each iteration of the loop. Each time, i is compared to our number variable - if i is smaller than number, the loop runs one more time. After that, i is increased by one.</p> <br>
 
-
-Try running the program, and afterwards, try changing the number variable to something bigger or smaller than 5. You will see the loop respond to the change.<br>
+<p style="text-indent: 40px">Try running the program, and afterwards, try changing the number variable to something bigger or smaller than 5. You will see the loop respond to the change.</p><br>
 
 <h4>The foreach loop</h4>
 
-The last loop we will look at, is the foreach loop. It operates on collections of items, for instance arrays or other built-in list types. In our example we will use one of the simple lists, called an ArrayList. It works much like an array, but don't worry, we will look into it in a later chapter.<br>
+<p style="text-indent: 40px">The last loop we will look at, is the foreach loop. It operates on collections of items, for instance arrays or other built-in list types. In our example we will use one of the simple lists, called an ArrayList. It works much like an array, but don't worry, we will look into it in a later chapter.</p><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -611,14 +606,14 @@ namespace ConsoleApplication1<br>
 </div>
 
 <br>
-Okay, so we create an instance of an ArrayList, and then we add some string items to it. We use the foreach loop to run through each item, setting the name variable to the item we have reached each time. That way, we have a named variable to output. As you can see, we declare the name variable to be of the string type – you always need to tell the foreach loop which datatype you are expecting to pull out of the collection. In case you have a list of various types, you may use the object class instead of a specific class, to pull out each item as an object. <br>
+<p style="text-indent: 40px">Okay, so we create an instance of an ArrayList, and then we add some string items to it. We use the foreach loop to run through each item, setting the name variable to the item we have reached each time. That way, we have a named variable to output. As you can see, we declare the name variable to be of the string type – you always need to tell the foreach loop which datatype you are expecting to pull out of the collection. In case you have a list of various types, you may use the object class instead of a specific class, to pull out each item as an object.</p> <br>
 <br>
 
-When working with collections, you are very likely to be using the foreach loop most of the time, mainly because it’s simpler than any of the other loops for these kind of operations.<br>
+<p style="text-indent: 40px">When working with collections, you are very likely to be using the foreach loop most of the time, mainly because it’s simpler than any of the other loops for these kind of operations.</p><br>
 
 <h1>Functions</h1>
 
-A function allows you to encapsulate a piece of code and call it from other parts of your code. You may very soon run into a situation where you need to repeat a piece of code, from multiple places, and this is where functions come in. In C#, they are basically declared like this:<br>
+<p style="text-indent: 40px">A function allows you to encapsulate a piece of code and call it from other parts of your code. You may very soon run into a situation where you need to repeat a piece of code, from multiple places, and this is where functions come in. In C#, they are basically declared like this:</p><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -629,7 +624,7 @@ A function allows you to encapsulate a piece of code and call it from other part
 </div>
 
 <br>
-To call a function, you simply write its name, an open parenthesis, then parameters, if any, and then a closing parenthesis, like this:<br>
+<p style="text-indent: 40px">To call a function, you simply write its name, an open parenthesis, then parameters, if any, and then a closing parenthesis, like this:</p><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -637,7 +632,7 @@ DoStuff();
 </div>
 
 <br>
-Here is an example of our DoStuff() function:<br>
+<p style="text-indent: 40px">Here is an example of our DoStuff() function:</p><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -648,10 +643,10 @@ public void DoStuff()<br>
 </div>
 
 <br>
-The first part, public, is the visibility, and is optional. If you don't define any, then the function will be private. More about that later on. <br>
+<p style="text-indent: 40px">The first part, public, is the visibility, and is optional. If you don't define any, then the function will be private. More about that later on.</p> <br>
 
 <br>
-Next is the type to return. It could be any valid type in C#, or as we have done it here, void. A void means that this function returns absolutely nothing. Also, this function takes no parameters, as you can see from the empty set of parentheses, so it's actually just a tad bit boring. Let's change that:<br>
+<p style="text-indent: 40px">Next is the type to return. It could be any valid type in C#, or as we have done it here, void. A void means that this function returns absolutely nothing. Also, this function takes no parameters, as you can see from the empty set of parentheses, so it's actually just a tad bit boring. Let's change that:</p><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -663,8 +658,7 @@ public int AddNumbers(int number1, int number2)<br>
 </div>
 
 <br>
-We've changed almost everything. The function now returns an integer, it takes two parameters (both integers), and instead of outputting something, it makes a calculation and then returns the result. This means that we can add two numbers from various places in our code, simply by calling this function, instead of having to write the calculation code each time. While we don't save that much time and effort in this small example, you better believe that you will learn to love functions, the more you use C#. This 
-function is called like this:<br>
+<p style="text-indent: 40px">We've changed almost everything. The function now returns an integer, it takes two parameters (both integers), and instead of outputting something, it makes a calculation and then returns the result. This means that we can add two numbers from various places in our code, simply by calling this function, instead of having to write the calculation code each time. While we don't save that much time and effort in this small example, you better believe that you will learn to love functions, the more you use C#. This function is called like this:</p><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -673,7 +667,7 @@ Console.WriteLine(result);
 </div>
 
 <br>
-As mentioned, this function actually returns something, and it has to, because we told C# that it's supposed to do so. When declaring anything else than void as a return type, we are forcing our self to return something. You can try removing the return line from the example above, and see the compiler complain: <br>
+<p style="text-indent: 40px">As mentioned, this function actually returns something, and it has to, because we told C# that it's supposed to do so. When declaring anything else than void as a return type, we are forcing our self to return something. You can try removing the return line from the example above, and see the compiler complain: <br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -681,7 +675,7 @@ As mentioned, this function actually returns something, and it has to, because w
 </div>
 
 <br>
-The compiler is reminding us that we have a function which doesn't return something, although we promised. And the compiler is pretty clever! Instead of removing the line, try something like this:<br>
+<p style="text-indent: 40px">The compiler is reminding us that we have a function which doesn't return something, although we promised. And the compiler is pretty clever! Instead of removing the line, try something like this:</p><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -696,7 +690,7 @@ public int AddNumbers(int number1, int number2)<br>
 </div>
 
 <br>
-You will see the exact same error - but why? Because there is no guarantee that our if statement will evaluate to true and the return line being executed. You can solve this by having a second, default like return statement in the end:<br>
+<p style="text-indent: 40px">You will see the exact same error - but why? Because there is no guarantee that our if statement will evaluate to true and the return line being executed. You can solve this by having a second, default like return statement in the end:</p><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -712,21 +706,21 @@ public int AddNumbers(int number1, int number2)
 </div>
 
 <br>
-This will fix the problem we created for our self, and it will also show you that we can have more than one return statement in our function. As soon as a return statement is reached, the function is left and no more code in it is executed. In this case, it means that as long as the result is higher than 10, the "return 0" is never reached.<br>
+<p style="text-indent: 40px">This will fix the problem we created for our self, and it will also show you that we can have more than one return statement in our function. As soon as a return statement is reached, the function is left and no more code in it is executed. In this case, it means that as long as the result is higher than 10, the "return 0" is never reached.</p><br>
 
 <h1>Function parameters</h1>
 
-In the previous chapter, we had a look at functions. We briefly discussed parameters, but only briefly. While parameters are very simple and straight forward to use, there are tricks which can make them a lot more powerful. <br>
+<p style="text-indent: 40px">In the previous chapter, we had a look at functions. We briefly discussed parameters, but only briefly. While parameters are very simple and straight forward to use, there are tricks which can make them a lot more powerful.</p> <br>
 <br>
 
-The first thing that we will take a look at, is the out and ref modifiers. C#, and other languages as well, differ between two parameters: "by value" and "by reference". The default in C# is "by value", which basically means that when you pass on a variable to a function call, you are actually sending a copy of the object, instead of a reference to it. This also means that you can make changes to the parameter from inside the function, without affecting the original object you passed as a parameter. <br>
+<p style="text-indent: 40px">The first thing that we will take a look at, is the out and ref modifiers. C#, and other languages as well, differ between two parameters: "by value" and "by reference". The default in C# is "by value", which basically means that when you pass on a variable to a function call, you are actually sending a copy of the object, instead of a reference to it. This also means that you can make changes to the parameter from inside the function, without affecting the original object you passed as a parameter.</p> <br>
 <br>
 
-With the ref and the out keyword, we can change this behavior, so we pass along a reference to the object instead of its value.<br>
+<p style="text-indent: 40px">With the ref and the out keyword, we can change this behavior, so we pass along a reference to the object instead of its value.</p><br>
 
 <h4>The ref modifier</h4>
 
-Consider the following example:<br>
+<p style="text-indent: 40px">Consider the following example:<br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -745,7 +739,7 @@ static void AddFive(int number)<br>
 </div>
 
 <br>
-We create an integer, assign the number 20 to it, and then we use the AddFive() method, which should add 5 to the number. But does it? No. The value we assign to number inside the function, is never carried out of the function, because we have passed a copy of the number value instead of a reference to it. This is simply how C# works, and in a lot of cases, it's the preferred result. However, in this case, we actually wish to modify the number inside our function. Enter the ref keyword:<br>
+<p style="text-indent: 40px">We create an integer, assign the number 20 to it, and then we use the AddFive() method, which should add 5 to the number. But does it? No. The value we assign to number inside the function, is never carried out of the function, because we have passed a copy of the number value instead of a reference to it. This is simply how C# works, and in a lot of cases, it's the preferred result. However, in this case, we actually wish to modify the number inside our function. Enter the ref keyword:</p><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -764,21 +758,21 @@ static void AddFive(ref int number)<br>
 </div>
 
 <br>
-As you can see, all we've done is adding the ref keyword to the function declaration as well as the call to the function. If you run the program now, you will see that the value of number has now changed, once we return from the function call. <br>
+<p style="text-indent: 40px">As you can see, all we've done is adding the ref keyword to the function declaration as well as the call to the function. If you run the program now, you will see that the value of number has now changed, once we return from the function call.</p> <br>
 
 <h4>The out modifier</h4>
 
-The out modifier works pretty much like the ref modifier. They both ensure that the parameter is passed by reference instead of by value, but they do come with two important differences: A value passed to a ref modifier has to be initialized before calling the method - this is not true for the out modifier, where you can use un-initialized values. On the other hand, you can't leave a function call with an out parameter, without assigning a value to it. Since you can pass in un-initialized values as an out parameter, you are not able to actually use an out parameter inside a function - you can only assign a new value to it. <br>
+<p style="text-indent: 40px">The out modifier works pretty much like the ref modifier. They both ensure that the parameter is passed by reference instead of by value, but they do come with two important differences: A value passed to a ref modifier has to be initialized before calling the method - this is not true for the out modifier, where you can use un-initialized values. On the other hand, you can't leave a function call with an out parameter, without assigning a value to it. Since you can pass in un-initialized values as an out parameter, you are not able to actually use an out parameter inside a function - you can only assign a new value to it.</p> <br>
 
 <br>
-Whether to use out or ref really depends on the situation, as you will realize once you start using them. Both are typically used to work around the issue of only being able to return one value from a function, with C#.<br> 
+<p style="text-indent: 40px">Whether to use out or ref really depends on the situation, as you will realize once you start using them. Both are typically used to work around the issue of only being able to return one value from a function, with C#.</p><br> 
 <br>
 
-Using the out modifier is just like using the ref modifier, as shown above. Simply change the ref keyword to the out keyword.<br>
+<p style="text-indent: 40px">Using the out modifier is just like using the ref modifier, as shown above. Simply change the ref keyword to the out keyword.</p><br>
 
 <h4>The params modifier</h4>
 
-So far, all of our functions have accepted a fixed amount of parameters. However, in some cases, you might need a function which takes an arbitrary number of parameters. This could of course be done by accepting an array or a list as a parameter, like this:<br>
+<p style="text-indent: 40px">So far, all of our functions have accepted a fixed amount of parameters. However, in some cases, you might need a function which takes an arbitrary number of parameters. This could of course be done by accepting an array or a list as a parameter, like this:</p><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -786,7 +780,7 @@ static void GreetPersons(string[] names) { }
 </div>
 
 <br>
-However, calling it would be a bit clumsy. In the shortest form, it would look like this:<br>
+<p style="text-indent: 40px">However, calling it would be a bit clumsy. In the shortest form, it would look like this:</p><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -794,7 +788,7 @@ GreetPersons(new string[] { "John", "Jane", "Tarzan" });<br>
 </div>
 
 <br>
-It is acceptable, but it can be done even smarter, with the params keyword:<br>
+<p style="text-indent: 40px">It is acceptable, but it can be done even smarter, with the params keyword:</p><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -802,7 +796,7 @@ static void GreetPersons(params string[] names) { }
 </div>
 
 <br>
-Calling it would then look like this:<br>
+<p style="text-indent: 40px">Calling it would then look like this:</p><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -810,10 +804,10 @@ GreetPersons("John", "Jane", "Tarzan");
 </div>
 
 <br>
-Another advantage of using the params approach, is that you are allowed to pass zero parameters to it as well. <br>
+<p style="text-indent: 40px">Another advantage of using the params approach, is that you are allowed to pass zero parameters to it as well.</p> <br>
 <br>
 
-Functions with params can even take other parameters as well, as long as the parameter with the params keyword are the last one. Besides that, only one parameter using the params keyword can be used per function. Here is a last and more complete example:<br>
+<p style="text-indent: 40px">Functions with params can even take other parameters as well, as long as the parameter with the params keyword are the last one. Besides that, only one parameter using the params keyword can be used per function. Here is a last and more complete example:</p><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -833,10 +827,10 @@ static void GreetPersons(int someUnusedParameter, params string[] names)<br>
 
 <h1>Arrays</h1>
 
-Arrays works as collections of items, for instance strings. You can use them to gather items in a single group, and perform various operations on them, e.g. sorting. Besides that, several methods within the framework work on arrays, to make it possible to accept a range of items instead of just one. This fact alone makes it important to know a bit about arrays. <br>
+<p style="text-indent: 40px">Arrays works as collections of items, for instance strings. You can use them to gather items in a single group, and perform various operations on them, e.g. sorting. Besides that, several methods within the framework work on arrays, to make it possible to accept a range of items instead of just one. This fact alone makes it important to know a bit about arrays.</p> <br>
 <br>
 
-Arrays are declared much like variables, with a set of [] brackets after the datatype, like this:<br>
+<p style="text-indent: 40px">Arrays are declared much like variables, with a set of [] brackets after the datatype, like this:</p><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -844,7 +838,7 @@ string[] names;
 </div>
 
 <br>
-You need to instantiate the array to use it, which is done like this:<br>
+<p style="text-indent: 40px">You need to instantiate the array to use it, which is done like this:</p><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -852,7 +846,7 @@ string[] names = new string[2];
 </div>
 
 <br>
-The number (2) is the size of the array, that is, the amount of items we can put in it. Putting items into the array is pretty simple as well:<br>
+<p style="text-indent: 40px">The number (2) is the size of the array, that is, the amount of items we can put in it. Putting items into the array is pretty simple as well:</p><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -860,10 +854,10 @@ names[0] = "John Doe";
 </div>
 
 <br>
-But why 0? As it is with so many things in the world of programming, the counting starts from 0 instead of 1. So the first item is indexed as 0, the next as 1 and so on. You should remember this when filling the array with items, because overfilling it will cause an exception. When you look at the initializer, setting the array to a size of 2, it might seem natural to put item number 0, 1 and 2 into it, but this is one item too much. If you do it, an exception will be thrown. We will discuss exceptions in a later chapter. <br>
+<p style="text-indent: 40px">But why 0? As it is with so many things in the world of programming, the counting starts from 0 instead of 1. So the first item is indexed as 0, the next as 1 and so on. You should remember this when filling the array with items, because overfilling it will cause an exception. When you look at the initializer, setting the array to a size of 2, it might seem natural to put item number 0, 1 and 2 into it, but this is one item too much. If you do it, an exception will be thrown. We will discuss exceptions in a later chapter.</p> <br>
 
 <br>
-Earlier, we learned about loops, and obviously these go great with arrays. The most common way of getting data out of an array, is to loop through it and perform some sort of operation with each value. Let's use the array from before, to make a real example:<br>
+<p style="text-indent: 40px">Earlier, we learned about loops, and obviously these go great with arrays. The most common way of getting data out of an array, is to loop through it and perform some sort of operation with each value. Let's use the array from before, to make a real example:</p><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -891,7 +885,7 @@ namespace ConsoleApplication1<br>
 </div>
 
 <br>
-We use the foreach loop, because it's the easiest, but of course we could have used one of the other types of loop instead. The for loop is good with arrays as well, for instance if you need to count each item, like this:<br>
+<p style="text-indent: 40px">We use the foreach loop, because it's the easiest, but of course we could have used one of the other types of loop instead. The for loop is good with arrays as well, for instance if you need to count each item, like this:</p><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -900,10 +894,10 @@ for(int i = 0; i < names.Length; i++)<br>
 </div>
 
 <br>
-It's actually very simple. We use the Length property of the array to decide how many times the loop should iterate, and then we use the counter (i) to output where we are in the process, as well as get the item from the array. Just like we used a number, a so called indexer, to put items into the array, we can use it to get a specific item out again. <br>
+<p style="text-indent: 40px">It's actually very simple. We use the Length property of the array to decide how many times the loop should iterate, and then we use the counter (i) to output where we are in the process, as well as get the item from the array. Just like we used a number, a so called indexer, to put items into the array, we can use it to get a specific item out again.</p> <br>
 <br>
 
-I told you earlier that we could use an array to sort a range of values, and it's actually very easy. The Array class contains a bunch of smart methods for working with arrays. This example will use numbers instead of strings, just to try something else, but it could just as easily have been strings. I wish to show you another way of populating an array, which is much easier if you have a small, predefined set of items that you wish to put into your array. Take a look:<br>
+<p style="text-indent: 40px">I told you earlier that we could use an array to sort a range of values, and it's actually very easy. The Array class contains a bunch of smart methods for working with arrays. This example will use numbers instead of strings, just to try something else, but it could just as easily have been strings. I wish to show you another way of populating an array, which is much easier if you have a small, predefined set of items that you wish to put into your array. Take a look:</p><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -911,10 +905,10 @@ int[] numbers = new int[5] { 4, 3, 8, 0, 5 };
 </div>
 
 <br>
-With one line, we have created an array with a size of 5, and filled it with 5 integers. By filling the array like this, you get an extra advantage, since the compiler will check and make sure that you don't put too many items into the array. Try adding a number more - you will see the compiler complain about it.<br> 
+<p style="text-indent: 40px">With one line, we have created an array with a size of 5, and filled it with 5 integers. By filling the array like this, you get an extra advantage, since the compiler will check and make sure that you don't put too many items into the array. Try adding a number more - you will see the compiler complain about it.</p><br> 
 <br>
 
-Actually, it can be done even shorter, like this:<br>
+<p style="text-indent: 40px">Actually, it can be done even shorter, like this:</p><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -922,10 +916,10 @@ int[] numbers = { 4, 3, 8, 0, 5 };
 </div>
 
 <br>
-This is short, and you don't have to specify a size. The first approach may be easier to read later on though. <br>
+<p style="text-indent: 40px">This is short, and you don't have to specify a size. The first approach may be easier to read later on though.</p> <br>
 <br>
 
-Let's try sorting the array - here's a complete example:<br>
+<p style="text-indent: 40px">Let's try sorting the array - here's a complete example:</p><br>
 <br>
 
 <div class="alert alert-info" role="alert">
@@ -952,10 +946,10 @@ namespace ConsoleApplication1<br>
 </div>
 
 <br>
-The only real new thing here is the Array.Sort command. It can take various parameters, for various kinds of sorting, but in this case, it simply takes our array. As you can see from the result, our array has been sorted. The Array class has other methods as well, for instance the Reverse() method. You can look it up in the documentation to see all the features of the Array class. <br>
+<p style="text-indent: 40px">The only real new thing here is the Array.Sort command. It can take various parameters, for various kinds of sorting, but in this case, it simply takes our array. As you can see from the result, our array has been sorted. The Array class has other methods as well, for instance the Reverse() method. You can look it up in the documentation to see all the features of the Array class.</p> <br>
 <br>
 
-The arrays we have used so far have only had one dimension. However, C# arrays can be multidimensional, sometimes referred to as arrays in arrays. Multidimensional arrays come in two flavors with C#: Rectangular arrays and jagged arrays. The difference is that with rectangular arrays, all the dimensions have to be the same size, hence the name rectangular. A jagged array can have dimensions of various sizes. Multidimensional arrays are a heavy subject, and a bit out of the scope of this tutorial.
+<p style="text-indent: 40px">The arrays we have used so far have only had one dimension. However, C# arrays can be multidimensional, sometimes referred to as arrays in arrays. Multidimensional arrays come in two flavors with C#: Rectangular arrays and jagged arrays. The difference is that with rectangular arrays, all the dimensions have to be the same size, hence the name rectangular. A jagged array can have dimensions of various sizes. Multidimensional arrays are a heavy subject, and a bit out of the scope of this tutorial.</p>
 
                 </p>
 <br>
